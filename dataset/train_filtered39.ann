@@ -1,0 +1,95 @@
+T1	disease 0 7	B族链球菌感染
+T2	disease 36 44	病灶不明的脓毒症
+T3	disease 45 48	脑膜炎
+T4	disease 49 51	肺炎
+T5	disease 52 58	化脓性关节炎
+T6	disease 59 62	腹膜炎
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+R5	relevant Arg1:T1 Arg2:T6	
+T7	disease 64 67	胆管癌
+T8	physical_therapy 68 74	射频消融治疗
+T9	disease 103 105	肿瘤
+T10	physical_therapy 105 109	姑息治疗
+R6	physical Arg1:T7 Arg2:T8	
+R7	physical Arg1:T9 Arg2:T10	
+T11	disease 111 116	新生儿黄疸
+T12	disease 124 129	生理性黄疸
+T13	disease 156 161	新生儿黄疸
+T14	symptom 170 198	血清胆红素水平≤205.2μmol/L(12mg/dL)
+R8	clinical_manifestation Arg1:T12 Arg2:T14	
+T15	disease 207 212	新生儿黄疸
+T16	disease 240 245	新生儿黄疸
+T17	symptom 221 223	嗜睡
+T18	symptom 230 233	吸吮差
+T19	symptom 224 229	肌张力低下
+T20	symptom 234 239	哭泣声调高
+R9	clinical_manifestation Arg1:T15 Arg2:T17	
+R10	clinical_manifestation Arg1:T15 Arg2:T19	
+R11	clinical_manifestation Arg1:T15 Arg2:T18	
+R12	clinical_manifestation Arg1:T15 Arg2:T20	
+T21	symptom 266 271	电解质紊乱
+T22	symptom 272 274	出血
+T23	symptom 275 277	感染
+T24	symptom 278 282	心律失常
+T25	symptom 283 290	血栓形成与栓塞
+T26	disease 291 299	坏死性小肠结肠炎
+T27	disease 300 307	移植物抗宿主病
+T28	disease 309 314	小细胞肺癌
+T29	physical_therapy 316 326	可曲式支气管镜取活检
+T30	physical_therapy 327 331	穿刺活检
+R13	physical Arg1:T28 Arg2:T29	
+R14	physical Arg1:T28 Arg2:T30	
+T31	disease 347 352	脑干胶质瘤
+T32	disease 373 378	脑干胶质瘤
+T33	disease 411 416	脑干胶质瘤
+T34	physical_therapy 408 410	化疗
+R15	physical Arg1:T33 Arg2:T34	
+T35	disease 428 433	急性胰腺炎
+T36	pathogenic_bacteria 441 449	流行性腮腺炎病毒
+T37	pathogenic_bacteria 450 454	麻疹病毒
+T38	pathogenic_bacteria 455 459	风疹病毒
+T39	pathogenic_bacteria 460 465	柯萨奇病毒
+T40	pathogenic_bacteria 466 470	埃可病毒
+T41	pathogenic_bacteria 471 480	甲型和乙型肝炎病毒
+T42	pathogenic_bacteria 481 486	巨细胞病毒
+T43	disease 491 496	急性胰腺炎
+T44	pathogenic_bacteria 499 507	流行性腮腺炎病毒
+T45	disease 510 513	胰腺炎
+R16	cause Arg1:T44 Arg2:T45	
+R17	cause Arg1:T36 Arg2:T43	
+R18	cause Arg1:T37 Arg2:T43	
+R19	cause Arg1:T38 Arg2:T43	
+R20	cause Arg1:T39 Arg2:T43	
+R21	cause Arg1:T40 Arg2:T43	
+R22	cause Arg1:T41 Arg2:T43	
+R23	cause Arg1:T42 Arg2:T43	
+T46	disease 520 527	自身免疫性肝炎
+T47	disease 552 555	肝硬化
+T48	disease 556 563	自身免疫性肝炎
+T49	disease 564 569	肾病综合征
+T50	disease 570 574	营养不良
+T51	disease 575 579	吸收不良
+T52	disease 580 584	慢性感染
+T53	disease 586 590	血流损失
+T54	disease 602 607	胃肠道损失
+T55	symptom 620 629	血清白蛋白水平下降
+R24	clinical_manifestation Arg1:T47 Arg2:T55	
+R25	clinical_manifestation Arg1:T48 Arg2:T55	
+R26	clinical_manifestation Arg1:T49 Arg2:T55	
+R27	clinical_manifestation Arg1:T50 Arg2:T55	
+R28	clinical_manifestation Arg1:T51 Arg2:T55	
+R29	clinical_manifestation Arg1:T52 Arg2:T55	
+R30	clinical_manifestation Arg1:T53 Arg2:T55	
+R31	clinical_manifestation Arg1:T54 Arg2:T55	
+T56	disease 631 636	急性胰腺炎
+T57	pathogenic_bacteria 651 653	饮酒
+R32	cause Arg1:T57 Arg2:T56	
+T58	disease 655 660	脊柱旁肿瘤
+T59	symptom 664 670	急性神经压迫
+T60	physical_therapy 676 680	手术减压
+T61	disease 698 706	脊柱旁横纹肌肉瘤
+R33	clinical_manifestation Arg1:T58 Arg2:T59	
+R34	physical Arg1:T58 Arg2:T60	

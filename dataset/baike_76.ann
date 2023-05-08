@@ -1,0 +1,45 @@
+T1	disease 0 3	肝衰竭
+T2	pathogenic_bacteria 22 26	肝炎病毒
+T3	pathogenic_bacteria 30 36	乙型肝炎病毒
+T4	disease 11 14	肝衰竭
+R1	cause Arg1:T2 Arg2:T4	
+R2	cause Arg1:T3 Arg2:T4	
+T5	pathogenic_bacteria 50 52	药物
+T6	pathogenic_bacteria 53 58	肝毒性物质
+R3	cause Arg1:T5 Arg2:T4	
+R4	cause Arg1:T6 Arg2:T4	
+T7	pathogenic_bacteria 60 62	酒精
+T8	pathogenic_bacteria 63 67	化学制剂
+R5	cause Arg1:T7 Arg2:T4	
+R6	cause Arg1:T8 Arg2:T4	
+T9	pathogenic_bacteria 77 79	药物
+T10	disease 82 91	急性、亚急性肝衰竭
+R7	cause Arg1:T9 Arg2:T10	
+T11	pathogenic_bacteria 97 99	酒精
+T12	disease 103 108	慢性肝衰竭
+R8	cause Arg1:T11 Arg2:T12	
+R9	relevant Arg1:T4 Arg2:T10	
+R10	relevant Arg1:T4 Arg2:T12	
+T13	disease 110 113	肝衰竭
+T14	disease 115 118	肝衰竭
+T15	pathogenic_bacteria 126 133	遗传代谢性疾病
+R11	cause Arg1:T15 Arg2:T14	
+T16	disease 185 188	肝衰竭
+T17	disease 190 193	肝衰竭
+T18	pathogenic_bacteria 205 213	感染某种肝炎病毒
+T19	pathogenic_bacteria 214 218	酒精中毒
+T20	pathogenic_bacteria 219 225	服用某种药物
+R12	cause Arg1:T18 Arg2:T17	
+R13	cause Arg1:T19 Arg2:T17	
+R14	cause Arg1:T20 Arg2:T17	
+T21	pathogenic_bacteria 242 257	慢性肝炎基础上重叠感染其他病毒
+T22	pathogenic_bacteria 258 273	慢性酒精中毒基础上合并病毒感染
+R15	cause Arg1:T21 Arg2:T17	
+R16	cause Arg1:T22 Arg2:T17	
+T23	disease 276 279	肝衰竭
+T24	disease 279 282	肝衰竭
+T25	disease 283 288	慢性肝衰竭
+R17	relevant Arg1:T24 Arg2:T25	
+T26	disease 337 340	肝衰竭
+T27	disease 341 346	慢性肝衰竭
+R18	relevant Arg1:T26 Arg2:T27	

@@ -1,0 +1,3 @@
+T1	disease 6 10	肾盂肾炎
+T2	physical_therapy 0 3	尿常规
+R1	physical Arg1:T1 Arg2:T2	

@@ -1,0 +1,24 @@
+T1	disease 0 2	癌症
+T2	symptom 14 16	肿块
+T3	disease 4 6	癌症
+R1	clinical_manifestation Arg1:T3 Arg2:T2	
+T4	disease 43 45	癌症
+T5	disease 52 55	乳腺癌
+R2	relevant Arg1:T4 Arg2:T5	
+T6	disease 68 70	癌症
+T7	disease 70 72	肿瘤
+T8	symptom 82 87	淋巴结肿大
+R3	clinical_manifestation Arg1:T7 Arg2:T8	
+R4	relevant Arg1:T6 Arg2:T7	
+T9	disease 115 117	癌症
+T10	disease 127 129	胃癌
+T11	disease 130 133	胰腺癌
+R5	relevant Arg1:T9 Arg2:T10	
+R6	relevant Arg1:T9 Arg2:T11	
+T12	disease 147 149	癌症
+T13	symptom 152 154	疼痛
+R7	clinical_manifestation Arg1:T12 Arg2:T13	
+T14	disease 155 157	肿瘤
+R8	relevant Arg1:T12 Arg2:T14	
+T15	symptom 189 193	局部疼痛
+R9	clinical_manifestation Arg1:T14 Arg2:T15	

@@ -1,0 +1,27 @@
+T1	disease 0 3	肝硬化
+T2	symptom 3 11	凝血酶原时间延长
+T3	symptom 12 20	凝血酶原活动下降
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	disease 22 25	肝硬化
+T5	symptom 25 34	转氨酶、胆红素升高
+T6	disease 36 39	肝硬化
+T7	symptom 39 50	总胆固醇及胆固醇脂下降
+T8	symptom 51 56	血氨可升高
+R3	clinical_manifestation Arg1:T6 Arg2:T7	
+R4	clinical_manifestation Arg1:T6 Arg2:T8	
+T9	disease 58 61	肝硬化
+T10	symptom 61 68	氨基酸代谢紊乱
+R5	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	disease 78 81	肝硬化
+T12	symptom 81 89	尿素氮、肌酐升高
+R6	clinical_manifestation Arg1:T11 Arg2:T12	
+T13	disease 91 94	肝硬化
+T14	symptom 94 99	电解质紊乱
+R7	clinical_manifestation Arg1:T13 Arg2:T14	
+T15	disease 107 110	肝硬化
+T16	physical_therapy 113 118	病原学检查
+R8	physical Arg1:T15 Arg2:T16	
+T17	disease 139 142	肝硬化
+T18	physical_therapy 145 150	免疫学检查
+R9	physical Arg1:T17 Arg2:T18	

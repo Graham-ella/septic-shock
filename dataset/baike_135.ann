@@ -1,0 +1,7 @@
+T1	disease 0 5	细菌性痢疾
+T2	pathogenic_bacteria 7 16	污染手、食品、水源
+T3	pathogenic_bacteria 17 21	生活接触
+T4	pathogenic_bacteria 23 33	苍蝇、蟑螂等间接方式
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	

@@ -1,0 +1,52 @@
+T1	disease 0 6	胃肠功能紊乱
+T2	symptom 7 16	持续腹痛伴体重减轻
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	medical_treatment 20 27	消化道钡餐摄片
+R2	treatment Arg1:T2 Arg2:T3	
+T4	symptom 36 42	持续上腹痛者
+T5	medical_treatment 43 47	胆囊超声
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	treatment Arg1:T4 Arg2:T5	
+T6	symptom 48 55	怀疑胰腺疾患时
+T7	medical_treatment 56 66	腹部CT及淀粉酶测定
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	treatment Arg1:T6 Arg2:T7	
+T8	symptom 67 75	怀疑乳糖酶缺乏症
+T9	medical_treatment 77 84	作乳糖耐量试验
+R7	clinical_manifestation Arg1:T1 Arg2:T8	
+R8	treatment Arg1:T8 Arg2:T9	
+T10	disease 86 92	胃肠功能紊乱
+T11	symptom 92 97	神经性呕吐
+R9	clinical_manifestation Arg1:T10 Arg2:T11	
+T12	disease 99 103	慢性胃病
+T13	disease 104 108	妊娠呕吐
+T14	disease 109 112	尿毒症
+T15	disease 129 135	胃肠功能紊乱
+T16	symptom 135 140	神经性厌食
+R10	clinical_manifestation Arg1:T15 Arg2:T16	
+T17	disease 168 174	胃肠功能紊乱
+T18	disease 178 185	胃肠道功能紊乱
+T19	physical_therapy 192 201	精神调适和改变行为
+R11	physical Arg1:T18 Arg2:T19	
+R12	physical Arg1:T17 Arg2:T19	
+T20	disease 222 228	胃肠功能紊乱
+T21	physical_therapy 235 239	饮食疗法
+T22	physical_therapy 240 246	营养支持疗法
+T23	physical_therapy 247 251	镇静安眠
+T24	physical_therapy 252 262	解痉止痛综合治疗方法
+R13	physical Arg1:T20 Arg2:T21	
+R14	physical Arg1:T20 Arg2:T22	
+R15	physical Arg1:T20 Arg2:T23	
+R16	physical Arg1:T20 Arg2:T24	
+T25	medical_treatment 274 281	理肠调胃安神剂
+T26	medical_treatment 282 285	谷维素
+T27	medical_treatment 286 289	消化酶
+T28	medical_treatment 290 295	维生素B1
+T29	medical_treatment 296 299	胃达喜
+T30	medical_treatment 300 303	吗叮啉
+R17	medical Arg1:T20 Arg2:T25	
+R18	medical Arg1:T20 Arg2:T26	
+R19	medical Arg1:T20 Arg2:T27	
+R20	medical Arg1:T20 Arg2:T28	
+R21	medical Arg1:T20 Arg2:T29	
+R22	medical Arg1:T20 Arg2:T30	

@@ -1,0 +1,9 @@
+T1	disease 0 5	细菌性痢疾
+T2	disease 5 10	细菌性痢疾
+T3	disease 33 35	菌痢
+R1	same Arg1:T2 Arg2:T3	
+T4	disease 39 43	志贺菌病
+R2	same Arg1:T2 Arg2:T4	
+R3	same Arg1:T3 Arg2:T4	
+T5	pathogenic_bacteria 58 62	志贺菌属
+R4	cause Arg1:T5 Arg2:T2	

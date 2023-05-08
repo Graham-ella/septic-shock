@@ -1,0 +1,66 @@
+T1	disease 0 5	急性肾损伤
+T2	disease 52 57	急性肾损伤
+T3	disease 57 62	急性肾损伤
+T4	disease 76 85	急性呼吸窘迫综合征
+R1	relevant Arg1:T3 Arg2:T4	
+T5	disease 87 92	急性肾损伤
+T6	disease 124 129	急性肾损伤
+T7	disease 186 191	急性肾损伤
+T8	disease 226 231	急性肾损伤
+T9	disease 297 302	急性肾损伤
+T11	disease 242 247	急性肾损伤
+T12	symptom 252 259	高分解代谢状态
+T13	symptom 260 269	蛋白质分解代谢加快
+T14	symptom 270 277	肌肉分解率增加
+R2	clinical_manifestation Arg1:T11 Arg2:T12	
+R3	clinical_manifestation Arg1:T11 Arg2:T13	
+R4	clinical_manifestation Arg1:T11 Arg2:T14	
+T15	disease 309 314	急性肾损伤
+T16	symptom 304 307	.感染
+R5	clinical_manifestation Arg1:T15 Arg2:T16	
+T17	disease 341 346	急性肾损伤
+T18	symptom 14 18	呼吸困难
+T19	symptom 19 21	咳嗽
+T20	symptom 22 29	咳粉红色泡沫痰
+T21	symptom 30 32	胸闷
+R6	clinical_manifestation Arg1:T1 Arg2:T18	
+R7	clinical_manifestation Arg1:T1 Arg2:T19	
+R8	clinical_manifestation Arg1:T1 Arg2:T20	
+R9	clinical_manifestation Arg1:T1 Arg2:T21	
+R10	relevant Arg1:T2 Arg2:T4	
+T22	symptom 101 108	充血性心力衰竭
+T23	symptom 109 113	心律失常
+T24	symptom 114 117	心包炎
+T25	symptom 118 121	高血压
+R11	clinical_manifestation Arg1:T5 Arg2:T22	
+R12	clinical_manifestation Arg1:T5 Arg2:T23	
+R13	clinical_manifestation Arg1:T5 Arg2:T24	
+R14	clinical_manifestation Arg1:T5 Arg2:T25	
+T26	symptom 138 140	昏睡
+T27	symptom 141 145	精神错乱
+T28	symptom 146 148	木僵
+T29	symptom 149 151	激动
+T30	symptom 152 160	精神病等精神症状
+T31	symptom 163 166	肌阵挛
+T32	symptom 167 171	反射亢进
+T33	symptom 172 178	不安腿综合征
+T34	disease 179 181	癫痫
+R15	clinical_manifestation Arg1:T6 Arg2:T26	
+R16	clinical_manifestation Arg1:T6 Arg2:T27	
+R17	clinical_manifestation Arg1:T6 Arg2:T28	
+R18	clinical_manifestation Arg1:T6 Arg2:T29	
+R19	clinical_manifestation Arg1:T6 Arg2:T30	
+R20	clinical_manifestation Arg1:T6 Arg2:T31	
+R21	clinical_manifestation Arg1:T6 Arg2:T32	
+R22	clinical_manifestation Arg1:T6 Arg2:T33	
+R23	relevant Arg1:T6 Arg2:T34	
+T35	symptom 203 205	贫血
+T36	symptom 206 211	白细胞升高
+T37	symptom 212 219	血小板功能缺陷
+T38	symptom 220 224	出血倾向
+R24	clinical_manifestation Arg1:T7 Arg2:T35	
+R25	clinical_manifestation Arg1:T7 Arg2:T36	
+R26	clinical_manifestation Arg1:T7 Arg2:T37	
+R27	clinical_manifestation Arg1:T7 Arg2:T38	
+R28	clinical_manifestation Arg1:T9 Arg2:T16	
+R29	clinical_manifestation Arg1:T17 Arg2:T16	

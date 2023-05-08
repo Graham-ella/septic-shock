@@ -1,0 +1,60 @@
+T1	disease 0 7	皮肤鳞状细胞癌
+T2	disease 259 265	毛细淋巴管瘤
+T3	physical_therapy 307 309	手术
+T4	disease 267 274	单纯性淋巴管瘤
+R1	same Arg1:T2 Arg2:T4	
+R2	physical Arg1:T2 Arg2:T3	
+T5	disease 384 387	食管癌
+T6	physical_therapy 388 395	EUS/FNA
+R3	physical Arg1:T5 Arg2:T6	
+T7	disease 440 445	脓毒性休克
+T8	disease 447 450	脓毒症
+R4	relevant Arg1:T7 Arg2:T8	
+T9	disease 473 476	冷休克
+R5	relevant Arg1:T7 Arg2:T9	
+T10	symptom 485 492	皮肤苍白、花纹
+T11	symptom 493 496	四肢凉
+T12	symptom 497 503	脉搏快、细弱
+T13	symptom 504 515	毛细血管再充盈时间延长
+R6	clinical_manifestation Arg1:T9 Arg2:T10	
+R7	clinical_manifestation Arg1:T9 Arg2:T11	
+R8	clinical_manifestation Arg1:T9 Arg2:T12	
+R9	clinical_manifestation Arg1:T9 Arg2:T13	
+T14	disease 525 528	GER
+T15	physical_therapy 565 569	外科手术
+R10	physical Arg1:T14 Arg2:T15	
+T16	disease 697 706	小儿呼吸、心搏骤停
+T17	pathogenic_bacteria 772 774	感染
+T18	pathogenic_bacteria 775 778	败血症
+T19	pathogenic_bacteria 779 782	脑膜炎
+T20	pathogenic_bacteria 715 721	呼吸系统疾病
+T21	pathogenic_bacteria 722 727	上气道阻塞
+T22	pathogenic_bacteria 745 750	下气道疾病
+R11	cause Arg1:T20 Arg2:T16	
+R12	cause Arg1:T21 Arg2:T16	
+R13	cause Arg1:T22 Arg2:T16	
+R14	cause Arg1:T17 Arg2:T16	
+R15	cause Arg1:T18 Arg2:T16	
+R16	cause Arg1:T19 Arg2:T16	
+T23	disease 792 797	厌氧菌肺炎
+T24	symptom 830 832	发热
+T25	symptom 833 835	咳嗽
+T26	symptom 836 843	进行性呼吸困难
+T27	symptom 844 846	胸痛
+T28	symptom 847 851	咳恶臭痰
+R17	clinical_manifestation Arg1:T23 Arg2:T24	
+R18	clinical_manifestation Arg1:T23 Arg2:T25	
+R19	clinical_manifestation Arg1:T23 Arg2:T26	
+R20	clinical_manifestation Arg1:T23 Arg2:T27	
+R21	clinical_manifestation Arg1:T23 Arg2:T28	
+T29	disease 862 868	范可尼综合征
+T30	pathogenic_bacteria 934 943	碳水化合物代谢障碍
+R22	cause Arg1:T30 Arg2:T29	
+T31	disease 1007 1011	恶性贫血
+T32	physical_therapy 1018 1020	内镜
+R23	physical Arg1:T31 Arg2:T32	
+T33	disease 1037 1040	肝硬化
+T34	physical_therapy 1041 1046	多普勒超声
+T35	physical_therapy 1047 1051	腹部CT
+R24	physical Arg1:T33 Arg2:T34	
+R25	physical Arg1:T33 Arg2:T35	

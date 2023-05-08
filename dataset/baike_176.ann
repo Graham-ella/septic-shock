@@ -1,0 +1,9 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 5 11	革兰阴性杆菌
+T3	disease 14 18	伤口感染
+R1	cause Arg1:T2 Arg2:T3	
+T4	pathogenic_bacteria 24 28	绿脓杆菌
+T5	pathogenic_bacteria 29 33	大肠杆菌
+R2	cause Arg1:T4 Arg2:T3	
+R3	cause Arg1:T5 Arg2:T3	
+R4	relevant Arg1:T1 Arg2:T3	

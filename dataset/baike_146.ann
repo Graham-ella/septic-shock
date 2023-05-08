@@ -1,0 +1,14 @@
+T1	disease 0 5	细菌性痢疾
+T2	symptom 7 9	发热
+T3	symptom 11 13	呕吐
+T4	symptom 14 16	腹泻
+T5	disease 19 25	胃肠道传染病
+T6	disease 26 32	急性食物中毒
+R1	clinical_manifestation Arg1:T5 Arg2:T4	
+R2	clinical_manifestation Arg1:T5 Arg2:T3	
+R3	clinical_manifestation Arg1:T5 Arg2:T2	
+R4	clinical_manifestation Arg1:T6 Arg2:T4	
+R5	clinical_manifestation Arg1:T6 Arg2:T3	
+R6	clinical_manifestation Arg1:T6 Arg2:T2	
+R7	relevant Arg1:T1 Arg2:T5	
+R8	relevant Arg1:T1 Arg2:T6	

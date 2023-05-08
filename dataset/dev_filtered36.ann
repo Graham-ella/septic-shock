@@ -1,0 +1,72 @@
+T1	disease 7 17	急性感染后肾小球肾炎
+T2	pathogenic_bacteria 23 32	β溶血性链球菌A组
+T3	pathogenic_bacteria 34 38	非链球菌
+T4	pathogenic_bacteria 44 48	葡萄球菌
+T5	pathogenic_bacteria 49 52	链球菌
+T6	pathogenic_bacteria 53 59	革兰阴性杆菌
+T7	pathogenic_bacteria 62 64	病毒
+T8	pathogenic_bacteria 65 69	流感病毒
+T9	pathogenic_bacteria 70 77	柯萨奇病毒B4
+T10	pathogenic_bacteria 78 82	EB病毒
+T11	pathogenic_bacteria 84 89	肺炎支原体
+T12	pathogenic_bacteria 90 93	疟原虫
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+R4	cause Arg1:T5 Arg2:T1	
+R5	cause Arg1:T6 Arg2:T1	
+R6	cause Arg1:T7 Arg2:T1	
+R7	cause Arg1:T8 Arg2:T1	
+R8	cause Arg1:T9 Arg2:T1	
+R9	cause Arg1:T10 Arg2:T1	
+R10	cause Arg1:T11 Arg2:T1	
+R11	cause Arg1:T12 Arg2:T1	
+T13	disease 149 157	隐匿性细菌性肺炎
+T14	physical_therapy 138 145	血氧饱和度测定
+R12	physical Arg1:T13 Arg2:T14	
+T15	disease 199 201	癌症
+T16	physical_therapy 205 209	全身CT
+T17	physical_therapy 210 215	全身PET
+R13	physical Arg1:T15 Arg2:T16	
+R14	physical Arg1:T15 Arg2:T17	
+T18	disease 227 234	肺炎链球菌肺炎
+T19	symptom 324 337	ERS、CRP、PCT增加
+T20	disease 236 242	化脓性并发症
+R15	relevant Arg1:T18 Arg2:T20	
+T21	physical_therapy 243 245	X线
+R16	physical Arg1:T20 Arg2:T21	
+T22	disease 339 342	登革热
+T23	symptom 346 352	循环衰竭迹象
+R17	clinical_manifestation Arg1:T22 Arg2:T23	
+T24	disease 363 366	DSS
+T25	symptom 356 358	休克
+R18	clinical_manifestation Arg1:T24 Arg2:T25	
+T26	disease 368 372	乙型肝炎
+T27	symptom 384 386	肝掌
+T28	symptom 387 390	蜘蛛痣
+T29	symptom 395 399	门脉高压
+T30	symptom 405 407	腹水
+T31	symptom 408 410	黄疸
+T32	symptom 411 416	扑翼样震颤
+R19	clinical_manifestation Arg1:T26 Arg2:T27	
+R20	clinical_manifestation Arg1:T26 Arg2:T28	
+R21	clinical_manifestation Arg1:T26 Arg2:T29	
+R22	clinical_manifestation Arg1:T26 Arg2:T30	
+R23	clinical_manifestation Arg1:T26 Arg2:T31	
+R24	clinical_manifestation Arg1:T26 Arg2:T32	
+T33	disease 434 439	L型菌肺炎
+T34	medical_treatment 477 481	氨苄西林
+T35	disease 443 451	难治性呼吸道感染
+R25	relevant Arg1:T33 Arg2:T35	
+T36	medical_treatment 482 493	头孢霉素类加大环内酯类
+R26	medical Arg1:T33 Arg2:T34	
+R27	medical Arg1:T33 Arg2:T36	
+T38	physical_therapy 570 576	冠状动脉造影
+T37	disease 551 561	稳定型缺血性心脏疾病
+R28	physical Arg1:T37 Arg2:T38	
+T39	disease 618 621	肝硬化
+T40	physical_therapy 611 614	肝活检
+R29	physical Arg1:T39 Arg2:T40	
+T41	disease 640 648	新生儿生理性黄疸
+T42	symptom 678 680	黄疸
+R30	clinical_manifestation Arg1:T41 Arg2:T42	

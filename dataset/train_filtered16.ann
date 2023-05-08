@@ -1,0 +1,76 @@
+T1	disease 0 2	肺炎
+T2	physical_therapy 35 39	分类计数
+T3	physical_therapy 26 34	外周血白细胞计数
+T4	physical_therapy 40 51	血白细胞碱性磷酸酶积分
+T5	physical_therapy 52 58	四唑氮蓝试验
+R1	physical Arg1:T1 Arg2:T3	
+R2	physical Arg1:T1 Arg2:T2	
+R3	physical Arg1:T1 Arg2:T4	
+R4	physical Arg1:T1 Arg2:T5	
+T6	physical_therapy 5 10	细菌学检查
+T7	disease 159 164	CMV感染
+T8	disease 178 183	症状性感染
+T9	disease 259 264	CMV肝炎
+T10	disease 265 270	CMV肺炎
+T11	disease 218 223	全身性感染
+T12	disease 275 280	横纹肌肉瘤
+T13	disease 291 296	横纹肌肉瘤
+T14	disease 296 301	横纹肌肉瘤
+T15	disease 360 366	黑素细胞肿瘤
+T16	disease 346 353	皮肤鳞状细胞癌
+T17	physical_therapy 356 358	活检
+R5	physical Arg1:T15 Arg2:T17	
+T18	disease 382 390	肢体和躯干部肿瘤
+T19	symptom 393 395	肿块
+T20	symptom 404 409	淋巴结转移
+R6	clinical_manifestation Arg1:T18 Arg2:T19	
+R7	clinical_manifestation Arg1:T18 Arg2:T20	
+T21	disease 420 422	哮喘
+T22	disease 580 584	低氧血症
+R8	relevant Arg1:T21 Arg2:T22	
+T23	disease 439 444	支气管哮喘
+T24	physical_therapy 462 464	吸氧
+T25	physical_therapy 466 473	保持呼吸道湿润
+T26	medical_treatment 475 481	支气管扩张药
+T27	medical_treatment 485 490	糖皮质激素
+T28	physical_therapy 492 496	控制感染
+T29	physical_therapy 498 503	观察和监护
+T30	physical_therapy 505 509	机械通气
+T31	disease 509 511	哮喘
+T32	disease 552 556	呼吸衰竭
+R9	physical Arg1:T23 Arg2:T24	
+R10	physical Arg1:T23 Arg2:T25	
+R11	medical Arg1:T23 Arg2:T26	
+R12	medical Arg1:T23 Arg2:T27	
+R13	physical Arg1:T23 Arg2:T28	
+R14	physical Arg1:T23 Arg2:T29	
+R15	physical Arg1:T23 Arg2:T30	
+T33	disease 600 605	急性胰腺炎
+T34	physical_therapy 609 614	钙替代疗法
+T35	medical_treatment 640 645	葡萄糖酸钙
+R16	physical Arg1:T33 Arg2:T34	
+R17	medical Arg1:T33 Arg2:T35	
+T36	disease 702 705	胰腺炎
+T37	disease 712 716	低钙血症
+T38	disease 726 729	肝硬化
+T39	physical_therapy 737 741	弹性成像
+R18	physical Arg1:T38 Arg2:T39	
+T40	physical_therapy 752 755	肝活检
+T41	disease 770 776	溃疡性结肠炎
+T42	disease 827 834	中毒性结肠扩张
+T43	disease 835 838	肠穿孔
+T44	disease 839 842	败血症
+R19	relevant Arg1:T41 Arg2:T42	
+R20	relevant Arg1:T41 Arg2:T43	
+R21	relevant Arg1:T41 Arg2:T44	
+T45	disease 922 941	Langerhans细胞组织细胞增生症
+T46	disease 911 917	中枢性尿崩症
+T47	disease 942 949	白血病细胞浸润
+T48	pathogenic_bacteria 848 857	AVP基因结构异常
+T49	pathogenic_bacteria 858 870	下丘脑及神经垂体发育缺陷
+T50	pathogenic_bacteria 872 906	下丘脑-神经束-神经垂体区域受到炎症、肿瘤、外伤、手术、自身免疫损伤
+R22	cause Arg1:T48 Arg2:T46	
+R23	cause Arg1:T49 Arg2:T46	
+R24	cause Arg1:T50 Arg2:T46	
+R25	relevant Arg1:T46 Arg2:T45	
+R26	relevant Arg1:T46 Arg2:T47	

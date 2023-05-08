@@ -1,0 +1,109 @@
+T1	disease 9 13	心肌梗死
+T2	disease 0 5	急性胰腺炎
+T3	disease 49 54	急性胰腺炎
+T4	physical_therapy 59 62	心肌酶
+T5	physical_therapy 83 86	心电图
+R1	physical Arg1:T1 Arg2:T4	
+R2	physical Arg1:T1 Arg2:T5	
+T6	disease 99 105	免疫系统疾病
+T7	pathogenic_bacteria 111 115	免疫反应
+T8	disease 157 164	变态反应性疾病
+T9	disease 165 172	自身免疫性疾病
+T10	disease 173 178	免疫缺陷病
+T11	disease 179 181	肿瘤
+R3	cause Arg1:T7 Arg2:T8	
+R4	cause Arg1:T7 Arg2:T9	
+R5	cause Arg1:T7 Arg2:T10	
+R6	cause Arg1:T7 Arg2:T11	
+T12	disease 183 188	基底细胞癌
+T13	medical_treatment 203 207	维莫德吉
+R7	medical Arg1:T12 Arg2:T13	
+T14	disease 268 278	稳定型缺血性心脏疾病
+T15	pathogenic_bacteria 322 324	吸烟
+T16	pathogenic_bacteria 325 328	高血压
+T17	pathogenic_bacteria 329 332	高血脂
+T18	pathogenic_bacteria 333 348	孤立的低水平高密度脂蛋白胆固醇
+T19	pathogenic_bacteria 349 352	糖尿病
+T20	pathogenic_bacteria 353 357	缺乏运动
+T21	pathogenic_bacteria 358 360	肥胖
+R8	cause Arg1:T15 Arg2:T14	
+R9	cause Arg1:T16 Arg2:T14	
+R10	cause Arg1:T17 Arg2:T14	
+R11	cause Arg1:T18 Arg2:T14	
+R12	cause Arg1:T19 Arg2:T14	
+R13	cause Arg1:T20 Arg2:T14	
+R14	cause Arg1:T21 Arg2:T14	
+T22	disease 428 434	新生儿硬肿症
+T23	symptom 396 399	低体温
+T24	disease 654 656	肺炎
+T25	disease 657 660	败血症
+R15	clinical_manifestation Arg1:T22 Arg2:T23	
+R16	relevant Arg1:T22 Arg2:T24	
+R17	relevant Arg1:T22 Arg2:T25	
+T26	symptom 557 559	不吃
+T27	symptom 560 562	不哭
+T28	symptom 563 567	反应低下
+T29	symptom 568 571	心率慢
+T30	symptom 572 581	心电图、血生化异常
+T31	symptom 589 591	休克
+T32	symptom 592 596	心力衰竭
+T33	symptom 597 600	DIC
+T34	symptom 601 604	肺出血
+T35	symptom 605 608	肾衰竭
+R18	clinical_manifestation Arg1:T22 Arg2:T26	
+R19	clinical_manifestation Arg1:T22 Arg2:T27	
+R20	clinical_manifestation Arg1:T22 Arg2:T28	
+R21	clinical_manifestation Arg1:T22 Arg2:T29	
+R22	clinical_manifestation Arg1:T22 Arg2:T30	
+R23	clinical_manifestation Arg1:T22 Arg2:T31	
+R24	clinical_manifestation Arg1:T22 Arg2:T32	
+R25	clinical_manifestation Arg1:T22 Arg2:T33	
+R26	clinical_manifestation Arg1:T22 Arg2:T34	
+R27	clinical_manifestation Arg1:T22 Arg2:T35	
+T36	disease 666 671	支气管肺炎
+T37	symptom 682 684	发热
+T38	symptom 685 687	咳嗽
+T39	symptom 688 692	呼吸急促
+T40	physical_therapy 696 700	肺部听诊
+R28	clinical_manifestation Arg1:T36 Arg2:T37	
+R29	clinical_manifestation Arg1:T36 Arg2:T38	
+R30	clinical_manifestation Arg1:T36 Arg2:T39	
+R31	physical Arg1:T36 Arg2:T40	
+T41	physical_therapy 750 756	疫苗预防接种
+R32	physical Arg1:T36 Arg2:T41	
+T42	disease 787 790	宫颈癌
+T43	disease 770 773	宫颈癌
+T44	disease 843 846	宫颈癌
+T45	disease 854 858	麻疹感染
+T46	disease 883 885	肺炎
+T47	disease 886 890	喉气管炎
+T48	disease 891 894	中耳炎
+T49	disease 895 897	脑炎
+R33	relevant Arg1:T45 Arg2:T46	
+R34	relevant Arg1:T45 Arg2:T47	
+R35	relevant Arg1:T45 Arg2:T48	
+R36	relevant Arg1:T45 Arg2:T49	
+T50	disease 921 926	支气管哮喘
+T51	physical_therapy 944 946	吸氧
+T52	physical_therapy 948 955	保持呼吸道湿润
+T53	medical_treatment 957 963	支气管扩张药
+T54	medical_treatment 967 972	糖皮质激素
+T55	physical_therapy 974 978	控制感染
+T56	physical_therapy 980 985	观察和监护
+T57	physical_therapy 987 991	机械通气
+T58	medical_treatment 1047 1054	β2受体兴奋剂
+T59	medical_treatment 1062 1068	抗胆碱能药物
+R37	physical Arg1:T50 Arg2:T51	
+R38	physical Arg1:T50 Arg2:T52	
+R39	medical Arg1:T50 Arg2:T53	
+R40	medical Arg1:T50 Arg2:T54	
+R41	physical Arg1:T50 Arg2:T55	
+R42	physical Arg1:T50 Arg2:T56	
+R43	physical Arg1:T50 Arg2:T57	
+R44	medical Arg1:T50 Arg2:T58	
+R45	medical Arg1:T50 Arg2:T59	
+T60	disease 1116 1119	AHF
+T61	physical_therapy 1186 1191	输注血小板
+T62	physical_therapy 1131 1137	新鲜冷冻血浆
+R46	physical Arg1:T60 Arg2:T62	
+R47	physical Arg1:T60 Arg2:T61	

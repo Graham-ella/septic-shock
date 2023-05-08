@@ -1,0 +1,9 @@
+T1	disease 0 2	癌症
+T2	disease 7 9	癌症
+T3	pathogenic_bacteria 16 18	吸烟
+R1	cause Arg1:T3 Arg2:T2	
+T4	pathogenic_bacteria 21 23	吸烟
+T5	disease 24 26	肺癌
+R2	cause Arg1:T4 Arg2:T5	
+R3	relevant Arg1:T1 Arg2:T5	
+R4	relevant Arg1:T2 Arg2:T5	

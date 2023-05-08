@@ -1,0 +1,5 @@
+T1	disease 0 2	肿瘤
+T2	physical_therapy 7 23	放射性同位素产生的α、β、γ射线
+R1	physical Arg1:T1 Arg2:T2	
+T3	physical_therapy 24 29	各类x射线
+R2	physical Arg1:T1 Arg2:T3	

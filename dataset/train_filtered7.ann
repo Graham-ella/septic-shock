@@ -1,0 +1,101 @@
+T1	disease 0 3	肝硬化
+T2	symptom 6 10	腹围增加
+T3	symptom 11 15	没有黄疸
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	disease 17 20	胆管癌
+T5	disease 34 39	急性胆道炎
+T6	symptom 24 26	高热
+T7	symptom 27 29	黄疸
+T8	symptom 30 34	右上腹痛
+R3	clinical_manifestation Arg1:T5 Arg2:T6	
+R4	clinical_manifestation Arg1:T5 Arg2:T7	
+R5	clinical_manifestation Arg1:T5 Arg2:T8	
+T9	disease 55 60	新生儿黄疸
+T10	disease 64 68	头颅血肿
+T11	symptom 68 74	体内少量出血
+R6	clinical_manifestation Arg1:T10 Arg2:T11	
+T12	disease 95 100	酮症酸中毒
+T13	medical_treatment 106 112	碳酸氢钠溶液
+T14	medical_treatment 201 204	胰岛素
+T15	disease 82 88	脑细胞酸中毒
+T16	disease 89 93	高钠血症
+R7	medical Arg1:T12 Arg2:T13	
+R8	medical Arg1:T12 Arg2:T14	
+T17	disease 233 241	肿瘤相关性HLH
+T18	disease 247 252	恶性淋巴瘤
+T19	disease 253 256	白血病
+T20	disease 267 280	朗格汉斯细胞组织细胞增生症
+T21	disease 294 297	HLH
+T22	physical_therapy 282 289	造血干细胞移植
+R9	physical Arg1:T17 Arg2:T22	
+R10	relevant Arg1:T17 Arg2:T18	
+R11	relevant Arg1:T17 Arg2:T19	
+R12	relevant Arg1:T17 Arg2:T20	
+R13	relevant Arg1:T17 Arg2:T21	
+T23	disease 299 302	胆管癌
+T24	symptom 315 320	无痛性黄疸
+T25	symptom 321 325	体重减轻
+T26	symptom 326 330	腹部疼痛
+R14	clinical_manifestation Arg1:T23 Arg2:T24	
+R15	clinical_manifestation Arg1:T23 Arg2:T25	
+R16	clinical_manifestation Arg1:T23 Arg2:T26	
+T27	disease 338 341	血友病
+T28	physical_therapy 462 470	重组抗血友病因子
+T29	disease 502 506	血友病甲
+R17	physical Arg1:T29 Arg2:T28	
+T30	disease 342 352	hemophilia
+R18	same Arg1:T27 Arg2:T30	
+T31	disease 402 406	血友病乙
+T32	disease 431 435	血友病丙
+T33	disease 508 515	B族链球菌感染
+T36	symptom 569 573	呼吸窘迫
+T34	symptom 545 552	关节发热、肿胀
+T35	symptom 553 560	压痛伴关节积液
+T37	symptom 574 576	发绀
+T38	symptom 577 581	鼻翼煽动
+T39	symptom 582 589	肋间或肋下凹陷
+T40	symptom 590 595	呼吸音减弱
+T41	symptom 596 608	听诊有湿啰音或胸膜摩擦音
+T42	symptom 613 618	鼻黏膜红肿
+T43	symptom 624 628	鼓膜膨胀
+T44	disease 629 632	鼓膜炎
+T45	symptom 640 646	腹部压痛僵硬
+T46	symptom 655 663	肠鸣音减弱或消失
+T47	disease 664 669	腹腔内感染
+T48	disease 619 622	鼻窦炎
+T49	disease 633 636	中耳炎
+T50	disease 609 611	肺炎
+T51	disease 561 567	化脓性关节炎
+R19	clinical_manifestation Arg1:T33 Arg2:T34	
+R20	clinical_manifestation Arg1:T33 Arg2:T35	
+R21	relevant Arg1:T33 Arg2:T51	
+R22	clinical_manifestation Arg1:T33 Arg2:T36	
+R23	clinical_manifestation Arg1:T33 Arg2:T37	
+R24	clinical_manifestation Arg1:T33 Arg2:T38	
+R25	clinical_manifestation Arg1:T33 Arg2:T39	
+R26	clinical_manifestation Arg1:T33 Arg2:T40	
+R27	clinical_manifestation Arg1:T33 Arg2:T41	
+R28	relevant Arg1:T33 Arg2:T50	
+R29	clinical_manifestation Arg1:T33 Arg2:T42	
+R30	relevant Arg1:T33 Arg2:T48	
+R31	clinical_manifestation Arg1:T33 Arg2:T43	
+R32	relevant Arg1:T33 Arg2:T44	
+R33	relevant Arg1:T33 Arg2:T49	
+R34	clinical_manifestation Arg1:T33 Arg2:T45	
+R35	clinical_manifestation Arg1:T33 Arg2:T46	
+R36	relevant Arg1:T33 Arg2:T47	
+T52	disease 672 675	肝硬化
+T53	disease 679 684	肝肺综合征
+R37	relevant Arg1:T52 Arg2:T53	
+T54	pathogenic_bacteria 690 694	门脉高压
+R38	cause Arg1:T54 Arg2:T53	
+T55	disease 714 720	垂体功能减退
+T56	pathogenic_bacteria 745 752	腺瘤的占位效应
+T57	pathogenic_bacteria 753 755	手术
+T58	pathogenic_bacteria 756 758	放射
+T59	pathogenic_bacteria 759 763	肿瘤梗死
+R39	cause Arg1:T56 Arg2:T55	
+R40	cause Arg1:T57 Arg2:T55	
+R41	cause Arg1:T58 Arg2:T55	
+R42	cause Arg1:T59 Arg2:T55	

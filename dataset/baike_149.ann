@@ -1,0 +1,23 @@
+T1	disease 0 2	癌症
+T2	disease 2 4	癌症
+T3	symptom 6 15	细胞分化和增殖异常
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	symptom 16 22	生长失去控制
+T5	symptom 23 30	浸润性和转移性
+R2	clinical_manifestation Arg1:T2 Arg2:T4	
+R3	clinical_manifestation Arg1:T2 Arg2:T5	
+R4	clinical_manifestation Arg1:T1 Arg2:T3	
+R5	clinical_manifestation Arg1:T1 Arg2:T4	
+R6	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	pathogenic_bacteria 72 74	吸烟
+T7	pathogenic_bacteria 75 77	感染
+T8	pathogenic_bacteria 78 82	职业暴露
+T9	pathogenic_bacteria 83 87	环境污染
+T10	pathogenic_bacteria 88 93	不合理膳食
+T11	pathogenic_bacteria 94 98	遗传因素
+R7	cause Arg1:T6 Arg2:T2	
+R8	cause Arg1:T7 Arg2:T2	
+R9	cause Arg1:T8 Arg2:T2	
+R10	cause Arg1:T9 Arg2:T2	
+R11	cause Arg1:T10 Arg2:T2	
+R12	cause Arg1:T11 Arg2:T2	

@@ -1,0 +1,68 @@
+T1	disease 20 27	垂体旁占位肿瘤
+T2	disease 11 17	垂体功能减退
+R1	relevant Arg1:T2 Arg2:T1	
+T3	disease 29 34	鞍区脑膜瘤
+T4	disease 35 38	转移瘤
+T5	disease 39 43	浆细胞瘤
+T6	disease 44 49	生殖细胞瘤
+T7	disease 50 58	视神经星形细胞瘤
+T8	disease 59 62	脊索瘤
+R2	relevant Arg1:T2 Arg2:T3	
+R3	relevant Arg1:T2 Arg2:T4	
+R4	relevant Arg1:T2 Arg2:T5	
+R5	relevant Arg1:T2 Arg2:T6	
+R6	relevant Arg1:T2 Arg2:T7	
+R7	relevant Arg1:T2 Arg2:T8	
+T9	disease 64 69	新生儿黄疸
+T10	symptom 89 91	黄染
+R8	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	disease 93 96	肝硬化
+T12	pathogenic_bacteria 120 126	慢性丙型肝炎
+T13	pathogenic_bacteria 127 133	慢性乙型肝炎
+T14	pathogenic_bacteria 134 138	酒精滥用
+T15	pathogenic_bacteria 139 148	非酒精性脂肪性肝病
+R9	cause Arg1:T12 Arg2:T11	
+R10	cause Arg1:T13 Arg2:T11	
+R11	cause Arg1:T14 Arg2:T11	
+R12	cause Arg1:T15 Arg2:T11	
+T16	disease 169 174	机化性肺炎
+T17	symptom 286 292	干性肺捻发音
+T18	symptom 242 244	低热
+T19	symptom 245 247	干咳
+T20	symptom 248 251	不适感
+T21	symptom 252 256	呼吸困难
+T22	symptom 257 261	体重减轻
+R13	clinical_manifestation Arg1:T16 Arg2:T18	
+R14	clinical_manifestation Arg1:T16 Arg2:T19	
+R15	clinical_manifestation Arg1:T16 Arg2:T20	
+R16	clinical_manifestation Arg1:T16 Arg2:T21	
+R17	clinical_manifestation Arg1:T16 Arg2:T22	
+R18	clinical_manifestation Arg1:T16 Arg2:T17	
+T23	disease 294 299	急性胰腺炎
+T24	disease 303 307	假性囊肿
+R19	relevant Arg1:T23 Arg2:T24	
+T25	disease 334 339	急性胰腺炎
+T26	disease 434 441	肿瘤溶解综合征
+T27	medical_treatment 477 481	别嘌呤醇
+R20	medical Arg1:T26 Arg2:T27	
+T28	disease 512 515	肝硬化
+T29	physical_therapy 518 520	戒酒
+T30	physical_therapy 521 530	避免其他肝毒性药物
+T31	physical_therapy 581 583	减肥
+T32	physical_therapy 584 590	维持足够营养
+T33	physical_therapy 591 597	规律锻炼身体
+R21	physical Arg1:T28 Arg2:T29	
+R22	physical Arg1:T28 Arg2:T30	
+R23	physical Arg1:T28 Arg2:T31	
+R24	physical Arg1:T28 Arg2:T32	
+R25	physical Arg1:T28 Arg2:T33	
+T34	disease 612 615	宫颈癌
+T35	symptom 631 633	腹泻
+T36	symptom 634 637	高血压
+T37	symptom 638 648	发热性中性粒细胞减少
+R26	clinical_manifestation Arg1:T34 Arg2:T35	
+R27	clinical_manifestation Arg1:T34 Arg2:T36	
+R28	clinical_manifestation Arg1:T34 Arg2:T37	
+T38	disease 753 758	新生儿黄疸
+T39	physical_therapy 774 778	换血疗法
+R29	physical Arg1:T38 Arg2:T39	

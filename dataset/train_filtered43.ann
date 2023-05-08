@@ -1,0 +1,84 @@
+T1	disease 0 5	慢性胰腺炎
+T2	physical_therapy 6 9	EUS
+T3	physical_therapy 26 28	活检
+T4	disease 42 45	胰腺炎
+T5	disease 46 51	胰管内肿瘤
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+T6	disease 201 206	感染性休克
+T7	disease 222 225	脓毒症
+T8	disease 254 257	毒血症
+T9	symptom 260 264	中毒改变
+R3	clinical_manifestation Arg1:T8 Arg2:T9	
+T10	symptom 271 273	恶心
+T11	symptom 274 276	呕吐
+T12	symptom 277 279	腹痛
+T13	symptom 280 282	腹泻
+R4	clinical_manifestation Arg1:T7 Arg2:T10	
+R5	clinical_manifestation Arg1:T7 Arg2:T11	
+R6	clinical_manifestation Arg1:T7 Arg2:T12	
+R7	clinical_manifestation Arg1:T7 Arg2:T13	
+T14	disease 355 364	骨髓增生异常综合征
+T15	disease 365 368	MDS
+R8	same Arg1:T14 Arg2:T15	
+T16	disease 373 376	AML
+R9	relevant Arg1:T14 Arg2:T16	
+T17	disease 386 389	AML
+T18	disease 297 300	AML
+T19	disease 398 403	急性胰腺炎
+T20	physical_therapy 428 432	经腹超声
+R10	physical Arg1:T19 Arg2:T20	
+T21	symptom 410 413	肺不张
+T22	symptom 414 418	胸腔积液
+R11	clinical_manifestation Arg1:T19 Arg2:T21	
+R12	clinical_manifestation Arg1:T19 Arg2:T22	
+T23	disease 455 458	膀胱癌
+T24	disease 506 509	膀胱癌
+T25	physical_therapy 513 520	肾脏和膀胱超声
+T26	physical_therapy 541 547	CT尿路造影
+T27	physical_therapy 548 554	静脉肾盂造影
+R13	physical Arg1:T24 Arg2:T25	
+R14	physical Arg1:T24 Arg2:T26	
+R15	physical Arg1:T24 Arg2:T27	
+T28	disease 567 576	呼吸道合胞病毒肺炎
+T29	disease 578 589	合胞病毒（RSV）肺炎
+T30	symptom 608 610	发热
+T31	symptom 611 615	呼吸困难
+T32	symptom 636 638	喘憋
+T33	symptom 639 643	口唇发绀
+T34	symptom 631 635	呼吸困难
+T35	symptom 644 648	鼻翼扇动
+T36	symptom 649 652	三凹征
+R16	same Arg1:T28 Arg2:T29	
+R17	clinical_manifestation Arg1:T28 Arg2:T30	
+R18	clinical_manifestation Arg1:T28 Arg2:T31	
+R20	clinical_manifestation Arg1:T28 Arg2:T32	
+R19	clinical_manifestation Arg1:T28 Arg2:T33	
+R21	clinical_manifestation Arg1:T28 Arg2:T35	
+R22	clinical_manifestation Arg1:T28 Arg2:T36	
+T37	disease 667 670	肝硬化
+T38	physical_therapy 671 675	铁的检测
+T39	disease 698 701	血色病
+T40	disease 702 705	血色病
+R23	physical Arg1:T39 Arg2:T38	
+T41	disease 745 748	宫颈癌
+T42	medical_treatment 753 755	顺铂
+T43	medical_treatment 776 779	紫杉醇
+T44	medical_treatment 780 784	吉西他滨
+T45	medical_treatment 785 789	培美曲塞
+T46	medical_treatment 790 795	贝伐珠单抗
+T47	medical_treatment 796 800	长春瑞滨
+T48	disease 801 804	宫颈癌
+R24	medical Arg1:T41 Arg2:T42	
+R25	medical Arg1:T41 Arg2:T43	
+R26	medical Arg1:T41 Arg2:T44	
+R27	medical Arg1:T41 Arg2:T45	
+R28	medical Arg1:T41 Arg2:T46	
+R29	medical Arg1:T41 Arg2:T47	
+T49	disease 838 841	膀胱癌
+T50	disease 845 848	尿潴留
+R30	relevant Arg1:T49 Arg2:T50	
+T51	disease 871 878	皮肤鳞状细胞癌
+T52	disease 879 887	侵袭性鳞状细胞癌
+T53	disease 888 890	肿瘤
+T54	disease 858 860	肿瘤

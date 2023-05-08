@@ -1,0 +1,3 @@
+T1	disease 0 2	癌症
+T2	physical_therapy 2 8	改善生活习惯
+R1	physical Arg1:T1 Arg2:T2	

@@ -1,0 +1,60 @@
+T1	disease 0 3	糖尿病
+T2	disease 5 10	血脂糖尿病
+R1	relevant Arg1:T1 Arg2:T2	
+T3	symptom 14 18	血脂异常
+R2	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	disease 33 36	糖尿病
+T5	symptom 39 62	甘油三酯、总胆固醇、低密度脂蛋白胆固醇水平升高
+R3	clinical_manifestation Arg1:T4 Arg2:T5	
+T6	disease 64 67	糖尿病
+T7	symptom 67 80	高密度脂蛋白胆固醇水平降低
+R4	clinical_manifestation Arg1:T6 Arg2:T7	
+T8	disease 82 85	糖尿病
+T9	symptom 151 167	以GAD抗体阳性率高，持续时间长
+T10	disease 169 174	1型糖尿病
+R5	clinical_manifestation Arg1:T10 Arg2:T9	
+R6	relevant Arg1:T8 Arg2:T10	
+T11	disease 182 185	糖尿病
+T12	disease 186 191	1型糖尿病
+R7	relevant Arg1:T11 Arg2:T12	
+T13	disease 209 214	1型糖尿病
+R8	relevant Arg1:T11 Arg2:T13	
+T14	disease 219 222	糖尿病
+T15	disease 253 258	早期糖尿病
+T16	symptom 258 268	肾病尿白蛋白轻度升高
+R9	clinical_manifestation Arg1:T15 Arg2:T16	
+T17	physical_therapy 232 239	放免或酶联方法
+R10	treatment Arg1:T16 Arg2:T17	
+R11	relevant Arg1:T14 Arg2:T15	
+T18	disease 270 273	糖尿病
+T19	disease 273 276	糖尿病
+T20	symptom 284 301	空腹血糖大于或等于7.0毫摩尔/升
+R12	clinical_manifestation Arg1:T19 Arg2:T20	
+T21	symptom 305 326	餐后两小时血糖大于或等于11.1毫摩尔/升
+R13	clinical_manifestation Arg1:T19 Arg2:T21	
+T22	disease 332 335	糖尿病
+T23	disease 337 340	糖尿病
+T24	disease 349 354	1型糖尿病
+R14	relevant Arg1:T23 Arg2:T24	
+T25	symptom 372 384	多饮多尿多食消瘦症状明显
+T26	symptom 385 390	血糖水平高
+T27	symptom 396 401	酮症酸中毒
+R15	clinical_manifestation Arg1:T24 Arg2:T25	
+R16	clinical_manifestation Arg1:T24 Arg2:T26	
+R17	clinical_manifestation Arg1:T24 Arg2:T27	
+T28	symptom 407 419	血清胰岛素和C肽水平低下
+R18	clinical_manifestation Arg1:T24 Arg2:T28	
+T29	symptom 420 437	ICA、IAA或GAD抗体可呈阳性
+R19	clinical_manifestation Arg1:T24 Arg2:T29	
+T30	disease 439 442	糖尿病
+T31	medical_treatment 452 457	胰岛素治疗
+R20	medical Arg1:T30 Arg2:T31	
+T32	disease 459 462	糖尿病
+T33	disease 464 469	2型糖尿病
+R21	relevant Arg1:T32 Arg2:T33	
+T34	symptom 489 492	高血压
+T35	symptom 493 497	血脂异常
+T36	symptom 498 502	动脉硬化
+R22	clinical_manifestation Arg1:T33 Arg2:T34	
+R23	clinical_manifestation Arg1:T33 Arg2:T35	
+R24	clinical_manifestation Arg1:T33 Arg2:T36	

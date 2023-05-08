@@ -1,0 +1,11 @@
+T1	disease 0 3	肝衰竭
+T2	medical_treatment 6 17	口服肠道益生菌、乳果糖
+T3	medical_treatment 30 38	酌情选用抗氧化剂
+R1	medical Arg1:T1 Arg2:T2	
+R2	medical Arg1:T1 Arg2:T3	
+T4	disease 85 88	肝衰竭
+T5	physical_therapy 116 120	血浆置换
+R3	physical Arg1:T4 Arg2:T5	
+T6	disease 213 216	肝衰竭
+T7	physical_therapy 225 228	肝移植
+R4	physical Arg1:T6 Arg2:T7	

@@ -1,0 +1,14 @@
+T1	disease 0 8	中毒性休克综合征
+T2	pathogenic_bacteria 52 59	金黄色葡萄球菌
+T3	pathogenic_bacteria 60 63	链球菌
+T4	disease 74 76	休克
+T5	disease 77 84	多脏器功能衰竭
+R1	cause Arg1:T3 Arg2:T4	
+R2	cause Arg1:T2 Arg2:T4	
+R3	cause Arg1:T3 Arg2:T5	
+R4	cause Arg1:T2 Arg2:T5	
+T6	pathogenic_bacteria 112 119	金黄色葡萄球菌
+R5	cause Arg1:T6 Arg2:T5	
+R6	cause Arg1:T6 Arg2:T4	
+R7	relevant Arg1:T1 Arg2:T4	
+R8	relevant Arg1:T1 Arg2:T5	

@@ -1,0 +1,113 @@
+T1	disease 0 11	DiGeorge综合征
+T2	pathogenic_bacteria 13 24	先天性甲状旁腺功能减退
+T3	pathogenic_bacteria 25 31	胸腺发育不良
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+T4	symptom 66 70	低钙血症
+T5	symptom 71 81	严重的喂养及吞咽困难
+T6	symptom 82 86	肾脏畸形
+T7	symptom 87 91	听觉丧失
+T8	symptom 92 99	喉气管食管畸形
+T9	symptom 100 106	生长激素低下
+T10	symptom 107 114	自身免疫性疾病
+T11	symptom 115 117	惊厥
+T12	symptom 118 126	中枢神经系统畸形
+T13	symptom 127 131	骨骼畸形
+T14	symptom 132 136	眼部畸形
+T15	symptom 137 144	牙轴质发育不良
+T16	disease 151 155	恶性肿瘤
+R3	relevant Arg1:T1 Arg2:T16	
+R4	clinical_manifestation Arg1:T1 Arg2:T4	
+R5	clinical_manifestation Arg1:T1 Arg2:T5	
+R6	clinical_manifestation Arg1:T1 Arg2:T6	
+R7	clinical_manifestation Arg1:T1 Arg2:T7	
+R8	clinical_manifestation Arg1:T1 Arg2:T8	
+R9	clinical_manifestation Arg1:T1 Arg2:T9	
+R10	clinical_manifestation Arg1:T1 Arg2:T10	
+R11	clinical_manifestation Arg1:T1 Arg2:T11	
+R12	clinical_manifestation Arg1:T1 Arg2:T12	
+R13	clinical_manifestation Arg1:T1 Arg2:T13	
+R14	clinical_manifestation Arg1:T1 Arg2:T14	
+R15	clinical_manifestation Arg1:T1 Arg2:T15	
+T17	disease 160 163	血友病
+T18	disease 163 166	血友病
+T19	disease 187 191	血友病甲
+T20	disease 215 219	血友病乙
+T22	disease 273 277	血友病丙
+T21	symptom 288 292	出血较轻
+T23	symptom 283 287	出血倾向
+T24	symptom 315 321	皮肤黏膜出血
+T25	symptom 329 333	月经过多
+R16	clinical_manifestation Arg1:T22 Arg2:T23	
+R17	clinical_manifestation Arg1:T22 Arg2:T21	
+T26	symptom 353 369	合并因子Ⅴ、因子Ⅶ等凝血因子缺乏
+R18	clinical_manifestation Arg1:T22 Arg2:T24	
+R19	clinical_manifestation Arg1:T22 Arg2:T25	
+R20	clinical_manifestation Arg1:T22 Arg2:T26	
+T27	disease 378 383	支气管类癌
+T28	disease 401 405	原发肿瘤
+T29	physical_therapy 437 442	楔形切除术
+T30	physical_therapy 450 455	肺叶切除术
+T31	physical_therapy 460 464	肺切除术
+R21	physical Arg1:T27 Arg2:T29	
+R22	physical Arg1:T27 Arg2:T30	
+R23	physical Arg1:T27 Arg2:T31	
+T32	disease 470 475	肾母细胞瘤
+T33	symptom 480 484	腹部肿块
+R24	clinical_manifestation Arg1:T32 Arg2:T33	
+T34	symptom 505 511	患侧肋腹膨胀
+R25	clinical_manifestation Arg1:T32 Arg2:T34	
+T35	disease 571 578	自身免疫性疾病
+T36	disease 579 581	肿瘤
+T37	disease 612 615	淋巴瘤
+T38	disease 621 625	SCID
+T39	disease 626 641	嘌呤核苷磷酸化酶（PNP）缺乏
+T40	disease 642 645	XLA
+T41	disease 646 656	X连锁淋巴组织增生症
+T42	disease 657 663	高IgM血症
+T43	disease 668 674	IgA缺乏症
+T44	disease 675 682	IgG亚类缺陷
+T45	disease 683 693	常见变异型免疫缺陷病
+T46	disease 700 712	湿疹血小板减少伴免疫缺陷
+T47	disease 718 731	毛细血管扩张共济失调综合征
+T48	disease 737 743	胸腺发育不全
+R26	relevant Arg1:T37 Arg2:T38	
+R27	relevant Arg1:T37 Arg2:T39	
+R28	relevant Arg1:T37 Arg2:T40	
+R29	relevant Arg1:T37 Arg2:T41	
+R30	relevant Arg1:T37 Arg2:T42	
+R31	relevant Arg1:T37 Arg2:T43	
+R32	relevant Arg1:T37 Arg2:T44	
+R33	relevant Arg1:T37 Arg2:T45	
+R34	relevant Arg1:T37 Arg2:T46	
+R35	relevant Arg1:T37 Arg2:T47	
+R36	relevant Arg1:T37 Arg2:T48	
+T49	disease 746 748	胃炎
+T50	disease 763 771	应激性消化道出血
+T51	pathogenic_bacteria 795 806	机械通气时间＞48小时
+T52	pathogenic_bacteria 807 815	存在凝血功能障碍
+T53	disease 775 777	胃炎
+R37	cause Arg1:T51 Arg2:T50	
+R38	cause Arg1:T52 Arg2:T50	
+T54	disease 819 826	肺炎衣原体肺炎
+T55	pathogenic_bacteria 826 831	肺炎衣原体
+T56	disease 845 847	肺炎
+R39	cause Arg1:T55 Arg2:T56	
+T57	disease 874 880	粟粒性肺结核
+T58	symptom 882 884	气促
+T59	symptom 885 887	发绀
+R40	clinical_manifestation Arg1:T57 Arg2:T58	
+R41	clinical_manifestation Arg1:T57 Arg2:T59	
+T60	disease 891 893	肺炎
+T61	symptom 899 906	肺部啰音不明显
+R42	clinical_manifestation Arg1:T57 Arg2:T61	
+T62	disease 908 911	胆管癌
+T63	disease 914 916	肿瘤
+T64	symptom 930 934	腹部隐痛
+T65	symptom 935 940	肝功能异常
+R43	clinical_manifestation Arg1:T62 Arg2:T64	
+R44	clinical_manifestation Arg1:T62 Arg2:T65	
+T66	disease 942 947	小细胞肺癌
+T67	disease 949 951	肺炎
+T68	disease 952 956	支气管炎
+T69	disease 960 963	类癌瘤

@@ -1,0 +1,28 @@
+T1	disease 0 9	重症急性呼吸综合征
+T2	disease 27 36	重症急性呼吸综合征
+T3	symptom 36 39	起病急
+T4	symptom 40 44	传染性强
+T5	symptom 46 48	发热
+T6	symptom 56 58	畏寒
+T7	symptom 68 77	呈不规则热或弛张热
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+R2	clinical_manifestation Arg1:T2 Arg2:T4	
+R3	clinical_manifestation Arg1:T2 Arg2:T5	
+R4	clinical_manifestation Arg1:T2 Arg2:T6	
+R5	clinical_manifestation Arg1:T2 Arg2:T7	
+T8	disease 111 120	重症急性呼吸综合征
+T9	disease 150 159	重症急性呼吸综合征
+T10	symptom 191 195	频繁咳嗽
+T11	symptom 196 198	气促
+T12	symptom 199 203	呼吸困难
+T13	symptom 204 214	略有活动则气喘、心悸
+R6	clinical_manifestation Arg1:T9 Arg2:T10	
+R7	clinical_manifestation Arg1:T9 Arg2:T11	
+R8	clinical_manifestation Arg1:T9 Arg2:T12	
+R9	clinical_manifestation Arg1:T9 Arg2:T13	
+T14	disease 223 232	重症急性呼吸综合征
+T15	disease 249 258	重症急性呼吸综合征
+T16	disease 288 297	重症急性呼吸综合征
+T17	disease 338 347	重症急性呼吸综合征
+T18	disease 358 367	重症急性呼吸综合征
+T19	disease 387 396	重症急性呼吸综合征

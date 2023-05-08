@@ -1,0 +1,84 @@
+T1	disease 0 5	遗传代谢病
+T2	symptom 48 50	嗜睡
+T3	symptom 53 55	昏迷
+T4	symptom 70 72	抽搐
+T5	symptom 73 78	肌张力增高
+T6	disease 84 87	脑水肿
+T7	disease 10 13	败血症
+T8	disease 88 92	颅内出血
+R1	relevant Arg1:T1 Arg2:T7	
+R2	clinical_manifestation Arg1:T1 Arg2:T2	
+R3	clinical_manifestation Arg1:T1 Arg2:T3	
+R4	clinical_manifestation Arg1:T1 Arg2:T4	
+R5	clinical_manifestation Arg1:T1 Arg2:T5	
+R6	relevant Arg1:T1 Arg2:T6	
+R7	relevant Arg1:T1 Arg2:T8	
+T9	disease 147 155	新生儿感染性肺炎
+T10	physical_therapy 162 166	胃液涂片
+R8	physical Arg1:T9 Arg2:T10	
+T11	pathogenic_bacteria 97 102	巨细胞病毒
+T12	pathogenic_bacteria 103 109	单纯疱疹病毒
+T13	pathogenic_bacteria 110 114	风疹病毒
+T14	pathogenic_bacteria 118 120	原虫
+T15	pathogenic_bacteria 127 130	衣原体
+T16	pathogenic_bacteria 131 134	支原体
+R9	cause Arg1:T11 Arg2:T9	
+R10	cause Arg1:T12 Arg2:T9	
+R11	cause Arg1:T13 Arg2:T9	
+R12	cause Arg1:T14 Arg2:T9	
+R13	cause Arg1:T15 Arg2:T9	
+R14	cause Arg1:T16 Arg2:T9	
+T17	disease 220 225	急性胰腺炎
+T18	symptom 257 259	黄疸
+T19	symptom 260 264	心动过速
+T20	symptom 238 242	剧烈腹痛
+T21	symptom 243 245	呕吐
+T22	symptom 249 251	发热
+R15	clinical_manifestation Arg1:T17 Arg2:T20	
+R16	clinical_manifestation Arg1:T17 Arg2:T21	
+R17	clinical_manifestation Arg1:T17 Arg2:T22	
+R18	clinical_manifestation Arg1:T17 Arg2:T18	
+R19	clinical_manifestation Arg1:T17 Arg2:T19	
+T23	disease 277 282	泌尿道感染
+T24	physical_therapy 306 308	B超
+R20	physical Arg1:T23 Arg2:T24	
+T25	physical_therapy 283 288	尿常规检査
+R21	physical Arg1:T23 Arg2:T25	
+T26	disease 351 359	脱屑性间质性肺炎
+T27	disease 414 420	上呼吸道感染
+R22	relevant Arg1:T26 Arg2:T27	
+T28	pathogenic_bacteria 375 380	腺病毒感染
+R23	cause Arg1:T28 Arg2:T26	
+T29	pathogenic_bacteria 381 388	先天性风疹感染
+R24	cause Arg1:T29 Arg2:T26	
+T30	pathogenic_bacteria 389 391	吸烟
+R25	cause Arg1:T30 Arg2:T26	
+T31	pathogenic_bacteria 392 397	有机尘吸入
+R26	cause Arg1:T31 Arg2:T26	
+T32	pathogenic_bacteria 398 407	应用呋喃旦啶等药物
+R27	cause Arg1:T32 Arg2:T26	
+T33	disease 441 448	重度急性胆囊炎
+T34	symptom 453 457	轻度黄疸
+R28	clinical_manifestation Arg1:T33 Arg2:T34	
+T35	disease 499 502	胰腺癌
+T36	pathogenic_bacteria 528 530	肥胖
+T37	pathogenic_bacteria 531 533	吸烟
+T38	pathogenic_bacteria 534 537	糖尿病
+T39	pathogenic_bacteria 538 543	慢性胰腺炎
+R29	cause Arg1:T36 Arg2:T35	
+R30	cause Arg1:T37 Arg2:T35	
+R31	cause Arg1:T38 Arg2:T35	
+R32	cause Arg1:T39 Arg2:T35	
+T40	disease 552 557	复发性肺炎
+T41	disease 579 584	恶性间皮瘤
+T42	pathogenic_bacteria 613 622	接触石棉、二氧化钍
+R33	cause Arg1:T42 Arg2:T41	
+T43	disease 658 662	颅内肿瘤
+T44	symptom 673 680	醒来后头痛加剧
+T45	symptom 681 687	精神状态改变
+T46	symptom 688 692	癫痫发作
+T47	symptom 693 702	局灶性神经功能缺损
+R34	clinical_manifestation Arg1:T43 Arg2:T44	
+R35	clinical_manifestation Arg1:T43 Arg2:T45	
+R36	clinical_manifestation Arg1:T43 Arg2:T46	
+R37	clinical_manifestation Arg1:T43 Arg2:T47	

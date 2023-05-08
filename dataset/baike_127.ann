@@ -1,0 +1,17 @@
+T1	disease 0 5	多脏器衰竭
+T2	medical_treatment 5 16	维生素和微量元素的补充
+R1	medical Arg1:T1 Arg2:T2	
+T3	disease 22 27	多脏器衰竭
+T4	medical_treatment 27 32	口服抗生素
+T5	disease 70 76	原发性菌血症
+T6	disease 79 85	假孢菌属炎症
+R2	medical Arg1:T5 Arg2:T4	
+R3	medical Arg1:T6 Arg2:T4	
+T7	pathogenic_bacteria 35 42	革兰阴性肠杆菌
+T8	pathogenic_bacteria 43 48	白色念珠菌
+T9	disease 67 69	肺炎
+R4	cause Arg1:T7 Arg2:T5	
+R5	cause Arg1:T7 Arg2:T6	
+R6	relevant Arg1:T3 Arg2:T9	
+R7	relevant Arg1:T3 Arg2:T5	
+R8	relevant Arg1:T3 Arg2:T6	

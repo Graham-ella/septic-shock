@@ -1,0 +1,9 @@
+T1	disease 0 3	肝损伤
+T2	physical_therapy 6 24	定时测定红细胞、血红蛋白和红细胞压积
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 50 53	肝损伤
+T4	physical_therapy 56 62	B型超声检查
+R2	physical Arg1:T3 Arg2:T4	
+T5	disease 103 106	肝损伤
+T6	physical_therapy 109 113	X线检查
+R3	physical Arg1:T5 Arg2:T6	

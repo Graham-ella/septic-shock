@@ -1,0 +1,129 @@
+T1	disease 0 5	1型糖尿病
+T2	symptom 23 25	多饮
+T3	symptom 26 28	多尿
+T4	symptom 29 43	每天饮水量和尿量可达3～5L
+T5	symptom 44 48	易饿多食
+T6	symptom 50 54	体重下降
+T7	symptom 71 75	夜间遗尿
+T8	symptom 5 12	起病多数较急骤
+R1	clinical_manifestation Arg1:T1 Arg2:T8	
+R2	clinical_manifestation Arg1:T1 Arg2:T2	
+R3	clinical_manifestation Arg1:T1 Arg2:T3	
+R4	clinical_manifestation Arg1:T1 Arg2:T4	
+R5	clinical_manifestation Arg1:T1 Arg2:T5	
+R6	clinical_manifestation Arg1:T1 Arg2:T6	
+R7	clinical_manifestation Arg1:T1 Arg2:T7	
+T9	disease 81 92	非ST段抬高型心肌梗死
+T10	symptom 99 101	乏力
+T11	symptom 102 104	恶心
+T12	symptom 105 107	呕吐
+T13	symptom 108 110	腹痛
+T14	symptom 112 114	晕厥
+T15	disease 115 126	非ST段抬高型心肌梗死
+R8	clinical_manifestation Arg1:T9 Arg2:T10	
+R9	clinical_manifestation Arg1:T9 Arg2:T11	
+R10	clinical_manifestation Arg1:T9 Arg2:T12	
+R11	clinical_manifestation Arg1:T9 Arg2:T13	
+R12	clinical_manifestation Arg1:T9 Arg2:T14	
+T16	disease 171 174	脓毒症
+T17	physical_therapy 316 322	聚合酶链反应
+T18	physical_therapy 160 166	微生物血培养
+T19	symptom 193 195	发热
+T20	symptom 196 207	体温≥38℃或≤36℃
+T21	symptom 208 210	寒战
+T22	symptom 211 228	白细胞计数大于10.0x109/L
+T23	symptom 229 235	皮肤黏膜出血
+T24	symptom 236 238	昏迷
+T25	symptom 239 246	多脏器功能衰竭
+T26	symptom 247 251	血压降低
+T27	symptom 252 256	呼吸加快
+T28	symptom 257 264	C反应蛋白升高
+T29	symptom 271 276	粒细胞减少
+T30	symptom 277 282	血小板减少
+R13	physical Arg1:T16 Arg2:T18	
+T31	physical_therapy 155 160	病原学检査
+R14	physical Arg1:T16 Arg2:T31	
+R15	clinical_manifestation Arg1:T16 Arg2:T19	
+T32	physical_therapy 180 183	血培养
+R16	physical Arg1:T16 Arg2:T32	
+R17	clinical_manifestation Arg1:T16 Arg2:T20	
+R18	clinical_manifestation Arg1:T16 Arg2:T21	
+R19	clinical_manifestation Arg1:T16 Arg2:T22	
+R20	clinical_manifestation Arg1:T16 Arg2:T23	
+R21	clinical_manifestation Arg1:T16 Arg2:T24	
+R22	clinical_manifestation Arg1:T16 Arg2:T25	
+R23	clinical_manifestation Arg1:T16 Arg2:T26	
+R24	clinical_manifestation Arg1:T16 Arg2:T27	
+R25	clinical_manifestation Arg1:T16 Arg2:T28	
+R26	clinical_manifestation Arg1:T16 Arg2:T29	
+R27	clinical_manifestation Arg1:T16 Arg2:T30	
+R28	physical Arg1:T16 Arg2:T17	
+T33	disease 358 363	HIV感染
+T34	disease 374 377	糖尿病
+T35	disease 378 381	心脏病
+R29	relevant Arg1:T33 Arg2:T34	
+R30	relevant Arg1:T33 Arg2:T35	
+T36	disease 398 403	HIV感染
+T37	medical_treatment 408 413	ART药物
+T38	disease 429 432	睾丸癌
+T39	disease 453 456	睾丸癌
+T40	disease 465 469	继发肿瘤
+R31	relevant Arg1:T39 Arg2:T40	
+T41	disease 494 498	乙型肝炎
+T42	disease 511 513	黄疸
+T43	disease 517 524	急性HBV感染
+R32	relevant Arg1:T41 Arg2:T42	
+R33	relevant Arg1:T43 Arg2:T42	
+T44	disease 540 545	症状性感染
+R34	relevant Arg1:T43 Arg2:T44	
+T45	symptom 547 553	出血倾向明显
+T46	disease 629 634	肝功能衰竭
+T47	disease 638 643	急性肝衰竭
+T48	disease 644 650	亚急性肝衰竭
+T49	disease 651 658	慢加急性肝衰竭
+T50	disease 659 664	慢性肝衰竭
+T51	symptom 556 570	皮肤瘀点、瘀斑、牙龈和鼻出血
+T52	symptom 574 579	消化道出血
+T53	symptom 588 595	腹水及氮质血症
+T54	symptom 596 598	少尿
+T55	symptom 599 602	低血钠
+T56	symptom 603 606	低尿钠
+R35	clinical_manifestation Arg1:T46 Arg2:T45	
+R36	clinical_manifestation Arg1:T46 Arg2:T51	
+R37	clinical_manifestation Arg1:T46 Arg2:T52	
+R38	clinical_manifestation Arg1:T46 Arg2:T53	
+R39	clinical_manifestation Arg1:T46 Arg2:T54	
+R40	clinical_manifestation Arg1:T46 Arg2:T55	
+R41	clinical_manifestation Arg1:T46 Arg2:T56	
+T57	disease 666 670	肾细胞癌
+T58	disease 674 686	抗利尿激素分泌异常综合征
+T59	disease 696 702	副肿瘤综合征
+R42	relevant Arg1:T58 Arg2:T59	
+T60	disease 728 733	慢性胰腺炎
+T61	disease 737 741	胆管梗阻
+T62	disease 759 764	慢性胰腺炎
+T63	symptom 774 776	黄疸
+T64	symptom 777 786	持续性或复发性疼痛
+R43	clinical_manifestation Arg1:T61 Arg2:T63	
+R44	clinical_manifestation Arg1:T61 Arg2:T64	
+T65	disease 788 794	松果体区肿瘤
+T66	disease 816 822	生殖细胞肿瘤
+T67	disease 832 840	松果体实质细胞瘤
+T68	disease 846 851	星形细胞瘤
+T69	disease 859 865	生殖细胞肿瘤
+T70	disease 869 874	生殖细胞瘤
+T71	disease 875 878	畸胎瘤
+T72	disease 879 888	混合型生殖细胞肿瘤
+T73	disease 911 914	畸胎瘤
+T74	physical_therapy 916 920	完整切除
+R45	physical Arg1:T73 Arg2:T74	
+T75	physical_therapy 931 937	部分切除肿瘤
+T76	physical_therapy 938 943	解除脑积水
+T77	physical_therapy 954 960	立体定向活检
+T78	physical_therapy 963 965	放疗
+T79	physical_therapy 966 968	化疗
+R46	physical Arg1:T65 Arg2:T75	
+R47	physical Arg1:T65 Arg2:T76	
+R48	physical Arg1:T65 Arg2:T77	
+R49	physical Arg1:T65 Arg2:T78	
+R50	physical Arg1:T65 Arg2:T79	

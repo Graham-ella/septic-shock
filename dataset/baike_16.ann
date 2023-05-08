@@ -1,0 +1,121 @@
+T1	disease 0 3	败血症
+T2	symptom 10 14	急性起病
+T3	symptom 15 17	寒战
+T4	symptom 18 20	高热
+T5	symptom 21 25	呼吸急促
+T6	symptom 26 30	心动过速
+T7	symptom 33 35	皮疹
+T8	symptom 36 40	关节肿痛
+T9	symptom 41 45	肝脾肿大
+T10	symptom 46 53	精神、神志改变
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	clinical_manifestation Arg1:T1 Arg2:T7	
+R7	clinical_manifestation Arg1:T1 Arg2:T8	
+R8	clinical_manifestation Arg1:T1 Arg2:T9	
+R9	clinical_manifestation Arg1:T1 Arg2:T10	
+T11	disease 56 59	败血症
+T12	disease 65 73	急性器官功能障碍
+T13	disease 77 82	重型败血症
+T14	disease 84 87	败血症
+T15	disease 99 104	感染性休克
+T16	disease 105 114	弥散性血管内凝血(
+T17	disease 114 117	DIC
+T18	disease 119 126	多器官功能衰竭
+R10	same Arg1:T16 Arg2:T17	
+R11	relevant Arg1:T14 Arg2:T15	
+R12	relevant Arg1:T14 Arg2:T18	
+T19	disease 128 131	败血症
+T20	pathogenic_bacteria 131 138	金黄色葡萄球菌
+T21	pathogenic_bacteria 139 144	肺炎链球菌
+T22	pathogenic_bacteria 145 148	肠球菌
+T23	pathogenic_bacteria 149 153	大肠杆菌
+T24	pathogenic_bacteria 155 161	肺炎克雷伯菌
+T25	pathogenic_bacteria 162 167	脆弱类杆菌
+T26	pathogenic_bacteria 168 175	白色假丝酵母菌
+R13	cause Arg1:T20 Arg2:T19	
+R14	cause Arg1:T21 Arg2:T19	
+R15	cause Arg1:T22 Arg2:T19	
+R16	cause Arg1:T23 Arg2:T19	
+R17	cause Arg1:T24 Arg2:T19	
+R18	cause Arg1:T25 Arg2:T19	
+R19	cause Arg1:T26 Arg2:T19	
+T27	disease 177 180	败血症
+T28	pathogenic_bacteria 180 187	金黄色葡萄球菌
+T29	pathogenic_bacteria 188 193	肺炎链球菌
+T30	pathogenic_bacteria 194 197	肠球菌
+T31	pathogenic_bacteria 198 202	大肠杆菌
+T32	pathogenic_bacteria 204 210	肺炎克雷伯菌
+T33	pathogenic_bacteria 211 216	脆弱类杆菌
+T34	pathogenic_bacteria 217 224	白色假丝酵母菌
+R20	cause Arg1:T28 Arg2:T27	
+R21	cause Arg1:T29 Arg2:T27	
+R22	cause Arg1:T30 Arg2:T27	
+R23	cause Arg1:T31 Arg2:T27	
+R24	cause Arg1:T32 Arg2:T27	
+R25	cause Arg1:T33 Arg2:T27	
+R26	cause Arg1:T34 Arg2:T27	
+T35	disease 226 229	败血症
+T36	disease 229 232	白血病
+T37	disease 233 236	败血症
+R27	relevant Arg1:T36 Arg2:T37	
+R28	relevant Arg1:T35 Arg2:T37	
+T38	disease 264 267	败血症
+T39	pathogenic_bacteria 267 274	金黄色葡萄球菌
+T40	pathogenic_bacteria 275 280	肺炎链球菌
+T41	pathogenic_bacteria 281 284	肠球菌
+T42	pathogenic_bacteria 285 289	大肠杆菌
+T43	pathogenic_bacteria 291 297	肺炎克雷伯菌
+T44	pathogenic_bacteria 298 303	脆弱类杆菌
+T45	pathogenic_bacteria 304 311	白色假丝酵母菌
+R29	cause Arg1:T39 Arg2:T38	
+R30	cause Arg1:T40 Arg2:T38	
+R31	cause Arg1:T41 Arg2:T38	
+R32	cause Arg1:T42 Arg2:T38	
+R33	cause Arg1:T43 Arg2:T38	
+R34	cause Arg1:T44 Arg2:T38	
+R35	cause Arg1:T45 Arg2:T38	
+T46	disease 313 316	败血症
+T47	pathogenic_bacteria 323 330	金黄色葡萄球菌
+T48	pathogenic_bacteria 331 336	肺炎链球菌
+T49	pathogenic_bacteria 337 340	肠球菌
+T50	pathogenic_bacteria 341 345	大肠杆菌
+T51	pathogenic_bacteria 347 353	肺炎克雷伯菌
+T52	pathogenic_bacteria 354 359	脆弱类杆菌
+T53	pathogenic_bacteria 360 367	白色假丝酵母菌
+R36	cause Arg1:T47 Arg2:T46	
+R37	cause Arg1:T48 Arg2:T46	
+R38	cause Arg1:T49 Arg2:T46	
+R39	cause Arg1:T50 Arg2:T46	
+R40	cause Arg1:T51 Arg2:T46	
+R41	cause Arg1:T52 Arg2:T46	
+R42	cause Arg1:T53 Arg2:T46	
+T54	disease 369 378	小儿及免疫功能低下
+T55	pathogenic_bacteria 386 392	表皮葡萄球菌
+R43	cause Arg1:T55 Arg2:T54	
+T56	disease 394 397	败血症
+T57	disease 410 413	败血症
+R44	relevant Arg1:T56 Arg2:T57	
+T58	disease 440 443	败血症
+T59	disease 452 455	败血病
+T60	pathogenic_bacteria 459 468	皮肤、黏膜发生破损
+T61	pathogenic_bacteria 469 473	伤口感染
+T62	pathogenic_bacteria 474 479	大面积烧伤
+T63	pathogenic_bacteria 480 485	开放性骨折
+T64	pathogenic_bacteria 486 487	疖
+T65	pathogenic_bacteria 488 489	痈
+T66	pathogenic_bacteria 490 495	感染性腹泻
+T67	pathogenic_bacteria 496 502	化脓性腹膜炎
+R45	cause Arg1:T60 Arg2:T59	
+R46	cause Arg1:T61 Arg2:T59	
+R47	cause Arg1:T62 Arg2:T59	
+R48	cause Arg1:T63 Arg2:T59	
+R49	cause Arg1:T64 Arg2:T59	
+R50	cause Arg1:T66 Arg2:T59	
+R51	cause Arg1:T67 Arg2:T59	
+R52	cause Arg1:T65 Arg2:T59	
+R53	relevant Arg1:T11 Arg2:T12	
+R54	relevant Arg1:T11 Arg2:T13	

@@ -1,0 +1,36 @@
+T1	disease 0 5	急性胰腺炎
+T2	physical_therapy 24 28	ERCP
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 102 109	皮肤鳞状细胞癌
+T4	disease 155 159	瘢痕形成
+R2	relevant Arg1:T3 Arg2:T4	
+T5	physical_therapy 164 168	切除肿瘤
+R3	physical Arg1:T3 Arg2:T5	
+T6	disease 192 198	转移性骨肿瘤
+T7	disease 258 262	慢性肾病
+T8	disease 349 355	梗阻性尿路病
+R4	relevant Arg1:T7 Arg2:T8	
+T9	disease 279 284	糖尿病肾病
+R5	relevant Arg1:T7 Arg2:T9	
+T10	disease 380 384	前列腺癌
+T11	disease 447 457	勃起功能障碍(ED)
+R6	relevant Arg1:T10 Arg2:T11	
+T12	disease 505 508	肝硬化
+T13	physical_therapy 520 527	筛查骨矿物密度
+R7	physical Arg1:T12 Arg2:T13	
+T14	disease 548 553	类脂性肺炎
+T15	symptom 604 606	发热
+R8	clinical_manifestation Arg1:T14 Arg2:T15	
+T16	disease 593 600	慢性间质性肺炎
+R9	relevant Arg1:T14 Arg2:T16	
+T17	disease 608 611	口咽癌
+T18	pathogenic_bacteria 623 627	咀嚼烟草
+T19	pathogenic_bacteria 628 630	槟榔
+T20	pathogenic_bacteria 637 641	咀嚼槟榔
+R10	cause Arg1:T18 Arg2:T17	
+R11	cause Arg1:T19 Arg2:T17	
+R12	cause Arg1:T20 Arg2:T17	
+T21	disease 658 663	恶性间皮瘤
+T22	pathogenic_bacteria 692 701	接触石棉、二氧化钍
+R13	cause Arg1:T22 Arg2:T21	
+T23	disease 747 750	白内障

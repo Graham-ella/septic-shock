@@ -1,0 +1,33 @@
+T1	disease 0 3	败血症
+T2	disease 5 8	败血症
+T3	disease 42 45	败血症
+T4	disease 48 51	败血症
+T5	disease 68 71	败血症
+T6	disease 149 152	败血症
+T7	disease 169 172	败血症
+T8	disease 199 202	败血症
+T9	disease 142 145	败血症
+T10	disease 237 240	败血症
+T11	pathogenic_bacteria 267 272	革兰阴性菌
+R1	cause Arg1:T11 Arg2:T10	
+T12	physical_therapy 240 260	检测血液、尿液、胸腹水等标本中有无内毒素
+R2	physical Arg1:T10 Arg2:T12	
+T13	disease 156 159	败血症
+T14	pathogenic_bacteria 112 133	各种局灶性感染虽经抗菌治疗而未能获有效控制
+R3	cause Arg1:T14 Arg2:T9	
+T15	disease 276 279	败血症
+T16	disease 327 330	败血症
+T17	disease 382 385	败血症
+T18	disease 385 388	败血症
+T19	symptom 389 394	全身性感染
+R4	clinical_manifestation Arg1:T18 Arg2:T19	
+T20	disease 330 333	败血症
+T21	disease 442 447	感染性休克
+T22	disease 448 451	DIC
+T23	disease 452 457	肾功能不全
+T24	disease 458 462	ARDS
+R5	relevant Arg1:T18 Arg2:T21	
+R6	relevant Arg1:T18 Arg2:T22	
+R7	relevant Arg1:T18 Arg2:T23	
+R8	relevant Arg1:T18 Arg2:T24	
+T25	disease 313 316	败血症

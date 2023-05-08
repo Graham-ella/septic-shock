@@ -1,0 +1,48 @@
+T1	disease 17 23	阿米巴肝脓肿
+T2	physical_therapy 68 73	PCR检测
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 0 4	疟疾感染
+T4	pathogenic_bacteria 43 49	细菌性痢疾史
+R2	cause Arg1:T4 Arg2:T1	
+T5	disease 77 80	胰腺癌
+T6	disease 127 133	药物性肾损害
+T7	disease 171 182	单纯性血尿和/或蛋白尿
+R3	relevant Arg1:T6 Arg2:T7	
+T8	pathogenic_bacteria 189 193	氨基糖苷
+T9	pathogenic_bacteria 194 198	头孢菌素
+T10	pathogenic_bacteria 199 201	磺胺
+T11	pathogenic_bacteria 202 207	NSAID
+T12	pathogenic_bacteria 208 213	抗肿瘤药物
+R4	cause Arg1:T8 Arg2:T7	
+R5	cause Arg1:T9 Arg2:T7	
+R6	cause Arg1:T10 Arg2:T7	
+R7	cause Arg1:T11 Arg2:T7	
+R8	cause Arg1:T12 Arg2:T7	
+T13	disease 227 234	肺炎链球菌肺炎
+T14	physical_therapy 252 258	胸部X线检査
+R9	physical Arg1:T13 Arg2:T14	
+T15	disease 305 308	睾丸癌
+T16	disease 309 317	继发性睾丸新生物
+T17	disease 338 340	喉癌
+T18	disease 494 500	肠源性毒血症
+T19	pathogenic_bacteria 454 463	肠黏膜屏障功能障碍
+R10	cause Arg1:T19 Arg2:T18	
+T20	disease 504 509	感染性休克
+R11	relevant Arg1:T18 Arg2:T20	
+T21	pathogenic_bacteria 487 493	肠道细菌转移
+R12	cause Arg1:T21 Arg2:T20	
+T22	disease 516 519	胆管癌
+T23	disease 567 573	大肠杆菌肠炎
+T24	disease 621 626	细菌性痢疾
+T25	symptom 603 605	呕吐
+R13	clinical_manifestation Arg1:T23 Arg2:T25	
+T26	disease 644 646	肺癌
+T27	disease 748 759	肿瘤相关改变（肺不张）
+R14	relevant Arg1:T26 Arg2:T27	
+T28	disease 701 703	肺炎
+R15	relevant Arg1:T26 Arg2:T28	
+T29	disease 714 721	中央阻塞性肿瘤
+R16	relevant Arg1:T28 Arg2:T29	
+T30	disease 724 729	小细胞肺癌
+T31	disease 681 689	阻塞性肺炎/缺氧
+R17	relevant Arg1:T31 Arg2:T30	

@@ -1,0 +1,38 @@
+T1	disease 0 8	中毒性休克综合征
+T2	symptom 11 15	出血倾向
+T3	symptom 16 23	血小板急骤下降
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	physical_therapy 26 35	凝血酶原、3P试验
+R3	treatment Arg1:T3 Arg2:T4	
+T5	physical_therapy 36 59	EDP纤维蛋白降解产物、优球蛋白溶解时间等检测
+R4	treatment Arg1:T3 Arg2:T5	
+T6	disease 65 73	弥散性血管内凝血
+R5	relevant Arg1:T1 Arg2:T6	
+T7	disease 82 90	中毒性休克综合征
+T8	symptom 105 109	急性发热
+T9	symptom 110 115	猩红热样疹
+T10	symptom 139 141	头晕
+T11	symptom 142 144	晕厥
+T12	disease 148 150	休克
+R6	clinical_manifestation Arg1:T7 Arg2:T8	
+R7	clinical_manifestation Arg1:T7 Arg2:T9	
+R8	clinical_manifestation Arg1:T7 Arg2:T10	
+R9	clinical_manifestation Arg1:T7 Arg2:T11	
+R10	relevant Arg1:T7 Arg2:T12	
+T13	symptom 154 157	低血压
+R11	clinical_manifestation Arg1:T12 Arg2:T13	
+T14	disease 159 167	中毒性休克综合征
+T15	physical_therapy 177 184	呼吸、循环支持
+T16	physical_therapy 185 187	吸氧
+T17	physical_therapy 188 192	心电监护
+T18	physical_therapy 193 199	建立静脉通路
+R12	physical Arg1:T14 Arg2:T15	
+R13	physical Arg1:T14 Arg2:T16	
+R14	physical Arg1:T14 Arg2:T17	
+R15	physical Arg1:T14 Arg2:T18	
+T19	disease 201 209	中毒性休克综合征
+T20	disease 210 215	肺功能衰竭
+T21	physical_therapy 219 224	行气管插管
+R16	relevant Arg1:T19 Arg2:T20	
+R17	physical Arg1:T20 Arg2:T21	

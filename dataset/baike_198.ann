@@ -1,0 +1,18 @@
+T1	disease 0 4	呼吸衰竭
+T2	disease 4 9	支气管炎症
+T3	disease 10 15	支气管痉挛
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 62 66	呼吸衰竭
+T5	disease 66 68	肺炎
+T6	disease 69 74	重度肺结核
+T7	disease 75 78	肺气肿
+T8	disease 79 86	弥散性肺纤维化
+T9	disease 87 96	成人呼吸窘迫综合征
+R3	relevant Arg1:T4 Arg2:T5	
+R4	relevant Arg1:T4 Arg2:T6	
+R5	relevant Arg1:T4 Arg2:T7	
+R6	relevant Arg1:T4 Arg2:T8	
+R7	relevant Arg1:T4 Arg2:T9	
+T10	symptom 107 123	肺容量、通气量、有效弥散面积减少
+R8	clinical_manifestation Arg1:T4 Arg2:T10	

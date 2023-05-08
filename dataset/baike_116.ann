@@ -1,0 +1,10 @@
+T1	disease 0 5	多脏器衰竭
+T2	disease 41 45	严重感染
+T3	disease 46 48	休克
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 133 138	多脏器衰竭
+T5	symptom 143 163	两个或两个以上器官同时或相继发生功能障碍
+R3	clinical_manifestation Arg1:T4 Arg2:T5	
+T6	symptom 66 79	两个或两个以上器官功能不全
+R4	clinical_manifestation Arg1:T1 Arg2:T6	

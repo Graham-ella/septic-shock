@@ -1,0 +1,44 @@
+T1	disease 0 5	类癌综合征
+T2	medical_treatment 118 125	放射性核素治疗
+R1	medical Arg1:T1 Arg2:T2	
+T3	medical_treatment 126 145	钇Y90DOTA-octreotate
+T4	medical_treatment 146 167	镥Lu177DOTA-octreotate
+R2	medical Arg1:T1 Arg2:T3	
+R3	medical Arg1:T1 Arg2:T4	
+T5	physical_therapy 20 39	111-铟-DTPA-奥曲肽闪烁扫描图
+R4	physical Arg1:T1 Arg2:T5	
+T6	disease 200 206	葡萄球菌肺炎
+T7	physical_therapy 223 229	痰或胸水涂片
+R5	physical Arg1:T6 Arg2:T7	
+T8	disease 256 259	肝硬化
+T9	disease 307 310	糖尿病
+T10	medical_treatment 334 341	利妥昔单抗治疗
+T11	medical_treatment 328 333	皮质类固醇
+R6	medical Arg1:T9 Arg2:T11	
+R7	medical Arg1:T9 Arg2:T10	
+T12	disease 370 376	红细胞增多症
+T13	symptom 365 368	多血质
+R8	clinical_manifestation Arg1:T12 Arg2:T13	
+T14	disease 378 380	脑炎
+T15	disease 474 479	边缘叶脑炎
+T16	disease 495 498	乳腺癌
+R9	relevant Arg1:T15 Arg2:T16	
+T17	disease 492 494	肺癌
+T18	disease 499 502	卵巢癌
+R10	relevant Arg1:T15 Arg2:T17	
+R11	relevant Arg1:T15 Arg2:T18	
+T19	physical_therapy 459 465	全身CT检查
+R12	physical Arg1:T17 Arg2:T19	
+R13	physical Arg1:T16 Arg2:T19	
+R14	physical Arg1:T18 Arg2:T19	
+T20	disease 528 531	卵巢癌
+T21	physical_therapy 603 609	阴道盆腔超声
+R15	physical Arg1:T20 Arg2:T21	
+T22	disease 747 752	化脓性胃炎
+T23	medical_treatment 815 818	抗生素
+R16	medical Arg1:T22 Arg2:T23	
+T24	disease 820 823	脓毒症
+R17	medical Arg1:T24 Arg2:T23	
+T25	disease 829 838	慢性淋巴细胞白血病
+T26	physical_therapy 906 910	血液检查
+R18	physical Arg1:T25 Arg2:T26	

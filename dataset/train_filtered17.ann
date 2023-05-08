@@ -1,0 +1,112 @@
+T1	disease 6 9	迟发型
+T2	pathogenic_bacteria 15 24	胆红素肝肠循环增加
+T3	disease 0 5	新生儿黄疸
+R1	cause Arg1:T2 Arg2:T1	
+T4	disease 29 34	急性胰腺炎
+T5	pathogenic_bacteria 38 41	胰腺癌
+R2	cause Arg1:T5 Arg2:T4	
+T6	disease 55 57	腺癌
+T7	disease 72 75	脓毒症
+T8	symptom 96 98	恶心
+T9	symptom 99 101	呕吐
+T10	symptom 102 104	腹痛
+T11	symptom 105 107	腹泻
+R3	clinical_manifestation Arg1:T7 Arg2:T8	
+R4	clinical_manifestation Arg1:T7 Arg2:T9	
+R5	clinical_manifestation Arg1:T7 Arg2:T10	
+R6	clinical_manifestation Arg1:T7 Arg2:T11	
+T12	disease 115 120	1型糖尿病
+T13	physical_therapy 181 187	糖化血红蛋白
+T14	symptom 120 127	起病多数较急骤
+T15	symptom 138 140	多饮
+T16	symptom 141 143	多尿
+T17	symptom 144 158	每天饮水量和尿量可达3～5L
+T18	symptom 159 163	易饿多食
+T19	symptom 165 169	体重下降
+R7	clinical_manifestation Arg1:T12 Arg2:T14	
+R8	clinical_manifestation Arg1:T12 Arg2:T15	
+R9	clinical_manifestation Arg1:T12 Arg2:T16	
+R10	clinical_manifestation Arg1:T12 Arg2:T17	
+R11	clinical_manifestation Arg1:T12 Arg2:T18	
+R12	clinical_manifestation Arg1:T12 Arg2:T19	
+R13	physical Arg1:T12 Arg2:T13	
+T20	disease 235 237	脑炎
+T21	disease 238 245	丙球蛋白贫乏症
+T22	medical_treatment 261 266	免疫球蛋白
+T23	disease 249 252	败血症
+R14	medical Arg1:T23 Arg2:T22	
+R15	medical Arg1:T21 Arg2:T22	
+T24	disease 272 278	新生儿硬肿症
+T25	disease 511 520	暂时性局部阴唇水肿
+T26	disease 498 500	肺炎
+T27	disease 501 504	败血症
+R16	relevant Arg1:T24 Arg2:T26	
+R17	relevant Arg1:T24 Arg2:T27	
+R18	relevant Arg1:T24 Arg2:T25	
+T28	symptom 401 403	不吃
+T29	symptom 404 406	不哭
+T30	symptom 407 411	反应低下
+T31	symptom 412 415	心率慢
+T32	symptom 416 425	心电图、血生化异常
+T33	symptom 433 435	休克
+T34	symptom 436 440	心力衰竭
+T35	symptom 441 444	DIC
+T36	symptom 445 448	肺出血
+T37	symptom 449 452	肾衰竭
+R19	clinical_manifestation Arg1:T24 Arg2:T28	
+R20	clinical_manifestation Arg1:T24 Arg2:T29	
+R21	clinical_manifestation Arg1:T24 Arg2:T30	
+R22	clinical_manifestation Arg1:T24 Arg2:T31	
+R23	clinical_manifestation Arg1:T24 Arg2:T32	
+R24	clinical_manifestation Arg1:T24 Arg2:T33	
+R25	clinical_manifestation Arg1:T24 Arg2:T34	
+R26	clinical_manifestation Arg1:T24 Arg2:T35	
+R27	clinical_manifestation Arg1:T24 Arg2:T36	
+R28	clinical_manifestation Arg1:T24 Arg2:T37	
+T38	disease 522 531	幕上高度恶性胶质瘤
+T39	physical_therapy 569 571	放疗
+R29	physical Arg1:T38 Arg2:T39	
+T40	disease 573 579	溃疡性结肠炎
+T41	disease 588 597	原发性硬化性胆管炎
+T42	symptom 582 586	胆道扩张
+R30	clinical_manifestation Arg1:T41 Arg2:T42	
+T43	disease 599 608	耶尔森菌小肠结肠炎
+T44	disease 629 636	肠系膜淋巴结炎
+T45	disease 637 642	结节性红斑
+T46	disease 643 649	反应性关节炎
+T47	disease 650 653	败血症
+T48	disease 654 657	心肌炎
+T49	disease 658 662	急性肝炎
+T50	disease 663 666	肝脓肿
+T51	disease 667 670	结膜炎
+T52	disease 671 674	脑膜炎
+T53	disease 675 678	尿道炎
+T54	disease 679 683	急性肾炎
+R31	relevant Arg1:T43 Arg2:T44	
+R32	relevant Arg1:T43 Arg2:T45	
+R33	relevant Arg1:T43 Arg2:T46	
+R34	relevant Arg1:T43 Arg2:T47	
+R35	relevant Arg1:T43 Arg2:T48	
+R36	relevant Arg1:T43 Arg2:T49	
+R37	relevant Arg1:T43 Arg2:T50	
+R38	relevant Arg1:T43 Arg2:T51	
+R39	relevant Arg1:T43 Arg2:T52	
+R40	relevant Arg1:T43 Arg2:T53	
+R41	relevant Arg1:T43 Arg2:T54	
+T55	disease 686 689	百日咳
+T56	disease 729 732	百日咳
+T57	symptom 701 705	呼吸暂停
+T58	symptom 706 710	心动过缓
+R42	clinical_manifestation Arg1:T55 Arg2:T57	
+R43	clinical_manifestation Arg1:T55 Arg2:T58	
+T59	physical_therapy 724 728	机械通气
+R44	physical Arg1:T55 Arg2:T59	
+T60	disease 736 740	肋骨骨折
+T61	physical_therapy 767 769	休息
+T62	physical_therapy 770 772	镇痛
+T63	physical_therapy 773 778	深呼吸锻炼
+R45	physical Arg1:T60 Arg2:T61	
+R46	physical Arg1:T60 Arg2:T62	
+R47	physical Arg1:T60 Arg2:T63	
+T64	disease 783 785	肺炎
+R48	relevant Arg1:T60 Arg2:T64	

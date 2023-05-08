@@ -1,0 +1,74 @@
+T1	disease 0 3	血液病
+T2	pathogenic_bacteria 16 19	磺胺类
+T3	pathogenic_bacteria 20 24	青霉素类
+T4	pathogenic_bacteria 25 28	奎尼丁
+T5	pathogenic_bacteria 29 33	甲基多巴
+T6	pathogenic_bacteria 34 37	头孢类
+T7	disease 46 48	溶血
+T8	pathogenic_bacteria 49 52	氯霉素
+T9	pathogenic_bacteria 53 57	化疗药物
+T10	pathogenic_bacteria 58 62	氨基比林
+T11	pathogenic_bacteria 63 67	甲巯咪唑
+T12	disease 71 75	骨髓衰竭
+R1	cause Arg1:T2 Arg2:T7	
+R2	cause Arg1:T3 Arg2:T7	
+R3	cause Arg1:T4 Arg2:T7	
+R4	cause Arg1:T5 Arg2:T7	
+R5	cause Arg1:T6 Arg2:T7	
+R6	cause Arg1:T8 Arg2:T12	
+R7	cause Arg1:T9 Arg2:T12	
+R8	cause Arg1:T10 Arg2:T12	
+R9	cause Arg1:T11 Arg2:T12	
+R10	relevant Arg1:T1 Arg2:T7	
+R11	relevant Arg1:T1 Arg2:T12	
+T13	disease 77 80	血液病
+T14	pathogenic_bacteria 86 99	长期接触X射线、放射性核素
+R12	cause Arg1:T14 Arg2:T13	
+T15	disease 126 129	血液病
+T16	pathogenic_bacteria 142 152	人类T细胞白血病病毒
+T17	disease 168 178	人类T淋巴细胞白血病
+R13	cause Arg1:T16 Arg2:T17	
+T18	disease 192 194	肿瘤
+T19	pathogenic_bacteria 179 185	EB病毒感染
+R14	cause Arg1:T19 Arg2:T18	
+T20	disease 199 206	再生障碍性贫血
+T21	pathogenic_bacteria 213 217	肝炎病毒
+T22	pathogenic_bacteria 218 225	微小病毒B19
+R15	cause Arg1:T21 Arg2:T20	
+R16	cause Arg1:T22 Arg2:T20	
+R17	relevant Arg1:T15 Arg2:T17	
+R18	relevant Arg1:T15 Arg2:T18	
+R19	relevant Arg1:T15 Arg2:T20	
+T23	disease 234 237	血液病
+T24	disease 254 260	β地中海贫血
+T25	disease 261 269	遗传性细胞增多症
+T26	disease 270 279	G-6-PD缺乏症
+T27	disease 280 289	Fanconi贫血
+T28	disease 290 294	血友病甲
+T29	disease 295 299	血友病乙
+R20	relevant Arg1:T23 Arg2:T24	
+R21	relevant Arg1:T23 Arg2:T25	
+R22	relevant Arg1:T23 Arg2:T26	
+R23	relevant Arg1:T23 Arg2:T27	
+R24	relevant Arg1:T23 Arg2:T28	
+R25	relevant Arg1:T23 Arg2:T29	
+T30	disease 310 313	血液病
+T31	disease 352 354	肿瘤
+R26	relevant Arg1:T30 Arg2:T31	
+T32	disease 359 362	血液病
+T33	disease 384 391	再生障碍性贫血
+T34	disease 392 402	自身免疫性溶血性贫血
+T35	disease 403 414	特发性血小板减少性紫癜
+R27	relevant Arg1:T32 Arg2:T33	
+R28	relevant Arg1:T32 Arg2:T34	
+R29	relevant Arg1:T32 Arg2:T35	
+T36	disease 447 450	血液病
+T37	disease 450 453	血液病
+T38	symptom 469 471	贫血
+T39	symptom 472 474	出血
+T40	symptom 475 477	发热
+T41	symptom 478 486	淋巴结、肝、脾大
+R30	clinical_manifestation Arg1:T37 Arg2:T38	
+R31	clinical_manifestation Arg1:T37 Arg2:T39	
+R32	clinical_manifestation Arg1:T37 Arg2:T40	
+R33	clinical_manifestation Arg1:T37 Arg2:T41	

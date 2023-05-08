@@ -1,0 +1,16 @@
+T1	disease 0 3	血液病
+T2	physical_therapy 4 15	缺铁性贫血的铁代谢检查
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 98 101	血液病
+T4	physical_therapy 117 124	细胞遗传学检测
+R2	physical Arg1:T3 Arg2:T4	
+T5	disease 173 176	血液病
+T6	physical_therapy 177 183	.影像学诊断
+R3	physical Arg1:T5 Arg2:T6	
+T7	disease 212 215	血液病
+T8	physical_therapy 228 232	骨髓活检
+T9	physical_therapy 233 244	淋巴结或浸润包块的活检
+T10	physical_therapy 245 259	脾活检以及体液细胞学病理检查
+R4	physical Arg1:T7 Arg2:T8	
+R5	physical Arg1:T7 Arg2:T9	
+R6	physical Arg1:T7 Arg2:T10	

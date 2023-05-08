@@ -1,0 +1,104 @@
+T1	disease 0 6	非小细胞肺癌
+T2	symptom 10 14	人格改变
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 17 19	肺癌
+R2	clinical_manifestation Arg1:T3 Arg2:T2	
+T4	symptom 37 39	恶心
+T5	symptom 40 42	呕吐
+R3	clinical_manifestation Arg1:T3 Arg2:T4	
+R4	clinical_manifestation Arg1:T3 Arg2:T5	
+T6	symptom 52 54	头痛
+T7	symptom 64 68	吞咽困难
+R5	clinical_manifestation Arg1:T3 Arg2:T6	
+R6	clinical_manifestation Arg1:T3 Arg2:T7	
+T8	disease 104 108	滑膜肉瘤
+T9	physical_therapy 162 169	区域淋巴结清扫
+R7	physical Arg1:T8 Arg2:T9	
+T10	disease 221 225	GERD
+T11	symptom 177 182	呼吸道感染
+T12	symptom 183 185	呛咳
+T13	symptom 186 190	声音嘶哑
+T14	symptom 191 193	屏气
+T15	disease 229 234	吸入性肺炎
+R8	relevant Arg1:T10 Arg2:T15	
+R9	clinical_manifestation Arg1:T10 Arg2:T11	
+R10	clinical_manifestation Arg1:T10 Arg2:T12	
+R11	clinical_manifestation Arg1:T10 Arg2:T13	
+R12	clinical_manifestation Arg1:T10 Arg2:T14	
+T16	disease 265 272	感染性心内膜炎
+T17	symptom 312 318	心脏杂音加重
+T18	symptom 323 327	心脏杂音
+T19	symptom 329 334	心功能不全
+R13	clinical_manifestation Arg1:T16 Arg2:T17	
+R14	clinical_manifestation Arg1:T16 Arg2:T18	
+R15	clinical_manifestation Arg1:T16 Arg2:T19	
+T20	pathogenic_bacteria 278 281	链球菌
+T21	pathogenic_bacteria 282 286	葡萄球菌
+T22	pathogenic_bacteria 293 295	真菌
+T23	pathogenic_bacteria 296 299	衣原体
+T24	pathogenic_bacteria 300 307	立克次体及病毒
+R16	cause Arg1:T20 Arg2:T16	
+R17	cause Arg1:T21 Arg2:T16	
+R18	cause Arg1:T22 Arg2:T16	
+R19	cause Arg1:T23 Arg2:T16	
+R20	cause Arg1:T24 Arg2:T16	
+T25	pathogenic_bacteria 358 363	HPV感染
+T26	disease 336 339	口咽癌
+R21	cause Arg1:T25 Arg2:T26	
+T27	disease 391 397	新生儿溶血病
+T28	symptom 459 461	神萎
+T29	symptom 462 466	吸吮反射
+T30	symptom 467 473	拥抱反射减弱
+T31	symptom 474 479	肌张力低下
+T32	symptom 497 499	发热
+T33	symptom 500 504	两眼凝视
+T34	symptom 505 510	肌张力增高
+T35	symptom 511 513	抽搐
+T36	symptom 514 518	角弓反张
+T37	disease 448 453	胆红素脑病
+R22	relevant Arg1:T27 Arg2:T37	
+R23	clinical_manifestation Arg1:T27 Arg2:T28	
+R24	clinical_manifestation Arg1:T27 Arg2:T29	
+R25	clinical_manifestation Arg1:T27 Arg2:T30	
+R26	clinical_manifestation Arg1:T27 Arg2:T31	
+R27	clinical_manifestation Arg1:T27 Arg2:T32	
+R28	clinical_manifestation Arg1:T27 Arg2:T33	
+R29	clinical_manifestation Arg1:T27 Arg2:T34	
+R30	clinical_manifestation Arg1:T27 Arg2:T35	
+R31	clinical_manifestation Arg1:T27 Arg2:T36	
+T38	disease 570 573	糖尿病
+T39	physical_therapy 618 622	测定血脂
+R32	physical Arg1:T38 Arg2:T39	
+T40	physical_therapy 584 590	空腹血糖测定
+R33	physical Arg1:T38 Arg2:T40	
+T41	disease 657 663	重度低钠血症
+T42	medical_treatment 689 695	伐普坦类药物
+R34	medical Arg1:T41 Arg2:T42	
+T43	disease 752 755	糖尿病
+T44	disease 717 721	慢性肾病
+T45	disease 756 759	高血压
+R35	relevant Arg1:T44 Arg2:T43	
+R36	relevant Arg1:T44 Arg2:T45	
+T46	disease 777 780	脓毒症
+T47	symptom 799 801	发热
+T48	symptom 814 816	寒战
+T49	physical_therapy 766 772	微生物血培养
+R37	physical Arg1:T46 Arg2:T49	
+T50	symptom 835 841	皮肤黏膜出血
+T51	symptom 842 844	昏迷
+T52	symptom 845 852	多脏器功能衰竭
+T53	symptom 853 857	血压降低
+T54	symptom 858 862	呼吸加快
+T55	symptom 863 870	C反应蛋白升高
+T56	symptom 877 882	粒细胞减少
+T57	symptom 883 888	血小板减少
+R38	clinical_manifestation Arg1:T46 Arg2:T47	
+R39	clinical_manifestation Arg1:T46 Arg2:T48	
+R40	clinical_manifestation Arg1:T46 Arg2:T50	
+R41	clinical_manifestation Arg1:T46 Arg2:T51	
+R42	clinical_manifestation Arg1:T46 Arg2:T52	
+R43	clinical_manifestation Arg1:T46 Arg2:T53	
+R44	clinical_manifestation Arg1:T46 Arg2:T54	
+R45	clinical_manifestation Arg1:T46 Arg2:T55	
+R46	clinical_manifestation Arg1:T46 Arg2:T56	
+R47	clinical_manifestation Arg1:T46 Arg2:T57	

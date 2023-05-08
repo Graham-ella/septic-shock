@@ -1,0 +1,25 @@
+T1	disease 0 6	凝血功能障碍
+T2	symptom 6 16	颈部、喉部软组织出血
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 28 34	凝血功能障碍
+T4	symptom 34 43	腹膜后、肠系膜出血
+R2	clinical_manifestation Arg1:T3 Arg2:T4	
+T5	disease 49 55	凝血功能障碍
+T6	symptom 61 63	鼻衄
+T7	symptom 64 68	牙龈出血
+T8	symptom 69 74	胃肠道出血
+T9	symptom 75 77	血尿
+R3	clinical_manifestation Arg1:T5 Arg2:T6	
+R4	clinical_manifestation Arg1:T5 Arg2:T7	
+R5	clinical_manifestation Arg1:T5 Arg2:T8	
+R6	clinical_manifestation Arg1:T5 Arg2:T9	
+T10	disease 90 96	凝血功能障碍
+T11	symptom 96 103	关节腔反复出血
+R7	clinical_manifestation Arg1:T10 Arg2:T11	
+T12	disease 128 134	凝血功能障碍
+T13	symptom 136 140	局部肿胀
+T14	symptom 141 143	疼痛
+T15	symptom 144 146	压痛
+R8	clinical_manifestation Arg1:T12 Arg2:T13	
+R9	clinical_manifestation Arg1:T12 Arg2:T14	
+R10	clinical_manifestation Arg1:T12 Arg2:T15	

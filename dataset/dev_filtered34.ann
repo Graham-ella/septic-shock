@@ -1,0 +1,60 @@
+T1	disease 11 19	卡氏肺孢子虫肺炎
+T2	symptom 65 70	融合小片影
+T3	symptom 71 77	肺透亮度减低
+T4	symptom 80 86	支气管充气征
+T5	symptom 87 92	泡性肺气肿
+T6	symptom 93 100	病变密度不均匀
+T7	symptom 101 106	肺门影不大
+T8	disease 22 30	间质性浆细胞肺炎
+R1	same Arg1:T1 Arg2:T8	
+R2	clinical_manifestation Arg1:T1 Arg2:T2	
+R3	clinical_manifestation Arg1:T1 Arg2:T3	
+R4	clinical_manifestation Arg1:T1 Arg2:T4	
+R5	clinical_manifestation Arg1:T1 Arg2:T5	
+R6	clinical_manifestation Arg1:T1 Arg2:T6	
+R7	clinical_manifestation Arg1:T1 Arg2:T7	
+T9	disease 120 124	MP肺炎
+T10	physical_therapy 150 154	PCR法
+R8	physical Arg1:T9 Arg2:T10	
+T11	disease 204 209	黏膜白斑病
+T12	symptom 201 203	白斑
+T13	symptom 211 213	红斑
+T14	disease 214 219	黏膜红斑病
+R9	clinical_manifestation Arg1:T11 Arg2:T12	
+R10	clinical_manifestation Arg1:T14 Arg2:T13	
+T15	disease 248 251	口咽癌
+T16	symptom 272 276	吞咽困难
+T17	symptom 277 281	体重减轻
+T18	disease 292 297	隐匿性误吸
+R11	clinical_manifestation Arg1:T18 Arg2:T17	
+R12	clinical_manifestation Arg1:T18 Arg2:T16	
+T19	disease 299 304	支气管肺炎
+T20	pathogenic_bacteria 339 345	室内居住拥挤
+T21	pathogenic_bacteria 346 350	通风不良
+T22	pathogenic_bacteria 351 355	空气污浊
+R13	cause Arg1:T20 Arg2:T19	
+R14	cause Arg1:T21 Arg2:T19	
+R15	cause Arg1:T22 Arg2:T19	
+T23	disease 378 383	厌氧菌肺炎
+T24	symptom 412 420	外周血白细胞计数
+T25	symptom 421 431	中性粒细胞比例的升高
+R16	clinical_manifestation Arg1:T23 Arg2:T24	
+R17	clinical_manifestation Arg1:T23 Arg2:T25	
+T26	disease 486 494	早产儿脑白质损伤
+T27	pathogenic_bacteria 503 508	围产期感染
+R18	cause Arg1:T27 Arg2:T26	
+T28	disease 557 560	垂体瘤
+T29	symptom 570 572	肿块
+R19	clinical_manifestation Arg1:T28 Arg2:T29	
+T30	disease 608 613	慢性胰腺炎
+T31	disease 622 625	糖尿病
+R20	relevant Arg1:T30 Arg2:T31	
+T32	disease 688 693	小细胞肺癌
+T33	symptom 710 712	咳嗽
+T34	symptom 731 735	胸腔积液
+T35	disease 718 723	梗阻性肺炎
+T36	disease 724 730	支气管内肿瘤
+R21	clinical_manifestation Arg1:T32 Arg2:T33	
+R22	clinical_manifestation Arg1:T32 Arg2:T34	
+R23	relevant Arg1:T32 Arg2:T35	
+R24	relevant Arg1:T32 Arg2:T36	

@@ -1,0 +1,28 @@
+T1	disease 0 2	癌症
+T2	disease 8 12	颅内肿瘤
+T3	symptom 15 19	视力障碍
+R1	relevant Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	symptom 27 29	面瘫
+R3	clinical_manifestation Arg1:T2 Arg2:T4	
+T5	disease 46 49	骨肿瘤
+T6	symptom 56 58	骨折
+T7	disease 59 61	肝癌
+T8	symptom 72 74	腹水
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+R5	clinical_manifestation Arg1:T7 Arg2:T8	
+R6	relevant Arg1:T1 Arg2:T5	
+R7	relevant Arg1:T1 Arg2:T7	
+T9	disease 77 79	癌症
+T10	symptom 86 90	体重减轻
+T11	symptom 91 95	食欲不振
+T12	symptom 96 99	恶病质
+T13	symptom 100 104	大量出汗
+T14	symptom 111 113	贫血
+T15	symptom 114 116	乏力
+R8	clinical_manifestation Arg1:T9 Arg2:T10	
+R9	clinical_manifestation Arg1:T9 Arg2:T11	
+R10	clinical_manifestation Arg1:T9 Arg2:T12	
+R11	clinical_manifestation Arg1:T9 Arg2:T13	
+R12	clinical_manifestation Arg1:T9 Arg2:T14	
+R13	clinical_manifestation Arg1:T9 Arg2:T15	

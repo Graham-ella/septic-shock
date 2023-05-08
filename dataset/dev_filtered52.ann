@@ -1,0 +1,63 @@
+T1	disease 0 9	慢性淋巴细胞白血病
+T2	medical_treatment 23 27	来那度胺
+R1	medical Arg1:T1 Arg2:T2	
+T3	disease 70 76	绞窄性肠梗阻
+T4	symptom 80 84	意识淡漠
+T5	symptom 85 90	感染性休克
+T6	symptom 141 145	肠道出血
+T7	disease 132 139	肠黏液局部缺血
+T8	symptom 149 151	黑便
+T9	symptom 101 105	腹壁潮红
+T10	symptom 106 109	腹膜炎
+T11	symptom 110 113	酸中毒
+T12	symptom 114 119	血小板减少
+T13	symptom 120 128	白细胞增多或减少
+R2	clinical_manifestation Arg1:T3 Arg2:T4	
+R3	clinical_manifestation Arg1:T3 Arg2:T5	
+R4	clinical_manifestation Arg1:T3 Arg2:T9	
+R5	clinical_manifestation Arg1:T3 Arg2:T10	
+R6	clinical_manifestation Arg1:T3 Arg2:T11	
+R7	clinical_manifestation Arg1:T3 Arg2:T12	
+R8	clinical_manifestation Arg1:T3 Arg2:T13	
+R9	clinical_manifestation Arg1:T7 Arg2:T6	
+R10	clinical_manifestation Arg1:T7 Arg2:T8	
+T14	disease 192 198	肝胆恶性肿瘤
+T15	disease 210 216	妊娠期高血压
+T16	disease 220 225	1型糖尿病
+R11	relevant Arg1:T16 Arg2:T15	
+T17	disease 258 262	后肠肿瘤
+T18	disease 277 282	类癌综合征
+R12	relevant Arg1:T17 Arg2:T18	
+T19	disease 284 289	支气管肺炎
+T20	pathogenic_bacteria 332 339	细菌和病毒感染
+T21	pathogenic_bacteria 343 352	病毒和细菌混合感染
+R13	cause Arg1:T20 Arg2:T19	
+R14	cause Arg1:T21 Arg2:T19	
+T22	disease 366 369	溶血病
+T23	physical_therapy 422 426	单面光疗
+R15	physical Arg1:T22 Arg2:T23	
+T24	physical_therapy 427 432	光纤毯光疗
+R16	physical Arg1:T22 Arg2:T24	
+T25	physical_therapy 439 443	双面光疗
+R17	physical Arg1:T22 Arg2:T25	
+T26	disease 445 450	急性胰腺炎
+T27	physical_therapy 458 464	血清IL-8
+R18	physical Arg1:T26 Arg2:T27	
+T28	disease 505 510	急性胰腺炎
+T29	pathogenic_bacteria 519 530	Oddi括约肌功能障碍
+T30	pathogenic_bacteria 531 538	高甘油三酯血症
+R19	cause Arg1:T29 Arg2:T28	
+R20	cause Arg1:T30 Arg2:T28	
+T31	disease 549 556	自身免疫性肝炎
+T32	disease 562 565	高血压
+T33	disease 566 571	肾功能不全
+T34	disease 572 576	高脂血症
+T35	disease 577 580	多毛症
+T36	disease 581 586	机会性感染
+T37	disease 587 591	恶性肿瘤
+R21	relevant Arg1:T31 Arg2:T32	
+R22	relevant Arg1:T31 Arg2:T33	
+R23	relevant Arg1:T31 Arg2:T34	
+R24	relevant Arg1:T31 Arg2:T35	
+R25	relevant Arg1:T31 Arg2:T36	
+R26	relevant Arg1:T31 Arg2:T37	

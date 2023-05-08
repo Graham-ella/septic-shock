@@ -1,0 +1,30 @@
+T1	disease 0 7	皮肤软组织感染
+T2	physical_therapy 9 40	尽量防止蚊子、昆虫等叮咬，避免玻璃、钉子割伤刺伤以及水火烫伤等
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 47 54	皮肤软组织感染
+T4	symptom 56 65	患有瘙痒性皮肤病者
+T5	physical_therapy 69 87	积极治疗，避免搔抓，不可任意挤压排脓
+R2	clinical_manifestation Arg1:T3 Arg2:T4	
+R3	treatment Arg1:T4 Arg2:T5	
+R4	physical Arg1:T3 Arg2:T5	
+T6	disease 96 99	糖尿病
+T7	disease 99 102	糖尿病
+T8	symptom 106 109	高血糖
+R5	clinical_manifestation Arg1:T7 Arg2:T8	
+T9	disease 120 123	糖尿病
+T10	symptom 123 126	高血糖
+R6	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	pathogenic_bacteria 130 137	胰岛素分泌缺陷
+T12	pathogenic_bacteria 138 145	其生物作用受损
+R7	cause Arg1:T11 Arg2:T9	
+R8	cause Arg1:T12 Arg2:T9	
+T13	disease 155 158	糖尿病
+T14	symptom 163 166	高血糖
+R9	clinical_manifestation Arg1:T13 Arg2:T14	
+T15	symptom 177 199	眼、肾、心脏、血管、神经的慢性损害、功能障碍
+R10	clinical_manifestation Arg1:T13 Arg2:T15	
+T16	disease 201 204	糖尿病
+T17	disease 205 210	2型糖尿病
+R11	relevant Arg1:T16 Arg2:T17	
+T18	pathogenic_bacteria 213 222	多种明确的基因突变
+R12	cause Arg1:T18 Arg2:T17	

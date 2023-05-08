@@ -1,0 +1,73 @@
+T1	disease 6 12	化脓性脑膜炎
+T2	symptom 87 90	关节痛
+T3	pathogenic_bacteria 30 35	脑膜炎球菌
+T4	pathogenic_bacteria 36 42	流感嗜血杆菌
+T5	pathogenic_bacteria 16 21	肺炎链球菌
+R1	cause Arg1:T5 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+R4	clinical_manifestation Arg1:T1 Arg2:T2	
+T6	disease 92 95	卵巢癌
+T7	disease 115 120	子宫内膜癌
+T8	disease 127 137	LynchII综合征
+R5	relevant Arg1:T6 Arg2:T8	
+T9	disease 181 185	前列腺癌
+T10	physical_therapy 199 208	根治性前列腺切除术
+T11	physical_therapy 209 215	淋巴结清扫术
+R6	physical Arg1:T9 Arg2:T10	
+R7	physical Arg1:T9 Arg2:T11	
+T12	disease 140 143	卵巢癌
+T13	disease 160 163	卵巢癌
+T14	pathogenic_bacteria 62 67	脑膜炎球菌
+T15	pathogenic_bacteria 68 74	流感嗜血杆菌
+T16	disease 77 83	化脓性脑膜炎
+T17	disease 45 51	化脓性脑膜炎
+T18	disease 324 328	前列腺癌
+T19	physical_therapy 343 352	根治性前列腺切除术
+T20	physical_therapy 374 380	淋巴结清扫术
+T21	disease 394 400	松果体区肿瘤
+T22	disease 421 427	松果体区肿瘤
+T23	physical_therapy 507 511	定向活检
+T24	physical_therapy 482 488	部分切除肿瘤
+T25	physical_therapy 489 494	解除脑积水
+T26	physical_therapy 514 516	放疗
+T27	physical_therapy 517 519	化疗
+R8	physical Arg1:T22 Arg2:T24	
+R9	physical Arg1:T22 Arg2:T25	
+R10	physical Arg1:T22 Arg2:T23	
+R11	physical Arg1:T22 Arg2:T26	
+R12	physical Arg1:T22 Arg2:T27	
+T28	disease 521 526	新生儿黄疸
+T29	disease 543 549	胡萝卜素血症
+T30	disease 583 585	肝癌
+T31	symptom 589 593	下肢水肿
+T32	disease 600 602	肝癌
+T33	disease 606 610	肝性脑病
+R13	clinical_manifestation Arg1:T30 Arg2:T31	
+T34	disease 625 628	膀胱癌
+T35	physical_therapy 663 669	延迟免疫治疗
+T36	physical_therapy 670 676	膀胱灌注化疗
+T37	physical_therapy 686 692	膀胱灌注化疗
+T38	disease 693 696	膀胱癌
+R14	physical Arg1:T34 Arg2:T35	
+R15	physical Arg1:T34 Arg2:T36	
+T39	disease 739 744	急性胰腺炎
+T40	physical_therapy 758 763	放置营养管
+R16	physical Arg1:T39 Arg2:T40	
+T41	disease 803 812	急性淋巴细胞白血病
+T42	disease 816 825	急性淋巴细胞白血病
+T43	disease 832 840	前体淋巴细胞肿瘤
+T44	disease 840 848	B淋巴细胞白血病
+T45	disease 856 864	B淋巴细胞白血病
+T46	disease 969 974	急性胰腺炎
+T47	physical_therapy 998 1007	磁共振胰胆管造影术
+T48	physical_therapy 1014 1024	内镜逆行胰胆管造影术
+T49	physical_therapy 1032 1037	腹超声检查
+T50	physical_therapy 1038 1044	内镜超声检查
+T51	disease 1064 1069	急性胰腺炎
+T52	physical_therapy 1086 1088	超声
+R17	physical Arg1:T46 Arg2:T47	
+R18	physical Arg1:T46 Arg2:T48	
+R19	physical Arg1:T46 Arg2:T49	
+R20	physical Arg1:T46 Arg2:T50	
+R21	physical Arg1:T46 Arg2:T52	

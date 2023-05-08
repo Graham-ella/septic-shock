@@ -1,0 +1,82 @@
+T1	disease 0 3	肝衰竭
+T2	disease 6 18	慢加急性(亚急性)肝衰竭
+R1	relevant Arg1:T1 Arg2:T2	
+T3	disease 22 26	慢性肝病
+R2	relevant Arg1:T2 Arg2:T3	
+T4	symptom 29 48	短期内发生急性或亚急性肝功能失代偿表现
+R3	clinical_manifestation Arg1:T2 Arg2:T4	
+T5	disease 64 67	肝衰竭
+T6	disease 70 75	慢性肝衰竭
+R4	relevant Arg1:T5 Arg2:T6	
+T7	disease 77 80	肝硬化
+R5	relevant Arg1:T6 Arg2:T7	
+T8	symptom 84 96	肝功能进行性减退和失代偿
+T9	symptom 99 105	凝血功能障碍
+T10	symptom 107 109	腹水
+T11	symptom 110 115	消化道出血
+T12	symptom 116 120	肝性脑病
+R6	clinical_manifestation Arg1:T6 Arg2:T8	
+R7	clinical_manifestation Arg1:T6 Arg2:T9	
+R8	clinical_manifestation Arg1:T6 Arg2:T10	
+R9	clinical_manifestation Arg1:T6 Arg2:T11	
+R10	clinical_manifestation Arg1:T6 Arg2:T12	
+T13	disease 130 133	肝衰竭
+T14	disease 212 215	肝衰竭
+T15	pathogenic_bacteria 199 201	病毒
+T16	pathogenic_bacteria 202 204	药物
+T17	pathogenic_bacteria 205 207	酒精
+R11	cause Arg1:T17 Arg2:T14	
+R12	cause Arg1:T16 Arg2:T14	
+R13	cause Arg1:T15 Arg2:T14	
+T18	disease 224 229	急性肝衰竭
+R14	relevant Arg1:T14 Arg2:T18	
+T21	disease 291 294	肝衰竭
+T22	disease 297 303	亚急性肝衰竭
+R16	relevant Arg1:T21 Arg2:T22	
+T24	symptom 235 249	2周内出现Ⅱ度及以上肝性脑病
+R18	clinical_manifestation Arg1:T18 Arg2:T24	
+T19	symptom 250 263	黄疸可小于正常值上限10倍
+T20	symptom 264 274	短期内黄疸进行性加深
+R15	clinical_manifestation Arg1:T18 Arg2:T19	
+R19	clinical_manifestation Arg1:T18 Arg2:T20	
+T23	symptom 322 328	黄疸迅速加深
+T25	symptom 331 357	大于正常值上限10倍或每日上升≥17.1umol/L
+R17	clinical_manifestation Arg1:T22 Arg2:T23	
+R20	clinical_manifestation Arg1:T22 Arg2:T25	
+T26	disease 359 362	肝衰竭
+T27	disease 365 377	慢加急性(亚急性)肝衰竭
+R21	relevant Arg1:T26 Arg2:T27	
+T28	symptom 394 409	急性(亚急性)肝功能失代偿表现
+T29	symptom 410 426	化验TBIL≥171umol/L
+T30	symptom 429 436	PTA≤40%
+R22	clinical_manifestation Arg1:T27 Arg2:T28	
+R23	clinical_manifestation Arg1:T27 Arg2:T29	
+R24	clinical_manifestation Arg1:T27 Arg2:T30	
+T31	disease 438 441	肝衰竭
+T32	disease 444 449	慢性肝衰竭
+T33	disease 451 454	肝硬化
+R25	relevant Arg1:T31 Arg2:T32	
+R26	relevant Arg1:T31 Arg2:T33	
+T34	symptom 458 470	肝功能进行性减退和失代偿
+R27	clinical_manifestation Arg1:T31 Arg2:T34	
+T35	disease 472 475	肝衰竭
+T36	symptom 483 495	有腹水或其他门脉高压表现
+T37	symptom 510 516	可有肝性脑病
+T38	symptom 519 527	血清总胆红素升高
+T39	symptom 542 549	白蛋白明显降低
+T40	symptom 554 562	存在凝血功能障碍
+T41	symptom 563 570	PTA≤40%
+R28	clinical_manifestation Arg1:T35 Arg2:T36	
+R29	clinical_manifestation Arg1:T35 Arg2:T37	
+R30	clinical_manifestation Arg1:T35 Arg2:T38	
+R31	clinical_manifestation Arg1:T35 Arg2:T39	
+R32	clinical_manifestation Arg1:T35 Arg2:T40	
+R33	clinical_manifestation Arg1:T35 Arg2:T41	
+T42	disease 573 576	肝衰竭
+T43	disease 578 581	肝衰竭
+T44	physical_therapy 607 613	内科基础治疗
+T45	physical_therapy 614 621	人工肝支持治疗
+T46	physical_therapy 622 628	肝脏移植治疗
+R34	physical Arg1:T43 Arg2:T44	
+R35	physical Arg1:T43 Arg2:T45	
+R36	physical Arg1:T43 Arg2:T46	

@@ -1,0 +1,28 @@
+T1	disease 0 5	细菌性痢疾
+T2	pathogenic_bacteria 5 10	宋氏志贺菌
+R1	cause Arg1:T2 Arg2:T1	
+T3	disease 21 26	细菌性痢疾
+T4	pathogenic_bacteria 26 31	福氏志贺菌
+R2	cause Arg1:T4 Arg2:T3	
+T5	disease 40 45	细菌性痢疾
+T6	pathogenic_bacteria 50 53	志贺菌
+R3	cause Arg1:T6 Arg2:T5	
+T7	disease 76 81	细菌性痢疾
+T8	pathogenic_bacteria 81 84	志贺菌
+R4	cause Arg1:T8 Arg2:T7	
+T9	symptom 101 105	炎症反应
+T10	symptom 106 113	小血管循环障碍
+T11	symptom 116 127	肠黏膜炎症、坏死及溃疡
+R5	clinical_manifestation Arg1:T7 Arg2:T9	
+R6	clinical_manifestation Arg1:T7 Arg2:T10	
+R7	clinical_manifestation Arg1:T7 Arg2:T11	
+T12	disease 129 134	细菌性痢疾
+T13	pathogenic_bacteria 136 139	志贺菌
+R8	cause Arg1:T13 Arg2:T12	
+T14	disease 152 157	细菌性痢疾
+T15	pathogenic_bacteria 161 164	肠毒素
+T16	pathogenic_bacteria 165 169	神经毒素
+T17	pathogenic_bacteria 170 174	细胞毒素
+R9	cause Arg1:T15 Arg2:T14	
+R10	cause Arg1:T16 Arg2:T14	
+R11	cause Arg1:T17 Arg2:T14	

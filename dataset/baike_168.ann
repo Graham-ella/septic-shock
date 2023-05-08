@@ -1,0 +1,7 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 8 15	金黄色葡萄球菌
+T3	pathogenic_bacteria 21 27	表皮葡萄球菌
+T4	pathogenic_bacteria 55 61	革兰阳性球菌
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	

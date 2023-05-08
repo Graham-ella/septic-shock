@@ -1,0 +1,79 @@
+T1	disease 20 25	缺铁性贫血
+T2	symptom 56 60	食欲下降
+T3	symptom 61 63	恶心
+T4	symptom 64 66	呕吐
+T5	symptom 67 69	腹痛
+T6	symptom 70 72	腹泻
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+T7	disease 75 78	肝硬化
+T8	pathogenic_bacteria 96 98	纹身
+R6	cause Arg1:T8 Arg2:T7	
+T9	disease 132 138	细菌性脑膜炎
+T10	disease 210 216	先天性巨结肠
+T11	disease 218 226	肠无神经节细胞症
+T12	disease 227 231	赫什朋病
+T13	disease 276 282	继发性巨结肠
+R7	same Arg1:T10 Arg2:T11	
+R8	same Arg1:T10 Arg2:T12	
+T14	symptom 298 305	先天性肛门狭窄
+T15	symptom 306 312	术后瘢痕狭窄
+T16	symptom 313 320	直肠外肿瘤压迫
+T17	symptom 323 327	排便不畅
+T18	symptom 328 332	粪便滞留
+R9	clinical_manifestation Arg1:T13 Arg2:T14	
+R10	clinical_manifestation Arg1:T13 Arg2:T15	
+R11	clinical_manifestation Arg1:T13 Arg2:T16	
+R12	clinical_manifestation Arg1:T13 Arg2:T17	
+R13	clinical_manifestation Arg1:T13 Arg2:T18	
+T19	disease 341 345	食物中毒
+T20	medical_treatment 371 375	氟喹诺酮
+T21	medical_treatment 376 386	甲氧苄啶/磺胺甲噁唑
+R14	medical Arg1:T19 Arg2:T20	
+R15	medical Arg1:T19 Arg2:T21	
+T22	disease 514 519	沙门菌肺炎
+T23	disease 521 524	肛门癌
+T24	disease 646 650	毒蛇咬伤
+T25	symptom 679 687	咬伤局部肿胀剧痛
+T26	symptom 691 693	水疱
+T27	symptom 694 696	血泡
+T28	symptom 697 701	组织坏死
+T29	symptom 702 708	伤口流血不止
+T30	symptom 719 723	全身出血
+T31	symptom 726 728	溶血
+T32	symptom 729 731	贫血
+T33	symptom 732 734	黄疸
+T34	symptom 735 740	血红蛋白尿
+T35	symptom 741 743	少尿
+T36	symptom 744 746	无尿
+T37	symptom 747 751	心音低钝
+T38	symptom 752 756	心律不齐
+T39	symptom 757 761	血压下降
+T40	symptom 762 766	呼吸急促
+T41	symptom 767 769	休克
+R16	clinical_manifestation Arg1:T24 Arg2:T25	
+R17	clinical_manifestation Arg1:T24 Arg2:T26	
+R18	clinical_manifestation Arg1:T24 Arg2:T27	
+R19	clinical_manifestation Arg1:T24 Arg2:T28	
+R20	clinical_manifestation Arg1:T24 Arg2:T29	
+R21	clinical_manifestation Arg1:T24 Arg2:T30	
+R22	clinical_manifestation Arg1:T24 Arg2:T31	
+R23	clinical_manifestation Arg1:T24 Arg2:T32	
+R24	clinical_manifestation Arg1:T24 Arg2:T33	
+R25	clinical_manifestation Arg1:T24 Arg2:T34	
+R26	clinical_manifestation Arg1:T24 Arg2:T35	
+R27	clinical_manifestation Arg1:T24 Arg2:T36	
+R28	clinical_manifestation Arg1:T24 Arg2:T37	
+R29	clinical_manifestation Arg1:T24 Arg2:T38	
+R30	clinical_manifestation Arg1:T24 Arg2:T39	
+R31	clinical_manifestation Arg1:T24 Arg2:T40	
+R32	clinical_manifestation Arg1:T24 Arg2:T41	
+T42	disease 885 891	化脓性脑膜炎
+T43	physical_therapy 953 957	静脉补液
+R33	physical Arg1:T42 Arg2:T43	
+T44	physical_therapy 1122 1127	尿常规检查
+T45	disease 1027 1029	血尿
+R34	physical Arg1:T45 Arg2:T44	

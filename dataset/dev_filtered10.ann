@@ -1,0 +1,134 @@
+T1	disease 20 25	横纹肌肉瘤
+T2	physical_therapy 65 70	大剂量放疗
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 102 107	新生儿化脑
+T4	pathogenic_bacteria 142 147	克雷伯杆菌
+T5	pathogenic_bacteria 148 152	沙门杆菌
+T6	pathogenic_bacteria 153 156	肠杆菌
+T7	pathogenic_bacteria 157 161	绿脓杆菌
+T8	pathogenic_bacteria 162 165	黄质菌
+T9	pathogenic_bacteria 167 170	沙雷菌
+T10	pathogenic_bacteria 115 120	B群链球菌
+T11	pathogenic_bacteria 124 131	革兰阴性肠杆菌
+R2	cause Arg1:T10 Arg2:T3	
+R3	cause Arg1:T11 Arg2:T3	
+R4	cause Arg1:T4 Arg2:T3	
+R5	cause Arg1:T5 Arg2:T3	
+R6	cause Arg1:T6 Arg2:T3	
+R7	cause Arg1:T7 Arg2:T3	
+R8	cause Arg1:T8 Arg2:T3	
+R9	cause Arg1:T9 Arg2:T3	
+T12	disease 176 179	蚕豆病
+T13	symptom 264 266	畏寒
+T14	symptom 267 269	发热
+T15	symptom 270 272	恶心
+T16	symptom 273 275	呕吐
+T17	symptom 276 278	腹痛
+T18	symptom 279 281	背痛
+T19	symptom 287 292	血红蛋白尿
+T20	pathogenic_bacteria 184 193	食用蚕豆、及其制品
+R10	cause Arg1:T20 Arg2:T12	
+R11	clinical_manifestation Arg1:T12 Arg2:T13	
+R12	clinical_manifestation Arg1:T12 Arg2:T14	
+R13	clinical_manifestation Arg1:T12 Arg2:T15	
+R14	clinical_manifestation Arg1:T12 Arg2:T16	
+R15	clinical_manifestation Arg1:T12 Arg2:T17	
+R16	clinical_manifestation Arg1:T12 Arg2:T18	
+R17	clinical_manifestation Arg1:T12 Arg2:T19	
+T21	disease 308 311	肝硬化
+T22	disease 321 326	肝肾综合征
+R18	relevant Arg1:T21 Arg2:T22	
+T23	disease 339 343	ARDS
+T24	symptom 390 394	呼吸窘迫
+T25	symptom 395 399	发绀加重
+T26	symptom 355 361	急性呼吸困难
+T27	symptom 362 366	呼吸急促
+T28	symptom 367 373	严重低氧血症
+T29	symptom 374 378	胸片异常
+T30	symptom 379 387	肺静态顺应性降低
+R19	clinical_manifestation Arg1:T23 Arg2:T26	
+R20	clinical_manifestation Arg1:T23 Arg2:T27	
+R21	clinical_manifestation Arg1:T23 Arg2:T28	
+R22	clinical_manifestation Arg1:T23 Arg2:T29	
+R23	clinical_manifestation Arg1:T23 Arg2:T30	
+R24	clinical_manifestation Arg1:T23 Arg2:T24	
+R25	clinical_manifestation Arg1:T23 Arg2:T25	
+T31	disease 510 512	窒息
+T32	disease 554 559	颅内压增高
+R26	relevant Arg1:T31 Arg2:T32	
+T33	disease 513 515	肺炎
+T34	disease 516 521	中毒性痢疾
+R27	relevant Arg1:T33 Arg2:T32	
+R28	relevant Arg1:T34 Arg2:T32	
+T35	disease 561 568	感染性心内膜炎
+T36	physical_therapy 607 610	血常规
+R29	physical Arg1:T35 Arg2:T36	
+T37	symptom 620 626	正细胞性贫血
+T38	symptom 627 633	白细胞数增高
+T39	symptom 634 643	中性粒细胞比例升高
+T40	symptom 644 648	血沉加快
+T41	symptom 658 666	血清球蛋白常增多
+T42	symptom 649 657	C-反应蛋白阳性
+T43	symptom 667 674	免疫球蛋白升高
+T44	physical_therapy 691 694	尿常规
+T45	symptom 705 708	蛋白尿
+T46	pathogenic_bacteria 574 577	链球菌
+T47	pathogenic_bacteria 578 582	葡萄球菌
+T48	pathogenic_bacteria 589 591	真菌
+T49	pathogenic_bacteria 592 595	衣原体
+T50	pathogenic_bacteria 596 603	立克次体及病毒
+R30	cause Arg1:T46 Arg2:T35	
+R31	cause Arg1:T47 Arg2:T35	
+R32	cause Arg1:T48 Arg2:T35	
+R33	cause Arg1:T49 Arg2:T35	
+R34	cause Arg1:T50 Arg2:T35	
+R35	physical Arg1:T35 Arg2:T44	
+R36	clinical_manifestation Arg1:T35 Arg2:T37	
+R37	clinical_manifestation Arg1:T35 Arg2:T38	
+R38	clinical_manifestation Arg1:T35 Arg2:T39	
+R39	clinical_manifestation Arg1:T35 Arg2:T40	
+R40	clinical_manifestation Arg1:T35 Arg2:T42	
+R41	clinical_manifestation Arg1:T35 Arg2:T41	
+R42	clinical_manifestation Arg1:T35 Arg2:T43	
+R43	clinical_manifestation Arg1:T35 Arg2:T45	
+T51	disease 724 729	腹主动脉瘤
+T52	symptom 774 781	急性撕裂样腹痛
+T53	symptom 782 789	搏动性腹部肿块
+T54	symptom 790 793	低血压
+T55	symptom 794 800	下肢出现花斑
+T56	symptom 801 806	伴脉搏下降
+T57	symptom 807 809	腹胀
+T58	pathogenic_bacteria 749 753	高脂血症
+T59	pathogenic_bacteria 754 756	抽烟
+T60	pathogenic_bacteria 757 760	糖尿病
+T61	pathogenic_bacteria 761 767	高胱氨酸血症
+R44	cause Arg1:T58 Arg2:T51	
+R45	cause Arg1:T59 Arg2:T51	
+R46	cause Arg1:T60 Arg2:T51	
+R47	cause Arg1:T61 Arg2:T51	
+R48	clinical_manifestation Arg1:T51 Arg2:T52	
+R49	clinical_manifestation Arg1:T51 Arg2:T53	
+R50	clinical_manifestation Arg1:T51 Arg2:T54	
+R51	clinical_manifestation Arg1:T51 Arg2:T55	
+R52	clinical_manifestation Arg1:T51 Arg2:T56	
+R53	clinical_manifestation Arg1:T51 Arg2:T57	
+T62	disease 811 816	急性胰腺炎
+T63	physical_therapy 881 887	括约肌切开术
+T64	physical_therapy 888 890	取石
+T65	physical_therapy 891 896	支架植入术
+T66	physical_therapy 897 901	组织诊断
+R54	physical Arg1:T62 Arg2:T63	
+R55	physical Arg1:T62 Arg2:T64	
+R56	physical Arg1:T62 Arg2:T65	
+R57	physical Arg1:T62 Arg2:T66	
+T67	disease 936 943	早发GBS感染
+T68	disease 967 970	脑膜炎
+R58	relevant Arg1:T67 Arg2:T68	
+T69	symptom 1009 1011	惊厥
+T70	symptom 1012 1014	嗜睡
+T71	symptom 1015 1017	昏迷
+T72	symptom 1018 1022	前囟隆起
+R59	clinical_manifestation Arg1:T68 Arg2:T69	
+R60	clinical_manifestation Arg1:T68 Arg2:T70	
+R61	clinical_manifestation Arg1:T68 Arg2:T71	
+R62	clinical_manifestation Arg1:T68 Arg2:T72	

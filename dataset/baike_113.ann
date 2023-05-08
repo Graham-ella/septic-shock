@@ -1,0 +1,24 @@
+T1	disease 0 3	血液病
+T2	symptom 18 20	发热
+T3	symptom 21 29	淋巴结、肝、脾大
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	disease 57 60	血液病
+T5	disease 108 113	甲状腺疾病
+T6	disease 146 151	肾上腺疾病
+R3	relevant Arg1:T4 Arg2:T5	
+R4	relevant Arg1:T4 Arg2:T6	
+T7	disease 198 201	血液病
+T8	pathogenic_bacteria 221 226	巨细胞病毒
+T9	pathogenic_bacteria 227 233	EB病毒感染
+T10	pathogenic_bacteria 234 241	HIV病毒感染
+T11	disease 203 208	感染性疾病
+R5	relevant Arg1:T7 Arg2:T11	
+R6	cause Arg1:T8 Arg2:T11	
+R7	cause Arg1:T9 Arg2:T11	
+R8	cause Arg1:T10 Arg2:T11	
+T12	disease 243 248	细菌性感染
+T13	disease 249 254	粟粒性结核
+T14	disease 255 258	脾脓肿
+R9	relevant Arg1:T12 Arg2:T13	
+R10	relevant Arg1:T12 Arg2:T14	

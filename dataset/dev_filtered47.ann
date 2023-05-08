@@ -1,0 +1,74 @@
+T1	disease 0 6	上呼吸道感染
+T2	disease 35 38	中耳炎
+T3	disease 39 42	鼻窦炎
+T4	disease 43 48	咽后壁脓肿
+T5	disease 49 54	颈淋巴结炎
+T6	disease 55 57	喉炎
+T7	disease 58 61	气管炎
+T8	disease 62 67	支气管肺炎
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+R5	relevant Arg1:T1 Arg2:T6	
+R6	relevant Arg1:T1 Arg2:T7	
+R7	relevant Arg1:T1 Arg2:T8	
+T9	disease 70 73	食管癌
+T10	physical_therapy 74 78	单独放疗
+R8	physical Arg1:T9 Arg2:T10	
+T11	disease 254 258	成骨肉瘤
+T12	physical_therapy 247 253	切除肿瘤组织
+R9	physical Arg1:T11 Arg2:T12	
+T13	disease 280 288	腹膜后横纹肌肉瘤
+T14	symptom 329 337	消化道或胆道梗阻
+T15	symptom 298 306	消化道或尿路梗阻
+T16	symptom 295 297	腹痛
+T17	disease 309 317	消化道和胆道肿瘤
+R10	clinical_manifestation Arg1:T13 Arg2:T16	
+R11	clinical_manifestation Arg1:T13 Arg2:T15	
+R12	clinical_manifestation Arg1:T17 Arg2:T14	
+T18	disease 339 344	急性胰腺炎
+T19	symptom 358 362	前哨肠袢
+T20	symptom 402 404	钙化
+R13	clinical_manifestation Arg1:T18 Arg2:T19	
+R14	clinical_manifestation Arg1:T18 Arg2:T20	
+T21	disease 406 409	肝硬化
+T22	symptom 430 434	肝酶异常
+R15	clinical_manifestation Arg1:T21 Arg2:T22	
+T23	disease 482 485	DIC
+T24	pathogenic_bacteria 507 511	细菌感染
+T25	pathogenic_bacteria 516 522	革兰阴性杆菌
+T26	pathogenic_bacteria 523 527	绿脓杆菌
+T27	pathogenic_bacteria 528 532	痢疾杆菌
+T28	pathogenic_bacteria 533 538	大肠埃希菌
+T29	pathogenic_bacteria 539 543	变形杆菌
+T30	pathogenic_bacteria 544 547	沙门菌
+T31	pathogenic_bacteria 554 560	革兰阴性球菌
+T32	pathogenic_bacteria 562 572	流行性脑脊髓膜双球菌
+T33	pathogenic_bacteria 575 581	革兰阳性球菌
+T34	pathogenic_bacteria 583 590	金黄色葡萄球菌
+T35	pathogenic_bacteria 591 597	溶血性链球菌
+R16	cause Arg1:T24 Arg2:T23	
+R17	cause Arg1:T25 Arg2:T23	
+R18	cause Arg1:T26 Arg2:T23	
+R19	cause Arg1:T27 Arg2:T23	
+R20	cause Arg1:T28 Arg2:T23	
+R21	cause Arg1:T29 Arg2:T23	
+R22	cause Arg1:T30 Arg2:T23	
+R23	cause Arg1:T31 Arg2:T23	
+R24	cause Arg1:T32 Arg2:T23	
+R25	cause Arg1:T33 Arg2:T23	
+R26	cause Arg1:T34 Arg2:T23	
+R27	cause Arg1:T35 Arg2:T23	
+T36	disease 607 612	急性胰腺炎
+T37	physical_therapy 644 650	逆行胰造影图
+R28	physical Arg1:T36 Arg2:T37	
+T38	disease 689 693	头颈肿瘤
+T39	disease 661 663	喉癌
+T40	disease 700 705	基底细胞癌
+T41	physical_therapy 727 736	皮肤病理组织学活检
+R29	physical Arg1:T40 Arg2:T41	
+T42	physical_therapy 760 764	刮除活检
+T43	physical_therapy 765 769	钻取活检
+R30	physical Arg1:T40 Arg2:T42	
+R31	physical Arg1:T40 Arg2:T43	

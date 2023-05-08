@@ -1,0 +1,6 @@
+T1	physical_therapy 0 3	尿常规
+T2	disease 6 14	隐匿性肾小球肾炎
+R1	physical Arg1:T2 Arg2:T1	
+T3	physical_therapy 37 40	尿常规
+T4	disease 43 50	慢性肾小球肾炎
+R2	physical Arg1:T4 Arg2:T3	

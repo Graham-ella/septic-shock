@@ -1,0 +1,91 @@
+T1	disease 0 3	胆管癌
+T2	symptom 10 12	黄疸
+T3	symptom 13 17	体重减轻
+T4	symptom 18 22	食欲减低
+T5	symptom 23 27	右上腹痛
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 52 58	新生儿败血症
+T7	pathogenic_bacteria 97 114	新生儿产时有呼吸抑制而经过复苏干预
+T8	pathogenic_bacteria 115 123	羊膜破水时间过长
+T9	disease 131 141	母亲有产时感染或发热
+T10	pathogenic_bacteria 142 144	男婴
+T11	pathogenic_bacteria 145 151	低出身体重儿
+R5	cause Arg1:T7 Arg2:T6	
+R6	cause Arg1:T8 Arg2:T6	
+R7	relevant Arg1:T9 Arg2:T6	
+R8	cause Arg1:T10 Arg2:T6	
+R9	cause Arg1:T11 Arg2:T6	
+T12	disease 162 167	缺血性卒中
+T13	disease 177 182	吸入性肺炎
+R10	relevant Arg1:T12 Arg2:T13	
+T14	disease 202 211	吸入性和继发性肺炎
+R11	relevant Arg1:T12 Arg2:T14	
+T15	disease 240 245	急性胰腺炎
+T16	physical_therapy 258 262	B型超声
+T17	physical_therapy 232 239	血清脂肪酶测定
+T18	symptom 246 254	血清脂肪酶也增高
+R12	physical Arg1:T15 Arg2:T17	
+R13	clinical_manifestation Arg1:T15 Arg2:T18	
+R14	physical Arg1:T15 Arg2:T16	
+T19	disease 297 300	膀胱癌
+T20	physical_therapy 335 341	延迟免疫治疗
+T21	physical_therapy 342 348	膀胱灌注化疗
+R15	physical Arg1:T19 Arg2:T20	
+R16	physical Arg1:T19 Arg2:T21	
+T22	disease 365 368	膀胱癌
+T23	disease 399 407	非浸润性乳头状癌
+T24	disease 396 398	Ta
+T25	disease 408 410	T1
+T26	disease 411 421	肿瘤侵及皮下结缔组织
+R17	same Arg1:T23 Arg2:T24	
+R18	same Arg1:T26 Arg2:T25	
+T27	medical_treatment 475 478	青霉素
+T28	medical_treatment 578 585	第三代头孢霉素
+T29	medical_treatment 587 591	头孢噻肟
+T30	medical_treatment 592 596	头孢曲松
+T31	medical_treatment 597 601	万古霉素
+T32	disease 456 461	急性阑尾炎
+T33	disease 437 442	右下叶肺炎
+R19	medical Arg1:T32 Arg2:T27	
+R20	medical Arg1:T32 Arg2:T28	
+R21	medical Arg1:T32 Arg2:T29	
+R22	medical Arg1:T32 Arg2:T30	
+R23	medical Arg1:T32 Arg2:T31	
+T34	disease 603 608	类脂性肺炎
+T35	physical_therapy 657 666	体位引流及气管吸引
+T36	physical_therapy 667 671	排出油剂
+T37	disease 643 650	慢性间质性肺炎
+R24	relevant Arg1:T34 Arg2:T37	
+R25	physical Arg1:T34 Arg2:T35	
+R26	physical Arg1:T34 Arg2:T36	
+T38	disease 750 756	假丝酵母菌病
+T39	physical_therapy 677 681	真菌检査
+T40	physical_therapy 841 845	眼底检査
+R27	physical Arg1:T38 Arg2:T39	
+T41	symptom 729 739	出芽的酵母菌与假菌丝
+R28	clinical_manifestation Arg1:T38 Arg2:T41	
+T42	physical_therapy 807 813	标本真菌培养
+T43	physical_therapy 761 779	病灶组织或假膜、渗液等标本显微镜检查
+R29	physical Arg1:T38 Arg2:T43	
+R30	physical Arg1:T38 Arg2:T42	
+R31	physical Arg1:T38 Arg2:T40	
+T44	disease 878 881	口咽癌
+T45	symptom 893 904	脂肪层消失的占位性生长
+T46	symptom 905 909	肌肉浸润
+T47	symptom 910 914	骨质破坏
+T48	symptom 916 925	静脉增强时周围强化
+R32	clinical_manifestation Arg1:T44 Arg2:T45	
+R33	clinical_manifestation Arg1:T44 Arg2:T46	
+R34	clinical_manifestation Arg1:T44 Arg2:T47	
+R35	clinical_manifestation Arg1:T44 Arg2:T48	
+T49	physical_therapy 882 886	CT扫描
+R36	physical Arg1:T44 Arg2:T49	
+T50	disease 936 938	化脑
+T51	disease 961 967	细菌性脑膜炎
+T52	pathogenic_bacteria 978 992	年幼儿对感染的病原缺乏免疫力
+T53	pathogenic_bacteria 996 1006	近期有致病细菌的携带
+R37	cause Arg1:T52 Arg2:T51	
+R38	cause Arg1:T53 Arg2:T51	

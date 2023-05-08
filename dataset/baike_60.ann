@@ -1,0 +1,46 @@
+T1	disease 0 4	腹腔感染
+T2	disease 60 64	腹腔感染
+T3	physical_therapy 36 48	获取病原菌后进行药敏试验
+R1	physical Arg1:T1 Arg2:T3	
+T4	disease 67 72	急性胰腺炎
+R2	relevant Arg1:T2 Arg2:T4	
+T5	disease 107 111	腹腔感染
+T6	disease 114 118	腹腔脓肿
+T7	disease 145 149	腹腔感染
+T8	disease 159 162	腹膜炎
+T9	medical_treatment 165 169	万古霉素
+T10	medical_treatment 170 176	去甲万古霉素
+T11	medical_treatment 178 185	第三代头孢菌素
+R3	medical Arg1:T8 Arg2:T9	
+R4	medical Arg1:T8 Arg2:T10	
+R5	medical Arg1:T8 Arg2:T11	
+T12	pathogenic_bacteria 215 221	革兰阴性杆菌
+R6	same Arg1:T7 Arg2:T8	
+R7	cause Arg1:T12 Arg2:T8	
+T13	disease 230 234	腹腔感染
+T14	disease 284 291	皮肤软组织感染
+T15	disease 291 298	皮肤软组织感染
+T16	disease 322 329	皮肤软组织感染
+T17	disease 346 349	毛囊炎
+T18	disease 350 351	疖
+T19	disease 352 353	痈
+T20	disease 354 361	急性蜂窝组织炎
+T21	disease 362 364	脓肿
+T22	disease 365 367	丹毒
+T23	disease 368 374	急性淋巴管炎
+R8	relevant Arg1:T16 Arg2:T17	
+R9	relevant Arg1:T16 Arg2:T18	
+R10	relevant Arg1:T16 Arg2:T19	
+R11	relevant Arg1:T16 Arg2:T20	
+R12	relevant Arg1:T16 Arg2:T21	
+R13	relevant Arg1:T16 Arg2:T22	
+R14	relevant Arg1:T16 Arg2:T23	
+T24	disease 376 383	皮肤软组织感染
+T25	disease 414 421	细菌协同性坏死
+T26	disease 423 429	坏死性筋膜炎
+T27	disease 431 440	溶血性链球菌性坏死
+T28	disease 442 449	新生儿皮下坏疽
+R15	relevant Arg1:T24 Arg2:T25	
+R16	relevant Arg1:T24 Arg2:T26	
+R17	relevant Arg1:T24 Arg2:T27	
+R18	relevant Arg1:T24 Arg2:T28	

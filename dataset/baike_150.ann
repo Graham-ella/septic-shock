@@ -1,0 +1,8 @@
+T1	disease 0 2	癌症
+T2	disease 10 12	癌症
+T3	pathogenic_bacteria 41 45	生活习惯
+T4	pathogenic_bacteria 47 49	吸烟
+R1	cause Arg1:T3 Arg2:T2	
+R2	cause Arg1:T4 Arg2:T2	
+R3	cause Arg1:T3 Arg2:T1	
+R4	cause Arg1:T4 Arg2:T1	

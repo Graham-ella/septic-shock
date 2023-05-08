@@ -1,0 +1,86 @@
+T1	disease 0 5	急性膀胱炎
+T2	pathogenic_bacteria 52 58	腐生葡萄球菌
+T3	pathogenic_bacteria 59 65	肺炎克雷伯菌
+T4	pathogenic_bacteria 66 70	变形杆菌
+T5	pathogenic_bacteria 78 83	假单胞杆菌
+T6	pathogenic_bacteria 84 87	肠球菌
+T7	pathogenic_bacteria 88 91	肠杆菌
+T8	pathogenic_bacteria 92 97	B型链球菌
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+R4	cause Arg1:T5 Arg2:T1	
+R5	cause Arg1:T6 Arg2:T1	
+R6	cause Arg1:T7 Arg2:T1	
+R7	cause Arg1:T8 Arg2:T1	
+T9	disease 99 105	转移性乳腺癌
+T10	medical_treatment 121 126	曲妥珠单抗
+R8	medical Arg1:T9 Arg2:T10	
+T11	disease 237 242	急性胰腺炎
+T12	physical_therapy 243 247	期待疗法
+R9	physical Arg1:T11 Arg2:T12	
+T13	disease 282 288	化脓性脑膜炎
+T14	disease 340 342	脑疝
+R10	relevant Arg1:T13 Arg2:T14	
+T15	symptom 352 360	突然意识障碍加重
+T16	symptom 361 366	瞳孔不等大
+R11	clinical_manifestation Arg1:T13 Arg2:T15	
+R12	clinical_manifestation Arg1:T13 Arg2:T16	
+T17	disease 394 399	2型糖尿病
+T18	disease 414 418	视网膜病
+T19	disease 419 421	肾病
+T20	disease 422 426	神经病变
+R13	relevant Arg1:T17 Arg2:T18	
+R14	relevant Arg1:T17 Arg2:T19	
+R15	relevant Arg1:T17 Arg2:T20	
+T21	disease 430 435	冷凝集素病
+T22	symptom 506 510	雷诺症状
+T23	symptom 514 518	肢端坏死
+T24	symptom 519 521	溃疡
+R16	clinical_manifestation Arg1:T21 Arg2:T22	
+R17	clinical_manifestation Arg1:T21 Arg2:T23	
+R18	clinical_manifestation Arg1:T21 Arg2:T24	
+T25	disease 439 444	肺炎支原体
+T26	disease 445 451	EB病毒感染
+T27	disease 455 462	淋巴增生性疾病
+R19	relevant Arg1:T21 Arg2:T25	
+R20	relevant Arg1:T21 Arg2:T26	
+R21	relevant Arg1:T21 Arg2:T27	
+T28	disease 523 525	肝癌
+T29	physical_therapy 567 575	基础代谢生化检查
+R22	physical Arg1:T28 Arg2:T29	
+T30	disease 655 660	急性胆管炎
+T31	symptom 677 679	发热
+T32	symptom 679 681	寒战
+T33	symptom 682 684	黄疸
+T34	symptom 685 687	腹痛
+R23	clinical_manifestation Arg1:T30 Arg2:T31	
+R24	clinical_manifestation Arg1:T30 Arg2:T32	
+R25	clinical_manifestation Arg1:T30 Arg2:T33	
+R26	clinical_manifestation Arg1:T30 Arg2:T34	
+T35	disease 696 702	妊娠期高血压
+T36	physical_therapy 762 764	降压
+R27	physical Arg1:T35 Arg2:T36	
+T37	physical_therapy 755 761	改变生活方式
+R28	physical Arg1:T35 Arg2:T37	
+T38	disease 795 797	尿感
+T39	pathogenic_bacteria 880 884	肠道细菌
+T40	pathogenic_bacteria 885 889	绿脓杆菌
+T41	pathogenic_bacteria 788 793	病原微生物
+T42	pathogenic_bacteria 817 824	肺炎克雷伯杆菌
+T43	pathogenic_bacteria 825 829	变形杆菌
+T44	pathogenic_bacteria 830 834	产气杆菌
+T45	pathogenic_bacteria 835 839	产碱杆菌
+T46	pathogenic_bacteria 843 849	革兰阳性球菌
+T47	pathogenic_bacteria 856 860	肠链球菌
+T48	pathogenic_bacteria 861 865	葡萄球菌
+R29	cause Arg1:T41 Arg2:T38	
+R30	cause Arg1:T42 Arg2:T38	
+R31	cause Arg1:T43 Arg2:T38	
+R32	cause Arg1:T44 Arg2:T38	
+R33	cause Arg1:T45 Arg2:T38	
+R34	cause Arg1:T46 Arg2:T38	
+R35	cause Arg1:T47 Arg2:T38	
+R36	cause Arg1:T48 Arg2:T38	
+R37	cause Arg1:T39 Arg2:T38	
+R38	cause Arg1:T40 Arg2:T38	

@@ -1,0 +1,89 @@
+T1	disease 67 71	急性中毒
+T2	symptom 26 29	低血糖
+T3	symptom 31 36	酮症酸中毒
+T4	symptom 38 42	颅内出血
+T5	symptom 44 48	中枢感染
+T6	symptom 50 54	肝性脑病
+T7	symptom 56 59	尿毒症
+T8	symptom 61 66	电解质紊乱
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	clinical_manifestation Arg1:T1 Arg2:T7	
+R7	clinical_manifestation Arg1:T1 Arg2:T8	
+T9	symptom 87 90	深昏迷
+T12	symptom 111 115	呼吸衰竭
+T11	symptom 102 104	高热
+T13	symptom 105 109	体温不升
+T10	symptom 92 94	休克
+T14	symptom 95 100	血压不稳定
+T15	symptom 117 121	心力衰竭
+T16	symptom 122 128	严重心律失常
+T17	symptom 130 136	惊厥持续状态
+T18	symptom 138 141	肾衰竭
+T19	symptom 143 146	DIC
+T20	symptom 148 173	血钠高于150mmol/L或低于120mmol/L
+R8	clinical_manifestation Arg1:T1 Arg2:T9	
+R9	clinical_manifestation Arg1:T1 Arg2:T10	
+R10	clinical_manifestation Arg1:T1 Arg2:T14	
+R11	clinical_manifestation Arg1:T1 Arg2:T11	
+R12	clinical_manifestation Arg1:T1 Arg2:T13	
+R13	clinical_manifestation Arg1:T1 Arg2:T12	
+R14	clinical_manifestation Arg1:T1 Arg2:T15	
+R15	clinical_manifestation Arg1:T1 Arg2:T16	
+R16	clinical_manifestation Arg1:T1 Arg2:T17	
+R17	clinical_manifestation Arg1:T1 Arg2:T18	
+R18	clinical_manifestation Arg1:T1 Arg2:T19	
+R19	clinical_manifestation Arg1:T1 Arg2:T20	
+T21	disease 175 181	非小细胞肺癌
+T22	physical_therapy 212 218	ROS1检测
+R20	physical Arg1:T21 Arg2:T22	
+T23	disease 274 279	急性胰腺炎
+T24	medical_treatment 303 307	脂肪乳剂
+R21	medical Arg1:T23 Arg2:T24	
+T25	disease 369 376	组织细胞增生症
+T26	disease 383 393	急性单核细胞性白血病
+T27	disease 401 408	恶性组织细胞病
+T28	disease 409 417	恶性组织细胞肉瘤
+T29	disease 421 428	恶性郎罕细胞病
+T30	disease 431 435	恶性肿瘤
+T31	disease 441 444	睾丸癌
+T32	disease 548 552	卵黄囊瘤
+R22	relevant Arg1:T25 Arg2:T26	
+R23	relevant Arg1:T25 Arg2:T27	
+R24	relevant Arg1:T25 Arg2:T28	
+R25	relevant Arg1:T25 Arg2:T29	
+R26	relevant Arg1:T25 Arg2:T30	
+T33	disease 494 499	精原细胞瘤
+T34	disease 514 517	畸胎瘤
+T35	disease 526 529	畸胎癌
+T36	disease 539 543	绒毛膜癌
+T37	disease 667 672	新生儿黄疸
+T38	physical_therapy 674 678	换血疗法
+R27	physical Arg1:T37 Arg2:T38	
+T39	disease 713 718	恶性间叶瘤
+T40	physical_therapy 740 742	放疗
+R28	physical Arg1:T39 Arg2:T40	
+T41	disease 759 763	帕金森病
+T42	physical_therapy 766 771	脑部MRI
+R29	physical Arg1:T41 Arg2:T42	
+T43	disease 920 924	低钙血症
+T44	medical_treatment 944 950	25%硫酸镁
+R30	medical Arg1:T43 Arg2:T44	
+T45	disease 826 831	严重RDS
+T46	disease 832 834	窒息
+T47	disease 835 840	感染性休克
+T48	disease 843 847	PPHN
+T49	medical_treatment 853 857	静脉补钙
+R31	medical Arg1:T43 Arg2:T49	
+R32	medical Arg1:T45 Arg2:T49	
+R33	medical Arg1:T46 Arg2:T49	
+R34	medical Arg1:T47 Arg2:T49	
+R35	medical Arg1:T48 Arg2:T49	
+T50	disease 963 968	儿童糖尿病
+T51	physical_therapy 1043 1049	定期检测血脂
+R36	physical Arg1:T50 Arg2:T51	
+T52	symptom 1010 1030	血清胆固醇、甘油三酯和游离脂肪酸明显增加
+R37	clinical_manifestation Arg1:T50 Arg2:T52	

@@ -1,0 +1,78 @@
+T1	disease 52 57	病毒性肺炎
+T2	symptom 58 62	间质病变
+T3	symptom 63 69	两肺膨胀过度
+T4	symptom 70 73	肺气肿
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+T5	disease 0 5	细菌性肺炎
+T6	symptom 9 17	两肺弥漫性模糊影
+T7	symptom 18 22	密度不均
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+R5	clinical_manifestation Arg1:T5 Arg2:T7	
+T8	disease 171 176	支气管扩张
+T9	pathogenic_bacteria 162 164	感染
+T10	pathogenic_bacteria 165 170	支气管阻塞
+R6	cause Arg1:T10 Arg2:T8	
+R7	cause Arg1:T9 Arg2:T8	
+T11	disease 87 96	金黄色葡萄球菌肺炎
+T12	disease 97 106	耐药肺炎链球菌肺炎
+T13	disease 109 118	革兰氏阴性杆菌肺炎
+T14	disease 119 126	支气管扩张肺炎
+T15	disease 215 220	感染性休克
+T16	physical_therapy 230 234	血液滤过
+T17	disease 209 214	全身性感染
+T18	medical_treatment 205 208	抗生素
+R8	medical Arg1:T17 Arg2:T18	
+R9	medical Arg1:T15 Arg2:T18	
+R10	physical Arg1:T15 Arg2:T16	
+T19	disease 343 346	肝硬化
+T20	disease 402 405	肝硬化
+T21	symptom 350 352	黄疸
+T22	symptom 353 355	瘙痒
+R11	clinical_manifestation Arg1:T19 Arg2:T21	
+R12	clinical_manifestation Arg1:T19 Arg2:T22	
+T23	physical_therapy 413 418	血清白蛋白
+R13	physical Arg1:T20 Arg2:T23	
+T24	symptom 424 433	血清白蛋白水平降低
+R14	clinical_manifestation Arg1:T20 Arg2:T24	
+T25	disease 474 477	RDS
+T26	physical_therapy 544 553	保证液体和营养供应
+T27	medical_treatment 612 615	抗生素
+T28	physical_therapy 490 492	保温
+T29	physical_therapy 523 525	监测
+R15	physical Arg1:T25 Arg2:T28	
+R16	physical Arg1:T25 Arg2:T29	
+R17	physical Arg1:T25 Arg2:T26	
+R18	medical Arg1:T25 Arg2:T27	
+T30	disease 641 644	肝硬化
+T31	physical_therapy 647 649	超声
+T32	physical_therapy 675 677	CT
+T33	physical_therapy 678 681	MRI
+R19	physical Arg1:T30 Arg2:T31	
+R20	physical Arg1:T30 Arg2:T32	
+R21	physical Arg1:T30 Arg2:T33	
+T34	disease 685 690	急性胰腺炎
+T35	physical_therapy 721 727	增强CT扫描
+R22	physical Arg1:T34 Arg2:T35	
+T36	disease 747 751	急性溶血
+T37	symptom 754 756	发热
+T38	symptom 757 759	黄疸
+T39	symptom 760 762	苍白
+T40	symptom 763 765	乏力
+T41	symptom 766 770	腰背酸痛
+T42	symptom 771 776	血红蛋白尿
+R23	clinical_manifestation Arg1:T36 Arg2:T37	
+R24	clinical_manifestation Arg1:T36 Arg2:T38	
+R25	clinical_manifestation Arg1:T36 Arg2:T39	
+R26	clinical_manifestation Arg1:T36 Arg2:T40	
+R27	clinical_manifestation Arg1:T36 Arg2:T41	
+R28	clinical_manifestation Arg1:T36 Arg2:T42	
+T43	disease 779 785	松果体区肿瘤
+T44	disease 807 813	生殖细胞肿瘤
+T45	disease 823 831	松果体实质细胞瘤
+T46	disease 837 842	星形细胞瘤
+T47	disease 850 856	生殖细胞肿瘤
+T48	disease 860 865	生殖细胞瘤
+T49	disease 866 869	畸胎瘤
+T50	disease 870 879	混合型生殖细胞肿瘤

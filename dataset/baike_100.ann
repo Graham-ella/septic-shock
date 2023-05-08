@@ -1,0 +1,8 @@
+T1	disease 0 3	肝硬化
+T2	physical_therapy 3 7	肝移植术
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 24 27	肝硬化
+T4	disease 41 46	终末期肝病
+T5	physical_therapy 48 56	人工肝、肝移植术
+R2	physical Arg1:T4 Arg2:T5	
+R3	relevant Arg1:T3 Arg2:T4	

@@ -1,0 +1,5 @@
+T1	disease 0 5	细菌性痢疾
+T2	symptom 7 17	肠道黏膜病变经久不愈
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	physical_therapy 22 28	保留灌肠疗法
+R2	treatment Arg1:T2 Arg2:T3	

@@ -1,0 +1,68 @@
+T1	disease 9 13	心肌梗死
+T2	symptom 56 60	呼吸急促
+T3	symptom 61 63	恶心
+T4	symptom 64 66	呕吐
+T5	symptom 67 69	发汗
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 71 74	肝硬化
+T7	symptom 107 116	过度搔抓引起的亮甲
+T8	symptom 117 119	肝掌
+T9	symptom 120 123	蜘蛛痣
+T10	symptom 124 126	瘀伤
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+R6	clinical_manifestation Arg1:T6 Arg2:T8	
+R7	clinical_manifestation Arg1:T6 Arg2:T9	
+R8	clinical_manifestation Arg1:T6 Arg2:T10	
+T11	disease 133 136	胆管炎
+T12	symptom 140 143	杵状指
+T13	symptom 144 152	掌纹处胆固醇沉积
+R9	clinical_manifestation Arg1:T11 Arg2:T12	
+R10	clinical_manifestation Arg1:T11 Arg2:T13	
+T14	disease 153 158	酒精性肝病
+T15	symptom 162 166	手掌挛缩
+T16	symptom 176 180	手指发绀
+T17	symptom 181 184	杵状指
+R11	clinical_manifestation Arg1:T14 Arg2:T15	
+R12	clinical_manifestation Arg1:T14 Arg2:T16	
+R13	clinical_manifestation Arg1:T14 Arg2:T17	
+T18	disease 186 189	白血病
+T19	disease 324 327	食管癌
+T20	physical_therapy 330 338	激光及光动力疗法
+R14	physical Arg1:T19 Arg2:T20	
+T21	disease 380 385	类癌综合征
+T22	symptom 404 408	体重减轻
+T23	symptom 409 411	疲劳
+R15	clinical_manifestation Arg1:T21 Arg2:T22	
+R16	clinical_manifestation Arg1:T21 Arg2:T23	
+T24	disease 457 460	HIV
+T25	symptom 521 531	严重的反复的细菌感染
+T26	symptom 533 536	败血症
+T27	symptom 537 539	肺炎
+T28	symptom 540 542	腹泻
+T29	symptom 543 547	尿路感染
+T30	symptom 548 552	皮肤感染
+T31	symptom 553 561	中枢神经系统感染
+R17	clinical_manifestation Arg1:T24 Arg2:T25	
+R18	clinical_manifestation Arg1:T24 Arg2:T26	
+R19	clinical_manifestation Arg1:T24 Arg2:T27	
+R20	clinical_manifestation Arg1:T24 Arg2:T28	
+R21	clinical_manifestation Arg1:T24 Arg2:T29	
+R22	clinical_manifestation Arg1:T24 Arg2:T30	
+R23	clinical_manifestation Arg1:T24 Arg2:T31	
+T32	disease 579 582	ALL
+T33	disease 751 753	肺癌
+T34	disease 781 786	慢性胰腺炎
+T35	disease 807 812	急性胰腺炎
+R24	relevant Arg1:T34 Arg2:T35	
+T36	disease 881 886	支气管肺炎
+T37	symptom 897 899	发热
+T38	symptom 900 902	咳嗽
+T39	symptom 903 907	呼吸急促
+R25	clinical_manifestation Arg1:T36 Arg2:T37	
+R26	clinical_manifestation Arg1:T36 Arg2:T38	
+R27	clinical_manifestation Arg1:T36 Arg2:T39	
+T40	physical_therapy 911 915	肺部听诊
+R28	physical Arg1:T36 Arg2:T40	

@@ -1,0 +1,59 @@
+T1	disease 0 5	淋巴管肉瘤
+T2	disease 19 24	淋巴管肉瘤
+T3	disease 32 34	肿瘤
+T4	physical_therapy 35 37	放疗
+T5	physical_therapy 47 49	截肢
+R1	physical Arg1:T2 Arg2:T5	
+T6	disease 51 60	革兰氏阴性杆菌肺炎
+T7	pathogenic_bacteria 72 78	流感嗜血杆菌
+T8	pathogenic_bacteria 79 86	肺炎克雷伯杆菌
+T9	disease 99 107	铜绿假单胞菌肺炎
+T10	disease 115 122	大肠埃希菌肺炎
+T11	physical_therapy 123 127	肺部听诊
+T12	symptom 128 133	闻及湿啰音
+R2	physical Arg1:T6 Arg2:T11	
+R3	cause Arg1:T7 Arg2:T6	
+R4	cause Arg1:T8 Arg2:T6	
+R5	relevant Arg1:T6 Arg2:T9	
+R6	relevant Arg1:T6 Arg2:T10	
+R7	clinical_manifestation Arg1:T6 Arg2:T12	
+T13	disease 146 149	胆囊炎
+T14	disease 152 155	脓毒症
+T16	symptom 170 179	局部或全身组织缺血
+R8	clinical_manifestation Arg1:T14 Arg2:T16	
+T15	disease 161 168	直接胆囊壁炎症
+R9	relevant Arg1:T14 Arg2:T15	
+T17	disease 186 189	睾丸癌
+T18	disease 196 199	睾丸癌
+T19	disease 221 224	睾丸癌
+T20	physical_therapy 250 254	体格检查
+T21	physical_therapy 255 259	血液检测
+T22	physical_therapy 266 270	CT扫面
+T23	physical_therapy 271 274	CXR
+R10	physical Arg1:T19 Arg2:T20	
+R11	physical Arg1:T19 Arg2:T21	
+R12	physical Arg1:T19 Arg2:T22	
+R13	physical Arg1:T19 Arg2:T23	
+T24	physical_therapy 260 265	影像学检查
+R14	physical Arg1:T19 Arg2:T24	
+T25	disease 277 282	急性胰腺炎
+T26	physical_therapy 283 287	肠内营养
+R15	physical Arg1:T25 Arg2:T26	
+T27	disease 302 305	胆管癌
+T28	disease 306 308	肿瘤
+T29	disease 314 316	肿瘤
+T30	disease 340 342	肿瘤
+T31	disease 391 393	肿瘤
+T32	disease 423 429	新生儿败血症
+T33	disease 580 587	颅内占位性病变
+T34	disease 603 608	颅内压增高
+T35	disease 616 623	颅内占位性病变
+T36	disease 625 630	颅内压增高
+T37	disease 698 703	感染性疾病
+T38	disease 710 715	结缔组织病
+T39	disease 722 726	恶性肿瘤
+T40	disease 733 736	胆囊炎
+T41	pathogenic_bacteria 745 750	产气厌氧菌
+T42	disease 766 769	糖尿病
+R16	relevant Arg1:T33 Arg2:T34	
+R17	relevant Arg1:T35 Arg2:T36	

@@ -1,0 +1,28 @@
+T1	disease 0 5	急性肾损伤
+T2	disease 26 33	急性梗阻性肾病
+R1	same Arg1:T1 Arg2:T2	
+T3	disease 35 40	急性肾损伤
+T4	symptom 42 46	尿量减少
+R2	clinical_manifestation Arg1:T3 Arg2:T4	
+T5	disease 91 96	急性肾损伤
+T6	disease 123 130	肾性急性肾损伤
+T7	disease 132 137	肾动脉阻塞
+T8	disease 138 141	血管炎
+R3	relevant Arg1:T5 Arg2:T6	
+R4	relevant Arg1:T5 Arg2:T7	
+R5	relevant Arg1:T5 Arg2:T8	
+T9	disease 144 149	急性肾损伤
+T10	disease 154 159	急性肾损伤
+T11	disease 173 178	急性肾损伤
+R6	relevant Arg1:T9 Arg2:T10	
+T12	disease 180 184	氮质血症
+R7	relevant Arg1:T11 Arg2:T12	
+T13	disease 185 190	急性肾损伤
+T14	disease 230 235	急性肾损伤
+T15	disease 273 278	急性肾损伤
+T16	disease 281 286	急性肾损伤
+T17	disease 298 303	急性肾损伤
+T18	disease 348 353	急性肾损伤
+T19	symptom 291 296	高分解代谢
+R8	clinical_manifestation Arg1:T16 Arg2:T19	
+T20	disease 411 416	急性肾损伤

@@ -1,0 +1,18 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 5 8	念珠菌
+T3	disease 13 17	肺部感染
+T4	disease 18 23	消化道感染
+R1	cause Arg1:T2 Arg2:T3	
+R2	cause Arg1:T2 Arg2:T4	
+R3	relevant Arg1:T1 Arg2:T3	
+R4	relevant Arg1:T1 Arg2:T4	
+T5	pathogenic_bacteria 32 38	静脉保留插管
+T6	disease 41 44	败血症
+T7	disease 45 49	免疫缺陷
+R5	cause Arg1:T5 Arg2:T6	
+R6	cause Arg1:T5 Arg2:T7	
+R7	relevant Arg1:T1 Arg2:T6	
+R8	relevant Arg1:T1 Arg2:T7	
+T8	disease 55 61	皮肤念珠菌病
+R9	cause Arg1:T5 Arg2:T8	
+R10	relevant Arg1:T1 Arg2:T8	

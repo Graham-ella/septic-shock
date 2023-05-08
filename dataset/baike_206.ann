@@ -1,0 +1,6 @@
+T1	physical_therapy 0 3	尿常规
+T2	disease 13 16	糖尿病
+R1	physical Arg1:T2 Arg2:T1	
+T3	physical_therapy 18 21	尿常规
+T4	disease 31 34	糖尿病
+R2	physical Arg1:T4 Arg2:T3	

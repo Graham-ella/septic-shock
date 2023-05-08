@@ -1,0 +1,72 @@
+T1	disease 0 5	多脏器衰竭
+T2	disease 60 62	休克
+T3	disease 63 69	心排血量减少
+T4	disease 70 72	水肿
+T5	disease 73 77	严重缺氧
+T6	disease 78 82	氮质血症
+T7	disease 85 91	代谢性酸中毒
+T8	disease 92 95	高血糖
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+R5	relevant Arg1:T1 Arg2:T6	
+R6	relevant Arg1:T1 Arg2:T7	
+R7	relevant Arg1:T1 Arg2:T8	
+T9	disease 108 113	多脏器衰竭
+T10	symptom 113 120	呼吸进行性困难
+T11	symptom 121 125	出现青紫
+T12	symptom 126 132	两肺啰音增多
+T13	symptom 133 150	胸片出现两肺弥散性团块阴影到肺实变
+R8	clinical_manifestation Arg1:T9 Arg2:T10	
+R9	clinical_manifestation Arg1:T9 Arg2:T11	
+R10	clinical_manifestation Arg1:T9 Arg2:T12	
+R11	clinical_manifestation Arg1:T9 Arg2:T13	
+T14	symptom 166 182	肺内分流增加而PaO2仍不能升高
+R12	clinical_manifestation Arg1:T9 Arg2:T14	
+T15	physical_therapy 201 205	机械通气
+R13	treatment Arg1:T14 Arg2:T15	
+T16	disease 207 212	多脏器衰竭
+T17	symptom 225 231	心脏负荷增加
+T18	symptom 232 241	呼吸不规则甚至暂停
+T19	symptom 242 244	少尿
+T20	symptom 245 250	重度酸中毒
+T21	symptom 251 255	氧耗增加
+T22	disease 259 263	肝性脑病
+R14	clinical_manifestation Arg1:T16 Arg2:T17	
+R15	clinical_manifestation Arg1:T16 Arg2:T18	
+R16	clinical_manifestation Arg1:T16 Arg2:T19	
+R17	clinical_manifestation Arg1:T16 Arg2:T20	
+R18	clinical_manifestation Arg1:T16 Arg2:T21	
+R19	relevant Arg1:T16 Arg2:T22	
+T23	disease 268 273	多脏器衰竭
+T24	disease 285 291	循环系统衰竭
+T25	symptom 292 296	心律失常
+R20	relevant Arg1:T23 Arg2:T24	
+R21	clinical_manifestation Arg1:T23 Arg2:T25	
+T26	disease 319 324	多脏器衰竭
+T27	symptom 334 342	并发代谢性酸中毒
+T28	symptom 343 346	高血糖
+R22	clinical_manifestation Arg1:T26 Arg2:T27	
+R23	clinical_manifestation Arg1:T26 Arg2:T28	
+T29	disease 362 367	多脏器衰竭
+T30	disease 367 371	MODS
+R24	relevant Arg1:T29 Arg2:T30	
+T31	disease 373 377	MODS
+R25	relevant Arg1:T29 Arg2:T31	
+T32	disease 478 480	休克
+T33	disease 537 541	MODS
+R26	relevant Arg1:T32 Arg2:T33	
+T34	disease 549 554	多脏器衰竭
+T35	disease 558 562	严重创伤
+T36	disease 563 565	休克
+T37	disease 566 568	感染
+R27	relevant Arg1:T34 Arg2:T35	
+R28	relevant Arg1:T34 Arg2:T36	
+R29	relevant Arg1:T34 Arg2:T37	
+T38	disease 581 586	多脏器衰竭
+T39	disease 587 589	休克
+R30	relevant Arg1:T38 Arg2:T39	
+T40	disease 594 598	MODS
+R31	relevant Arg1:T39 Arg2:T40	
+R32	same Arg1:T38 Arg2:T40	

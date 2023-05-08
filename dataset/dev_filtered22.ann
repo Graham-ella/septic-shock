@@ -1,0 +1,55 @@
+T1	disease 0 7	皮肤鳞状细胞癌
+T2	physical_therapy 26 32	Mohs手术
+R1	physical Arg1:T1 Arg2:T2	
+T3	physical_therapy 36 40	外科手术
+T4	physical_therapy 53 55	放疗
+T5	physical_therapy 57 61	常用化疗
+R2	physical Arg1:T1 Arg2:T3	
+R3	physical Arg1:T1 Arg2:T4	
+R4	physical Arg1:T1 Arg2:T5	
+T6	disease 97 107	_耶氏肺孢子虫_肺炎
+T7	disease 112 117	地中海贫血
+T8	disease 151 156	传染性肝炎
+T9	disease 157 160	肝硬化
+T10	disease 119 124	海洋性贫血
+R5	same Arg1:T7 Arg2:T10	
+T11	disease 125 135	珠蛋白生成障碍性贫血
+R6	same Arg1:T7 Arg2:T11	
+T12	disease 161 165	HbH病
+T13	disease 173 176	肝脾大
+T14	disease 177 179	黄疸
+R7	relevant Arg1:T12 Arg2:T13	
+R8	relevant Arg1:T12 Arg2:T14	
+T15	disease 187 192	肝功能损害
+R9	relevant Arg1:T12 Arg2:T15	
+T16	disease 242 244	肿瘤
+T17	pathogenic_bacteria 219 222	HPV
+R10	cause Arg1:T17 Arg2:T16	
+T18	disease 262 267	感染性休克
+T19	physical_therapy 284 288	免疫疗法
+R11	physical Arg1:T18 Arg2:T19	
+T20	disease 339 342	肝硬化
+T21	physical_therapy 360 364	腹部CT
+R12	physical Arg1:T20 Arg2:T21	
+T22	disease 378 382	尤因肉瘤
+T23	disease 450 455	横纹肌肉瘤
+T24	medical_treatment 511 514	阿霉素
+T25	medical_treatment 515 517	顺铂
+T26	medical_treatment 518 521	VAC
+R13	medical Arg1:T23 Arg2:T24	
+R14	medical Arg1:T23 Arg2:T25	
+R15	medical Arg1:T23 Arg2:T26	
+T27	disease 567 573	非小细胞肺癌
+T28	symptom 591 593	咳嗽
+T29	symptom 594 596	咯血
+T30	symptom 597 599	胸痛
+T31	symptom 600 602	肩痛
+T32	symptom 605 609	呼吸困难
+R16	clinical_manifestation Arg1:T27 Arg2:T28	
+R17	clinical_manifestation Arg1:T27 Arg2:T29	
+R18	clinical_manifestation Arg1:T27 Arg2:T30	
+R19	clinical_manifestation Arg1:T27 Arg2:T31	
+R20	clinical_manifestation Arg1:T27 Arg2:T32	
+T33	disease 611 616	新生儿黄疸
+T34	physical_therapy 627 632	外周血涂片
+R21	physical Arg1:T33 Arg2:T34	

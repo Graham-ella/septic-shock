@@ -1,0 +1,9 @@
+T1	disease 0 5	医院内感染
+T2	disease 35 37	肺炎
+T3	pathogenic_bacteria 23 27	流感杆菌
+T4	pathogenic_bacteria 28 32	肺炎球菌
+R1	cause Arg1:T4 Arg2:T2	
+R2	cause Arg1:T3 Arg2:T2	
+R3	relevant Arg1:T1 Arg2:T2	
+T5	pathogenic_bacteria 18 22	荚膜细菌
+R4	cause Arg1:T5 Arg2:T2	

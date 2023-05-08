@@ -1,0 +1,8 @@
+T1	disease 0 2	休克
+T2	symptom 29 33	呼吸困难
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	physical_therapy 35 44	头部和躯干抬高一点
+R2	treatment Arg1:T2 Arg2:T3	
+T4	physical_therapy 53 60	保持呼吸道通畅
+R3	treatment Arg1:T2 Arg2:T4	
+T5	disease 64 66	休克

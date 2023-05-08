@@ -1,0 +1,97 @@
+T1	disease 13 16	胰腺炎
+T2	pathogenic_bacteria 23 26	呋塞米
+T3	pathogenic_bacteria 27 31	去羟肌苷
+T4	pathogenic_bacteria 32 35	雌激素
+T5	pathogenic_bacteria 36 40	硫唑嘌呤
+T6	pathogenic_bacteria 41 47	噻嗪类利尿剂
+T7	pathogenic_bacteria 48 53	磺胺类药物
+T8	pathogenic_bacteria 54 60	四环素类药物
+T9	pathogenic_bacteria 61 64	舒林酸
+T10	pathogenic_bacteria 65 68	巯嘌呤
+T11	pathogenic_bacteria 69 73	丙戊酸盐
+T12	pathogenic_bacteria 74 81	左旋天冬酰胺酶
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+R4	cause Arg1:T5 Arg2:T1	
+R5	cause Arg1:T6 Arg2:T1	
+R6	cause Arg1:T7 Arg2:T1	
+R7	cause Arg1:T8 Arg2:T1	
+R8	cause Arg1:T9 Arg2:T1	
+R9	cause Arg1:T10 Arg2:T1	
+R10	cause Arg1:T11 Arg2:T1	
+R11	cause Arg1:T12 Arg2:T1	
+T13	disease 101 106	急性胰腺炎
+T14	physical_therapy 109 111	教育
+R12	physical Arg1:T13 Arg2:T14	
+T16	physical_therapy 209 215	血清γ-GT
+T15	disease 281 284	胆管癌
+T17	physical_therapy 247 252	血清转氨酶
+T18	physical_therapy 138 143	血清胆红素
+R13	physical Arg1:T15 Arg2:T17	
+R14	physical Arg1:T15 Arg2:T16	
+R15	physical Arg1:T15 Arg2:T18	
+T19	disease 307 313	水肿性胰腺炎
+T21	symptom 331 333	恶心
+T22	symptom 334 336	呕吐
+T23	symptom 337 339	发热
+T24	symptom 376 381	阵发性哭闹
+T25	symptom 341 347	血、尿淀粉酶
+T20	symptom 326 330	剧烈腹痛
+R16	clinical_manifestation Arg1:T19 Arg2:T20	
+R17	clinical_manifestation Arg1:T19 Arg2:T21	
+R18	clinical_manifestation Arg1:T19 Arg2:T22	
+R19	clinical_manifestation Arg1:T19 Arg2:T23	
+R20	clinical_manifestation Arg1:T19 Arg2:T25	
+R21	clinical_manifestation Arg1:T19 Arg2:T24	
+T26	symptom 393 396	反应差
+T27	symptom 397 400	面色灰
+R22	clinical_manifestation Arg1:T19 Arg2:T26	
+R23	clinical_manifestation Arg1:T19 Arg2:T27	
+T28	disease 405 410	急性胰腺炎
+T29	symptom 414 416	腹胀
+R24	clinical_manifestation Arg1:T28 Arg2:T29	
+T30	disease 437 445	卡氏肺孢子虫肺炎
+T31	disease 448 456	间质性浆细胞肺炎
+R25	same Arg1:T30 Arg2:T31	
+T32	symptom 535 539	吃奶不好
+T33	symptom 540 544	烦躁不安
+T34	symptom 549 553	呼吸加快
+T35	symptom 554 556	发绀
+T36	symptom 569 571	咳嗽
+T37	symptom 572 574	鼻扇
+T38	symptom 575 578	三凹征
+T39	symptom 580 589	肺部几乎听不到啰音
+R26	clinical_manifestation Arg1:T30 Arg2:T32	
+R27	clinical_manifestation Arg1:T30 Arg2:T33	
+R28	clinical_manifestation Arg1:T30 Arg2:T34	
+R29	clinical_manifestation Arg1:T30 Arg2:T35	
+R30	clinical_manifestation Arg1:T30 Arg2:T36	
+R31	clinical_manifestation Arg1:T30 Arg2:T37	
+R32	clinical_manifestation Arg1:T30 Arg2:T38	
+R33	clinical_manifestation Arg1:T30 Arg2:T39	
+T40	disease 599 605	松果体区肿瘤
+T41	disease 773 780	肺炎链球菌肺炎
+T42	pathogenic_bacteria 815 822	肺炎链球菌感染
+R34	cause Arg1:T42 Arg2:T41	
+T43	disease 839 843	恶性肿瘤
+T44	symptom 866 871	消化道出血
+T45	symptom 872 874	贫血
+T46	symptom 875 877	早饱
+T47	symptom 883 887	体重下降
+T48	symptom 897 904	进行性吞咽困难
+T49	symptom 905 909	吞咽疼痛
+T50	symptom 910 914	持续呕吐
+T51	physical_therapy 852 856	内镜检查
+R35	physical Arg1:T43 Arg2:T51	
+R36	clinical_manifestation Arg1:T43 Arg2:T44	
+R37	clinical_manifestation Arg1:T43 Arg2:T45	
+R38	clinical_manifestation Arg1:T43 Arg2:T46	
+R39	clinical_manifestation Arg1:T43 Arg2:T47	
+R40	clinical_manifestation Arg1:T43 Arg2:T48	
+R41	clinical_manifestation Arg1:T43 Arg2:T49	
+R42	clinical_manifestation Arg1:T43 Arg2:T50	
+T52	disease 916 920	放线菌病
+T53	physical_therapy 925 931	注意口腔卫生
+R43	physical Arg1:T52 Arg2:T53	
+T54	disease 1021 1026	腺病毒肺炎

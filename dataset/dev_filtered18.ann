@@ -1,0 +1,113 @@
+T1	disease 8 14	神经源性膀胱
+T2	disease 22 26	尿路感染
+R1	relevant Arg1:T1 Arg2:T2	
+T3	physical_therapy 99 102	尿常规
+R2	physical Arg1:T1 Arg2:T3	
+T4	disease 169 174	支气管肿瘤
+T5	medical_treatment 180 182	顺铂
+T6	medical_treatment 175 179	依托泊苷
+T7	medical_treatment 200 204	氟尿嘧啶
+T8	medical_treatment 205 210	链脲佐菌素
+R3	medical Arg1:T4 Arg2:T6	
+R4	medical Arg1:T4 Arg2:T5	
+R5	medical Arg1:T4 Arg2:T7	
+R6	medical Arg1:T4 Arg2:T8	
+T9	disease 218 223	Ⅱ型AIP
+T10	disease 232 237	Ⅰ型AIP
+T11	medical_treatment 291 298	皮质类固醇治疗
+R7	medical Arg1:T10 Arg2:T11	
+T12	disease 240 245	无痛性黄疸
+R8	relevant Arg1:T10 Arg2:T12	
+T13	disease 319 325	新生儿硬肿症
+T14	disease 372 374	肺炎
+T15	disease 421 426	微循环障碍
+R9	relevant Arg1:T14 Arg2:T15	
+T16	disease 375 378	败血症
+T17	disease 379 381	腹泻
+T18	disease 382 384	窒息
+T19	disease 385 393	严重先天性心脏病
+T20	disease 394 396	畸形
+R10	relevant Arg1:T16 Arg2:T15	
+R11	relevant Arg1:T17 Arg2:T15	
+R12	relevant Arg1:T18 Arg2:T15	
+R13	relevant Arg1:T19 Arg2:T15	
+R14	relevant Arg1:T20 Arg2:T15	
+T21	disease 427 430	DIC
+R15	relevant Arg1:T14 Arg2:T21	
+R16	relevant Arg1:T16 Arg2:T21	
+R17	relevant Arg1:T17 Arg2:T21	
+R18	relevant Arg1:T18 Arg2:T21	
+R19	relevant Arg1:T19 Arg2:T21	
+R20	relevant Arg1:T20 Arg2:T21	
+T22	disease 434 440	松果体区肿瘤
+T23	disease 468 474	生殖细胞肿瘤
+T24	disease 484 492	松果体实质细胞瘤
+T25	disease 498 503	星形细胞瘤
+T26	disease 564 567	川崎病
+T27	disease 573 576	心肌炎
+T28	disease 577 580	心包炎
+T29	disease 581 585	心内膜炎
+T30	disease 586 590	心律失常
+T31	disease 611 615	心肌梗死
+T32	disease 616 620	心力衰竭
+T33	disease 621 624	高血压
+R21	relevant Arg1:T26 Arg2:T27	
+R22	relevant Arg1:T26 Arg2:T28	
+R23	relevant Arg1:T26 Arg2:T29	
+R24	relevant Arg1:T26 Arg2:T30	
+R25	relevant Arg1:T26 Arg2:T31	
+R26	relevant Arg1:T26 Arg2:T32	
+R27	relevant Arg1:T26 Arg2:T33	
+T34	symptom 592 597	可闻奔马律
+T35	symptom 598 602	心音低钝
+T36	symptom 603 607	心音分裂
+T37	symptom 659 663	情绪异常
+R28	clinical_manifestation Arg1:T26 Arg2:T34	
+R29	clinical_manifestation Arg1:T26 Arg2:T35	
+R30	clinical_manifestation Arg1:T26 Arg2:T36	
+R31	clinical_manifestation Arg1:T26 Arg2:T37	
+T38	disease 625 630	心源性休克
+R32	relevant Arg1:T26 Arg2:T38	
+T39	symptom 637 639	惊厥
+T40	symptom 640 642	昏迷
+R33	clinical_manifestation Arg1:T26 Arg2:T39	
+R34	clinical_manifestation Arg1:T26 Arg2:T40	
+T41	disease 792 797	消化道出血
+T42	pathogenic_bacteria 762 770	消化道血循环障碍
+R35	cause Arg1:T42 Arg2:T41	
+T43	disease 799 804	食管裂孔疝
+T44	pathogenic_bacteria 780 790	肠壁静脉明显充血破裂
+R36	cause Arg1:T44 Arg2:T43	
+T45	disease 805 808	肠套叠
+T46	pathogenic_bacteria 770 778	肠道循环回流受阻
+R37	cause Arg1:T46 Arg2:T45	
+T47	disease 849 852	血友病
+T48	pathogenic_bacteria 827 837	血小板减少或功能障碍
+R38	cause Arg1:T48 Arg2:T47	
+T49	disease 853 859	维生素K缺乏
+R39	cause Arg1:T48 Arg2:T49	
+T50	pathogenic_bacteria 820 826	凝血因子缺乏
+R40	cause Arg1:T50 Arg2:T47	
+T51	disease 881 887	生殖细胞肿瘤
+T52	symptom 929 931	胸痛
+T53	symptom 932 936	呼吸困难
+T54	symptom 937 939	咳嗽
+T55	symptom 940 942	发烧
+T56	symptom 943 945	头痛
+T57	symptom 946 948	疲劳
+R41	clinical_manifestation Arg1:T51 Arg2:T52	
+R42	clinical_manifestation Arg1:T51 Arg2:T53	
+R43	clinical_manifestation Arg1:T51 Arg2:T54	
+R44	clinical_manifestation Arg1:T51 Arg2:T55	
+R45	clinical_manifestation Arg1:T51 Arg2:T56	
+R46	clinical_manifestation Arg1:T51 Arg2:T57	
+T58	disease 953 955	肿瘤
+T59	symptom 964 967	上腹痛
+T60	symptom 968 972	体重下降
+T61	symptom 973 983	隐性或显性消化道出血
+R47	clinical_manifestation Arg1:T58 Arg2:T59	
+R48	clinical_manifestation Arg1:T58 Arg2:T60	
+R49	clinical_manifestation Arg1:T58 Arg2:T61	
+T62	disease 998 1007	原发性硬化性胆管炎
+T63	disease 1011 1013	UC
+R50	relevant Arg1:T62 Arg2:T63	

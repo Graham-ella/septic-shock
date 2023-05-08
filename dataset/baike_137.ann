@@ -1,0 +1,11 @@
+T1	disease 0 5	细菌性痢疾
+T2	pathogenic_bacteria 18 21	志贺菌
+T3	pathogenic_bacteria 26 31	痢疾志贺菌
+T4	pathogenic_bacteria 32 37	福氏志贺菌
+T5	pathogenic_bacteria 38 43	鲍氏志贺菌
+T6	pathogenic_bacteria 44 49	宋氏志贺菌
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+R4	cause Arg1:T5 Arg2:T1	
+R5	cause Arg1:T6 Arg2:T1	

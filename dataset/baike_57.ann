@@ -1,0 +1,52 @@
+T1	disease 0 5	急性胆管炎
+T2	physical_therapy 10 16	鼻胆管引流术
+T3	physical_therapy 18 26	胆囊穿刺置管引流
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+T4	disease 34 39	急性胆管炎
+T5	disease 41 48	急性重症胆管炎
+R3	relevant Arg1:T4 Arg2:T5	
+T6	disease 58 61	败血症
+T7	disease 62 67	中毒性休克
+T8	disease 68 74	胆源性肝脓肿
+T9	disease 75 79	胆道出血
+T10	disease 80 87	多器官功能衰竭
+R4	relevant Arg1:T5 Arg2:T6	
+R5	relevant Arg1:T5 Arg2:T7	
+R6	relevant Arg1:T5 Arg2:T8	
+R7	relevant Arg1:T5 Arg2:T9	
+R8	relevant Arg1:T5 Arg2:T10	
+T11	disease 97 102	急性胆管炎
+T12	disease 130 135	有胆道梗阻
+R9	relevant Arg1:T11 Arg2:T12	
+T13	disease 181 186	急性胆管炎
+T14	disease 186 191	中毒性休克
+T15	disease 192 195	肝脓肿
+T16	disease 196 200	胆道出血
+T17	disease 201 208	多器官功能衰竭
+R10	relevant Arg1:T13 Arg2:T14	
+R11	relevant Arg1:T13 Arg2:T15	
+R12	relevant Arg1:T13 Arg2:T16	
+R13	relevant Arg1:T13 Arg2:T17	
+T18	disease 252 257	急性胆管炎
+T19	pathogenic_bacteria 262 270	胆管的感染和梗阻
+R14	cause Arg1:T19 Arg2:T18	
+T20	disease 322 327	急性胆管炎
+T21	disease 375 380	急性胆管炎
+T22	symptom 385 393	胆道的梗阻和感染
+R15	clinical_manifestation Arg1:T21 Arg2:T22	
+T23	disease 400 405	急性胆管炎
+T24	symptom 413 418	胆道内高压
+T25	disease 419 422	败血症
+T26	disease 423 426	毒血症
+T27	disease 427 432	内毒素血症
+T28	disease 433 439	高胆红素血症
+R16	clinical_manifestation Arg1:T23 Arg2:T24	
+R17	relevant Arg1:T23 Arg2:T25	
+R18	relevant Arg1:T23 Arg2:T26	
+R19	relevant Arg1:T23 Arg2:T27	
+R20	relevant Arg1:T23 Arg2:T28	
+T29	disease 458 463	急性胆管炎
+T30	disease 519 524	急性胆管炎
+T31	disease 550 552	休克
+R21	relevant Arg1:T30 Arg2:T31	

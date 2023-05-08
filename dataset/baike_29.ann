@@ -1,0 +1,24 @@
+T1	disease 0 5	急性肾损伤
+T2	symptom 11 13	嗜睡
+T3	symptom 14 21	进行性反应迟钝
+T4	symptom 24 28	癫痫发作
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+T5	disease 38 43	急性肾损伤
+T6	symptom 45 50	电解质紊乱
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+T7	disease 86 91	急性肾损伤
+T8	disease 93 97	高钾血症
+R5	relevant Arg1:T7 Arg2:T8	
+T9	disease 207 212	急性肾损伤
+T10	disease 215 219	低钠血症
+R6	relevant Arg1:T9 Arg2:T10	
+T11	disease 240 245	急性肾损伤
+T12	disease 294 299	急性肾损伤
+T13	disease 302 306	高磷血症
+R7	relevant Arg1:T12 Arg2:T13	
+T14	disease 321 326	急性肾损伤
+T15	disease 403 408	急性肾损伤
+T16	disease 434 439	急性肾损伤
+T17	disease 488 493	急性肾损伤

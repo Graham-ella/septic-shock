@@ -1,0 +1,68 @@
+T1	disease 0 5	急性胰腺炎
+T2	medical_treatment 75 80	乳酸林格液
+R1	medical Arg1:T1 Arg2:T2	
+T3	disease 134 143	慢性淋巴细胞白血病
+T4	disease 156 164	低丙种球蛋白血症
+R2	relevant Arg1:T3 Arg2:T4	
+T5	disease 201 209	儿童原发性糖尿病
+T6	disease 218 223	1型糖尿病
+T7	medical_treatment 250 253	胰岛素
+T8	disease 259 268	胰岛素依赖型糖尿病
+R3	same Arg1:T6 Arg2:T8	
+T9	disease 269 273	IDDM
+R4	same Arg1:T8 Arg2:T9	
+R5	medical Arg1:T6 Arg2:T7	
+T10	pathogenic_bacteria 225 232	胰岛β细胞破坏
+T11	pathogenic_bacteria 233 242	胰岛素分泌绝对缺乏
+R6	cause Arg1:T10 Arg2:T6	
+R7	cause Arg1:T11 Arg2:T6	
+T12	disease 306 311	2型糖尿病
+T13	disease 421 423	NB
+T14	disease 513 515	肝癌
+T15	physical_therapy 521 525	超声检查
+R8	physical Arg1:T14 Arg2:T15	
+T16	disease 574 580	假丝酵母菌病
+T17	disease 634 642	假丝酵母菌菌血症
+T18	pathogenic_bacteria 582 588	假丝酵母菌属
+R9	cause Arg1:T18 Arg2:T16	
+T19	disease 617 620	脓毒症
+R10	relevant Arg1:T16 Arg2:T19	
+T20	symptom 648 652	长期发热
+T21	symptom 672 676	体温增高
+R11	clinical_manifestation Arg1:T17 Arg2:T20	
+R12	clinical_manifestation Arg1:T17 Arg2:T21	
+T22	symptom 682 688	全身状况恶化
+R13	clinical_manifestation Arg1:T17 Arg2:T22	
+T23	disease 723 732	骨髓增生异常综合征
+T24	disease 733 736	MDS
+R14	same Arg1:T23 Arg2:T24	
+T25	disease 690 697	急性髓性白血病
+T26	disease 738 748	慢性髓单核细胞白血病
+T27	disease 749 756	骨髓增殖性肿瘤
+R15	relevant Arg1:T25 Arg2:T23	
+R16	relevant Arg1:T25 Arg2:T26	
+R17	relevant Arg1:T25 Arg2:T27	
+T28	disease 758 765	B族链球菌感染
+T29	physical_therapy 797 807	脑脊液葡萄糖和蛋白质
+R18	physical Arg1:T28 Arg2:T29	
+T30	physical_therapy 847 850	脑脊液
+R19	physical Arg1:T28 Arg2:T30	
+T31	disease 854 859	急性胰腺炎
+T32	physical_therapy 863 868	镁替代疗法
+R20	physical Arg1:T31 Arg2:T32	
+T33	medical_treatment 894 897	硫酸镁
+R21	medical Arg1:T31 Arg2:T33	
+T34	disease 1054 1057	高腹水
+T35	disease 1058 1061	肝硬化
+R22	relevant Arg1:T34 Arg2:T35	
+T36	physical_therapy 1073 1077	限钠饮食
+T37	physical_therapy 1078 1080	利尿
+R23	physical Arg1:T34 Arg2:T36	
+R24	physical Arg1:T34 Arg2:T37	
+T38	physical_therapy 1136 1141	大量放腹水
+T39	physical_therapy 1142 1147	补充白蛋白
+T40	physical_therapy 1148 1155	TIPSS治疗
+T41	disease 1085 1090	难治性腹水
+R25	physical Arg1:T41 Arg2:T38	
+R26	physical Arg1:T41 Arg2:T39	
+R27	physical Arg1:T41 Arg2:T40	

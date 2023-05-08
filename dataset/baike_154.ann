@@ -1,0 +1,28 @@
+T1	disease 0 2	癌症
+T2	disease 3 13	家族性结肠腺瘤性息肉
+T3	pathogenic_bacteria 18 29	胚系细胞APC基因突变
+R1	cause Arg1:T3 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T2	
+T4	disease 31 33	癌症
+T5	disease 55 59	恶性肿瘤
+T6	pathogenic_bacteria 61 67	丙种蛋白缺乏
+T7	disease 72 75	白血病
+T8	disease 76 84	淋巴造血系统肿瘤
+T9	pathogenic_bacteria 85 89	AIDS
+T10	disease 96 100	恶性肿瘤
+R3	relevant Arg1:T4 Arg2:T5	
+R4	cause Arg1:T6 Arg2:T7	
+R5	cause Arg1:T6 Arg2:T8	
+R6	cause Arg1:T9 Arg2:T10	
+R7	relevant Arg1:T4 Arg2:T7	
+R8	relevant Arg1:T4 Arg2:T8	
+R9	relevant Arg1:T4 Arg2:T10	
+T11	disease 109 111	癌症
+T12	pathogenic_bacteria 139 142	雌激素
+T13	pathogenic_bacteria 143 146	催乳素
+T14	disease 147 150	乳腺癌
+R10	cause Arg1:T13 Arg2:T14	
+R11	cause Arg1:T12 Arg2:T14	
+R12	relevant Arg1:T11 Arg2:T14	
+T15	disease 129 131	肿瘤
+R13	relevant Arg1:T11 Arg2:T15	

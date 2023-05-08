@@ -1,0 +1,70 @@
+T1	disease 6 9	AOM
+T2	pathogenic_bacteria 17 22	肺炎链球菌
+T3	pathogenic_bacteria 36 42	流感嗜血杆菌
+T4	pathogenic_bacteria 55 60	卡他莫拉菌
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+T5	disease 114 120	新生儿硬肿症
+T6	symptom 91 93	硬肿
+T7	disease 340 342	肺炎
+T8	disease 343 346	败血症
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+R5	relevant Arg1:T5 Arg2:T7	
+R6	relevant Arg1:T5 Arg2:T8	
+T9	disease 359 367	腺泡型软组织肉瘤
+T10	symptom 402 411	切面呈黄白或灰红色
+T11	symptom 412 417	中央含坏死
+T12	symptom 418 421	出血区
+T13	symptom 427 432	较粗的血管
+R7	clinical_manifestation Arg1:T9 Arg2:T10	
+R8	clinical_manifestation Arg1:T9 Arg2:T11	
+R9	clinical_manifestation Arg1:T9 Arg2:T12	
+R10	clinical_manifestation Arg1:T9 Arg2:T13	
+T14	disease 443 445	感染
+T15	disease 446 448	炎症
+T16	disease 449 451	癌症
+R11	relevant Arg1:T14 Arg2:T16	
+R12	relevant Arg1:T15 Arg2:T16	
+T17	disease 461 467	转移性乳腺癌
+T18	physical_therapy 519 525	全血细胞计数
+T19	physical_therapy 471 476	肝功能检查
+R13	physical Arg1:T17 Arg2:T19	
+R14	physical Arg1:T17 Arg2:T18	
+T20	disease 550 557	急性细菌性痢疾
+T21	physical_therapy 590 594	粪便培养
+R15	physical Arg1:T20 Arg2:T21	
+T22	disease 618 621	RDS
+T23	pathogenic_bacteria 599 601	早产
+R16	cause Arg1:T23 Arg2:T22	
+T24	disease 659 667	HELLP综合征
+T25	pathogenic_bacteria 691 695	多胎妊娠
+T26	pathogenic_bacteria 696 698	肥胖
+R17	cause Arg1:T25 Arg2:T24	
+R18	cause Arg1:T26 Arg2:T24	
+T27	disease 699 704	慢性高血压
+T28	disease 705 708	糖尿病
+T29	disease 709 716	自身免疫性疾病
+T30	disease 717 723	胎盘形成异常
+R19	relevant Arg1:T24 Arg2:T27	
+R20	relevant Arg1:T24 Arg2:T28	
+R21	relevant Arg1:T24 Arg2:T29	
+R22	relevant Arg1:T24 Arg2:T30	
+T31	disease 760 765	军团菌肺炎
+T32	medical_treatment 797 800	利福平
+T33	symptom 785 787	发热
+T34	symptom 788 793	呼吸道症状
+R23	clinical_manifestation Arg1:T31 Arg2:T33	
+R24	clinical_manifestation Arg1:T31 Arg2:T34	
+R25	medical Arg1:T31 Arg2:T32	
+T35	disease 816 823	急性肝功能衰竭
+T36	symptom 841 848	肝细胞大量坏死
+T37	symptom 880 886	凝血机制障碍
+T38	symptom 887 889	黄疸
+T39	symptom 895 897	腹水
+T40	disease 890 894	肝性脑病
+R26	clinical_manifestation Arg1:T35 Arg2:T36	
+R27	clinical_manifestation Arg1:T35 Arg2:T37	
+R28	clinical_manifestation Arg1:T35 Arg2:T38	
+R29	clinical_manifestation Arg1:T35 Arg2:T39	
+R30	relevant Arg1:T35 Arg2:T40	

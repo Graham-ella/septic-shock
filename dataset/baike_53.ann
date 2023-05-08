@@ -1,0 +1,24 @@
+T1	disease 0 4	急性肺炎
+T2	physical_therapy 6 10	细菌培养
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 71 75	急性肺炎
+T4	physical_therapy 76 81	.病毒检测
+R2	physical Arg1:T3 Arg2:T4	
+T5	disease 174 178	急性肺炎
+T6	physical_therapy 179 205	.肺炎支原体（MP）、肺炎衣原体（CP）—DNA检测
+R3	physical Arg1:T5 Arg2:T6	
+T7	disease 273 277	急性肺炎
+T8	physical_therapy 277 285	血和胸腔积液培养
+T9	disease 286 288	肺炎
+R5	relevant Arg1:T7 Arg2:T9	
+R4	physical Arg1:T9 Arg2:T8	
+T10	disease 298 302	急性肺炎
+T11	physical_therapy 302 307	血和痰培养
+T12	disease 319 321	肺炎
+R6	physical Arg1:T12 Arg2:T11	
+R7	relevant Arg1:T10 Arg2:T12	
+T13	disease 327 331	急性肺炎
+T14	physical_therapy 331 339	CT、MRI检查
+R8	physical Arg1:T13 Arg2:T14	
+T15	physical_therapy 359 367	CT、MRI检查
+R9	physical Arg1:T13 Arg2:T15	

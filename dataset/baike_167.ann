@@ -1,0 +1,11 @@
+T1	disease 0 2	癌症
+T2	disease 4 7	食管癌
+T3	disease 8 11	大肠癌
+T4	disease 12 15	乳腺癌
+T5	disease 16 18	胃癌
+T6	disease 19 24	子宫内膜癌
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+R5	relevant Arg1:T1 Arg2:T6	

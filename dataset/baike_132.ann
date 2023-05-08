@@ -1,0 +1,17 @@
+T1	disease 0 5	细菌性痢疾
+T2	symptom 12 14	发热
+T3	symptom 15 17	腹痛
+T4	symptom 18 20	腹泻
+T5	symptom 21 25	里急后重
+T6	symptom 26 31	黏液脓血便
+T7	disease 36 41	全身毒血症
+T8	disease 50 55	感染性休克
+T9	disease 59 64	中毒性脑病
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	relevant Arg1:T1 Arg2:T7	
+R7	relevant Arg1:T1 Arg2:T8	
+R8	relevant Arg1:T1 Arg2:T9	

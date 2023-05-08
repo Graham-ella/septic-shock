@@ -1,0 +1,66 @@
+T1	disease 0 3	败血症
+T2	pathogenic_bacteria 4 13	耐甲氧西林的金葡菌
+R1	cause Arg1:T2 Arg2:T1	
+T3	medical_treatment 17 21	万古霉素
+T4	medical_treatment 32 36	利奈唑胺
+T5	medical_treatment 37 41	达托霉素
+T6	medical_treatment 42 46	替加环素
+R2	medical Arg1:T1 Arg2:T3	
+R3	medical Arg1:T1 Arg2:T4	
+R4	medical Arg1:T1 Arg2:T5	
+R5	medical Arg1:T1 Arg2:T6	
+T7	disease 48 51	败血症
+T8	disease 52 61	革兰阴性杆菌败血症
+R6	relevant Arg1:T7 Arg2:T8	
+T9	medical_treatment 62 69	第三代头孢菌素
+R7	medical Arg1:T8 Arg2:T9	
+T10	disease 116 119	败血症
+T11	medical_treatment 128 137	第二、三代头孢菌素
+R8	medical Arg1:T10 Arg2:T11	
+T12	medical_treatment 145 149	庆大霉素
+T13	medical_treatment 150 156	阿米卡星联合
+R9	medical Arg1:T10 Arg2:T12	
+R10	medical Arg1:T10 Arg2:T13	
+T14	disease 158 161	败血症
+T15	disease 209 212	败血症
+T16	disease 161 168	绿脓杆菌败血症
+R11	relevant Arg1:T14 Arg2:T16	
+T17	medical_treatment 171 180	哌拉西林/他唑巴坦
+T18	medical_treatment 181 189	头孢哌酮/舒巴坦
+T19	medical_treatment 190 194	头孢他啶
+T20	medical_treatment 195 199	头孢吡肟
+T21	medical_treatment 200 205	碳青霉烯类
+R12	medical Arg1:T16 Arg2:T17	
+R13	medical Arg1:T16 Arg2:T18	
+R14	medical Arg1:T16 Arg2:T19	
+R15	medical Arg1:T16 Arg2:T20	
+R16	medical Arg1:T16 Arg2:T21	
+T22	disease 234 237	败血症
+T23	pathogenic_bacteria 257 261	绿脓杆菌
+T24	pathogenic_bacteria 264 268	G-杆菌
+R17	cause Arg1:T23 Arg2:T22	
+R18	cause Arg1:T24 Arg2:T22	
+T25	disease 317 320	败血症
+T26	disease 321 327	厌氧菌败血症
+R19	relevant Arg1:T25 Arg2:T26	
+T27	disease 355 358	败血症
+T28	disease 393 396	败血症
+T29	disease 397 402	真菌败血症
+R20	relevant Arg1:T28 Arg2:T29	
+T30	medical_treatment 425 428	氟康唑
+T31	medical_treatment 429 440	两性霉素B及其脂质制剂
+T32	medical_treatment 441 448	伊曲康唑注射液
+T33	medical_treatment 449 453	伏立康唑
+T34	medical_treatment 454 458	氟胞嘧啶
+T35	disease 403 408	念珠菌血症
+T36	medical_treatment 410 414	卡泊芬净
+T37	medical_treatment 415 419	米卡芬净
+R26	medical Arg1:T35 Arg2:T36	
+R27	medical Arg1:T35 Arg2:T37	
+R21	relevant Arg1:T29 Arg2:T35	
+R22	medical Arg1:T35 Arg2:T30	
+R23	medical Arg1:T35 Arg2:T31	
+R24	medical Arg1:T35 Arg2:T32	
+R25	medical Arg1:T35 Arg2:T33	
+R28	medical Arg1:T35 Arg2:T34	
+T38	disease 485 488	败血症

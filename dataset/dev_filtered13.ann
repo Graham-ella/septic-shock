@@ -1,0 +1,72 @@
+T1	disease 0 2	肝癌
+T2	pathogenic_bacteria 113 117	慢性炎症
+R1	cause Arg1:T2 Arg2:T1	
+T3	disease 7 10	肝硬化
+R2	relevant Arg1:T1 Arg2:T3	
+T4	pathogenic_bacteria 22 27	黄曲霉毒素
+R3	cause Arg1:T4 Arg2:T3	
+T5	disease 28 34	遗传性血色病
+T6	disease 45 54	原发性胆汁性肝硬化
+T7	disease 55 64	原发性硬化性胆管炎
+T8	disease 65 73	迟发性皮肤卟啉病
+R4	relevant Arg1:T3 Arg2:T5	
+R5	relevant Arg1:T3 Arg2:T6	
+R6	relevant Arg1:T3 Arg2:T7	
+R7	relevant Arg1:T3 Arg2:T8	
+T9	pathogenic_bacteria 74 78	钍造影剂
+T10	pathogenic_bacteria 79 81	吸烟
+T11	pathogenic_bacteria 82 87	口服避孕药
+T12	pathogenic_bacteria 88 94	雄激素类固醇
+R8	cause Arg1:T9 Arg2:T3	
+R9	cause Arg1:T10 Arg2:T3	
+R10	cause Arg1:T11 Arg2:T3	
+R11	cause Arg1:T12 Arg2:T3	
+T13	disease 136 139	睾丸癌
+T14	disease 205 212	鳞状基底细胞癌
+T15	disease 297 301	幕上肿瘤
+T16	symptom 303 305	癫痫
+T17	disease 277 281	颅内肿瘤
+R12	clinical_manifestation Arg1:T15 Arg2:T16	
+R13	clinical_manifestation Arg1:T17 Arg2:T16	
+T18	symptom 318 320	头痛
+R14	clinical_manifestation Arg1:T15 Arg2:T18	
+T19	disease 404 409	生理性黄疸
+T20	disease 459 462	胰腺癌
+T21	symptom 483 486	上腹痛
+T22	symptom 487 495	无痛性梗阻性黄疸
+T23	symptom 496 500	体重下降
+T24	symptom 503 506	后背痛
+R15	clinical_manifestation Arg1:T20 Arg2:T21	
+R16	clinical_manifestation Arg1:T20 Arg2:T22	
+R17	clinical_manifestation Arg1:T20 Arg2:T23	
+R18	clinical_manifestation Arg1:T20 Arg2:T24	
+T25	disease 525 527	化脑
+T26	disease 538 546	肺炎链球菌脑膜炎
+T27	disease 547 556	流感嗜血杆菌脑膜炎
+T28	disease 580 583	恶性疟
+T29	disease 599 602	脑型疟
+T30	symptom 603 605	高热
+T31	symptom 606 608	谵语
+T32	symptom 609 611	抽搐
+T33	symptom 612 614	昏迷
+T34	symptom 615 622	脑膜刺激征阳性
+R19	clinical_manifestation Arg1:T29 Arg2:T30	
+R20	clinical_manifestation Arg1:T29 Arg2:T31	
+R21	clinical_manifestation Arg1:T29 Arg2:T32	
+R22	clinical_manifestation Arg1:T29 Arg2:T33	
+R23	clinical_manifestation Arg1:T29 Arg2:T34	
+T35	disease 625 628	胆汁型
+T36	symptom 628 630	高热
+T37	symptom 631 633	黄疸
+T38	symptom 634 638	肝脾肿大
+T39	symptom 639 641	昏迷
+R24	clinical_manifestation Arg1:T35 Arg2:T36	
+R25	clinical_manifestation Arg1:T35 Arg2:T37	
+R26	clinical_manifestation Arg1:T35 Arg2:T38	
+R27	clinical_manifestation Arg1:T35 Arg2:T39	
+T40	disease 643 652	慢性淋巴细胞白血病
+T41	physical_therapy 678 685	血常规分类计数
+R28	physical Arg1:T40 Arg2:T41	
+T42	disease 692 695	肝硬化
+T43	symptom 699 703	性欲减退
+R29	clinical_manifestation Arg1:T42 Arg2:T43	

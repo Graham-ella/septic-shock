@@ -1,0 +1,91 @@
+T1	disease 0 10	稳定型缺血性心脏疾病
+T2	disease 12 15	胆管炎
+T3	disease 19 25	消化性溃疡病
+T4	disease 37 43	消化性溃疡病
+T5	disease 62 72	稳定型缺血性心脏疾病
+T6	physical_therapy 73 75	进食
+R1	physical Arg1:T3 Arg2:T6	
+T7	symptom 45 55	反复发作的上腹部疼痛
+R2	clinical_manifestation Arg1:T4 Arg2:T7	
+T8	disease 83 85	胃炎
+T9	disease 98 105	自身免疫性胃炎
+T10	disease 111 116	甲状腺疾病
+T11	disease 117 129	特发性肾上腺皮质功能不全
+T12	disease 130 133	白癜风
+T13	disease 134 139	1型糖尿病
+T14	disease 140 148	甲状旁腺功能减退
+R3	relevant Arg1:T9 Arg2:T10	
+R4	relevant Arg1:T9 Arg2:T11	
+R5	relevant Arg1:T9 Arg2:T12	
+R6	relevant Arg1:T9 Arg2:T13	
+R7	relevant Arg1:T9 Arg2:T14	
+T15	disease 150 154	尤因肉瘤
+T16	disease 215 220	慢性骨髓炎
+T17	physical_therapy 234 238	细菌培养
+R8	physical Arg1:T15 Arg2:T17	
+R9	relevant Arg1:T15 Arg2:T16	
+T18	disease 240 246	转移性乳腺癌
+T19	physical_therapy 252 260	循环肿瘤细胞计数
+R10	physical Arg1:T18 Arg2:T19	
+T20	disease 279 284	新生儿黄疸
+T21	disease 297 302	病理性黄疸
+T22	disease 371 376	新生儿黄疸
+T23	pathogenic_bacteria 423 428	代谢性疾病
+T24	pathogenic_bacteria 466 470	母乳喂养
+T25	pathogenic_bacteria 313 318	溶血性贫血
+T26	pathogenic_bacteria 377 386	UDPGT酶的抑制
+T27	pathogenic_bacteria 389 393	药物作用
+T28	pathogenic_bacteria 396 400	新生霉素
+T29	pathogenic_bacteria 402 419	Lucey-Driscoll综合征
+T30	pathogenic_bacteria 429 434	半乳糖血症
+T31	pathogenic_bacteria 435 443	甲状腺功能减退症
+T32	pathogenic_bacteria 444 449	酪氨酸血症
+T33	pathogenic_bacteria 450 457	高甲硫氨酸血症
+T34	pathogenic_bacteria 458 464	妊娠期糖尿病
+R11	cause Arg1:T25 Arg2:T21	
+R12	cause Arg1:T26 Arg2:T21	
+R13	cause Arg1:T27 Arg2:T21	
+R14	cause Arg1:T28 Arg2:T21	
+R15	cause Arg1:T29 Arg2:T21	
+R16	cause Arg1:T23 Arg2:T21	
+R17	cause Arg1:T30 Arg2:T21	
+R18	cause Arg1:T31 Arg2:T21	
+R19	cause Arg1:T32 Arg2:T21	
+R20	cause Arg1:T33 Arg2:T21	
+R21	cause Arg1:T34 Arg2:T21	
+R22	cause Arg1:T24 Arg2:T21	
+T35	disease 518 523	口腔黏膜炎
+T36	disease 583 588	口腔黏膜炎
+T37	symptom 556 564	无症状或症状轻微
+T38	symptom 572 582	中度疼痛，不影响进食
+T39	symptom 591 600	剧烈疼痛，影响进食
+R23	clinical_manifestation Arg1:T35 Arg2:T37	
+R24	clinical_manifestation Arg1:T35 Arg2:T38	
+R25	clinical_manifestation Arg1:T36 Arg2:T39	
+T40	disease 602 608	非小细胞肺癌
+T41	disease 609 613	气管肿瘤
+T42	symptom 618 622	异常钙化
+T43	symptom 623 627	气道狭窄
+T44	symptom 628 633	阻塞性肺炎
+T45	symptom 635 638	肺不张
+T46	disease 639 645	非小细胞肺癌
+T47	physical_therapy 646 652	支气管镜检查
+T48	physical_therapy 665 669	激光治疗
+R26	clinical_manifestation Arg1:T41 Arg2:T42	
+R27	clinical_manifestation Arg1:T41 Arg2:T43	
+R28	clinical_manifestation Arg1:T41 Arg2:T44	
+R29	clinical_manifestation Arg1:T41 Arg2:T45	
+R30	physical Arg1:T41 Arg2:T47	
+R31	physical Arg1:T41 Arg2:T48	
+T49	disease 671 674	肝硬化
+T50	physical_therapy 678 682	血液检测
+R32	physical Arg1:T49 Arg2:T50	
+T51	disease 719 724	急性胰腺炎
+T52	disease 742 746	甲状腺癌
+T53	disease 747 752	滤泡性肿瘤
+T54	symptom 753 757	细胞增多
+T55	symptom 758 761	微滤泡
+T56	symptom 762 766	缺乏胶质
+R33	clinical_manifestation Arg1:T53 Arg2:T54	
+R34	clinical_manifestation Arg1:T53 Arg2:T55	
+R35	clinical_manifestation Arg1:T53 Arg2:T56	

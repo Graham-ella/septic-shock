@@ -1,0 +1,65 @@
+T1	disease 7 12	肝功能异常
+T2	disease 66 70	急性肝炎
+T3	disease 71 75	慢性肝炎
+T4	disease 77 80	肝硬化
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+T5	symptom 51 60	血清转氨酶轻度增高
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 157 160	糖尿病
+T7	pathogenic_bacteria 101 114	CoxsackieB组病毒
+T8	pathogenic_bacteria 115 119	EB病毒
+T9	pathogenic_bacteria 120 125	腮腺炎病毒
+R5	cause Arg1:T7 Arg2:T6	
+R6	cause Arg1:T8 Arg2:T6	
+R7	cause Arg1:T9 Arg2:T6	
+T10	disease 227 230	RSV
+T11	symptom 259 265	啰音出现较晚
+T12	symptom 240 244	起病急骤
+T13	symptom 245 252	高热持续时间长
+T14	symptom 253 258	中毒症状重
+R8	clinical_manifestation Arg1:T10 Arg2:T12	
+R9	clinical_manifestation Arg1:T10 Arg2:T13	
+R10	clinical_manifestation Arg1:T10 Arg2:T14	
+R11	clinical_manifestation Arg1:T10 Arg2:T11	
+T16	pathogenic_bacteria 302 306	重度烧伤
+T15	disease 321 328	非结石性胆囊炎
+T17	disease 295 298	胆囊炎
+R12	cause Arg1:T16 Arg2:T15	
+T18	pathogenic_bacteria 338 341	脓毒症
+T19	pathogenic_bacteria 342 344	脱水
+T20	pathogenic_bacteria 345 350	全肠外营养
+T21	pathogenic_bacteria 351 355	正压通气
+R13	cause Arg1:T18 Arg2:T15	
+R14	cause Arg1:T19 Arg2:T15	
+R15	cause Arg1:T20 Arg2:T15	
+R16	cause Arg1:T21 Arg2:T15	
+T22	disease 357 364	B族链球菌感染
+T23	disease 382 390	病灶不明的脓毒症
+T24	disease 391 394	脑膜炎
+T25	disease 395 397	肺炎
+T26	disease 398 404	化脓性关节炎
+T27	disease 405 408	腹膜炎
+R17	relevant Arg1:T22 Arg2:T23	
+R18	relevant Arg1:T22 Arg2:T24	
+R19	relevant Arg1:T22 Arg2:T25	
+R20	relevant Arg1:T22 Arg2:T26	
+R21	relevant Arg1:T22 Arg2:T27	
+T28	disease 410 414	原发肿瘤
+T29	disease 437 444	皮肤鳞状细胞癌
+T30	physical_therapy 445 454	Mohs显微描记术
+R22	physical Arg1:T29 Arg2:T30	
+T31	disease 560 563	糖尿病
+T32	physical_therapy 522 528	糖化血红蛋白
+T33	disease 546 556	稳定型缺血性心脏疾病
+R23	physical Arg1:T33 Arg2:T32	
+R24	physical Arg1:T31 Arg2:T32	
+T34	disease 574 578	慢性肾病
+T35	disease 648 654	缺血性肾脏病
+T36	disease 595 600	糖尿病肾病
+T37	disease 706 709	心包炎
+T38	physical_therapy 770 775	超声心动图
+R25	physical Arg1:T37 Arg2:T38	
+T39	symptom 733 735	胸痛
+R26	clinical_manifestation Arg1:T37 Arg2:T39	

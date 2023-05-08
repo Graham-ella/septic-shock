@@ -1,0 +1,17 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 34 37	金葡菌
+T3	disease 40 43	脓皮病
+T4	disease 44 46	疖病
+T5	disease 47 50	脓疱疮
+R1	relevant Arg1:T1 Arg2:T3	
+R2	relevant Arg1:T1 Arg2:T4	
+R3	relevant Arg1:T1 Arg2:T5	
+R4	cause Arg1:T2 Arg2:T3	
+R5	cause Arg1:T2 Arg2:T4	
+R6	cause Arg1:T2 Arg2:T5	
+T6	pathogenic_bacteria 52 58	溶血性链球菌
+T7	disease 58 61	脓皮病
+R7	cause Arg1:T6 Arg2:T7	
+T8	pathogenic_bacteria 69 72	金葡菌
+T9	disease 75 79	皮肤感染
+R8	cause Arg1:T8 Arg2:T9	

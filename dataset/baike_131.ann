@@ -1,0 +1,5 @@
+T1	disease 0 5	细菌性痢疾
+T2	pathogenic_bacteria 5 8	志贺菌
+T3	symptom 20 30	结肠黏膜的炎症和溃疡
+R1	cause Arg1:T2 Arg2:T1	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	

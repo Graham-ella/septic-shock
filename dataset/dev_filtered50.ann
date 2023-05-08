@@ -1,0 +1,67 @@
+T1	disease 5 8	胰腺癌
+T2	symptom 17 21	体重下降
+T3	symptom 22 24	厌食
+T4	symptom 25 28	易疲劳
+T5	symptom 29 34	上腹部包块
+T6	symptom 35 38	肝肿大
+T7	symptom 39 53	Courvoisier's征
+T8	symptom 68 76	弥散性血管内凝血
+T9	symptom 82 84	瘀斑
+T10	symptom 85 87	紫癜
+T11	symptom 88 90	青紫
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	clinical_manifestation Arg1:T1 Arg2:T7	
+R7	clinical_manifestation Arg1:T1 Arg2:T8	
+R8	clinical_manifestation Arg1:T1 Arg2:T9	
+R9	clinical_manifestation Arg1:T1 Arg2:T10	
+R10	clinical_manifestation Arg1:T1 Arg2:T11	
+T12	disease 92 93	痔
+T13	disease 102 106	肛门狭窄
+R11	relevant Arg1:T12 Arg2:T13	
+T14	disease 164 169	细菌性肺炎
+T15	physical_therapy 140 144	正压呼吸
+T16	physical_therapy 145 154	气管插管后机械通气
+T17	medical_treatment 176 179	抗生素
+T18	medical_treatment 206 211	耐酶青霉素
+T19	medical_treatment 212 219	第一代头孢菌素
+T20	medical_treatment 220 224	阿米卡星
+T21	medical_treatment 232 239	第三代头孢菌素
+R12	physical Arg1:T14 Arg2:T16	
+R13	physical Arg1:T14 Arg2:T15	
+R14	medical Arg1:T14 Arg2:T17	
+R15	medical Arg1:T14 Arg2:T18	
+R16	medical Arg1:T14 Arg2:T19	
+R17	medical Arg1:T14 Arg2:T20	
+R18	medical Arg1:T14 Arg2:T21	
+T22	disease 260 265	酮症酸中毒
+T23	medical_treatment 271 277	碳酸氢钠溶液
+R19	medical Arg1:T22 Arg2:T23	
+T24	medical_treatment 372 375	胰岛素
+T25	disease 376 379	糖尿病
+R20	medical Arg1:T25 Arg2:T24	
+T26	disease 443 446	肝硬化
+T27	physical_therapy 454 462	γ-谷氨酰转肽酶
+R21	physical Arg1:T26 Arg2:T27	
+T28	disease 522 529	沙眼衣原体肺炎
+T29	pathogenic_bacteria 530 535	沙眼衣原体
+R22	cause Arg1:T29 Arg2:T28	
+T30	physical_therapy 701 705	尿液培养
+T31	physical_therapy 762 769	粪便肠病毒培养
+T32	disease 724 726	脑炎
+R23	physical Arg1:T32 Arg2:T30	
+R24	physical Arg1:T32 Arg2:T31	
+T33	disease 804 807	肝硬化
+T34	disease 809 817	男性性腺机能减退
+R25	relevant Arg1:T33 Arg2:T34	
+T35	disease 821 828	肝性骨营养不良
+R26	relevant Arg1:T33 Arg2:T35	
+T36	disease 866 871	儿童糖尿病
+T37	physical_therapy 928 932	运动治疗
+T38	physical_therapy 873 877	综合治疗
+R27	physical Arg1:T36 Arg2:T38	
+R28	physical Arg1:T36 Arg2:T37	
+T39	disease 990 995	基底细胞癌

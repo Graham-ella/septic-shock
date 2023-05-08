@@ -1,0 +1,64 @@
+T1	disease 0 5	细菌性痢疾
+T2	symptom 7 9	高热
+T3	symptom 10 12	惊厥
+T4	physical_therapy 18 22	物理降温
+T5	medical_treatment 23 26	退热药
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	treatment Arg1:T2 Arg2:T4	
+R4	treatment Arg1:T2 Arg2:T5	
+T6	disease 28 33	细菌性痢疾
+T7	symptom 34 36	惊厥
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+T8	physical_therapy 40 45	亚冬眠疗法
+R6	treatment Arg1:T7 Arg2:T8	
+T9	disease 47 52	细菌性痢疾
+T10	disease 52 56	循环衰竭
+T11	disease 63 68	感染性休克
+R7	relevant Arg1:T9 Arg2:T10	
+R8	relevant Arg1:T10 Arg2:T11	
+R9	relevant Arg1:T9 Arg2:T11	
+T12	physical_therapy 76 83	扩充有效血容量
+T13	physical_therapy 85 90	纠正酸中毒
+T14	physical_therapy 92 96	强心治疗
+T15	physical_therapy 98 104	解除血管痉挛
+T16	physical_therapy 106 112	维持酸碱平衡
+T17	medical_treatment 114 121	应用糖皮质激素
+R10	physical Arg1:T11 Arg2:T12	
+R11	physical Arg1:T11 Arg2:T13	
+R12	physical Arg1:T11 Arg2:T14	
+R13	physical Arg1:T11 Arg2:T15	
+R14	physical Arg1:T11 Arg2:T16	
+R15	medical Arg1:T11 Arg2:T17	
+T18	disease 123 128	细菌性痢疾
+T19	disease 130 133	脑水肿
+T20	disease 134 138	呼吸衰竭
+R16	relevant Arg1:T18 Arg2:T19	
+R17	relevant Arg1:T18 Arg2:T20	
+T21	physical_therapy 139 146	保持呼吸道通畅
+T22	physical_therapy 147 149	吸氧
+R18	physical Arg1:T20 Arg2:T21	
+R19	physical Arg1:T20 Arg2:T22	
+T23	disease 174 177	脑水肿
+T24	medical_treatment 160 171	甘露醇或山梨醇进行脱水
+R20	medical Arg1:T23 Arg2:T24	
+R21	medical Arg1:T19 Arg2:T24	
+T25	disease 179 184	细菌性痢疾
+T26	disease 184 188	慢性菌痢
+R22	relevant Arg1:T25 Arg2:T26	
+T27	physical_therapy 202 208	避免过度劳累
+T28	physical_therapy 209 215	勿使腹部受凉
+T29	physical_therapy 216 222	勿食生冷饮食
+R23	physical Arg1:T26 Arg2:T27	
+R24	physical Arg1:T26 Arg2:T28	
+R25	physical Arg1:T26 Arg2:T29	
+T30	disease 224 229	细菌性痢疾
+T31	symptom 230 236	肠道功能紊乱
+R26	clinical_manifestation Arg1:T30 Arg2:T31	
+T32	medical_treatment 240 249	给予镇静、解痉药物
+R27	treatment Arg1:T31 Arg2:T32	
+T33	disease 251 256	细菌性痢疾
+T34	symptom 259 265	肠道菌群失衡
+R28	clinical_manifestation Arg1:T33 Arg2:T34	
+T35	medical_treatment 289 299	改用乳酸杆菌等益生菌
+R29	treatment Arg1:T34 Arg2:T35	

@@ -1,0 +1,89 @@
+T1	disease 0 3	肝硬化
+T2	physical_therapy 15 18	肝移植
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 28 33	新生儿黄疸
+T4	symptom 42 44	嗜睡
+T5	symptom 45 50	肌张力低下
+T6	symptom 51 54	吸吮差
+T7	symptom 55 60	哭泣声调高
+T8	disease 61 66	新生儿黄疸
+T9	symptom 75 78	易激惹
+T10	symptom 81 83	变音
+T11	symptom 84 89	哭泣声调高
+R2	clinical_manifestation Arg1:T3 Arg2:T4	
+R3	clinical_manifestation Arg1:T3 Arg2:T5	
+R4	clinical_manifestation Arg1:T3 Arg2:T6	
+R5	clinical_manifestation Arg1:T3 Arg2:T7	
+R6	clinical_manifestation Arg1:T8 Arg2:T9	
+R7	clinical_manifestation Arg1:T8 Arg2:T10	
+R8	clinical_manifestation Arg1:T8 Arg2:T11	
+T12	disease 91 99	HELLP综合征
+T13	disease 101 109	非糖尿病性低血糖
+T14	disease 113 115	腹水
+T15	disease 127 135	HELLP综合征
+T16	disease 145 153	HELLP综合征
+T17	disease 157 161	腹内出血
+R9	relevant Arg1:T12 Arg2:T14	
+T18	disease 165 171	新生儿败血症
+T19	disease 195 201	新生儿败血症
+T20	physical_therapy 271 274	血培养
+T21	physical_therapy 282 285	血培养
+T22	physical_therapy 309 312	血培养
+R10	physical Arg1:T19 Arg2:T20	
+T23	disease 349 352	破伤风
+T24	disease 383 389	新生儿破伤风
+T25	physical_therapy 403 405	给氧
+T26	physical_therapy 417 424	呼吸机辅助通气
+R11	physical Arg1:T24 Arg2:T25	
+R12	physical Arg1:T24 Arg2:T26	
+T27	symptom 397 399	缺氧
+T28	symptom 400 402	青紫
+T29	symptom 407 409	窒息
+T30	symptom 410 414	呼吸衰竭
+R13	clinical_manifestation Arg1:T24 Arg2:T27	
+R14	clinical_manifestation Arg1:T24 Arg2:T28	
+R15	clinical_manifestation Arg1:T24 Arg2:T29	
+R16	clinical_manifestation Arg1:T24 Arg2:T30	
+T31	disease 485 489	NTDs
+T32	pathogenic_bacteria 426 434	孕早期口服避孕药
+T33	pathogenic_bacteria 439 444	抗肿瘤药物
+T34	medical_treatment 445 449	氨甲蝶呤
+T35	medical_treatment 450 455	维生素B4
+T36	medical_treatment 456 460	巯基嘌呤
+T37	pathogenic_bacteria 464 479	大量或持续应用可的松或泼尼松龙
+R17	cause Arg1:T32 Arg2:T31	
+R18	cause Arg1:T33 Arg2:T31	
+R19	cause Arg1:T37 Arg2:T31	
+T38	disease 491 499	草莓状毛细血管瘤
+T39	symptom 530 537	肿瘤常高于皮肤
+T40	symptom 538 541	鲜红色
+T41	symptom 542 544	分叶
+T42	symptom 545 549	形如草莓
+T43	disease 501 509	幼年性毛细血管瘤
+R20	same Arg1:T38 Arg2:T43	
+R21	clinical_manifestation Arg1:T38 Arg2:T39	
+R22	clinical_manifestation Arg1:T38 Arg2:T40	
+R23	clinical_manifestation Arg1:T38 Arg2:T41	
+R24	clinical_manifestation Arg1:T38 Arg2:T42	
+T44	disease 657 661	低钙血症
+T45	medical_treatment 664 668	补充镁剂
+T46	disease 563 568	严重RDS
+T47	disease 569 571	窒息
+T48	disease 572 577	感染性休克
+T49	disease 580 584	PPHN
+T50	medical_treatment 590 594	静脉补钙
+R25	medical Arg1:T46 Arg2:T50	
+R26	medical Arg1:T47 Arg2:T50	
+R27	medical Arg1:T48 Arg2:T50	
+R28	medical Arg1:T49 Arg2:T50	
+R29	medical Arg1:T44 Arg2:T45	
+R30	medical Arg1:T44 Arg2:T50	
+T51	disease 689 691	喉癌
+T52	disease 692 696	免疫抑制
+T53	disease 711 713	肿瘤
+T54	disease 715 719	疟疾感染
+T55	disease 721 723	肺炎
+T56	disease 727 729	流感
+T57	disease 768 772	疟疾感染
+T58	physical_therapy 774 777	PCR
+R31	physical Arg1:T56 Arg2:T58	

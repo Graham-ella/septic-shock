@@ -1,0 +1,32 @@
+T1	disease 0 5	多脏器衰竭
+T2	symptom 8 27	高分解代谢且外源性营养不能阻止自身消耗
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 29 34	多脏器衰竭
+T4	symptom 37 43	高动力型循环
+R2	clinical_manifestation Arg1:T3 Arg2:T4	
+T5	disease 53 58	多脏器衰竭
+T6	disease 58 61	MOF
+T7	disease 65 68	MOF
+T8	disease 100 104	严重创伤
+T9	disease 105 107	休克
+T10	disease 108 110	感染
+T11	pathogenic_bacteria 111 116	大面积烧伤
+T12	pathogenic_bacteria 117 122	急诊大手术
+R3	same Arg1:T5 Arg2:T6	
+R4	same Arg1:T5 Arg2:T7	
+R5	relevant Arg1:T5 Arg2:T8	
+R6	relevant Arg1:T5 Arg2:T9	
+R7	relevant Arg1:T5 Arg2:T10	
+R8	cause Arg1:T11 Arg2:T7	
+R9	cause Arg1:T12 Arg2:T7	
+T13	disease 146 151	多脏器衰竭
+T14	disease 154 157	MOF
+R10	same Arg1:T13 Arg2:T14	
+T15	disease 169 175	肝肾综合合征
+T16	disease 176 181	肺脑综合征
+T17	disease 182 189	心力衰竭合并肝
+T18	disease 190 195	肾功能衰竭
+R11	relevant Arg1:T13 Arg2:T15	
+R12	relevant Arg1:T13 Arg2:T16	
+R13	relevant Arg1:T13 Arg2:T17	
+R14	relevant Arg1:T13 Arg2:T18	

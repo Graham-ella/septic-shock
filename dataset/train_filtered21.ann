@@ -1,0 +1,105 @@
+T1	disease 0 5	急性胰腺炎
+T2	disease 27 33	创伤性胰腺炎
+T3	pathogenic_bacteria 20 24	外部创伤
+R1	cause Arg1:T3 Arg2:T2	
+T4	disease 35 40	溶血性贫血
+T5	disease 108 113	溶血性贫血
+T6	disease 117 126	淋巴组织增生性疾病
+T7	disease 56 63	自身免疫性疾病
+T8	disease 72 75	SLE
+T9	disease 76 82	类风湿关节炎
+T10	disease 83 86	硬皮病
+R2	relevant Arg1:T4 Arg2:T8	
+R3	relevant Arg1:T4 Arg2:T9	
+R4	relevant Arg1:T4 Arg2:T10	
+T11	disease 134 143	慢性淋巴细胞白血病
+T12	disease 149 157	非霍奇金氏淋巴瘤
+T13	disease 163 168	浆细胞异常
+R5	relevant Arg1:T5 Arg2:T11	
+R6	relevant Arg1:T5 Arg2:T12	
+R7	relevant Arg1:T5 Arg2:T13	
+R8	relevant Arg1:T5 Arg2:T6	
+T14	disease 189 191	喉癌
+T15	symptom 195 197	喘鸣
+T16	symptom 210 215	呼吸音减弱
+T17	disease 219 221	肺炎
+T18	disease 236 238	喉癌
+T19	symptom 258 262	呼吸困难
+R9	clinical_manifestation Arg1:T18 Arg2:T19	
+R10	clinical_manifestation Arg1:T14 Arg2:T15	
+R11	clinical_manifestation Arg1:T14 Arg2:T16	
+T20	disease 264 271	慢性泌尿道感染
+T21	symptom 285 287	贫血
+T22	symptom 288 290	消瘦
+T23	symptom 291 295	生长迟缓
+T24	symptom 296 299	高血压
+T25	symptom 300 305	肾功能不全
+T26	physical_therapy 314 319	尿常规检査
+T27	physical_therapy 320 325	尿细胞计数
+T28	physical_therapy 326 331	尿常规检查
+T29	disease 358 362	尿路感染
+R12	clinical_manifestation Arg1:T20 Arg2:T21	
+R13	clinical_manifestation Arg1:T20 Arg2:T22	
+R14	clinical_manifestation Arg1:T20 Arg2:T23	
+R15	clinical_manifestation Arg1:T20 Arg2:T24	
+R16	clinical_manifestation Arg1:T20 Arg2:T25	
+R17	physical Arg1:T20 Arg2:T26	
+R18	physical Arg1:T20 Arg2:T27	
+R19	physical Arg1:T20 Arg2:T28	
+T30	disease 364 370	垂体功能减退
+T31	disease 406 412	垂体功能减退
+T32	physical_therapy 415 419	生化检查
+R20	physical Arg1:T31 Arg2:T32	
+T33	disease 431 434	肝硬化
+T34	disease 452 455	肝硬化
+T35	physical_therapy 465 468	肝移植
+R21	physical Arg1:T34 Arg2:T35	
+R22	physical Arg1:T33 Arg2:T35	
+R23	physical Arg1:T30 Arg2:T32	
+T36	disease 472 477	慢性胰腺炎
+T37	disease 478 483	慢性胰腺炎
+T38	disease 486 489	肝硬化
+T39	disease 502 504	骨折
+R24	relevant Arg1:T36 Arg2:T39	
+R25	relevant Arg1:T37 Arg2:T39	
+R26	relevant Arg1:T38 Arg2:T39	
+T40	disease 514 521	恶性血管内皮瘤
+T41	disease 523 527	血管肉瘤
+R27	same Arg1:T40 Arg2:T41	
+T42	physical_therapy 533 541	免疫组织化学染色
+R28	physical Arg1:T40 Arg2:T42	
+T43	disease 580 583	脓毒症
+T44	physical_therapy 641 645	卧床休息
+T45	physical_therapy 646 650	加强护理
+T46	physical_therapy 651 665	供给营养丰富的食品及足够液体
+T47	physical_therapy 666 673	注意电解质平衡
+T48	physical_therapy 674 679	维生素补充
+T49	physical_therapy 680 684	防止压疮
+T50	disease 585 587	伤寒
+T51	disease 588 594	粟粒性肺结核
+T52	disease 595 602	恶性组织细胞病
+T53	disease 603 608	结缔组织病
+T54	disease 610 618	幼年特发性关节炎
+R29	relevant Arg1:T43 Arg2:T50	
+R30	relevant Arg1:T43 Arg2:T51	
+R31	relevant Arg1:T43 Arg2:T52	
+R32	relevant Arg1:T43 Arg2:T53	
+R33	relevant Arg1:T43 Arg2:T54	
+R34	physical Arg1:T43 Arg2:T44	
+R35	physical Arg1:T43 Arg2:T45	
+R36	physical Arg1:T43 Arg2:T46	
+R37	physical Arg1:T43 Arg2:T47	
+R38	physical Arg1:T43 Arg2:T48	
+R39	physical Arg1:T43 Arg2:T49	
+T55	disease 689 694	1型糖尿病
+T56	symptom 712 714	多饮
+T57	symptom 715 717	多尿
+T58	symptom 718 732	每天饮水量和尿量可达3～5L
+T59	symptom 733 737	易饿多食
+T60	symptom 739 743	体重下降
+R40	clinical_manifestation Arg1:T55 Arg2:T56	
+R41	clinical_manifestation Arg1:T55 Arg2:T57	
+R42	clinical_manifestation Arg1:T55 Arg2:T58	
+R43	clinical_manifestation Arg1:T55 Arg2:T59	
+R44	clinical_manifestation Arg1:T55 Arg2:T60	
+T61	disease 762 769	儿童2型糖尿病

@@ -1,0 +1,118 @@
+T1	disease 0 5	新生儿黄疸
+T2	disease 15 20	肝细胞疾病
+T3	symptom 9 13	肝脾肿大
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	disease 47 51	尿路感染
+T5	physical_therapy 67 72	细菌学检查
+R2	physical Arg1:T4 Arg2:T5	
+T6	physical_therapy 22 27	尿常规检查
+R3	physical Arg1:T4 Arg2:T6	
+T7	disease 62 66	肾盂肾炎
+T8	disease 145 150	新生儿窒息
+T9	pathogenic_bacteria 183 188	缺氧性疾病
+T10	pathogenic_bacteria 217 226	障碍胎盘循环的疾病
+T11	pathogenic_bacteria 190 194	呼吸衰竭
+T12	pathogenic_bacteria 195 204	青紫型先天性心脏病
+T13	pathogenic_bacteria 205 209	严重贫血
+T14	pathogenic_bacteria 210 214	CO中毒
+T15	pathogenic_bacteria 228 235	充血性心力衰竭
+T16	pathogenic_bacteria 236 244	妊娠高血压综合征
+T17	pathogenic_bacteria 245 249	慢性肾炎
+T18	pathogenic_bacteria 250 252	失血
+T19	pathogenic_bacteria 253 255	休克
+T20	pathogenic_bacteria 256 259	糖尿病
+T21	pathogenic_bacteria 260 265	感染性疾病
+T22	pathogenic_bacteria 271 283	孕母吸毒、吸烟或被动吸烟
+T23	pathogenic_bacteria 284 297	孕母年龄≥35岁或＜16岁
+T24	pathogenic_bacteria 298 302	多胎妊娠
+R4	cause Arg1:T9 Arg2:T8	
+R5	cause Arg1:T11 Arg2:T8	
+R6	cause Arg1:T12 Arg2:T8	
+R7	cause Arg1:T13 Arg2:T8	
+R8	cause Arg1:T14 Arg2:T8	
+R9	cause Arg1:T10 Arg2:T8	
+R10	cause Arg1:T15 Arg2:T8	
+R11	cause Arg1:T16 Arg2:T8	
+R12	cause Arg1:T17 Arg2:T8	
+R13	cause Arg1:T18 Arg2:T8	
+R14	cause Arg1:T19 Arg2:T8	
+R15	cause Arg1:T20 Arg2:T8	
+R16	cause Arg1:T21 Arg2:T8	
+R17	cause Arg1:T22 Arg2:T8	
+R18	cause Arg1:T23 Arg2:T8	
+R19	cause Arg1:T24 Arg2:T8	
+T25	disease 316 321	上皮样肉瘤
+T26	symptom 360 365	切面带黏性
+T27	symptom 366 378	灰白色间隔黄褐色的出血区
+R20	clinical_manifestation Arg1:T25 Arg2:T26	
+R21	clinical_manifestation Arg1:T25 Arg2:T27	
+T28	disease 380 384	食物中毒
+T29	physical_therapy 396 400	血液培养
+T30	symptom 414 416	发热
+T31	disease 439 442	脓毒症
+T32	symptom 445 449	心动过速
+T33	symptom 450 453	低血压
+T34	symptom 454 461	毛细血管充盈差
+T35	symptom 462 466	呼吸急促
+T36	symptom 467 473	急性意识障碍
+T37	symptom 474 478	尿量减少
+R22	clinical_manifestation Arg1:T31 Arg2:T32	
+R23	clinical_manifestation Arg1:T31 Arg2:T33	
+R24	clinical_manifestation Arg1:T31 Arg2:T34	
+R25	clinical_manifestation Arg1:T31 Arg2:T35	
+R26	clinical_manifestation Arg1:T31 Arg2:T36	
+R27	clinical_manifestation Arg1:T31 Arg2:T37	
+R28	physical Arg1:T28 Arg2:T29	
+R29	clinical_manifestation Arg1:T28 Arg2:T30	
+T38	physical_therapy 483 486	血培养
+R30	physical Arg1:T28 Arg2:T38	
+T39	pathogenic_bacteria 387 393	肉毒杆菌毒素
+T40	disease 495 505	稳定型缺血性心脏疾病
+T41	disease 518 521	食管炎
+T42	symptom 533 537	吞咽困难
+T43	symptom 538 542	吞咽疼痛
+R31	clinical_manifestation Arg1:T41 Arg2:T42	
+R32	clinical_manifestation Arg1:T41 Arg2:T43	
+T44	disease 507 514	肺炎合并胸膜炎
+T45	disease 557 562	支气管肺炎
+T46	medical_treatment 660 664	头孢他啶
+T47	medical_treatment 665 669	头孢哌酮
+T48	medical_treatment 685 689	美罗培南
+T49	medical_treatment 680 684	亚胺培南
+T50	symptom 573 575	发热
+T51	symptom 576 578	咳嗽
+T52	symptom 579 583	呼吸急促
+T53	physical_therapy 587 591	肺部听诊
+T54	symptom 591 599	闻及中、细湿啰音
+T55	physical_therapy 603 608	胸部影像学
+R33	clinical_manifestation Arg1:T45 Arg2:T50	
+R34	clinical_manifestation Arg1:T45 Arg2:T51	
+R35	clinical_manifestation Arg1:T45 Arg2:T52	
+R36	physical Arg1:T45 Arg2:T53	
+R37	clinical_manifestation Arg1:T45 Arg2:T54	
+R38	physical Arg1:T45 Arg2:T55	
+R39	medical Arg1:T45 Arg2:T46	
+R40	medical Arg1:T45 Arg2:T47	
+R41	medical Arg1:T45 Arg2:T49	
+R42	medical Arg1:T45 Arg2:T48	
+T56	disease 691 696	新生儿黄疸
+T57	symptom 733 745	血清总胆红素水平逐渐升高
+R43	clinical_manifestation Arg1:T56 Arg2:T57	
+T58	disease 747 753	非小细胞肺癌
+T59	disease 767 771	指杵状变
+T60	disease 772 779	肥大性骨关节病
+T61	disease 780 786	恶性高钙血症
+R44	relevant Arg1:T58 Arg2:T59	
+R45	relevant Arg1:T58 Arg2:T60	
+R46	relevant Arg1:T58 Arg2:T61	
+T62	disease 816 819	弓形虫
+T63	symptom 876 878	发热
+T64	symptom 879 882	肝脾大
+T65	symptom 883 888	淋巴结肿大
+T66	symptom 889 891	皮疹
+T67	symptom 892 894	黄疸
+R47	clinical_manifestation Arg1:T62 Arg2:T63	
+R48	clinical_manifestation Arg1:T62 Arg2:T64	
+R49	clinical_manifestation Arg1:T62 Arg2:T65	
+R50	clinical_manifestation Arg1:T62 Arg2:T66	
+R51	clinical_manifestation Arg1:T62 Arg2:T67	

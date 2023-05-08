@@ -1,0 +1,96 @@
+T1	disease 0 4	食物中毒
+T2	medical_treatment 67 70	抗毒素
+R1	medical Arg1:T1 Arg2:T2	
+T3	disease 46 50	呼吸衰竭
+T4	disease 53 55	麻痹
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+T5	disease 119 123	血吸虫病
+T6	disease 171 176	1型糖尿病
+T7	symptom 201 204	起病急
+T8	symptom 205 209	进食减少
+T9	symptom 210 212	恶心
+T10	symptom 213 215	呕吐
+T11	symptom 216 218	腹痛
+T12	symptom 227 233	皮肤黏膜干燥
+T13	symptom 234 238	呼吸深长
+T14	symptom 239 246	呼气中带有酮味
+T15	symptom 247 251	脉搏细速
+T16	symptom 252 256	血压下降
+T17	symptom 257 261	体温不升
+T18	symptom 264 266	嗜睡
+T19	symptom 267 269	淡漠
+T20	symptom 270 272	昏迷
+T21	pathogenic_bacteria 186 193	感染或饮食不当
+R4	cause Arg1:T21 Arg2:T6	
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+R6	clinical_manifestation Arg1:T6 Arg2:T8	
+R7	clinical_manifestation Arg1:T6 Arg2:T9	
+R8	clinical_manifestation Arg1:T6 Arg2:T10	
+R9	clinical_manifestation Arg1:T6 Arg2:T11	
+R10	clinical_manifestation Arg1:T6 Arg2:T12	
+R11	clinical_manifestation Arg1:T6 Arg2:T13	
+R12	clinical_manifestation Arg1:T6 Arg2:T14	
+R13	clinical_manifestation Arg1:T6 Arg2:T15	
+R14	clinical_manifestation Arg1:T6 Arg2:T16	
+R15	clinical_manifestation Arg1:T6 Arg2:T17	
+R16	clinical_manifestation Arg1:T6 Arg2:T18	
+R17	clinical_manifestation Arg1:T6 Arg2:T19	
+R18	clinical_manifestation Arg1:T6 Arg2:T20	
+T22	disease 326 331	支气管肺炎
+T23	physical_therapy 274 280	胸部X线检査
+R19	physical Arg1:T22 Arg2:T23	
+T24	disease 355 364	新生儿化脓性脑膜炎
+T25	symptom 428 432	神志改变
+T26	symptom 433 438	烦躁易激惹
+T27	symptom 439 441	惊跳
+T28	symptom 442 446	突然尖叫
+T29	symptom 447 449	嗜睡
+T30	symptom 450 452	神萎
+T31	symptom 455 460	颅内压增高
+T32	symptom 461 471	前囟紧张、饱满或隆起
+T33	symptom 472 476	骨缝分离
+R20	clinical_manifestation Arg1:T24 Arg2:T25	
+R21	clinical_manifestation Arg1:T24 Arg2:T26	
+R22	clinical_manifestation Arg1:T24 Arg2:T27	
+R23	clinical_manifestation Arg1:T24 Arg2:T28	
+R24	clinical_manifestation Arg1:T24 Arg2:T29	
+R25	clinical_manifestation Arg1:T24 Arg2:T30	
+R26	clinical_manifestation Arg1:T24 Arg2:T31	
+R27	clinical_manifestation Arg1:T24 Arg2:T32	
+R28	clinical_manifestation Arg1:T24 Arg2:T33	
+T34	disease 625 628	RDS
+T35	disease 585 592	B组链球菌肺炎
+T36	disease 605 612	宫内感染性肺炎
+R29	relevant Arg1:T35 Arg2:T36	
+T37	disease 643 649	急性支气管炎
+T38	disease 690 692	肺炎
+R30	relevant Arg1:T37 Arg2:T38	
+T39	disease 659 665	上呼吸道感染
+R31	relevant Arg1:T37 Arg2:T39	
+T40	disease 694 697	口咽癌
+T41	disease 807 812	支气管囊肿
+T42	symptom 865 869	肺部感染
+R32	clinical_manifestation Arg1:T41 Arg2:T42	
+T43	disease 870 872	肺炎
+R33	relevant Arg1:T41 Arg2:T43	
+T44	disease 873 880	上腔静脉综合征
+R34	relevant Arg1:T41 Arg2:T44	
+T45	disease 887 889	气胸
+R35	relevant Arg1:T41 Arg2:T45	
+T46	symptom 860 864	反复咳嗽
+R36	clinical_manifestation Arg1:T41 Arg2:T46	
+T47	symptom 881 885	气管压缩
+R37	clinical_manifestation Arg1:T41 Arg2:T47	
+T48	disease 849 855	非小细胞肺癌
+T49	disease 894 898	疟疾感染
+T50	physical_therapy 912 918	全血细胞计数
+R38	physical Arg1:T49 Arg2:T50	
+T51	physical_therapy 919 921	凝血
+T52	physical_therapy 922 926	肝肾功能
+T53	physical_therapy 927 929	血糖
+T54	physical_therapy 930 933	尿常规
+R39	physical Arg1:T49 Arg2:T51	
+R40	physical Arg1:T49 Arg2:T52	
+R41	physical Arg1:T49 Arg2:T53	
+R42	physical Arg1:T49 Arg2:T54	

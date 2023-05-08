@@ -1,0 +1,128 @@
+T1	disease 0 3	膀胱癌
+T2	physical_therapy 14 16	化疗
+T3	physical_therapy 17 21	放射治疗
+T4	physical_therapy 39 48	膀胱部分切除术治疗
+T5	physical_therapy 66 70	免疫疗法
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+R3	physical Arg1:T1 Arg2:T4	
+R4	physical Arg1:T1 Arg2:T5	
+T6	disease 134 139	泌尿道感染
+T7	disease 156 159	肾结核
+T8	pathogenic_bacteria 146 152	结核分枝杆菌
+R5	cause Arg1:T8 Arg2:T7	
+T9	physical_therapy 112 115	尿培养
+T10	physical_therapy 118 123	尿菌落计数
+R6	physical Arg1:T6 Arg2:T9	
+R7	physical Arg1:T6 Arg2:T10	
+T11	pathogenic_bacteria 178 182	抗酸杆菌
+R8	cause Arg1:T11 Arg2:T7	
+T12	disease 259 265	泌尿系统结石
+T13	disease 266 269	肾囊肿
+T14	disease 270 273	肾肿瘤
+T15	disease 274 283	左肾静脉受压综合征
+T16	disease 284 289	肾静脉血栓
+T17	physical_therapy 228 232	超声检查
+T18	physical_therapy 233 237	CT检查
+T19	physical_therapy 238 244	静脉肾盂造影
+T20	physical_therapy 250 254	DMSA
+R9	physical Arg1:T12 Arg2:T17	
+R10	physical Arg1:T12 Arg2:T18	
+R11	physical Arg1:T12 Arg2:T19	
+R12	physical Arg1:T12 Arg2:T20	
+R13	physical Arg1:T13 Arg2:T17	
+R14	physical Arg1:T13 Arg2:T18	
+R15	physical Arg1:T13 Arg2:T19	
+R16	physical Arg1:T13 Arg2:T20	
+R17	physical Arg1:T14 Arg2:T17	
+R18	physical Arg1:T14 Arg2:T18	
+R19	physical Arg1:T14 Arg2:T19	
+R20	physical Arg1:T14 Arg2:T20	
+R21	physical Arg1:T15 Arg2:T17	
+R22	physical Arg1:T15 Arg2:T18	
+R23	physical Arg1:T15 Arg2:T19	
+R24	physical Arg1:T15 Arg2:T20	
+R25	physical Arg1:T16 Arg2:T17	
+R26	physical Arg1:T16 Arg2:T18	
+R27	physical Arg1:T16 Arg2:T19	
+R28	physical Arg1:T16 Arg2:T20	
+T21	disease 305 312	非肾小球性血尿
+T22	pathogenic_bacteria 294 303	儿童特发性高钙尿症
+R29	cause Arg1:T22 Arg2:T21	
+T23	disease 385 401	不全性Kartagener综合征
+T24	symptom 402 406	易患感冒
+T25	symptom 407 409	肺炎
+T26	symptom 412 416	呼吸困难
+T27	symptom 417 419	发绀
+T28	symptom 420 425	说话带鼻音
+T29	symptom 433 437	杵状指趾
+T30	symptom 438 442	肺部啰音
+R30	clinical_manifestation Arg1:T23 Arg2:T24	
+R31	clinical_manifestation Arg1:T23 Arg2:T25	
+R32	clinical_manifestation Arg1:T23 Arg2:T26	
+R33	clinical_manifestation Arg1:T23 Arg2:T27	
+R34	clinical_manifestation Arg1:T23 Arg2:T28	
+R35	clinical_manifestation Arg1:T23 Arg2:T29	
+R36	clinical_manifestation Arg1:T23 Arg2:T30	
+T31	disease 477 479	脓肿
+T32	medical_treatment 466 469	抗生素
+R37	medical Arg1:T31 Arg2:T32	
+T33	disease 496 499	胰腺炎
+T34	symptom 515 517	发热
+T35	symptom 518 522	临床恶化
+R38	clinical_manifestation Arg1:T33 Arg2:T34	
+R39	clinical_manifestation Arg1:T33 Arg2:T35	
+T36	disease 531 537	流感病毒肺炎
+T37	symptom 556 563	呼吸道症状显著
+T38	symptom 564 568	喘息明显
+T39	symptom 576 580	呼吸衰竭
+T40	symptom 581 585	心力衰竭
+R40	clinical_manifestation Arg1:T36 Arg2:T37	
+R41	clinical_manifestation Arg1:T36 Arg2:T38	
+R42	clinical_manifestation Arg1:T36 Arg2:T39	
+R43	clinical_manifestation Arg1:T36 Arg2:T40	
+T41	disease 603 608	慢性胰腺炎
+T42	disease 664 668	胰腺钙化
+R44	relevant Arg1:T41 Arg2:T42	
+T43	symptom 699 726	脂肪泻或脂肪酶与实验室正常均值相比要低且少于2个标准差
+T44	physical_therapy 730 740	内镜下逆行胰胆管造影
+T45	physical_therapy 747 749	CT
+T46	physical_therapy 750 759	核磁共振胰胆管造影
+T47	symptom 806 809	上腹痛
+T48	symptom 810 825	12个月内体重下降超过10kg
+T49	symptom 833 846	空腹血糖＞140mg/dL
+T50	disease 829 832	糖尿病
+R45	clinical_manifestation Arg1:T41 Arg2:T43	
+R46	physical Arg1:T41 Arg2:T44	
+R47	physical Arg1:T41 Arg2:T45	
+R48	physical Arg1:T41 Arg2:T46	
+R49	clinical_manifestation Arg1:T41 Arg2:T47	
+R50	clinical_manifestation Arg1:T41 Arg2:T48	
+R51	relevant Arg1:T41 Arg2:T50	
+R52	clinical_manifestation Arg1:T41 Arg2:T49	
+T51	disease 852 857	急性胰腺炎
+T52	physical_therapy 890 892	CT
+R53	physical Arg1:T51 Arg2:T52	
+T53	symptom 860 867	全身性炎症反应
+T54	symptom 868 873	脓毒症体征
+R54	clinical_manifestation Arg1:T51 Arg2:T53	
+R55	clinical_manifestation Arg1:T51 Arg2:T54	
+T55	disease 914 917	肝硬化
+T56	physical_therapy 925 931	乙型肝炎抗原
+R56	physical Arg1:T55 Arg2:T56	
+T57	disease 960 967	慢性HBV感染
+T58	disease 969 974	新生儿黄疸
+T59	disease 987 992	溶血性贫血
+T60	disease 1003 1009	红细胞增多症
+T61	physical_therapy 1012 1018	全血细胞计数
+T62	disease 1036 1039	脓毒症
+R57	physical Arg1:T62 Arg2:T61	
+T63	disease 1070 1080	急性逆转录病毒综合征
+T64	disease 1108 1111	鹅口疮
+T65	disease 1119 1127	耶氏肺孢子菌肺炎
+T66	disease 1041 1046	HIV感染
+R58	relevant Arg1:T66 Arg2:T63	
+T67	symptom 1095 1105	严重的CD4细胞减少
+R59	clinical_manifestation Arg1:T66 Arg2:T67	
+R60	relevant Arg1:T66 Arg2:T64	
+R61	relevant Arg1:T66 Arg2:T65	

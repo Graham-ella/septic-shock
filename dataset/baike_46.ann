@@ -1,0 +1,46 @@
+T1	disease 0 2	肺炎
+T2	symptom 20 32	多种病原体所致的混合感染
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 34 36	肺炎
+T4	pathogenic_bacteria 80 86	革兰阴性杆菌
+R2	cause Arg1:T4 Arg2:T3	
+T5	disease 92 94	肺炎
+T6	symptom 101 103	发热
+T7	symptom 104 106	咳痰
+R3	clinical_manifestation Arg1:T5 Arg2:T6	
+R4	clinical_manifestation Arg1:T5 Arg2:T7	
+T8	disease 125 127	肺炎
+T9	symptom 132 136	呼吸急促
+T10	symptom 137 141	呼吸困难
+T11	symptom 144 148	意识障碍
+T12	symptom 149 151	嗜睡
+T13	symptom 152 154	脱水
+T14	symptom 155 159	食欲减退
+R5	clinical_manifestation Arg1:T8 Arg2:T9	
+R6	clinical_manifestation Arg1:T8 Arg2:T10	
+R7	clinical_manifestation Arg1:T8 Arg2:T11	
+R8	clinical_manifestation Arg1:T8 Arg2:T12	
+R9	clinical_manifestation Arg1:T8 Arg2:T13	
+R10	clinical_manifestation Arg1:T8 Arg2:T14	
+T15	disease 162 164	肺炎
+T16	symptom 171 173	脉速
+T17	symptom 174 178	呼吸急促
+T18	symptom 186 190	湿性啰音
+T19	symptom 192 199	伴有呼吸音减弱
+T20	symptom 200 208	支气管肺泡呼吸音
+R11	clinical_manifestation Arg1:T15 Arg2:T16	
+R12	clinical_manifestation Arg1:T15 Arg2:T17	
+R13	clinical_manifestation Arg1:T15 Arg2:T18	
+R14	clinical_manifestation Arg1:T15 Arg2:T19	
+R15	clinical_manifestation Arg1:T15 Arg2:T20	
+T21	disease 211 213	肺炎
+T22	physical_therapy 215 219	血液检查
+R16	physical Arg1:T21 Arg2:T22	
+T23	physical_therapy 219 224	血常规检查
+R17	physical Arg1:T21 Arg2:T23	
+T24	disease 262 264	肺炎
+T25	physical_therapy 266 272	动脉血气分析
+R18	physical Arg1:T24 Arg2:T25	
+T26	disease 314 316	肺炎
+T27	physical_therapy 317 323	.胸部X线片
+R19	physical Arg1:T26 Arg2:T27	

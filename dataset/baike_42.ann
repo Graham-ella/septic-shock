@@ -1,0 +1,38 @@
+T1	disease 0 6	凝血功能障碍
+T2	medical_treatment 21 31	抗利尿激素的同类物质
+T3	disease 54 60	轻症血友病甲
+R1	medical Arg1:T3 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 126 132	凝血功能障碍
+T5	medical_treatment 134 138	抗纤溶剂
+R3	medical Arg1:T4 Arg2:T5	
+T6	disease 221 227	凝血功能障碍
+T7	medical_treatment 231 235	氨甲苯酸
+R4	medical Arg1:T6 Arg2:T7	
+T8	disease 270 276	凝血功能障碍
+T9	symptom 281 283	血尿
+R5	clinical_manifestation Arg1:T8 Arg2:T9	
+T10	disease 296 300	尿路阻塞
+R6	relevant Arg1:T8 Arg2:T10	
+T11	disease 305 311	凝血功能障碍
+T12	symptom 317 323	深部组织血肿
+T13	symptom 324 328	关节出血
+R7	clinical_manifestation Arg1:T11 Arg2:T12	
+R8	clinical_manifestation Arg1:T11 Arg2:T13	
+T14	disease 349 355	凝血功能障碍
+T15	symptom 355 359	反复出血
+R9	clinical_manifestation Arg1:T14 Arg2:T15	
+T16	physical_therapy 372 385	局部用冰袋或绷带压迫、固定
+R10	treatment Arg1:T15 Arg2:T16	
+T17	disease 387 393	凝血功能障碍
+T18	disease 411 417	凝血功能障碍
+T19	disease 417 423	血管性血友病
+R11	relevant Arg1:T18 Arg2:T19	
+T20	symptom 469 477	自幼即有出血倾向
+T21	symptom 478 484	出血时间延长
+T22	symptom 485 493	血小板粘附性减低
+T23	symptom 494 516	对瑞斯托霉素诱导的血小板凝集功能减弱或不凝集
+R12	clinical_manifestation Arg1:T19 Arg2:T20	
+R13	clinical_manifestation Arg1:T19 Arg2:T21	
+R14	clinical_manifestation Arg1:T19 Arg2:T22	
+R15	clinical_manifestation Arg1:T19 Arg2:T23	

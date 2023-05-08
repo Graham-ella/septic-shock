@@ -1,0 +1,28 @@
+T1	disease 0 3	菌血症
+T2	disease 29 32	菌血症
+T3	medical_treatment 54 64	按经验给予抗生素治疗
+R1	medical Arg1:T2 Arg2:T3	
+T4	disease 66 69	菌血症
+T5	disease 81 84	菌血症
+T6	pathogenic_bacteria 70 79	肺，胆道或尿路感染
+R2	cause Arg1:T6 Arg2:T5	
+T7	medical_treatment 103 108	抗生素治疗
+R3	medical Arg1:T5 Arg2:T7	
+T8	disease 116 119	菌血症
+T9	disease 121 126	多器官衰竭
+R4	relevant Arg1:T8 Arg2:T9	
+T10	disease 136 143	多菌种性菌血症
+R5	relevant Arg1:T8 Arg2:T10	
+T11	disease 151 154	菌血症
+T12	pathogenic_bacteria 164 166	麻疹
+T13	pathogenic_bacteria 167 172	流行性感冒
+T14	pathogenic_bacteria 173 176	百日咳
+T15	disease 184 191	呼吸道细菌感染
+R6	cause Arg1:T12 Arg2:T15	
+R7	cause Arg1:T13 Arg2:T15	
+R8	cause Arg1:T14 Arg2:T15	
+T16	disease 196 199	菌血症
+R9	relevant Arg1:T15 Arg2:T16	
+R10	relevant Arg1:T11 Arg2:T15	
+T17	pathogenic_bacteria 13 22	静脉内和尿路内插管
+R11	cause Arg1:T17 Arg2:T1	

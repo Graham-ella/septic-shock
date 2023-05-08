@@ -1,0 +1,29 @@
+T1	disease 0 7	急性心功能不全
+T2	symptom 11 18	劳力性呼吸困难
+T3	symptom 19 28	夜间阵发性呼吸困难
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	symptom 39 44	左心室增大
+T5	symptom 57 72	肺底部有湿啰音、干啰音和哮鸣音
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 83 90	急性心功能不全
+T7	disease 92 97	急性肺水肿
+R5	relevant Arg1:T6 Arg2:T7	
+T8	symptom 97 100	发病急
+T9	symptom 104 110	严重呼吸困难
+T10	symptom 111 120	端坐呼吸、烦躁不安
+T11	symptom 141 145	咳嗽频繁
+R6	clinical_manifestation Arg1:T7 Arg2:T8	
+R7	clinical_manifestation Arg1:T7 Arg2:T9	
+R8	clinical_manifestation Arg1:T7 Arg2:T10	
+R9	clinical_manifestation Arg1:T7 Arg2:T11	
+T12	disease 182 189	急性心功能不全
+T13	physical_therapy 191 194	心电图
+R10	physical Arg1:T12 Arg2:T13	
+T14	disease 203 210	急性心功能不全
+T15	physical_therapy 212 216	X线检查
+R11	physical Arg1:T14 Arg2:T15	
+T16	disease 227 234	急性心功能不全
+T17	physical_therapy 235 241	.超声心动图
+R12	physical Arg1:T16 Arg2:T17	

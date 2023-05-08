@@ -1,0 +1,36 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 8 11	类杆菌
+T3	disease 38 45	腹腔和盆腔感染
+R1	cause Arg1:T2 Arg2:T3	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	pathogenic_bacteria 46 50	梭杆菌属
+T5	pathogenic_bacteria 51 55	消化球菌
+T6	pathogenic_bacteria 56 59	放线菌
+T7	disease 64 74	口腔及呼吸系统的感染
+R3	cause Arg1:T6 Arg2:T7	
+R4	cause Arg1:T5 Arg2:T7	
+R5	cause Arg1:T4 Arg2:T7	
+R6	relevant Arg1:T1 Arg2:T7	
+T8	disease 108 111	败血症
+T9	disease 112 116	心内膜炎
+T10	pathogenic_bacteria 97 100	类杆菌
+T11	pathogenic_bacteria 101 105	丙酸杆菌
+R7	cause Arg1:T11 Arg2:T8	
+R8	cause Arg1:T10 Arg2:T8	
+R9	cause Arg1:T11 Arg2:T9	
+R10	cause Arg1:T10 Arg2:T9	
+T12	disease 130 132	肠炎
+T13	pathogenic_bacteria 134 138	难辨梭菌
+R11	cause Arg1:T13 Arg2:T12	
+R12	relevant Arg1:T1 Arg2:T7	
+R13	relevant Arg1:T1 Arg2:T8	
+R14	relevant Arg1:T1 Arg2:T9	
+R15	relevant Arg1:T1 Arg2:T12	
+T14	disease 76 81	吸入性肺炎
+T15	disease 82 87	坏死性肺炎
+T16	disease 88 91	肺脓肿
+T17	disease 92 94	脓胸
+R16	relevant Arg1:T7 Arg2:T14	
+R17	relevant Arg1:T7 Arg2:T15	
+R18	relevant Arg1:T7 Arg2:T16	
+R19	relevant Arg1:T7 Arg2:T17	

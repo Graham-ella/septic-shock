@@ -1,0 +1,11 @@
+T1	disease 0 8	中毒性休克综合征
+T2	pathogenic_bacteria 38 41	金葡菌
+R1	cause Arg1:T2 Arg2:T1	
+T3	disease 50 58	中毒性休克综合征
+T4	physical_therapy 70 95	拟诊患者可行血白细胞计数、C反应蛋白和降钙素原测定
+R2	physical Arg1:T3 Arg2:T4	
+T5	disease 118 126	中毒性休克综合征
+T6	disease 126 138	肺、肾、肝等脏器功能衰竭
+T7	physical_therapy 140 149	测血气及肝、肾功能
+R3	relevant Arg1:T5 Arg2:T6	
+R4	physical Arg1:T6 Arg2:T7	

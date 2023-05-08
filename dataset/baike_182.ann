@@ -1,0 +1,12 @@
+T1	disease 0 5	医院内感染
+T2	disease 15 22	隐球菌性脑膜炎
+T3	pathogenic_bacteria 29 38	绷带和筒形石膏污染
+T4	disease 41 51	根霉菌和曲菌蜂窝织炎
+R1	cause Arg1:T3 Arg2:T4	
+R2	relevant Arg1:T1 Arg2:T2	
+R3	relevant Arg1:T1 Arg2:T4	
+T5	disease 53 58	医院内感染
+T6	pathogenic_bacteria 66 69	金葡菌
+T7	disease 70 74	伤口感染
+R4	cause Arg1:T6 Arg2:T7	
+R5	relevant Arg1:T5 Arg2:T7	

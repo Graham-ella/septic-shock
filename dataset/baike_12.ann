@@ -1,0 +1,44 @@
+T1	disease 0 3	脓毒症
+T2	physical_therapy 9 15	早期液体复苏
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 20 25	脓毒症休克
+R2	physical Arg1:T3 Arg2:T2	
+R3	relevant Arg1:T1 Arg2:T3	
+T4	disease 31 34	脓毒症
+T5	disease 41 44	脓毒症
+T6	disease 171 174	脓毒症
+T7	medical_treatment 238 245	使用抗生素治疗
+R4	medical Arg1:T6 Arg2:T7	
+T8	disease 247 250	脓毒症
+T9	disease 253 256	脓毒症
+T10	disease 275 278	脓毒症
+T11	medical_treatment 281 286	使用抗生素
+R5	medical Arg1:T10 Arg2:T11	
+T12	disease 288 291	脓毒症
+T13	disease 312 315	脓毒症
+T14	medical_treatment 320 330	给予经验性抗生素治疗
+R6	medical Arg1:T13 Arg2:T14	
+T15	disease 448 451	脓毒症
+T16	medical_treatment 484 494	使用有效地窄谱抗生素
+R7	medical Arg1:T15 Arg2:T16	
+T17	disease 496 499	脓毒症
+T18	medical_treatment 503 516	经验性抗生素治疗和靶向治疗
+R8	medical Arg1:T17 Arg2:T18	
+T19	disease 540 543	脓毒症
+T20	physical_therapy 546 551	祛除感染源
+R9	physical Arg1:T19 Arg2:T20	
+T21	disease 553 556	脓毒症
+T22	disease 557 560	脓毒症
+T23	pathogenic_bacteria 585 589	外科感染
+T24	pathogenic_bacteria 592 597	脓性胆管炎
+T25	pathogenic_bacteria 598 602	脓肿形成
+T26	pathogenic_bacteria 603 606	肠梗阻
+T27	pathogenic_bacteria 607 613	化脓性阑尾炎
+R10	cause Arg1:T23 Arg2:T22	
+R11	cause Arg1:T24 Arg2:T22	
+R12	cause Arg1:T25 Arg2:T22	
+R13	cause Arg1:T26 Arg2:T22	
+R14	cause Arg1:T27 Arg2:T22	
+T28	disease 678 681	脓毒症
+T29	medical_treatment 683 689	血管活性药物
+R15	medical Arg1:T28 Arg2:T29	

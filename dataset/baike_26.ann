@@ -1,0 +1,80 @@
+T1	disease 0 5	急性肾损伤
+T2	disease 5 10	急性肾损伤
+T3	disease 144 149	急性肾损伤
+T4	disease 161 166	急性肾损伤
+T5	disease 197 202	急性肾损伤
+T6	symptom 204 211	血管内容量减少
+R1	clinical_manifestation Arg1:T5 Arg2:T6	
+T7	disease 285 290	急性肾损伤
+T8	symptom 291 298	.心输出量减少
+R2	clinical_manifestation Arg1:T7 Arg2:T8	
+T9	disease 345 350	急性肾损伤
+T10	symptom 352 358	外周血管扩张
+R3	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	disease 369 372	脓毒症
+T12	disease 300 305	心功能不全
+R4	relevant Arg1:T7 Arg2:T12	
+R5	relevant Arg1:T9 Arg2:T11	
+T13	disease 213 219	细胞外液丢失
+T14	pathogenic_bacteria 221 223	烧伤
+T15	pathogenic_bacteria 224 226	腹泻
+T16	pathogenic_bacteria 227 229	呕吐
+T17	pathogenic_bacteria 230 233	利尿剂
+T18	pathogenic_bacteria 234 239	消化道出血
+R6	cause Arg1:T14 Arg2:T13	
+R7	cause Arg1:T15 Arg2:T13	
+R8	cause Arg1:T16 Arg2:T13	
+R9	cause Arg1:T17 Arg2:T13	
+R10	cause Arg1:T18 Arg2:T13	
+T19	disease 242 248	细胞外液滞留
+T20	disease 250 253	胰腺炎
+T21	pathogenic_bacteria 254 256	烧伤
+T22	disease 257 262	挤压综合征
+T23	disease 263 265	创伤
+T24	disease 266 271	肾病综合征
+T25	pathogenic_bacteria 272 276	营养不良
+T26	disease 277 282	肝功能衰竭
+R11	cause Arg1:T21 Arg2:T19	
+R12	cause Arg1:T25 Arg2:T19	
+R13	relevant Arg1:T19 Arg2:T20	
+R14	relevant Arg1:T19 Arg2:T22	
+R15	relevant Arg1:T19 Arg2:T23	
+R16	relevant Arg1:T19 Arg2:T24	
+R17	relevant Arg1:T19 Arg2:T26	
+T27	disease 307 311	心肌梗死
+T28	disease 313 317	心律失常
+T29	disease 318 324	缺血性心脏病
+T30	disease 325 328	心肌病
+T31	disease 329 332	瓣膜病
+T32	disease 333 336	高血压
+T33	disease 337 342	严重肺心病
+R18	relevant Arg1:T12 Arg2:T27	
+R19	relevant Arg1:T12 Arg2:T28	
+R20	relevant Arg1:T12 Arg2:T29	
+R21	relevant Arg1:T12 Arg2:T30	
+R22	relevant Arg1:T12 Arg2:T31	
+R23	relevant Arg1:T12 Arg2:T32	
+R24	relevant Arg1:T12 Arg2:T33	
+T34	disease 378 387	肾上腺皮质功能不全
+T35	disease 388 392	高镁血症
+T36	disease 393 398	高碳酸血症
+T37	disease 399 403	低氧血症
+T38	disease 406 411	急性肾损伤
+T39	symptom 413 420	肾血管严重收缩
+R25	clinical_manifestation Arg1:T38 Arg2:T39	
+T40	disease 422 425	脓毒症
+R26	relevant Arg1:T38 Arg2:T40	
+T41	disease 453 458	急性肾损伤
+T42	disease 494 499	急性肾损伤
+T43	disease 564 569	急性肾损伤
+T44	disease 640 645	急性肾损伤
+T45	symptom 460 467	肾动脉机械闭锁
+R27	clinical_manifestation Arg1:T41 Arg2:T45	
+T46	disease 501 507	肾血管性疾病
+R28	relevant Arg1:T42 Arg2:T46	
+T47	disease 571 576	肾小球肾炎
+R29	relevant Arg1:T43 Arg2:T47	
+R30	relevant Arg1:T11 Arg2:T34	
+R31	relevant Arg1:T11 Arg2:T35	
+R32	relevant Arg1:T11 Arg2:T36	
+R33	relevant Arg1:T11 Arg2:T37	

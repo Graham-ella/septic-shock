@@ -1,0 +1,58 @@
+T1	disease 0 2	肺炎
+T2	disease 2 4	肺炎
+T3	symptom 5 14	缺乏明显呼吸系症状
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	disease 38 40	肺炎
+T5	symptom 45 54	呼吸急促及呼吸困难
+T6	symptom 57 61	意识障碍
+T7	symptom 62 64	嗜睡
+T8	symptom 65 67	脱水
+T9	symptom 68 72	食欲减退
+R2	clinical_manifestation Arg1:T4 Arg2:T5	
+R3	clinical_manifestation Arg1:T4 Arg2:T6	
+R4	clinical_manifestation Arg1:T4 Arg2:T7	
+R5	clinical_manifestation Arg1:T4 Arg2:T8	
+R6	clinical_manifestation Arg1:T4 Arg2:T9	
+T10	disease 75 77	肺炎
+T11	pathogenic_bacteria 77 81	大肠杆菌
+T12	pathogenic_bacteria 82 87	克雷伯杆菌
+T13	pathogenic_bacteria 88 92	绿脓杆菌
+T14	pathogenic_bacteria 93 97	流感杆菌
+T15	pathogenic_bacteria 98 104	革兰阴性杆菌
+R7	cause Arg1:T11 Arg2:T10	
+R8	cause Arg1:T12 Arg2:T10	
+R9	cause Arg1:T13 Arg2:T10	
+R10	cause Arg1:T14 Arg2:T10	
+R11	cause Arg1:T15 Arg2:T10	
+T16	disease 123 125	肺炎
+T17	symptom 125 129	呼吸急促
+T18	symptom 130 134	呼吸困难
+T19	symptom 135 137	嗜睡
+T20	symptom 138 140	脱水
+T21	symptom 141 145	食欲减退
+T22	symptom 146 152	脉速、湿啰音
+T23	symptom 153 168	伴呼吸音减弱及支气管肺泡呼吸音
+R12	clinical_manifestation Arg1:T16 Arg2:T17	
+R13	clinical_manifestation Arg1:T16 Arg2:T18	
+R14	clinical_manifestation Arg1:T16 Arg2:T19	
+R15	clinical_manifestation Arg1:T16 Arg2:T20	
+R16	clinical_manifestation Arg1:T16 Arg2:T21	
+R17	clinical_manifestation Arg1:T16 Arg2:T22	
+R18	clinical_manifestation Arg1:T16 Arg2:T23	
+T24	disease 170 172	肺炎
+T25	pathogenic_bacteria 174 180	革兰阴性杆菌
+T26	pathogenic_bacteria 188 192	大肠杆菌
+T27	pathogenic_bacteria 193 198	克雷伯杆菌
+T28	pathogenic_bacteria 199 203	绿脓杆菌
+T29	pathogenic_bacteria 204 208	流感杆菌
+R19	cause Arg1:T25 Arg2:T24	
+R20	cause Arg1:T26 Arg2:T24	
+R21	cause Arg1:T27 Arg2:T24	
+R22	cause Arg1:T28 Arg2:T24	
+R23	cause Arg1:T29 Arg2:T24	
+T30	disease 211 213	肺炎
+T31	pathogenic_bacteria 244 247	厌氧菌
+T32	disease 251 253	肺炎
+R24	cause Arg1:T31 Arg2:T32	
+T33	pathogenic_bacteria 241 243	真菌
+R25	cause Arg1:T33 Arg2:T32	

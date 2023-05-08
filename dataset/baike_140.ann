@@ -1,0 +1,79 @@
+T1	disease 0 5	细菌性痢疾
+T2	symptom 13 19	全身中毒症状
+T3	symptom 20 22	腹痛
+T4	symptom 23 27	里急后重
+T5	symptom 28 37	左下腹压痛均不明显
+T6	symptom 40 42	低热
+T7	symptom 43 49	糊状或水样便
+T8	symptom 50 56	混有少量黏液
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	clinical_manifestation Arg1:T1 Arg2:T7	
+R7	clinical_manifestation Arg1:T1 Arg2:T8	
+T9	disease 76 81	细菌性痢疾
+T10	symptom 81 91	粪便镜检有红、白细胞
+T11	pathogenic_bacteria 95 99	痢疾杆菌
+R8	clinical_manifestation Arg1:T9 Arg2:T10	
+R9	cause Arg1:T11 Arg2:T9	
+T12	disease 106 110	急性肠炎
+T13	disease 115 120	细菌性痢疾
+T14	symptom 123 127	全身中毒
+R10	clinical_manifestation Arg1:T13 Arg2:T14	
+T15	disease 136 141	细菌性痢疾
+T16	symptom 141 144	起病急
+T17	symptom 145 147	高热
+T18	symptom 148 150	恶心
+T19	symptom 151 153	呕吐
+T20	symptom 154 158	剧烈腹痛
+T21	symptom 159 170	腹部（尤为左下腹）压痛
+T22	symptom 171 177	里急后重明显
+T23	symptom 178 181	脓血便
+T24	symptom 182 186	便次频繁
+R11	clinical_manifestation Arg1:T15 Arg2:T16	
+R12	clinical_manifestation Arg1:T15 Arg2:T17	
+R13	clinical_manifestation Arg1:T15 Arg2:T18	
+R14	clinical_manifestation Arg1:T15 Arg2:T19	
+R15	clinical_manifestation Arg1:T15 Arg2:T20	
+R16	clinical_manifestation Arg1:T15 Arg2:T21	
+R17	clinical_manifestation Arg1:T15 Arg2:T22	
+R18	clinical_manifestation Arg1:T15 Arg2:T23	
+R19	clinical_manifestation Arg1:T15 Arg2:T24	
+T25	disease 193 198	细菌性痢疾
+T26	symptom 198 203	病情进展快
+T27	symptom 204 208	明显失水
+T28	symptom 209 213	四肢发冷
+T29	symptom 214 218	极度衰竭
+T30	disease 222 224	休克
+R20	clinical_manifestation Arg1:T25 Arg2:T26	
+R21	clinical_manifestation Arg1:T25 Arg2:T27	
+R22	clinical_manifestation Arg1:T25 Arg2:T28	
+R23	clinical_manifestation Arg1:T25 Arg2:T29	
+R24	relevant Arg1:T25 Arg2:T30	
+T31	disease 226 231	细菌性痢疾
+T32	symptom 236 240	全身中毒
+R25	clinical_manifestation Arg1:T31 Arg2:T32	
+T33	symptom 256 260	精神萎靡
+T34	symptom 261 265	面色青灰
+T35	symptom 266 270	四肢厥冷
+T36	symptom 271 275	呼吸微弱
+T37	symptom 276 280	皮肤花纹
+T38	symptom 281 285	反复惊厥
+T39	symptom 286 288	嗜睡
+T40	symptom 291 293	昏迷
+R26	clinical_manifestation Arg1:T31 Arg2:T33	
+R27	clinical_manifestation Arg1:T31 Arg2:T34	
+R28	clinical_manifestation Arg1:T31 Arg2:T35	
+R29	clinical_manifestation Arg1:T31 Arg2:T36	
+R30	clinical_manifestation Arg1:T31 Arg2:T37	
+R31	clinical_manifestation Arg1:T31 Arg2:T38	
+R32	clinical_manifestation Arg1:T31 Arg2:T39	
+R33	clinical_manifestation Arg1:T31 Arg2:T40	
+T41	disease 305 310	细菌性痢疾
+T42	disease 318 320	休克
+T43	disease 323 328	感染性休克
+R34	relevant Arg1:T41 Arg2:T42	
+R35	relevant Arg1:T41 Arg2:T43	
+R36	relevant Arg1:T42 Arg2:T43	

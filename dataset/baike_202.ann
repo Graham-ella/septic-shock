@@ -1,0 +1,28 @@
+T1	disease 0 3	肝损伤
+T2	symptom 25 27	口渴
+T3	symptom 28 30	恶心
+T4	symptom 31 33	呕吐
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+T5	disease 35 38	肝损伤
+T6	disease 41 48	低血容量性休克
+T7	disease 49 52	腹膜炎
+R4	relevant Arg1:T5 Arg2:T6	
+R5	relevant Arg1:T5 Arg2:T7	
+T8	disease 54 57	肝损伤
+T9	symptom 78 80	腹胀
+R6	clinical_manifestation Arg1:T8 Arg2:T9	
+T10	disease 85 88	肝损伤
+T11	symptom 110 114	肝区钝痛
+R7	clinical_manifestation Arg1:T10 Arg2:T11	
+T12	disease 129 132	肝损伤
+T13	symptom 145 149	胆道出血
+T14	symptom 153 158	消化道出血
+T15	disease 168 175	慢性进行性贫血
+R8	clinical_manifestation Arg1:T12 Arg2:T13	
+R9	clinical_manifestation Arg1:T12 Arg2:T14	
+R10	relevant Arg1:T12 Arg2:T15	
+T16	disease 177 180	肝损伤
+T17	disease 212 219	急性失血性休克
+R11	relevant Arg1:T16 Arg2:T17	

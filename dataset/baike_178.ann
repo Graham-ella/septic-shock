@@ -1,0 +1,19 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 18 20	曲菌
+T3	pathogenic_bacteria 21 25	念珠菌属
+T4	pathogenic_bacteria 26 32	卡氏肺孢子虫
+T5	pathogenic_bacteria 33 38	巨细胞病毒
+T6	pathogenic_bacteria 39 45	带状疱疹病毒
+T7	pathogenic_bacteria 46 51	沙眼衣原体
+T8	pathogenic_bacteria 52 60	非典型分枝杆菌属
+T9	pathogenic_bacteria 61 66	嗜肺军团菌
+T10	disease 67 71	肺部感染
+R1	cause Arg1:T9 Arg2:T10	
+R2	cause Arg1:T8 Arg2:T10	
+R3	cause Arg1:T7 Arg2:T10	
+R4	cause Arg1:T6 Arg2:T10	
+R5	cause Arg1:T5 Arg2:T10	
+R6	cause Arg1:T4 Arg2:T10	
+R7	cause Arg1:T3 Arg2:T10	
+R8	cause Arg1:T2 Arg2:T10	
+R9	relevant Arg1:T1 Arg2:T10	

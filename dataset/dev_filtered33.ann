@@ -1,0 +1,68 @@
+T1	disease 0 5	急性胰腺炎
+T2	disease 9 13	假性囊肿
+R1	relevant Arg1:T1 Arg2:T2	
+T3	disease 51 54	TTP
+T4	disease 59 65	血小板减少症
+T5	disease 66 71	溶血性贫血
+T6	disease 72 78	神经系统异常
+T7	disease 79 81	发热
+T8	disease 82 86	肾脏损害
+R2	relevant Arg1:T3 Arg2:T4	
+R3	relevant Arg1:T3 Arg2:T5	
+R4	relevant Arg1:T3 Arg2:T6	
+R5	relevant Arg1:T3 Arg2:T7	
+R6	relevant Arg1:T3 Arg2:T8	
+T9	symptom 117 119	腹痛
+T10	disease 120 123	高血压
+T11	symptom 124 126	恶心
+T12	symptom 127 129	呕吐
+T13	disease 132 134	黄疸
+T14	disease 135 137	瘀点
+T15	disease 138 140	紫癜
+R7	clinical_manifestation Arg1:T3 Arg2:T9	
+R8	relevant Arg1:T3 Arg2:T10	
+R9	clinical_manifestation Arg1:T3 Arg2:T11	
+R10	clinical_manifestation Arg1:T3 Arg2:T12	
+R11	relevant Arg1:T3 Arg2:T13	
+R12	relevant Arg1:T3 Arg2:T14	
+R13	relevant Arg1:T3 Arg2:T15	
+T16	disease 160 168	B族溶血性链球菌
+T17	disease 169 172	GBS
+R14	same Arg1:T16 Arg2:T17	
+T18	disease 201 204	肝硬化
+T19	pathogenic_bacteria 206 212	隐源性肝硬化
+R15	cause Arg1:T19 Arg2:T18	
+T20	disease 278 283	胆红素脑病
+T21	symptom 295 300	肌张力减低
+T22	symptom 301 307	拥抱反射异常
+R16	clinical_manifestation Arg1:T20 Arg2:T21	
+R17	clinical_manifestation Arg1:T20 Arg2:T22	
+T23	disease 382 391	流感嗜血杆菌脑膜炎
+T24	medical_treatment 319 323	地塞米松
+R18	medical Arg1:T23 Arg2:T24	
+T25	disease 501 508	B族链球菌感染
+T26	symptom 536 538	发热
+R19	clinical_manifestation Arg1:T25 Arg2:T26	
+T27	disease 553 557	蜂窝织炎
+T28	disease 558 561	脓毒症
+T29	disease 562 565	脑膜炎
+T30	disease 566 570	尿路感染
+R20	relevant Arg1:T25 Arg2:T27	
+R21	relevant Arg1:T25 Arg2:T28	
+R22	relevant Arg1:T25 Arg2:T29	
+R23	relevant Arg1:T25 Arg2:T30	
+T31	disease 592 597	鳞状细胞癌
+T32	physical_therapy 582 588	针吸细胞分析
+R24	physical Arg1:T31 Arg2:T32	
+T33	disease 669 675	中枢性尿崩症
+T34	pathogenic_bacteria 606 615	AVP基因结构异常
+T35	pathogenic_bacteria 616 628	下丘脑及神经垂体发育缺陷
+R25	cause Arg1:T34 Arg2:T33	
+R26	cause Arg1:T35 Arg2:T33	
+T36	disease 712 718	遗传性胰腺炎
+T37	disease 738 741	糖尿病
+T38	disease 742 746	动脉血栓
+T39	disease 747 750	胰腺癌
+R27	relevant Arg1:T36 Arg2:T37	
+R28	relevant Arg1:T36 Arg2:T38	
+R29	relevant Arg1:T36 Arg2:T39	

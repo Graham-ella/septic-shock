@@ -1,0 +1,34 @@
+T1	disease 0 3	肝硬化
+T2	disease 5 10	原发性肝癌
+R1	relevant Arg1:T1 Arg2:T2	
+T3	physical_therapy 24 37	血管栓塞+CT导引局部消融
+R2	physical Arg1:T2 Arg2:T3	
+T4	physical_therapy 39 43	局部放疗
+R3	physical Arg1:T2 Arg2:T4	
+T5	medical_treatment 77 80	利卡汀
+T6	medical_treatment 81 85	索拉菲尼
+R4	medical Arg1:T2 Arg2:T5	
+R5	medical Arg1:T2 Arg2:T6	
+T7	disease 98 101	肝硬化
+T8	disease 101 107	酒精性肝硬化
+T9	disease 108 114	胆汁性肝硬化
+T10	disease 115 118	肝淤血
+R6	relevant Arg1:T7 Arg2:T8	
+R7	relevant Arg1:T7 Arg2:T9	
+R8	relevant Arg1:T7 Arg2:T10	
+T11	disease 122 125	肝硬化
+T12	disease 131 134	肝硬化
+T13	disease 159 167	病毒性肝炎肝硬化
+T14	disease 168 174	隐源性肝硬化
+R9	relevant Arg1:T12 Arg2:T13	
+R10	relevant Arg1:T12 Arg2:T14	
+R11	relevant Arg1:T11 Arg2:T10	
+R12	relevant Arg1:T11 Arg2:T9	
+R13	relevant Arg1:T11 Arg2:T8	
+R14	relevant Arg1:T7 Arg2:T13	
+R15	relevant Arg1:T7 Arg2:T14	
+R16	relevant Arg1:T11 Arg2:T13	
+R17	relevant Arg1:T11 Arg2:T14	
+R18	relevant Arg1:T12 Arg2:T10	
+R19	relevant Arg1:T12 Arg2:T9	
+R20	relevant Arg1:T12 Arg2:T8	

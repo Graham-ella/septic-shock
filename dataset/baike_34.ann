@@ -1,0 +1,11 @@
+T1	disease 0 9	重症急性呼吸综合征
+T2	disease 44 53	重症急性呼吸综合征
+T3	disease 100 109	重症急性呼吸综合征
+T4	disease 136 145	重症急性呼吸综合征
+T5	disease 193 202	重症急性呼吸综合征
+T6	physical_therapy 147 153	血液生化检查
+R1	physical Arg1:T4 Arg2:T6	
+T7	disease 218 227	重症急性呼吸综合征
+T8	disease 286 295	重症急性呼吸综合征
+T9	disease 365 374	重症急性呼吸综合征
+T10	disease 437 446	重症急性呼吸综合征

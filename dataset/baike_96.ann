@@ -1,0 +1,15 @@
+T1	disease 0 3	肝硬化
+T2	medical_treatment 6 12	钙通道阻滞剂
+R1	medical Arg1:T1 Arg2:T2	
+T3	disease 29 32	肝硬化
+T4	disease 35 46	补充B族维生素和消化酶
+R2	relevant Arg1:T3 Arg2:T4	
+T5	disease 57 60	肝硬化
+T6	medical_treatment 72 101	可服用升白细胞和血小板的药物（如利血生、鲨肝醇、氨肽素等）
+R3	medical Arg1:T5 Arg2:T6	
+T7	disease 122 125	肝硬化
+T8	physical_therapy 143 155	卧床休息，限制水、钠摄入
+R4	physical Arg1:T7 Arg2:T8	
+T9	disease 157 160	肝硬化
+T10	medical_treatment 161 172	利尿剂治疗如双氢克尿噻
+R5	medical Arg1:T9 Arg2:T10	

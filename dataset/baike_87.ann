@@ -1,0 +1,29 @@
+T1	disease 0 2	黄疸
+T2	physical_therapy 6 12	肝活组织检查
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 14 16	黄疸
+T4	physical_therapy 20 25	腹腔镜检查
+R2	physical Arg1:T3 Arg2:T4	
+T5	disease 27 29	黄疸
+T6	disease 76 80	隐性黄疸
+R3	relevant Arg1:T5 Arg2:T6	
+T7	disease 72 74	黄疸
+T8	disease 82 84	黄疸
+T9	disease 137 141	显性黄疸
+T10	symptom 85 104	血清胆红素浓度高于34.2umol/L
+T11	symptom 114 135	巩膜、皮肤、黏膜以及其他组织和体液出现黄染
+R4	clinical_manifestation Arg1:T9 Arg2:T10	
+R5	clinical_manifestation Arg1:T9 Arg2:T11	
+R6	relevant Arg1:T8 Arg2:T9	
+T12	disease 143 145	黄疸
+T13	disease 148 152	假性黄疸
+R7	relevant Arg1:T12 Arg2:T13	
+T14	disease 156 158	黄疸
+T15	disease 158 162	假性黄疸
+R8	relevant Arg1:T14 Arg2:T15	
+T16	disease 193 195	黄疸
+T17	disease 249 251	黄疸
+T18	disease 251 255	假性黄疸
+R9	relevant Arg1:T17 Arg2:T18	
+T19	symptom 256 264	血胆红素浓度正常
+R10	clinical_manifestation Arg1:T18 Arg2:T19	

@@ -1,0 +1,105 @@
+T1	disease 0 5	急性胰腺炎
+T2	medical_treatment 37 40	加贝酯
+T3	medical_treatment 41 45	乌司他丁
+T4	physical_therapy 55 59	放置支架
+T5	medical_treatment 25 28	奥曲肽
+R1	medical Arg1:T1 Arg2:T5	
+R2	medical Arg1:T1 Arg2:T2	
+R3	medical Arg1:T1 Arg2:T3	
+R4	physical Arg1:T1 Arg2:T4	
+T7	physical_therapy 142 148	经尿道切除术
+T6	disease 138 141	膀胱癌
+R5	physical Arg1:T6 Arg2:T7	
+T8	disease 157 162	新生儿黄疸
+T9	physical_therapy 171 181	直接Coombs试验
+R6	physical Arg1:T8 Arg2:T9	
+T10	disease 202 209	B族链球菌感染
+T11	physical_therapy 220 224	血液培养
+T12	physical_therapy 225 231	全血细胞计数
+T13	physical_therapy 232 239	白细胞分类计数
+T14	physical_therapy 240 245	血小板计数
+T15	physical_therapy 246 252	胸部X线检查
+T16	disease 290 293	脓毒症
+T17	medical_treatment 306 309	抗生素
+R7	physical Arg1:T10 Arg2:T11	
+R8	physical Arg1:T10 Arg2:T12	
+R9	physical Arg1:T10 Arg2:T13	
+R10	physical Arg1:T10 Arg2:T14	
+R11	physical Arg1:T10 Arg2:T15	
+R12	medical Arg1:T16 Arg2:T17	
+T18	disease 357 362	支气管肺炎
+T19	physical_therapy 313 319	C-反应蛋白
+T20	symptom 373 375	发热
+T21	symptom 376 378	咳嗽
+T22	symptom 379 383	呼吸急促
+T23	physical_therapy 387 391	肺部听诊
+R13	physical Arg1:T18 Arg2:T19	
+R14	clinical_manifestation Arg1:T18 Arg2:T20	
+R15	clinical_manifestation Arg1:T18 Arg2:T21	
+R16	clinical_manifestation Arg1:T18 Arg2:T22	
+R17	physical Arg1:T18 Arg2:T23	
+T24	disease 443 445	肺炎
+T25	symptom 449 451	发热
+T26	symptom 452 456	呼吸困难
+T27	symptom 457 462	排痰性咳嗽
+R18	clinical_manifestation Arg1:T24 Arg2:T25	
+R19	clinical_manifestation Arg1:T24 Arg2:T26	
+R20	clinical_manifestation Arg1:T24 Arg2:T27	
+T28	disease 477 485	假丝酵母菌菌血症
+T30	disease 561 564	脑膜炎
+R22	relevant Arg1:T28 Arg2:T30	
+T29	disease 532 539	念珠菌心内膜炎
+R21	relevant Arg1:T28 Arg2:T29	
+T31	disease 565 568	脑脓肿
+R23	relevant Arg1:T28 Arg2:T31	
+T32	symptom 515 519	体温增高
+T33	symptom 520 524	症状加重
+T34	symptom 525 531	全身状况恶化
+T35	symptom 491 495	长期发热
+R24	clinical_manifestation Arg1:T28 Arg2:T35	
+R25	clinical_manifestation Arg1:T28 Arg2:T32	
+R26	clinical_manifestation Arg1:T28 Arg2:T33	
+R27	clinical_manifestation Arg1:T28 Arg2:T34	
+T36	pathogenic_bacteria 657 662	B族链球菌
+T38	disease 615 621	细菌性脑膜炎
+T39	pathogenic_bacteria 643 648	大肠埃希菌
+T40	pathogenic_bacteria 649 656	革兰氏阴性杆菌
+T41	pathogenic_bacteria 668 679	单核细胞增多性李斯特菌
+T42	pathogenic_bacteria 680 685	脑膜炎球菌
+T43	pathogenic_bacteria 686 692	脑膜炎奈瑟菌
+T44	pathogenic_bacteria 715 721	铜绿假单胞菌
+T45	pathogenic_bacteria 724 731	金黄色葡萄球菌
+T46	pathogenic_bacteria 801 807	流感嗜血杆菌
+T47	pathogenic_bacteria 808 813	肺炎链球菌
+T48	pathogenic_bacteria 814 820	脑膜炎双球菌
+T49	pathogenic_bacteria 840 845	肺炎链球菌
+R29	cause Arg1:T39 Arg2:T38	
+R30	cause Arg1:T40 Arg2:T38	
+R28	cause Arg1:T36 Arg2:T38	
+R31	cause Arg1:T41 Arg2:T38	
+R32	cause Arg1:T42 Arg2:T38	
+R33	cause Arg1:T43 Arg2:T38	
+R34	cause Arg1:T44 Arg2:T38	
+R35	cause Arg1:T45 Arg2:T38	
+R36	cause Arg1:T46 Arg2:T38	
+R37	cause Arg1:T47 Arg2:T38	
+R38	cause Arg1:T48 Arg2:T38	
+R39	cause Arg1:T49 Arg2:T38	
+T37	disease 871 878	失代偿期肝硬化
+T50	disease 910 912	腹水
+T51	disease 913 920	胃食管静脉曲张
+T52	disease 921 927	静脉曲张出血
+T53	disease 928 932	肝性脑病
+T54	disease 935 937	黄疸
+T55	disease 890 898	肝脏合成功能降低
+T56	disease 899 903	门脉高压
+R40	relevant Arg1:T37 Arg2:T55	
+R41	relevant Arg1:T37 Arg2:T56	
+R42	relevant Arg1:T37 Arg2:T50	
+R43	relevant Arg1:T37 Arg2:T51	
+R44	relevant Arg1:T37 Arg2:T52	
+R45	relevant Arg1:T37 Arg2:T53	
+R46	relevant Arg1:T37 Arg2:T54	
+T57	disease 950 955	急性胰腺炎
+T58	symptom 980 982	腹痛
+R47	clinical_manifestation Arg1:T57 Arg2:T58	

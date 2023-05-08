@@ -1,0 +1,9 @@
+T1	disease 0 9	重症急性呼吸综合征
+T2	disease 9 18	重症急性呼吸综合征
+T3	disease 74 83	重症急性呼吸综合征
+T4	pathogenic_bacteria 28 36	SARS冠状病毒
+R1	cause Arg1:T4 Arg2:T2	
+T5	disease 85 94	重症急性呼吸综合征
+T6	disease 133 142	重症急性呼吸综合征
+T7	disease 142 151	严重急性呼吸综合征
+R2	relevant Arg1:T6 Arg2:T7	

@@ -1,0 +1,103 @@
+T1	disease 0 3	口咽癌
+T2	disease 22 29	放疗后吞咽困难
+R1	relevant Arg1:T1 Arg2:T2	
+T3	disease 30 32	误吸
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 73 78	吸入性肺炎
+R3	relevant Arg1:T1 Arg2:T4	
+T5	physical_therapy 143 153	内镜逆行胰胆管造影术
+T6	disease 87 92	急性胰腺炎
+R4	physical Arg1:T6 Arg2:T5	
+T7	physical_therapy 198 202	超声检查
+T8	physical_therapy 203 212	磁共振胆胰管造影术
+R5	physical Arg1:T6 Arg2:T7	
+R6	physical Arg1:T6 Arg2:T8	
+T9	symptom 103 105	结石
+T10	symptom 106 117	弥漫性或节段性胰腺肿大
+T11	symptom 118 135	胰腺周围脂肪轮廓不规则或消失、坏死
+T12	symptom 136 140	假性囊肿
+R7	clinical_manifestation Arg1:T6 Arg2:T9	
+R8	clinical_manifestation Arg1:T6 Arg2:T10	
+R9	clinical_manifestation Arg1:T6 Arg2:T11	
+R10	clinical_manifestation Arg1:T6 Arg2:T12	
+T13	disease 216 222	非小细胞肺癌
+T14	disease 268 273	梗阻后肺炎
+T15	disease 274 276	缺氧
+T16	disease 280 283	高肺炎
+R11	relevant Arg1:T13 Arg2:T14	
+R12	relevant Arg1:T13 Arg2:T15	
+T17	pathogenic_bacteria 308 310	肿瘤
+R13	cause Arg1:T17 Arg2:T16	
+T18	disease 334 338	肝性脑病
+T19	pathogenic_bacteria 357 362	消化道出血
+T20	pathogenic_bacteria 363 365	便秘
+T21	pathogenic_bacteria 366 374	饮食摄入蛋白过多
+T22	pathogenic_bacteria 375 377	腹泻
+T23	pathogenic_bacteria 378 380	呕吐
+T24	pathogenic_bacteria 381 384	低血糖
+T25	pathogenic_bacteria 385 390	电解质紊乱
+T26	pathogenic_bacteria 397 400	利尿剂
+T27	pathogenic_bacteria 401 404	镇静剂
+T28	pathogenic_bacteria 410 414	腹穿放液
+T29	pathogenic_bacteria 415 420	TIPSS
+T30	pathogenic_bacteria 421 423	感染
+T31	pathogenic_bacteria 424 426	贫血
+T32	pathogenic_bacteria 427 429	缺氧
+T33	pathogenic_bacteria 430 433	低血压
+R14	cause Arg1:T19 Arg2:T18	
+R15	cause Arg1:T20 Arg2:T18	
+R16	cause Arg1:T21 Arg2:T18	
+R17	cause Arg1:T22 Arg2:T18	
+R18	cause Arg1:T23 Arg2:T18	
+R19	cause Arg1:T24 Arg2:T18	
+R20	cause Arg1:T25 Arg2:T18	
+R21	cause Arg1:T26 Arg2:T18	
+R22	cause Arg1:T27 Arg2:T18	
+R23	cause Arg1:T28 Arg2:T18	
+R24	cause Arg1:T29 Arg2:T18	
+R25	cause Arg1:T30 Arg2:T18	
+R26	cause Arg1:T31 Arg2:T18	
+R27	cause Arg1:T32 Arg2:T18	
+R28	cause Arg1:T33 Arg2:T18	
+T34	disease 435 443	新生儿泌尿道感染
+T35	disease 446 449	败血症
+T36	symptom 500 502	尿频
+T37	symptom 503 505	尿急
+T38	symptom 506 508	尿痛
+T39	symptom 509 513	尿液混浊
+T40	symptom 514 520	偶见肉眼血尿
+R29	relevant Arg1:T34 Arg2:T35	
+R30	clinical_manifestation Arg1:T34 Arg2:T36	
+R31	clinical_manifestation Arg1:T34 Arg2:T37	
+R32	clinical_manifestation Arg1:T34 Arg2:T38	
+R33	clinical_manifestation Arg1:T34 Arg2:T39	
+R34	clinical_manifestation Arg1:T34 Arg2:T40	
+T41	disease 581 584	宫颈癌
+T42	physical_therapy 588 592	锥切活检
+T43	physical_therapy 599 607	盆腔淋巴结清除术
+T44	disease 546 550	宫颈腺癌
+R35	physical Arg1:T41 Arg2:T42	
+R36	physical Arg1:T41 Arg2:T43	
+T45	disease 613 615	肿瘤
+T46	disease 742 745	胆结石
+T47	physical_therapy 773 777	生化检查
+T48	physical_therapy 735 739	超声检查
+R37	physical Arg1:T46 Arg2:T48	
+T49	disease 729 734	急性胰腺炎
+R38	physical Arg1:T46 Arg2:T47	
+T50	symptom 785 814	总胆红素和直接胆红素、碱性磷酸酶和γ-谷氨酰转肽酶水平升高
+T51	symptom 815 830	谷丙转氨酶/谷草转氨酶略有升高
+T52	symptom 833 839	胰酶水平正常
+R39	clinical_manifestation Arg1:T46 Arg2:T50	
+R40	clinical_manifestation Arg1:T46 Arg2:T51	
+R41	clinical_manifestation Arg1:T46 Arg2:T52	
+T53	disease 849 854	急性胰腺炎
+T54	physical_therapy 858 869	腹部CT胰腺外炎症评分
+R42	physical Arg1:T53 Arg2:T54	
+T55	disease 911 917	毛细支气管炎
+T56	disease 983 992	流行性毛细支气管炎
+T57	symptom 999 1001	喘憋
+R43	clinical_manifestation Arg1:T56 Arg2:T57	
+T58	disease 1020 1025	喘憋性肺炎
+R44	same Arg1:T56 Arg2:T58	
+R46	relevant Arg1:T55 Arg2:T56	

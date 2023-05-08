@@ -1,0 +1,14 @@
+T1	disease 0 2	肿瘤
+T2	disease 8 10	癌症
+T3	disease 15 17	癌症
+T4	physical_therapy 24 28	放射治疗
+R1	physical Arg1:T3 Arg2:T4	
+R2	relevant Arg1:T1 Arg2:T3	
+T5	disease 46 48	肿瘤
+T6	physical_therapy 48 52	放射治疗
+T7	disease 53 55	肿瘤
+R3	physical Arg1:T7 Arg2:T6	
+R4	physical Arg1:T5 Arg2:T6	
+T8	disease 70 72	肿瘤
+T9	disease 94 96	肿瘤
+T10	disease 74 76	肿瘤

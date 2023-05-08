@@ -1,0 +1,24 @@
+T1	disease 0 3	血液病
+T2	disease 11 14	血液病
+T3	disease 37 40	血液病
+T4	disease 40 43	血液病
+T5	symptom 59 61	贫血
+T6	symptom 62 64	出血
+T7	symptom 65 67	发热
+T8	symptom 68 76	淋巴结、肝、脾大
+R1	clinical_manifestation Arg1:T4 Arg2:T5	
+R2	clinical_manifestation Arg1:T4 Arg2:T6	
+R3	clinical_manifestation Arg1:T4 Arg2:T7	
+R4	clinical_manifestation Arg1:T4 Arg2:T8	
+T9	disease 78 81	血液病
+T10	pathogenic_bacteria 81 85	化学因素
+T11	pathogenic_bacteria 86 90	物理因素
+T12	pathogenic_bacteria 91 95	生物因素
+T13	pathogenic_bacteria 96 100	遗传因素
+T14	pathogenic_bacteria 101 105	免疫因素
+T15	disease 111 114	血液病
+R5	cause Arg1:T10 Arg2:T15	
+R6	cause Arg1:T11 Arg2:T15	
+R7	cause Arg1:T12 Arg2:T15	
+R8	cause Arg1:T13 Arg2:T15	
+R9	cause Arg1:T14 Arg2:T15	

@@ -1,0 +1,64 @@
+T1	disease 48 54	新生儿败血症
+T2	disease 15 25	新生儿胎粪栓塞综合征
+T3	disease 26 34	左半小结肠综合征
+T4	disease 35 37	HD
+T5	disease 38 44	相关ENS病
+T6	disease 55 58	脑损伤
+T7	disease 69 72	肛门癌
+T8	disease 102 107	肛门直肠癌
+T9	disease 89 92	大肠癌
+T10	disease 119 121	肺炎
+T11	disease 146 149	佝偻病
+R1	relevant Arg1:T10 Arg2:T11	
+T12	disease 176 181	HIV感染
+T13	physical_therapy 284 289	肝功能检查
+R2	physical Arg1:T12 Arg2:T13	
+T14	disease 347 353	慢性乙型肝炎
+T15	disease 396 401	急性肾损伤
+T16	symptom 403 411	白细胞总数常增高
+T17	symptom 412 422	中性粒细胞比例也增高
+R3	clinical_manifestation Arg1:T15 Arg2:T16	
+R4	clinical_manifestation Arg1:T15 Arg2:T17	
+T18	disease 424 428	慢性胃炎
+T19	pathogenic_bacteria 512 516	慢性肾炎
+R5	cause Arg1:T19 Arg2:T18	
+T20	pathogenic_bacteria 517 520	尿毒症
+T21	pathogenic_bacteria 521 526	重症糖尿病
+T22	pathogenic_bacteria 527 533	肝胆系统疾病
+T23	pathogenic_bacteria 534 540	类风湿关节炎
+T24	pathogenic_bacteria 541 548	系统性红斑狼疮
+R6	cause Arg1:T20 Arg2:T18	
+R7	cause Arg1:T21 Arg2:T18	
+R8	cause Arg1:T22 Arg2:T18	
+R9	cause Arg1:T23 Arg2:T18	
+R10	cause Arg1:T24 Arg2:T18	
+T25	disease 563 567	PPHN
+T26	physical_therapy 627 636	人工呼吸机的高通气
+T27	physical_therapy 637 647	纠正酸中毒或碱化血液
+T28	medical_treatment 648 656	纠正体循环低血压
+T29	medical_treatment 657 670	给以正性肌力药物或液体扩容
+R11	physical Arg1:T25 Arg2:T26	
+R12	physical Arg1:T25 Arg2:T27	
+R13	medical Arg1:T25 Arg2:T28	
+R14	medical Arg1:T25 Arg2:T29	
+T30	disease 721 725	慢性便秘
+T31	pathogenic_bacteria 672 678	饮食习惯不当
+T32	pathogenic_bacteria 679 683	心理障碍
+T33	pathogenic_bacteria 684 692	药物性肠蠕动不良
+R15	cause Arg1:T31 Arg2:T30	
+R16	cause Arg1:T32 Arg2:T30	
+R17	cause Arg1:T33 Arg2:T30	
+T34	pathogenic_bacteria 693 695	代谢
+T35	pathogenic_bacteria 696 701	内分泌疾病
+R18	cause Arg1:T34 Arg2:T30	
+R19	cause Arg1:T35 Arg2:T30	
+T36	disease 726 729	肠梗阻
+R20	cause Arg1:T31 Arg2:T36	
+R21	cause Arg1:T32 Arg2:T36	
+R22	cause Arg1:T35 Arg2:T36	
+T37	disease 848 852	丙型肝炎
+T38	medical_treatment 833 840	口服抗病毒药物
+R23	medical Arg1:T37 Arg2:T38	
+T39	disease 865 868	破伤风
+T40	physical_therapy 958 960	给氧
+R24	physical Arg1:T39 Arg2:T40	

@@ -1,0 +1,9 @@
+T1	disease 0 7	急性心功能不全
+T2	symptom 7 11	心力衰竭
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	symptom 37 39	乏力
+T4	symptom 40 44	呼吸困难
+T5	symptom 45 49	体液潴留
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	

@@ -1,0 +1,9 @@
+T1	disease 0 2	肿瘤
+T2	medical_treatment 3 10	低糖/二甲双胍
+R1	medical Arg1:T1 Arg2:T2	
+T3	disease 47 49	肿瘤
+T4	medical_treatment 57 64	低糖/二甲双胍
+R2	medical Arg1:T3 Arg2:T4	
+T5	disease 77 79	肿瘤
+T6	medical_treatment 89 97	二甲双胍/低血糖
+R3	medical Arg1:T5 Arg2:T6	

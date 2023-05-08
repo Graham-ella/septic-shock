@@ -1,0 +1,50 @@
+T1	disease 0 2	黄疸
+T2	symptom 14 38	巩膜、黏膜、皮肤及其他组织会开始逐渐地被染成黄色
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 81 83	黄疸
+T4	disease 88 91	肝硬化
+T5	disease 91 94	肝硬化
+T6	disease 134 137	肝硬化
+T7	disease 144 146	肝炎
+T8	disease 147 150	肝硬化
+T9	disease 155 161	酒精性肝硬化
+T10	disease 162 169	血吸虫性肝硬化
+R2	relevant Arg1:T6 Arg2:T7	
+R3	relevant Arg1:T6 Arg2:T9	
+R4	relevant Arg1:T6 Arg2:T10	
+T11	disease 171 174	肝硬化
+T12	symptom 197 202	肝功能损害
+T13	symptom 203 207	门脉高压
+R5	clinical_manifestation Arg1:T11 Arg2:T12	
+R6	clinical_manifestation Arg1:T11 Arg2:T13	
+T14	symptom 227 232	消化道出血
+T15	symptom 233 237	肝性脑病
+T16	symptom 238 242	继发感染
+T17	symptom 243 248	脾功能亢进
+T18	symptom 249 251	腹水
+T19	symptom 252 254	癌变
+R7	clinical_manifestation Arg1:T11 Arg2:T14	
+R8	clinical_manifestation Arg1:T11 Arg2:T15	
+R9	clinical_manifestation Arg1:T11 Arg2:T16	
+R10	clinical_manifestation Arg1:T11 Arg2:T17	
+R11	clinical_manifestation Arg1:T11 Arg2:T18	
+R12	clinical_manifestation Arg1:T11 Arg2:T19	
+T20	disease 260 263	肝硬化
+T21	disease 277 285	病毒性肝炎肝硬化
+T22	disease 286 292	酒精性肝硬化
+T23	disease 293 299	代谢性肝硬化
+T24	disease 300 308	胆汁淤积性肝硬化
+T25	disease 309 320	肝静脉回流受阻性肝硬化
+T26	disease 321 329	自身免疫性肝硬化
+T27	disease 330 339	毒物和药物性肝硬化
+T28	disease 340 348	营养不良性肝硬化
+T29	disease 349 355	隐源性肝硬化
+R13	relevant Arg1:T20 Arg2:T21	
+R14	relevant Arg1:T20 Arg2:T22	
+R15	relevant Arg1:T20 Arg2:T23	
+R16	relevant Arg1:T20 Arg2:T24	
+R17	relevant Arg1:T20 Arg2:T25	
+R18	relevant Arg1:T20 Arg2:T26	
+R19	relevant Arg1:T20 Arg2:T27	
+R20	relevant Arg1:T20 Arg2:T28	
+R21	relevant Arg1:T20 Arg2:T29	

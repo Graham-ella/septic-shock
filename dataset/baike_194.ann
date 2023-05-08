@@ -1,0 +1,25 @@
+T1	disease 0 7	急性心功能不全
+T2	disease 10 14	心肌梗死
+T3	disease 15 18	心肌病
+T4	disease 19 28	血流动力学负荷过重
+T5	disease 29 31	炎症
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+T6	disease 114 121	急性心功能不全
+T7	disease 123 129	急性心力衰竭
+T8	disease 144 147	左心衰
+R5	relevant Arg1:T6 Arg2:T7	
+R6	relevant Arg1:T6 Arg2:T8	
+T9	disease 149 156	急性心功能不全
+T10	symptom 156 160	急性心衰
+R7	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	symptom 184 195	收缩性心衰或舒张性心衰
+R8	clinical_manifestation Arg1:T9 Arg2:T11	
+T12	disease 215 222	急性心功能不全
+T13	disease 240 247	急性心功能不全
+T14	symptom 247 255	慢性心衰急性加重
+T15	symptom 256 262	急性心肌坏死
+R9	clinical_manifestation Arg1:T13 Arg2:T14	
+R10	clinical_manifestation Arg1:T13 Arg2:T15	

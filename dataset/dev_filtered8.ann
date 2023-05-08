@@ -1,0 +1,86 @@
+T1	disease 4 9	支气管肺炎
+T2	medical_treatment 81 88	肺炎链球菌疫苗
+T3	medical_treatment 89 101	B型流感嗜血杆菌结合疫苗
+T4	medical_treatment 102 108	流感病毒疫苗
+R1	medical Arg1:T1 Arg2:T2	
+R2	medical Arg1:T1 Arg2:T3	
+R3	medical Arg1:T1 Arg2:T4	
+T5	symptom 20 22	发热
+T6	symptom 23 25	咳嗽
+T7	symptom 26 30	呼吸急促
+T8	physical_therapy 34 38	肺部听诊
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	clinical_manifestation Arg1:T1 Arg2:T7	
+R7	physical Arg1:T1 Arg2:T8	
+T9	disease 160 170	侵袭性非霍奇金淋巴瘤
+T10	physical_therapy 278 284	免疫组化检查
+R8	physical Arg1:T9 Arg2:T10	
+T11	disease 111 117	非小细胞肺癌
+T12	symptom 174 176	发热
+T13	symptom 177 181	夜间盗汗
+T14	symptom 182 185	不适感
+T15	symptom 186 190	体重减轻
+T16	symptom 191 193	咳嗽
+T17	symptom 194 196	气促
+T18	symptom 197 201	腹部不适
+T19	symptom 202 204	头痛
+T20	symptom 205 211	精神状态改变
+T21	symptom 212 214	眩晕
+T22	symptom 215 219	共济失调
+T23	symptom 220 224	胸腔积液
+T24	symptom 225 229	淋巴结病
+T25	symptom 230 234	面色苍白
+T26	symptom 235 237	紫癜
+T27	symptom 238 240	黄疸
+T28	symptom 241 244	肝肿大
+T29	symptom 245 248	脾肿大
+T30	symptom 249 253	皮肤结节
+T31	symptom 254 264	神经系统体格检查异常
+R9	clinical_manifestation Arg1:T9 Arg2:T12	
+R10	clinical_manifestation Arg1:T9 Arg2:T13	
+R11	clinical_manifestation Arg1:T9 Arg2:T14	
+R12	clinical_manifestation Arg1:T9 Arg2:T15	
+R13	clinical_manifestation Arg1:T9 Arg2:T16	
+R14	clinical_manifestation Arg1:T9 Arg2:T17	
+R15	clinical_manifestation Arg1:T9 Arg2:T18	
+R16	clinical_manifestation Arg1:T9 Arg2:T19	
+R17	clinical_manifestation Arg1:T9 Arg2:T20	
+R18	clinical_manifestation Arg1:T9 Arg2:T21	
+R19	clinical_manifestation Arg1:T9 Arg2:T22	
+R20	clinical_manifestation Arg1:T9 Arg2:T23	
+R21	clinical_manifestation Arg1:T9 Arg2:T24	
+R22	clinical_manifestation Arg1:T9 Arg2:T25	
+R23	clinical_manifestation Arg1:T9 Arg2:T26	
+R24	clinical_manifestation Arg1:T9 Arg2:T27	
+R25	clinical_manifestation Arg1:T9 Arg2:T28	
+R26	clinical_manifestation Arg1:T9 Arg2:T29	
+R27	clinical_manifestation Arg1:T9 Arg2:T30	
+R28	clinical_manifestation Arg1:T9 Arg2:T31	
+T32	disease 299 303	垂体卒中
+T33	disease 384 390	阿尔茨海默病
+T34	physical_therapy 400 402	CT
+R29	physical Arg1:T33 Arg2:T34	
+T35	disease 436 438	脑炎
+T36	physical_therapy 472 476	腰椎穿刺
+R30	physical Arg1:T35 Arg2:T36	
+T37	disease 506 508	脑疝
+T38	pathogenic_bacteria 495 500	占位性病变
+R31	cause Arg1:T38 Arg2:T37	
+T39	disease 509 515	凝血功能障碍
+R32	cause Arg1:T38 Arg2:T39	
+T40	disease 520 527	皮肤开放性损伤
+R33	cause Arg1:T38 Arg2:T40	
+R34	relevant Arg1:T35 Arg2:T37	
+R35	relevant Arg1:T35 Arg2:T39	
+T41	disease 541 547	化脓性脑膜炎
+T42	disease 635 640	肾母细胞瘤
+T43	physical_therapy 641 643	放疗
+R36	physical Arg1:T42 Arg2:T43	
+T44	disease 672 678	转移性乳腺癌
+T45	physical_therapy 730 732	化疗
+R37	physical Arg1:T44 Arg2:T45	
+T46	disease 743 750	第二次原发肿瘤
+T47	disease 776 778	肿瘤
+T48	physical_therapy 782 789	组织病理学检查
+R38	physical Arg1:T47 Arg2:T48	

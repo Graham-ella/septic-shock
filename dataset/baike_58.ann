@@ -1,0 +1,64 @@
+T1	disease 0 4	腹腔感染
+T2	pathogenic_bacteria 53 57	大肠杆菌
+T3	disease 60 64	腹腔感染
+T4	pathogenic_bacteria 34 40	革兰阴性杆菌
+R1	cause Arg1:T4 Arg2:T1	
+T5	pathogenic_bacteria 42 49	肠道杆菌科细菌
+R2	cause Arg1:T5 Arg2:T1	
+R3	cause Arg1:T2 Arg2:T1	
+T6	disease 66 72	继发性腹膜炎
+R4	relevant Arg1:T3 Arg2:T6	
+T7	pathogenic_bacteria 76 85	空腔脏器穿孔、坏死
+R5	cause Arg1:T7 Arg2:T6	
+T8	disease 87 91	腹腔感染
+T9	pathogenic_bacteria 100 107	肠道杆菌科细菌
+R6	cause Arg1:T9 Arg2:T8	
+T10	pathogenic_bacteria 113 117	非发酵菌
+R7	cause Arg1:T10 Arg2:T8	
+T11	pathogenic_bacteria 119 125	铜绿假单胞菌
+R8	cause Arg1:T11 Arg2:T8	
+T12	pathogenic_bacteria 126 130	不动杆菌
+R9	cause Arg1:T12 Arg2:T8	
+T13	pathogenic_bacteria 137 140	肠球菌
+T14	pathogenic_bacteria 141 147	革兰阳性球菌
+T15	pathogenic_bacteria 163 166	厌氧菌
+R10	cause Arg1:T13 Arg2:T8	
+R11	cause Arg1:T14 Arg2:T8	
+R12	cause Arg1:T15 Arg2:T8	
+T16	disease 168 172	腹腔感染
+T17	disease 174 180	第三型腹膜炎
+R13	relevant Arg1:T16 Arg2:T17	
+T18	pathogenic_bacteria 185 188	耐药菌
+R14	cause Arg1:T18 Arg2:T17	
+T19	disease 190 194	腹腔感染
+T20	disease 196 200	腹腔脓肿
+R15	relevant Arg1:T19 Arg2:T20	
+T21	pathogenic_bacteria 228 232	肠道杆菌
+T22	pathogenic_bacteria 242 249	厌氧脆弱类杆菌
+T23	pathogenic_bacteria 250 256	需氧肠道杆菌
+R16	cause Arg1:T21 Arg2:T20	
+R17	cause Arg1:T22 Arg2:T20	
+R18	cause Arg1:T23 Arg2:T20	
+T24	disease 258 262	腹腔感染
+T25	disease 262 266	腹腔感染
+T26	disease 302 307	感染性休克
+T27	disease 308 311	败血症
+T28	disease 312 320	弥散性血管内凝血
+T29	disease 328 335	多器官功能衰竭
+R19	relevant Arg1:T25 Arg2:T26	
+R20	relevant Arg1:T25 Arg2:T27	
+R21	relevant Arg1:T25 Arg2:T28	
+R22	relevant Arg1:T25 Arg2:T29	
+T30	disease 337 341	腹腔感染
+T31	disease 369 374	急性胆囊炎
+T32	disease 375 380	急性阑尾炎
+T33	disease 383 386	腹膜炎
+T34	disease 388 392	腹腔脓肿
+T35	disease 411 418	单纯性腹腔感染
+T36	disease 419 426	复杂性腹腔感染
+R23	relevant Arg1:T30 Arg2:T31	
+R24	relevant Arg1:T30 Arg2:T32	
+R25	relevant Arg1:T30 Arg2:T33	
+R26	relevant Arg1:T30 Arg2:T34	
+R27	relevant Arg1:T30 Arg2:T35	
+R28	relevant Arg1:T30 Arg2:T36	

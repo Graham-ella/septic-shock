@@ -1,0 +1,59 @@
+T1	disease 17 26	混合性高胆红素血症
+T2	pathogenic_bacteria 3 14	混合性高胆红素血症感染
+R1	cause Arg1:T2 Arg2:T1	
+T3	symptom 56 58	贫血
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	disease 41 43	黄疸
+T5	pathogenic_bacteria 32 34	细菌
+T6	pathogenic_bacteria 35 37	病毒
+R3	cause Arg1:T5 Arg2:T4	
+R4	cause Arg1:T6 Arg2:T4	
+T7	disease 60 69	幕上高度恶性胶质瘤
+T8	disease 115 120	低度胶质瘤
+T9	disease 122 127	急性胰腺炎
+T10	disease 171 175	成骨肉瘤
+T11	disease 179 185	成骨性骨肉瘤
+T12	disease 186 193	成软骨性骨肉瘤
+T13	disease 194 201	成纤维性骨肉瘤
+T14	physical_therapy 209 213	X线摄片
+R5	physical Arg1:T10 Arg2:T14	
+T15	disease 249 253	幕下肿瘤
+T16	symptom 255 258	眼震颤
+T17	symptom 294 296	呕吐
+T18	symptom 259 266	肢体共济运动差
+R6	clinical_manifestation Arg1:T15 Arg2:T16	
+R7	clinical_manifestation Arg1:T15 Arg2:T18	
+R8	clinical_manifestation Arg1:T15 Arg2:T17	
+T19	disease 323 329	囊状淋巴管瘤
+T20	disease 331 335	囊状水瘤
+R9	same Arg1:T19 Arg2:T20	
+T21	disease 391 397	儿童恶性肿瘤
+T22	disease 398 401	淋巴瘤
+T23	disease 402 408	神经母细胞瘤
+T24	disease 409 413	尤因肉瘤
+T25	physical_therapy 451 455	X线平片
+T26	physical_therapy 456 462	B型超声检查
+T27	physical_therapy 463 465	CT
+T28	physical_therapy 466 469	MRI
+T29	physical_therapy 470 473	骨扫描
+R10	physical Arg1:T21 Arg2:T25	
+R11	physical Arg1:T21 Arg2:T26	
+R12	physical Arg1:T21 Arg2:T27	
+R13	physical Arg1:T21 Arg2:T28	
+R14	physical Arg1:T21 Arg2:T29	
+T30	disease 475 482	皮肤鳞状细胞癌
+T31	disease 530 533	胆管癌
+T32	disease 536 541	梗阻性黄疸
+T33	physical_therapy 552 556	腹部超声
+R15	physical Arg1:T32 Arg2:T33	
+T34	disease 599 604	急性胰腺炎
+T35	pathogenic_bacteria 613 616	沙门菌
+T36	pathogenic_bacteria 617 621	痢疾杆菌
+T37	pathogenic_bacteria 622 625	弯曲菌
+T38	pathogenic_bacteria 563 568	寄生虫感染
+R16	cause Arg1:T38 Arg2:T34	
+T39	pathogenic_bacteria 626 633	钩端螺旋体感染
+R17	cause Arg1:T35 Arg2:T34	
+R18	cause Arg1:T36 Arg2:T34	
+R19	cause Arg1:T37 Arg2:T34	
+R20	cause Arg1:T39 Arg2:T34	

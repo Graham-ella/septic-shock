@@ -1,0 +1,4 @@
+T1	disease 0 5	感染性休克
+T2	disease 34 39	感染性休克
+T3	pathogenic_bacteria 5 9	手术感染
+R1	cause Arg1:T3 Arg2:T1	

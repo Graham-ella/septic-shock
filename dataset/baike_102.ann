@@ -1,0 +1,10 @@
+T1	disease 0 2	肿瘤
+T2	disease 7 9	肿瘤
+T3	disease 29 31	肿瘤
+T4	disease 72 74	肿瘤
+T5	medical_treatment 108 119	禁食状态下使用二甲双胍
+R1	medical Arg1:T4 Arg2:T5	
+T6	symptom 9 26	细胞会出现不同于正常细胞的代谢变化
+R2	clinical_manifestation Arg1:T2 Arg2:T6	
+R3	clinical_manifestation Arg1:T3 Arg2:T6	
+R4	clinical_manifestation Arg1:T1 Arg2:T6	

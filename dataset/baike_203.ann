@@ -1,0 +1,32 @@
+T1	disease 0 3	肝损伤
+T2	symptom 14 16	寒战
+T3	symptom 17 19	高热
+T4	symptom 20 24	肝区疼痛
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+T5	disease 33 36	肝损伤
+T6	symptom 36 41	腹腔内出血
+T7	symptom 42 47	胆汁外渗多
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+R5	clinical_manifestation Arg1:T5 Arg2:T7	
+T8	disease 57 61	急性休克
+T9	disease 64 68	腹膜刺激
+R6	relevant Arg1:T5 Arg2:T8	
+R7	relevant Arg1:T5 Arg2:T9	
+T10	disease 72 75	肝损伤
+T11	symptom 78 82	腹部疼痛
+T12	symptom 83 87	颜面苍白
+T13	symptom 88 92	脉搏细数
+T14	symptom 93 97	血压下降
+T15	symptom 98 102	尿量减少
+R8	clinical_manifestation Arg1:T10 Arg2:T11	
+R9	clinical_manifestation Arg1:T10 Arg2:T12	
+R10	clinical_manifestation Arg1:T10 Arg2:T13	
+R11	clinical_manifestation Arg1:T10 Arg2:T14	
+R12	clinical_manifestation Arg1:T10 Arg2:T15	
+T16	disease 105 108	肝损伤
+T17	symptom 108 114	腹部压痛明显
+T18	symptom 115 119	腹肌紧张
+R13	clinical_manifestation Arg1:T16 Arg2:T17	
+R14	clinical_manifestation Arg1:T16 Arg2:T18	

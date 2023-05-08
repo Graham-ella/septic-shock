@@ -1,0 +1,10 @@
+T1	disease 0 2	肿瘤
+T2	disease 29 33	良性肿瘤
+T3	disease 34 38	恶性肿瘤
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 43 45	肿瘤
+T5	disease 45 48	白血病
+T6	disease 65 67	血癌
+R3	same Arg1:T5 Arg2:T6	
+R4	relevant Arg1:T4 Arg2:T5	

@@ -1,0 +1,13 @@
+T1	disease 0 8	中毒性休克综合征
+T2	disease 35 42	多脏器功能衰竭
+T3	symptom 46 48	发绀
+T4	symptom 49 53	呼吸困难
+T5	symptom 54 58	氧分压低
+T6	symptom 59 61	尿少
+T7	symptom 62 67	尿素氮升高
+R1	relevant Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T2 Arg2:T3	
+R3	clinical_manifestation Arg1:T2 Arg2:T4	
+R4	clinical_manifestation Arg1:T2 Arg2:T5	
+R5	clinical_manifestation Arg1:T2 Arg2:T6	
+R6	clinical_manifestation Arg1:T2 Arg2:T7	

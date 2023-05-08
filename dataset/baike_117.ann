@@ -1,0 +1,18 @@
+T1	disease 0 5	多脏器衰竭
+T2	pathogenic_bacteria 5 9	重度感染
+T3	pathogenic_bacteria 10 15	长期低血压
+T4	pathogenic_bacteria 16 18	创伤
+T5	pathogenic_bacteria 19 31	多种介质和巨噬细胞的激活
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+R4	cause Arg1:T5 Arg2:T1	
+T6	disease 51 56	多脏器衰竭
+T7	disease 62 65	MOF
+R5	same Arg1:T6 Arg2:T7	
+T8	disease 79 82	MOF
+R6	same Arg1:T6 Arg2:T8	
+T9	pathogenic_bacteria 98 106	细胞因子过量生成
+R7	cause Arg1:T9 Arg2:T8	
+T10	pathogenic_bacteria 138 156	大量细胞因子（又称细胞素）和其他介质
+R8	cause Arg1:T10 Arg2:T8	

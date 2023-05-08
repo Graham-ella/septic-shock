@@ -1,0 +1,89 @@
+T1	disease 0 5	慢性胰腺炎
+T2	symptom 57 61	典型腹痛
+T3	symptom 48 56	复发性急性胰腺炎
+T4	disease 84 88	胰腺钙化
+T5	disease 103 110	中重度胰管病变
+T6	disease 140 146	胰源性脂肪泻
+T7	disease 122 134	持续性胰腺外分泌功能障碍
+R1	clinical_manifestation Arg1:T1 Arg2:T3	
+R2	clinical_manifestation Arg1:T1 Arg2:T2	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+R5	relevant Arg1:T1 Arg2:T7	
+R6	relevant Arg1:T1 Arg2:T6	
+T8	disease 149 151	胃炎
+T9	disease 154 157	胃腺癌
+T10	disease 158 163	胃良性肿瘤
+R7	relevant Arg1:T8 Arg2:T9	
+R8	relevant Arg1:T8 Arg2:T10	
+T11	disease 172 179	B族链球菌感染
+T12	physical_therapy 237 242	肝功能试验
+R9	physical Arg1:T11 Arg2:T12	
+T13	disease 249 252	脓毒症
+T14	symptom 254 280	丙氨酸氨基转移酶和天门冬氨酸转移酶可出现非特异性升高
+R10	clinical_manifestation Arg1:T13 Arg2:T14	
+T15	disease 288 293	1型糖尿病
+T16	symptom 324 328	精神呆滞
+T17	symptom 329 331	软弱
+T18	symptom 332 336	体重下降
+R11	clinical_manifestation Arg1:T15 Arg2:T16	
+R12	clinical_manifestation Arg1:T15 Arg2:T17	
+R13	clinical_manifestation Arg1:T15 Arg2:T18	
+T19	pathogenic_bacteria 303 305	感染
+T20	pathogenic_bacteria 306 310	饮食不当
+R14	cause Arg1:T19 Arg2:T15	
+R15	cause Arg1:T20 Arg2:T15	
+T21	disease 341 346	百日咳肺炎
+T22	pathogenic_bacteria 347 352	百日咳杆菌
+R16	cause Arg1:T22 Arg2:T21	
+T23	medical_treatment 385 388	红霉素
+R17	medical Arg1:T21 Arg2:T23	
+T24	disease 375 380	支气管肺炎
+R18	relevant Arg1:T21 Arg2:T24	
+T25	disease 401 406	急性胰腺炎
+T26	disease 408 415	急性肾功能损伤
+R19	relevant Arg1:T25 Arg2:T26	
+T27	disease 419 423	胰腺脓肿
+R20	relevant Arg1:T25 Arg2:T27	
+T28	disease 455 460	脑干胶质瘤
+T29	disease 469 474	脑干胶质瘤
+T30	disease 475 483	儿童神经系统肿瘤
+T31	physical_therapy 452 454	化疗
+R21	physical Arg1:T28 Arg2:T31	
+T32	disease 505 511	非小细胞肺癌
+T33	disease 522 526	COPD
+T34	symptom 514 517	哮鸣音
+T35	disease 527 532	支气管阻塞
+T36	symptom 537 540	捻发音
+T37	disease 542 548	去梗阻性肺炎
+T38	disease 549 552	肺不张
+T39	disease 562 567	支气管阻塞
+T40	symptom 572 578	减弱的呼吸音
+R22	clinical_manifestation Arg1:T33 Arg2:T34	
+R23	clinical_manifestation Arg1:T35 Arg2:T34	
+R24	clinical_manifestation Arg1:T37 Arg2:T36	
+R25	clinical_manifestation Arg1:T38 Arg2:T36	
+R26	clinical_manifestation Arg1:T39 Arg2:T40	
+T41	disease 580 591	B细胞型非霍奇金淋巴瘤
+T42	disease 614 621	B细胞型NHL
+T43	disease 625 643	伯基特型（Burkitt’s）NHL
+T44	disease 645 653	大B细胞型NHL
+T45	disease 655 671	成熟B细胞性急性淋巴细胞性白血病
+T46	disease 733 739	转移性乳腺癌
+T47	physical_therapy 762 768	胸部CT扫描
+T48	disease 782 788	转移性乳腺癌
+T49	physical_therapy 740 744	胸部X线
+R27	physical Arg1:T46 Arg2:T49	
+R28	physical Arg1:T46 Arg2:T47	
+T50	disease 819 826	充血性心力衰竭
+T51	disease 827 829	肺炎
+T52	disease 830 833	肺栓塞
+T53	disease 834 838	营养不良
+T54	disease 847 851	胸腔积液
+R29	relevant Arg1:T50 Arg2:T54	
+R30	relevant Arg1:T51 Arg2:T54	
+R31	relevant Arg1:T52 Arg2:T54	
+R32	relevant Arg1:T53 Arg2:T54	
+T55	disease 750 754	胸腔积液
+R33	physical Arg1:T55 Arg2:T49	
+R34	physical Arg1:T55 Arg2:T47	

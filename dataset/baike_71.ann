@@ -1,0 +1,45 @@
+T1	disease 0 3	糖尿病
+T2	disease 10 15	2型糖尿病
+R1	relevant Arg1:T1 Arg2:T2	
+T3	disease 29 34	2型糖尿病
+T4	medical_treatment 47 53	加双胍类药物
+R2	medical Arg1:T3 Arg2:T4	
+T5	disease 54 58	1型糖尿
+T6	medical_treatment 71 85	用双胍类药物可减少胰岛素剂量
+R3	medical Arg1:T5 Arg2:T6	
+T7	disease 86 91	2型糖尿病
+T8	medical_treatment 106 122	加用双胍类药物，能减少胰岛素用量
+R4	medical Arg1:T7 Arg2:T8	
+T9	disease 124 130	胃肠功能紊乱
+T10	disease 130 136	胃肠功能紊乱
+T11	disease 138 145	胃肠神经官能症
+R5	same Arg1:T10 Arg2:T11	
+R6	same Arg1:T9 Arg2:T11	
+R7	relevant Arg1:T1 Arg2:T3	
+R8	relevant Arg1:T1 Arg2:T5	
+R9	relevant Arg1:T1 Arg2:T7	
+T12	pathogenic_bacteria 158 162	精神因素
+R10	cause Arg1:T12 Arg2:T10	
+T13	disease 228 234	胃肠功能紊乱
+T14	pathogenic_bacteria 244 249	饮食不规律
+R11	cause Arg1:T14 Arg2:T13	
+T15	disease 283 289	胃肠功能紊乱
+T16	pathogenic_bacteria 296 300	消化不良
+T17	pathogenic_bacteria 301 303	胃炎
+T18	pathogenic_bacteria 304 307	溃疡病
+T19	pathogenic_bacteria 308 313	急性胃肠炎
+R12	cause Arg1:T16 Arg2:T15	
+R13	cause Arg1:T17 Arg2:T15	
+R14	cause Arg1:T18 Arg2:T15	
+R15	cause Arg1:T19 Arg2:T15	
+T20	disease 317 323	胃肠功能紊乱
+T21	disease 370 376	胃肠功能紊乱
+T22	disease 390 396	胃肠功能紊乱
+T23	pathogenic_bacteria 323 327	精神因素
+R16	cause Arg1:T23 Arg2:T20	
+T24	symptom 383 388	神经性呕吐
+R17	clinical_manifestation Arg1:T21 Arg2:T24	
+T25	symptom 397 402	神经性嗳气
+R18	clinical_manifestation Arg1:T22 Arg2:T25	
+T26	disease 362 368	胃肠功能紊乱
+R19	cause Arg1:T23 Arg2:T26	

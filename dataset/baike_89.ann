@@ -1,0 +1,28 @@
+T1	disease 0 3	肝硬化
+T2	disease 5 10	病毒性肝炎
+T3	disease 16 21	病毒性肝炎
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 37 44	门静脉性肝硬化
+R3	relevant Arg1:T1 Arg2:T4	
+T5	disease 51 54	肝硬化
+T6	disease 70 73	肝硬化
+T7	pathogenic_bacteria 56 60	酒精中毒
+R4	cause Arg1:T7 Arg2:T6	
+T8	disease 80 83	肝硬化
+T9	pathogenic_bacteria 95 99	营养不良
+T10	disease 121 124	肝硬化
+R5	cause Arg1:T9 Arg2:T10	
+T11	disease 131 134	肝硬化
+T12	disease 209 218	中毒性或药物性肝炎
+T13	disease 223 226	肝硬化
+R6	relevant Arg1:T12 Arg2:T13	
+R7	relevant Arg1:T11 Arg2:T13	
+T14	disease 228 231	肝硬化
+T15	pathogenic_bacteria 231 235	黄曲霉素
+T16	disease 250 253	肝硬化
+R8	cause Arg1:T15 Arg2:T16	
+T17	disease 255 258	肝硬化
+T18	disease 316 322	心源性肝硬化
+T19	disease 306 312	淤血性肝硬化
+R9	same Arg1:T19 Arg2:T18	

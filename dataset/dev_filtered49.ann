@@ -1,0 +1,81 @@
+T1	disease 0 10	传染性单核细胞增多症
+T2	disease 92 97	间质性肺炎
+T3	disease 98 103	胃肠道出血
+T4	disease 104 106	肾炎
+T5	disease 107 117	自身免疫性溶血性贫血
+T6	disease 118 125	再生障碍性贫血
+T7	disease 126 132	粒细胞缺乏症
+T8	disease 133 139	血小板减少症
+T9	pathogenic_bacteria 12 16	EB病毒
+T10	symptom 42 44	发热
+T11	symptom 45 48	咽喉痛
+T12	symptom 49 57	肝脾和淋巴结肿大
+T13	symptom 58 68	外周血中淋巴细胞增多
+T14	symptom 69 77	出现异型淋巴细胞
+R1	cause Arg1:T9 Arg2:T1	
+R2	clinical_manifestation Arg1:T1 Arg2:T10	
+R3	clinical_manifestation Arg1:T1 Arg2:T11	
+R4	clinical_manifestation Arg1:T1 Arg2:T12	
+R5	clinical_manifestation Arg1:T1 Arg2:T13	
+R6	clinical_manifestation Arg1:T1 Arg2:T14	
+R7	relevant Arg1:T1 Arg2:T2	
+R8	relevant Arg1:T1 Arg2:T3	
+R9	relevant Arg1:T1 Arg2:T4	
+R10	relevant Arg1:T1 Arg2:T5	
+R11	relevant Arg1:T1 Arg2:T6	
+R12	relevant Arg1:T1 Arg2:T7	
+R13	relevant Arg1:T1 Arg2:T8	
+T15	disease 146 152	新生儿低血糖
+T16	pathogenic_bacteria 248 254	高胰岛素血症
+T17	pathogenic_bacteria 180 189	糖原和脂肪贮存不足
+R14	cause Arg1:T17 Arg2:T15	
+R15	cause Arg1:T16 Arg2:T15	
+T18	disease 277 282	急性胰腺炎
+T19	symptom 290 292	发汗
+T20	symptom 293 297	心动过速
+T21	symptom 298 302	呼吸过速
+T22	symptom 309 317	脉搏忽然变得细弱
+R16	clinical_manifestation Arg1:T18 Arg2:T19	
+R17	clinical_manifestation Arg1:T18 Arg2:T20	
+R18	clinical_manifestation Arg1:T18 Arg2:T21	
+R19	clinical_manifestation Arg1:T18 Arg2:T22	
+T23	disease 369 373	AIDS
+T24	physical_therapy 396 403	特异性抗体检测
+R20	physical Arg1:T23 Arg2:T24	
+T25	disease 428 433	基底细胞癌
+T26	disease 478 481	AML
+T27	disease 482 485	ALL
+T28	disease 587 590	脑膜炎
+T29	pathogenic_bacteria 591 599	耐青霉素肺炎球菌
+R21	cause Arg1:T29 Arg2:T28	
+T30	disease 621 625	手足口病
+T31	pathogenic_bacteria 695 702	肠道病毒71型
+T32	pathogenic_bacteria 703 712	柯萨奇病毒A16型
+T33	pathogenic_bacteria 716 721	CV-A6
+T34	pathogenic_bacteria 722 730	CV-A10感染
+T35	pathogenic_bacteria 627 631	肠道病毒
+R22	cause Arg1:T35 Arg2:T30	
+R23	cause Arg1:T31 Arg2:T30	
+R24	cause Arg1:T32 Arg2:T30	
+R25	cause Arg1:T33 Arg2:T30	
+R26	cause Arg1:T34 Arg2:T30	
+T36	disease 782 787	感染性肺炎
+T37	pathogenic_bacteria 745 749	大肠杆菌
+T38	pathogenic_bacteria 759 764	克雷伯杆菌
+T39	pathogenic_bacteria 765 769	李斯特菌
+R27	cause Arg1:T37 Arg2:T36	
+R28	cause Arg1:T38 Arg2:T36	
+R29	cause Arg1:T39 Arg2:T36	
+T40	disease 798 803	细菌性肺炎
+T41	medical_treatment 810 813	抗生素
+T42	medical_treatment 840 845	耐酶青霉素
+T43	medical_treatment 881 884	红霉素
+T44	medical_treatment 846 853	第一代头孢菌素
+T45	medical_treatment 854 858	阿米卡星
+T46	medical_treatment 866 873	第三代头孢菌素
+R30	medical Arg1:T40 Arg2:T41	
+R31	medical Arg1:T40 Arg2:T42	
+R32	medical Arg1:T40 Arg2:T44	
+R33	medical Arg1:T40 Arg2:T45	
+R34	medical Arg1:T40 Arg2:T46	
+R35	medical Arg1:T40 Arg2:T43	

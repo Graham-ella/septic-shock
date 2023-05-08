@@ -1,0 +1,44 @@
+T1	disease 0 5	细菌性痢疾
+T2	disease 5 9	急性菌痢
+R1	relevant Arg1:T1 Arg2:T2	
+T3	physical_therapy 17 21	卧床休息
+T4	physical_therapy 22 27	消化道隔离
+R2	physical Arg1:T2 Arg2:T3	
+R3	physical Arg1:T2 Arg2:T4	
+T5	disease 51 56	细菌性痢疾
+T6	physical_therapy 56 66	给予流质或半流质饮食
+T7	physical_therapy 67 80	忌食生冷、油腻和刺激性食物
+R4	physical Arg1:T5 Arg2:T6	
+R5	physical Arg1:T5 Arg2:T7	
+T8	disease 82 87	细菌性痢疾
+T9	pathogenic_bacteria 93 96	志贺菌
+R6	cause Arg1:T9 Arg2:T8	
+T10	medical_treatment 156 160	喹诺酮类
+T11	medical_treatment 183 190	复方磺胺甲恶唑
+T12	medical_treatment 191 195	阿莫西林
+T13	medical_treatment 196 200	头孢曲松
+T14	medical_treatment 201 206	中药小檗碱
+R7	medical Arg1:T8 Arg2:T10	
+R8	medical Arg1:T8 Arg2:T11	
+R9	medical Arg1:T8 Arg2:T12	
+R10	medical Arg1:T8 Arg2:T13	
+R11	medical Arg1:T8 Arg2:T14	
+T15	disease 231 236	细菌性痢疾
+T16	physical_therapy 241 253	保持水、电解质和酸碱平衡
+R12	physical Arg1:T15 Arg2:T16	
+T17	disease 255 260	细菌性痢疾
+T18	symptom 261 265	挛性腹痛
+R13	clinical_manifestation Arg1:T17 Arg2:T18	
+T19	medical_treatment 268 271	阿托品
+T20	physical_therapy 274 278	腹部热敷
+R14	treatment Arg1:T18 Arg2:T19	
+R15	treatment Arg1:T18 Arg2:T20	
+T21	disease 280 285	细菌性痢疾
+T22	symptom 285 287	发热
+T23	physical_therapy 289 293	物理降温
+T24	symptom 296 298	高热
+T25	medical_treatment 302 305	退热药
+R16	clinical_manifestation Arg1:T21 Arg2:T22	
+R17	clinical_manifestation Arg1:T21 Arg2:T24	
+R18	treatment Arg1:T22 Arg2:T23	
+R19	treatment Arg1:T24 Arg2:T25	

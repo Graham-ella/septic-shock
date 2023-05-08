@@ -1,0 +1,30 @@
+T1	disease 0 5	多脏器衰竭
+T2	disease 59 63	MSOF
+R1	same Arg1:T1 Arg2:T2	
+T3	pathogenic_bacteria 34 36	细菌
+T4	pathogenic_bacteria 37 40	内毒素
+T5	pathogenic_bacteria 41 44	TNF
+T6	pathogenic_bacteria 45 49	IL-1
+R2	cause Arg1:T6 Arg2:T2	
+R3	cause Arg1:T5 Arg2:T2	
+R4	cause Arg1:T4 Arg2:T2	
+R5	cause Arg1:T3 Arg2:T2	
+T7	disease 68 73	多脏器衰竭
+T8	disease 113 117	MSOF
+R6	same Arg1:T7 Arg2:T8	
+T9	pathogenic_bacteria 73 81	肠道细菌与内毒素
+R7	cause Arg1:T9 Arg2:T8	
+T10	pathogenic_bacteria 83 92	肠源性细菌或内毒素
+R8	cause Arg1:T10 Arg2:T8	
+T11	disease 122 127	多脏器衰竭
+T12	disease 140 147	肠屏障功能状态
+T13	disease 148 155	康普弗细胞功能
+T14	disease 156 169	超高代谢反应与远处器官损伤
+R9	relevant Arg1:T11 Arg2:T12	
+R10	relevant Arg1:T11 Arg2:T13	
+R11	relevant Arg1:T11 Arg2:T14	
+T15	disease 182 187	多脏器衰竭
+T16	pathogenic_bacteria 227 236	肠源性细菌或内毒素
+T17	disease 245 252	肠屏障功能衰竭
+R12	cause Arg1:T16 Arg2:T17	
+R13	relevant Arg1:T15 Arg2:T17	

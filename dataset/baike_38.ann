@@ -1,0 +1,8 @@
+T1	disease 0 6	凝血功能障碍
+T2	disease 6 12	凝血功能障碍
+T3	disease 13 19	凝血功能障碍
+T4	disease 42 48	凝血功能障碍
+T5	disease 62 68	凝血功能障碍
+T6	disease 111 117	凝血功能障碍
+T7	pathogenic_bacteria 138 146	多种凝血因子缺乏
+R1	cause Arg1:T7 Arg2:T6	

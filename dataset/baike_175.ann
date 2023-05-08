@@ -1,0 +1,19 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 33 40	呼吸道合胞病毒
+T3	pathogenic_bacteria 41 46	副流感病毒
+T4	disease 49 54	呼吸道感染
+T5	disease 55 57	流感
+T6	disease 58 60	风疹
+T7	disease 61 66	病毒性肝炎
+R1	cause Arg1:T3 Arg2:T4	
+R2	cause Arg1:T2 Arg2:T4	
+R3	cause Arg1:T2 Arg2:T5	
+R4	cause Arg1:T3 Arg2:T5	
+R5	cause Arg1:T3 Arg2:T6	
+R6	cause Arg1:T2 Arg2:T6	
+R7	cause Arg1:T3 Arg2:T7	
+R8	cause Arg1:T2 Arg2:T7	
+R9	relevant Arg1:T1 Arg2:T4	
+R10	relevant Arg1:T1 Arg2:T5	
+R11	relevant Arg1:T1 Arg2:T6	
+R12	relevant Arg1:T1 Arg2:T7	

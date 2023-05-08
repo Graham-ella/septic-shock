@@ -1,0 +1,46 @@
+T1	disease 0 5	细菌性痢疾
+T2	pathogenic_bacteria 9 16	痢疾杆菌内毒素
+R1	cause Arg1:T2 Arg2:T1	
+T3	disease 39 44	细菌性痢疾
+T4	pathogenic_bacteria 44 49	慢性菌痢菌
+R2	cause Arg1:T4 Arg2:T3	
+T5	disease 70 75	细菌性痢疾
+T6	disease 82 89	结肠溃疡性病变
+R3	relevant Arg1:T5 Arg2:T6	
+T7	disease 119 124	细菌性痢疾
+T8	disease 129 134	慢性隐匿型
+R4	relevant Arg1:T7 Arg2:T8	
+T9	disease 184 189	细菌性痢疾
+T10	symptom 149 158	大便病原菌培养阳性
+R5	clinical_manifestation Arg1:T8 Arg2:T10	
+T11	symptom 169 182	黏膜炎症或溃疡等菌痢的表现
+R6	clinical_manifestation Arg1:T8 Arg2:T11	
+T12	disease 189 194	慢性迁延型
+R7	relevant Arg1:T9 Arg2:T12	
+T13	symptom 197 203	有急性菌痢史
+R8	clinical_manifestation Arg1:T12 Arg2:T13	
+T14	symptom 211 218	腹胀或长期腹泻
+R9	clinical_manifestation Arg1:T12 Arg2:T14	
+T15	symptom 219 224	黏液脓血便
+R10	clinical_manifestation Arg1:T12 Arg2:T15	
+T16	symptom 225 231	长期间歇排菌
+R11	clinical_manifestation Arg1:T12 Arg2:T16	
+T17	disease 241 246	细菌性痢疾
+T18	disease 246 253	慢性型急性发作
+R12	relevant Arg1:T17 Arg2:T18	
+T19	symptom 256 262	有急性菌痢史
+R13	clinical_manifestation Arg1:T18 Arg2:T19	
+T20	symptom 263 273	急性期后症状已不明显
+R14	clinical_manifestation Arg1:T18 Arg2:T20	
+T21	pathogenic_bacteria 274 281	受凉、饮食不当
+R15	cause Arg1:T21 Arg2:T18	
+T22	disease 299 304	细菌性痢疾
+T23	disease 308 312	急性菌痢
+R16	relevant Arg1:T22 Arg2:T23	
+T24	symptom 314 334	白细胞总数和中性粒细胞比例呈轻至中度升高
+R17	clinical_manifestation Arg1:T23 Arg2:T24	
+T25	disease 336 341	细菌性痢疾
+T26	symptom 347 352	血红蛋白低
+T27	symptom 353 355	贫血
+R18	clinical_manifestation Arg1:T25 Arg2:T26	
+R19	clinical_manifestation Arg1:T25 Arg2:T27	

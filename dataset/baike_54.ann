@@ -1,0 +1,21 @@
+T1	disease 0 4	急性肺炎
+T2	disease 27 29	肺炎
+R1	relevant Arg1:T1 Arg2:T2	
+T3	physical_therapy 8 12	卧床休息
+T4	physical_therapy 13 17	大量饮水
+T5	physical_therapy 18 20	吸氧
+T6	physical_therapy 21 25	积极排痰
+R2	physical Arg1:T1 Arg2:T3	
+R3	physical Arg1:T1 Arg2:T4	
+R4	physical Arg1:T1 Arg2:T5	
+R5	physical Arg1:T1 Arg2:T6	
+T7	disease 43 47	急性肺炎
+T8	medical_treatment 47 51	青霉素类
+T9	medical_treatment 52 56	头孢菌素
+T10	medical_treatment 57 64	大环内酯类药物
+R6	medical Arg1:T7 Arg2:T8	
+R7	medical Arg1:T7 Arg2:T9	
+R8	medical Arg1:T7 Arg2:T10	
+T11	disease 114 118	急性肺炎
+T12	physical_therapy 118 128	密切监测用药后的反应
+R9	physical Arg1:T11 Arg2:T12	

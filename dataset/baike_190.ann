@@ -1,0 +1,46 @@
+T1	disease 0 3	暖休克
+T2	disease 3 5	休克
+R1	relevant Arg1:T1 Arg2:T2	
+T3	symptom 10 17	心肌收缩力增强
+T4	symptom 18 24	心输出量增加
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+T5	symptom 26 41	外周血管扩张使周围血管阻力降低
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 90 93	暖休克
+T7	disease 106 109	暖休克
+T8	symptom 95 103	皮肤比较温暖干燥
+R5	clinical_manifestation Arg1:T6 Arg2:T8	
+R6	clinical_manifestation Arg1:T7 Arg2:T8	
+T9	disease 111 114	暖休克
+T10	symptom 114 120	外周血管收缩
+T11	symptom 121 126	微循环淤滞
+T12	symptom 127 145	大量毛细血管渗出致血容量和CO2减少
+R7	clinical_manifestation Arg1:T9 Arg2:T10	
+R8	clinical_manifestation Arg1:T9 Arg2:T11	
+R9	clinical_manifestation Arg1:T9 Arg2:T12	
+T13	disease 147 150	暖休克
+T14	symptom 152 158	血管阻力降低
+T15	symptom 159 164	氧耗量减低
+T16	symptom 165 169	乳酸增多
+T17	symptom 170 174	低氧血症
+T18	symptom 175 180	低碳酸血症
+R10	clinical_manifestation Arg1:T13 Arg2:T14	
+R11	clinical_manifestation Arg1:T13 Arg2:T15	
+R12	clinical_manifestation Arg1:T13 Arg2:T16	
+R13	clinical_manifestation Arg1:T13 Arg2:T17	
+R14	clinical_manifestation Arg1:T13 Arg2:T18	
+T19	disease 182 185	暖休克
+T20	symptom 188 192	皮肤发亮
+T21	symptom 193 195	肤暖
+T22	symptom 196 199	皮肤干
+T23	disease 201 204	暖休克
+R15	clinical_manifestation Arg1:T19 Arg2:T20	
+R16	clinical_manifestation Arg1:T19 Arg2:T21	
+R17	clinical_manifestation Arg1:T19 Arg2:T22	
+T24	symptom 204 209	脉压差较大
+T25	symptom 210 214	呼吸急促
+T26	symptom 215 219	烦躁不安
+R18	clinical_manifestation Arg1:T23 Arg2:T24	
+R19	clinical_manifestation Arg1:T23 Arg2:T25	
+R20	clinical_manifestation Arg1:T23 Arg2:T26	

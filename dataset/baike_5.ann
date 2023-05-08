@@ -1,0 +1,47 @@
+T1	disease 0 5	感染性休克
+T2	physical_therapy 8 13	纠正酸中毒
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 32 37	感染性休克
+T4	medical_treatment 37 40	缓冲碱
+R2	medical Arg1:T3 Arg2:T4	
+T5	disease 71 76	感染性休克
+T6	physical_therapy 76 81	纠正酸中毒
+R3	physical Arg1:T5 Arg2:T6	
+T7	medical_treatment 95 101	血管活性药物
+R4	medical Arg1:T5 Arg2:T7	
+T8	disease 109 112	DIC
+R5	relevant Arg1:T5 Arg2:T8	
+T9	disease 117 122	感染性休克
+T10	medical_treatment 125 131	血管活性药物
+R6	medical Arg1:T9 Arg2:T10	
+T11	disease 156 158	休克
+R7	relevant Arg1:T9 Arg2:T11	
+T12	disease 163 168	感染性休克
+T13	medical_treatment 182 189	强心药物的应用
+T14	physical_therapy 191 197	维持呼吸功能
+T15	disease 200 204	ARDS
+R8	medical Arg1:T12 Arg2:T13	
+R9	physical Arg1:T12 Arg2:T14	
+R10	relevant Arg1:T12 Arg2:T15	
+T16	physical_therapy 206 212	肾功能的维护
+T17	physical_therapy 171 180	维护重要脏器的功能
+R11	physical Arg1:T12 Arg2:T17	
+T18	medical_treatment 230 237	肾上腺皮质激素
+T19	medical_treatment 238 246	β-内啡肽拮抗剂
+R12	medical Arg1:T12 Arg2:T18	
+R13	medical Arg1:T12 Arg2:T19	
+T20	disease 257 262	感染性休克
+T21	disease 263 266	败血症
+R14	relevant Arg1:T20 Arg2:T21	
+T22	disease 324 329	感染性休克
+T23	disease 350 355	严重毒血症
+T24	symptom 332 336	急性起病
+T25	symptom 337 341	寒战高热
+T26	symptom 342 349	白细胞显着增加
+R15	clinical_manifestation Arg1:T22 Arg2:T24	
+R16	clinical_manifestation Arg1:T22 Arg2:T25	
+R17	clinical_manifestation Arg1:T22 Arg2:T26	
+R18	relevant Arg1:T22 Arg2:T23	
+T27	disease 366 371	感染性休克
+T28	disease 390 395	感染性休克
+T29	disease 431 436	感染性休克

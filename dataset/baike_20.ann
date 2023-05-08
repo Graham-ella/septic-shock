@@ -1,0 +1,7 @@
+T1	disease 0 5	败血症休克
+T2	disease 77 80	败血症
+T3	disease 150 153	败血症
+T4	disease 155 162	革兰阴性败血症
+R1	relevant Arg1:T3 Arg2:T4	
+T5	disease 13 19	各种器官衰竭
+R2	relevant Arg1:T1 Arg2:T5	

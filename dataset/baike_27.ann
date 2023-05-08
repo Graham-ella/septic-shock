@@ -1,0 +1,14 @@
+T1	disease 0 5	急性肾损伤
+T2	disease 10 13	脓毒症
+T3	disease 14 23	全身抗炎反应综合征
+T4	disease 84 89	急性肾损伤
+T5	disease 107 112	急性肾损伤
+T6	disease 7 9	感染
+R1	relevant Arg1:T1 Arg2:T6	
+T7	disease 192 197	急性肾损伤
+T8	disease 114 119	结缔组织病
+T9	disease 120 126	.肾小管坏死
+R2	relevant Arg1:T5 Arg2:T9	
+R3	relevant Arg1:T5 Arg2:T8	
+R4	relevant Arg1:T6 Arg2:T2	
+R5	relevant Arg1:T6 Arg2:T3	

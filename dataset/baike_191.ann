@@ -1,0 +1,19 @@
+T1	disease 0 3	暖休克
+T2	disease 8 11	暖休克
+T3	pathogenic_bacteria 21 26	革兰阳性菌
+T4	disease 33 35	休克
+R1	cause Arg1:T3 Arg2:T4	
+R2	relevant Arg1:T2 Arg2:T4	
+R3	relevant Arg1:T1 Arg2:T4	
+T5	disease 39 42	暖休克
+T6	disease 49 54	感染性休克
+R4	relevant Arg1:T5 Arg2:T6	
+T7	symptom 59 63	感染严重
+T8	symptom 64 71	抗生素用量不足
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+R6	clinical_manifestation Arg1:T6 Arg2:T8	
+T9	disease 85 88	暖休克
+T10	disease 89 95	心肾功能不全
+R7	relevant Arg1:T9 Arg2:T10	
+T11	disease 120 126	心肾功能衰竭
+R8	relevant Arg1:T9 Arg2:T11	

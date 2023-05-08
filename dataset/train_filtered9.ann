@@ -1,0 +1,93 @@
+T1	disease 134 139	感染性肺炎
+T2	pathogenic_bacteria 111 116	克雷伯杆菌
+T3	pathogenic_bacteria 117 121	李斯特菌
+T4	pathogenic_bacteria 23 28	GBS带菌
+R1	cause Arg1:T4 Arg2:T1	
+R2	cause Arg1:T2 Arg2:T1	
+R3	cause Arg1:T3 Arg2:T1	
+T5	disease 145 150	急性胰腺炎
+T6	symptom 157 167	中上腹和脐周剧烈腹痛
+T7	symptom 168 170	呕吐
+T8	symptom 174 176	发热
+T9	disease 177 185	急性水肿型胰腺炎
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+R5	clinical_manifestation Arg1:T5 Arg2:T7	
+R6	clinical_manifestation Arg1:T5 Arg2:T8	
+T10	disease 200 203	肝硬化
+T11	pathogenic_bacteria 205 209	胆道梗阻
+T12	pathogenic_bacteria 210 215	机械性梗阻
+T13	pathogenic_bacteria 216 220	胆道闭锁
+T14	pathogenic_bacteria 221 226	囊性纤维化
+R7	cause Arg1:T11 Arg2:T10	
+R8	cause Arg1:T12 Arg2:T10	
+R9	cause Arg1:T13 Arg2:T10	
+R10	cause Arg1:T14 Arg2:T10	
+T15	disease 228 231	肝硬化
+T16	symptom 234 242	肝脏表面呈结节样
+T17	symptom 243 247	肝脏缩小
+T18	symptom 248 258	左叶/尾状叶可能肥大
+T19	symptom 259 261	腹水
+T20	symptom 262 268	侧支循环形成
+T21	physical_therapy 272 280	上消化道内镜检查
+T22	disease 309 316	胃食管静脉曲张
+T23	disease 317 324	门脉高压性胃病
+R11	clinical_manifestation Arg1:T15 Arg2:T16	
+R12	clinical_manifestation Arg1:T15 Arg2:T17	
+R13	clinical_manifestation Arg1:T15 Arg2:T18	
+R14	clinical_manifestation Arg1:T15 Arg2:T19	
+R15	clinical_manifestation Arg1:T15 Arg2:T20	
+R16	physical Arg1:T15 Arg2:T21	
+R17	relevant Arg1:T15 Arg2:T22	
+R18	relevant Arg1:T15 Arg2:T23	
+T24	disease 336 339	肝硬化
+T25	medical_treatment 356 360	生长抑素
+T26	medical_treatment 365 368	奥曲肽
+R19	medical Arg1:T24 Arg2:T25	
+R20	medical Arg1:T24 Arg2:T26	
+T27	disease 388 395	生殖细胞性肿瘤
+T28	disease 541 548	生殖细胞性肿瘤
+T29	symptom 604 613	睾丸不对称肿大、硬
+R21	clinical_manifestation Arg1:T28 Arg2:T29	
+T30	physical_therapy 445 451	血液生化检查
+T31	physical_therapy 453 457	甲胎蛋白
+T32	physical_therapy 465 476	β-人绒毛膜促性腺激素
+T33	physical_therapy 485 492	血清乳酸脱氢酶
+T34	physical_therapy 509 514	B型超声波
+T35	physical_therapy 516 518	CT
+T36	physical_therapy 519 522	MRI
+T37	physical_therapy 534 536	化疗
+T38	physical_therapy 539 541	放疗
+T39	physical_therapy 529 531	手术
+R22	physical Arg1:T27 Arg2:T30	
+R23	physical Arg1:T27 Arg2:T31	
+R24	physical Arg1:T27 Arg2:T32	
+R25	physical Arg1:T27 Arg2:T33	
+R26	physical Arg1:T27 Arg2:T34	
+R27	physical Arg1:T27 Arg2:T35	
+R28	physical Arg1:T27 Arg2:T36	
+R29	physical Arg1:T27 Arg2:T39	
+R30	physical Arg1:T27 Arg2:T37	
+R31	physical Arg1:T27 Arg2:T38	
+T40	disease 615 623	糖尿病酮症酸中毒
+T41	physical_therapy 651 655	快速补液
+R32	physical Arg1:T40 Arg2:T41	
+T42	disease 774 777	AHF
+T43	medical_treatment 718 723	口服抗生素
+T44	medical_treatment 725 728	新霉素
+T45	physical_therapy 789 795	新鲜冷冻血浆
+R33	physical Arg1:T42 Arg2:T45	
+T46	symptom 782 788	凝血功能障碍
+R34	clinical_manifestation Arg1:T42 Arg2:T46	
+R35	medical Arg1:T42 Arg2:T44	
+R36	medical Arg1:T42 Arg2:T43	
+T47	disease 827 833	阿尔茨海默病
+T48	disease 834 839	2型糖尿病
+T49	disease 843 848	血管性痴呆
+T50	disease 876 878	AD
+R37	relevant Arg1:T48 Arg2:T49	
+R38	relevant Arg1:T48 Arg2:T50	
+T51	disease 895 898	食管癌
+T52	physical_therapy 937 942	新辅助治疗
+T53	physical_therapy 911 918	术前联合放化疗
+R39	physical Arg1:T51 Arg2:T53	
+R40	physical Arg1:T51 Arg2:T52	

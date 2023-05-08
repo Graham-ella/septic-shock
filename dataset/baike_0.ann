@@ -1,0 +1,118 @@
+T1	disease 0 5	感染性休克
+T2	pathogenic_bacteria 12 17	革兰阴性菌
+T3	disease 23 28	感染性休克
+R1	cause Arg1:T2 Arg2:T3	
+R2	cause Arg1:T2 Arg2:T1	
+T4	disease 30 35	感染性休克
+T5	disease 35 40	感染性休克
+T6	disease 42 47	脓毒性休克
+R3	same Arg1:T5 Arg2:T6	
+R4	same Arg1:T4 Arg2:T6	
+T7	pathogenic_bacteria 51 58	微生物及其毒素
+T8	disease 65 74	脓毒病综合征伴休克
+R5	same Arg1:T6 Arg2:T8	
+R6	cause Arg1:T7 Arg2:T8	
+T9	disease 76 81	感染性休克
+T10	pathogenic_bacteria 86 93	微生物及其毒素
+T11	pathogenic_bacteria 94 98	胞壁产物
+T12	pathogenic_bacteria 122 126	细胞因子
+T13	pathogenic_bacteria 127 132	内源性介质
+T14	symptom 154 162	组织细胞缺血缺氧
+T15	symptom 163 167	代谢紊乱
+T16	symptom 168 172	功能障碍
+T17	symptom 175 182	多器官功能衰竭
+R7	cause Arg1:T10 Arg2:T9	
+R8	cause Arg1:T11 Arg2:T9	
+R9	cause Arg1:T12 Arg2:T9	
+R10	cause Arg1:T13 Arg2:T9	
+R11	clinical_manifestation Arg1:T9 Arg2:T14	
+R12	clinical_manifestation Arg1:T9 Arg2:T15	
+R13	clinical_manifestation Arg1:T9 Arg2:T16	
+R14	clinical_manifestation Arg1:T9 Arg2:T17	
+T18	disease 184 189	感染性休克
+T19	disease 189 192	败血症
+T20	disease 217 220	败血症
+T21	disease 225 230	感染性休克
+T22	disease 235 240	感染性休克
+T23	pathogenic_bacteria 247 252	革兰阴性菌
+T24	pathogenic_bacteria 254 260	肠杆菌科细菌
+T25	pathogenic_bacteria 261 265	大肠杆菌
+T26	pathogenic_bacteria 266 270	克雷伯菌
+T27	pathogenic_bacteria 271 274	肠杆菌
+T28	pathogenic_bacteria 277 282	不发酵杆菌
+T29	pathogenic_bacteria 283 288	假单胞菌属
+T30	pathogenic_bacteria 289 294	不动杆菌属
+T31	pathogenic_bacteria 297 302	脑膜炎球菌
+T32	pathogenic_bacteria 303 306	类杆菌
+R15	cause Arg1:T23 Arg2:T22	
+R16	cause Arg1:T24 Arg2:T22	
+R17	cause Arg1:T25 Arg2:T22	
+R18	cause Arg1:T26 Arg2:T22	
+R19	cause Arg1:T27 Arg2:T22	
+R20	cause Arg1:T28 Arg2:T22	
+R21	cause Arg1:T29 Arg2:T22	
+R22	cause Arg1:T30 Arg2:T22	
+R23	cause Arg1:T31 Arg2:T22	
+R24	cause Arg1:T32 Arg2:T22	
+T33	disease 309 314	感染性休克
+T34	pathogenic_bacteria 314 319	革兰阳性菌
+T35	pathogenic_bacteria 320 324	葡萄球菌
+T36	pathogenic_bacteria 325 328	链球菌
+T37	pathogenic_bacteria 329 334	肺炎链球菌
+T38	pathogenic_bacteria 335 341	梭状芽胞杆菌
+T39	disease 346 348	休克
+T40	disease 350 355	感染性休克
+T41	disease 378 380	休克
+R25	relevant Arg1:T40 Arg2:T41	
+T42	disease 382 387	感染性休克
+T43	disease 393 401	革兰阴性菌败血症
+T44	disease 402 407	暴发性流脑
+T45	disease 408 410	肺炎
+T46	disease 411 417	化脓性胆管炎
+T47	disease 418 422	腹腔感染
+T48	disease 423 425	菌痢
+T49	disease 432 434	休克
+R27	relevant Arg1:T42 Arg2:T49	
+R26	relevant Arg1:T43 Arg2:T49	
+R28	relevant Arg1:T44 Arg2:T49	
+R29	relevant Arg1:T45 Arg2:T49	
+R30	relevant Arg1:T46 Arg2:T49	
+R31	relevant Arg1:T47 Arg2:T49	
+R32	relevant Arg1:T48 Arg2:T49	
+T50	disease 436 441	感染性休克
+T51	disease 457 460	肝硬化
+T52	disease 461 464	糖尿病
+T53	disease 465 469	恶性肿瘤
+T54	disease 470 473	白血病
+T55	disease 474 476	烧伤
+T56	disease 477 481	器官移植
+T57	pathogenic_bacteria 483 513	长期接受肾上腺皮质激素等免疫抑制剂、抗代谢药物、细菌毒类药物
+T58	pathogenic_bacteria 514 518	放射治疗
+T59	disease 536 541	感染性休克
+R33	cause Arg1:T58 Arg2:T59	
+R34	cause Arg1:T57 Arg2:T59	
+R35	relevant Arg1:T56 Arg2:T59	
+R36	relevant Arg1:T55 Arg2:T59	
+R37	relevant Arg1:T54 Arg2:T59	
+R38	relevant Arg1:T53 Arg2:T59	
+R39	relevant Arg1:T52 Arg2:T59	
+R40	relevant Arg1:T51 Arg2:T59	
+T60	disease 543 548	感染性休克
+R41	cause Arg1:T34 Arg2:T33	
+R42	cause Arg1:T35 Arg2:T33	
+R43	cause Arg1:T36 Arg2:T33	
+R44	cause Arg1:T37 Arg2:T33	
+R45	cause Arg1:T38 Arg2:T33	
+R46	relevant Arg1:T33 Arg2:T39	
+R47	relevant Arg1:T18 Arg2:T19	
+R48	relevant Arg1:T18 Arg2:T20	
+R49	cause Arg1:T23 Arg2:T21	
+R50	cause Arg1:T24 Arg2:T21	
+R51	cause Arg1:T25 Arg2:T21	
+R52	cause Arg1:T26 Arg2:T21	
+R53	cause Arg1:T27 Arg2:T21	
+R54	cause Arg1:T28 Arg2:T21	
+R55	cause Arg1:T29 Arg2:T21	
+R56	cause Arg1:T30 Arg2:T21	
+R57	cause Arg1:T31 Arg2:T21	
+R58	cause Arg1:T32 Arg2:T21	

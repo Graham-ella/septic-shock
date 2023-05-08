@@ -1,0 +1,45 @@
+T1	disease 0 3	败血症
+T2	disease 32 35	败血症
+T3	symptom 35 37	高热
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	physical_therapy 46 66	补充适量维生素，维持水、电解质和酸碱平衡
+R2	treatment Arg1:T3 Arg2:T4	
+T5	physical_therapy 67 74	纠正低蛋白血症
+R3	treatment Arg1:T3 Arg2:T5	
+T6	physical_therapy 39 43	物理降温
+R4	treatment Arg1:T3 Arg2:T6	
+T7	disease 98 101	败血症
+T8	disease 127 130	败血症
+T9	disease 137 142	继发性肺炎
+R5	relevant Arg1:T8 Arg2:T9	
+T10	disease 150 153	败血症
+T11	medical_treatment 153 159	抗菌药物治疗
+T12	disease 167 170	败血症
+R6	medical Arg1:T10 Arg2:T11	
+R7	medical Arg1:T12 Arg2:T11	
+T13	disease 229 232	败血症
+T14	disease 232 235	败血症
+T15	disease 341 347	真菌性败血症
+R8	relevant Arg1:T14 Arg2:T15	
+T16	disease 359 362	败血症
+T17	disease 364 371	感染性心内膜炎
+R9	relevant Arg1:T16 Arg2:T17	
+T18	disease 382 385	败血症
+T19	disease 416 419	败血症
+T20	disease 427 434	葡萄球菌败血症
+R10	relevant Arg1:T19 Arg2:T20	
+T21	disease 473 476	败血症
+T22	medical_treatment 522 526	头孢唑林
+T23	medical_treatment 527 531	头孢氨苄
+T24	medical_treatment 532 536	头孢呋辛
+T25	medical_treatment 537 541	头孢克洛
+T26	medical_treatment 547 552	氟喹诺酮类
+R11	medical Arg1:T21 Arg2:T22	
+R12	medical Arg1:T21 Arg2:T23	
+R13	medical Arg1:T21 Arg2:T24	
+R14	medical Arg1:T21 Arg2:T25	
+R15	medical Arg1:T21 Arg2:T26	
+T27	medical_treatment 563 567	阿米卡星
+T28	medical_treatment 568 572	庆大霉素
+R16	medical Arg1:T21 Arg2:T27	
+R17	medical Arg1:T21 Arg2:T28	

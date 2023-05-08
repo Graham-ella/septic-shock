@@ -1,0 +1,8 @@
+T1	disease 0 5	多脏器衰竭
+T2	symptom 32 51	血管内皮细胞与器官主质细胞产生细胞凋亡
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 53 58	多脏器衰竭
+T4	disease 58 62	细胞凋亡
+T5	disease 64 71	程序性细胞死亡
+R2	same Arg1:T4 Arg2:T5	
+R3	relevant Arg1:T3 Arg2:T4	

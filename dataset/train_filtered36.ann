@@ -1,0 +1,109 @@
+T1	disease 98 101	风湿热
+T2	physical_therapy 0 5	血清学检查
+T3	disease 102 112	传染性单核细胞增多症
+T4	disease 113 120	巨细胞病毒感染
+T5	disease 121 125	弓形虫病
+T6	disease 126 130	沙门菌病
+T7	disease 131 134	兔热病
+T8	disease 135 139	布鲁菌病
+T9	disease 140 146	钩端螺旋体病
+T10	disease 150 158	幼年类风湿关节炎
+T11	disease 159 163	恶性肿瘤
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T3 Arg2:T2	
+R3	physical Arg1:T4 Arg2:T2	
+R4	physical Arg1:T5 Arg2:T2	
+R5	physical Arg1:T6 Arg2:T2	
+R6	physical Arg1:T7 Arg2:T2	
+R7	physical Arg1:T8 Arg2:T2	
+R8	physical Arg1:T9 Arg2:T2	
+R9	physical Arg1:T10 Arg2:T2	
+R10	physical Arg1:T11 Arg2:T2	
+T12	disease 171 175	食物中毒
+T13	symptom 192 194	腹痛
+T14	symptom 195 197	黄疸
+T15	symptom 198 202	右上腹痛
+T16	symptom 211 215	慢性咳嗽
+T17	symptom 216 218	胸痛
+T18	symptom 219 223	呼吸困难
+T19	symptom 224 226	咯血
+T20	symptom 235 239	黏膜溃疡
+T21	symptom 240 244	营养不良
+R11	clinical_manifestation Arg1:T12 Arg2:T13	
+R12	clinical_manifestation Arg1:T12 Arg2:T14	
+R13	clinical_manifestation Arg1:T12 Arg2:T15	
+R14	clinical_manifestation Arg1:T12 Arg2:T16	
+R15	clinical_manifestation Arg1:T12 Arg2:T17	
+R16	clinical_manifestation Arg1:T12 Arg2:T18	
+R17	clinical_manifestation Arg1:T12 Arg2:T19	
+R18	clinical_manifestation Arg1:T12 Arg2:T20	
+R19	clinical_manifestation Arg1:T12 Arg2:T21	
+T22	disease 330 335	HIV感染
+T23	physical_therapy 264 270	病毒抗体检测
+T24	physical_therapy 304 309	血快速试验
+R20	physical Arg1:T22 Arg2:T23	
+R21	physical Arg1:T22 Arg2:T24	
+T25	disease 351 356	HIV感染
+T26	disease 358 363	新生儿黄疸
+T27	disease 376 378	黄疸
+T28	disease 386 388	黄疸
+T29	disease 412 418	多发性骨髓瘤
+T30	disease 428 434	血小板减少症
+T31	disease 455 460	肾功能损伤
+R22	relevant Arg1:T29 Arg2:T30	
+R23	relevant Arg1:T30 Arg2:T31	
+T32	symptom 441 446	血细胞减少
+R24	clinical_manifestation Arg1:T31 Arg2:T32	
+T33	physical_therapy 462 464	化疗
+T34	disease 475 485	稳定型缺血性心脏疾病
+T35	disease 489 495	不典型心绞痛
+T36	disease 497 504	不典型的心绞痛
+T37	disease 513 518	典型心绞痛
+T38	disease 524 534	稳定型缺血性心脏疾病
+T39	disease 536 541	典型心绞痛
+T40	symptom 506 510	胸部不适
+R25	clinical_manifestation Arg1:T36 Arg2:T40	
+T41	disease 546 549	冠心病
+T42	disease 575 580	急性胰腺炎
+T43	symptom 584 586	腹痛
+R26	clinical_manifestation Arg1:T42 Arg2:T43	
+T44	disease 629 631	NB
+T45	physical_therapy 621 628	组织病理学检查
+T46	physical_therapy 645 651	免疫组织化学
+T47	physical_therapy 652 654	电镜
+T48	disease 663 665	肿瘤
+R27	physical Arg1:T44 Arg2:T45	
+R28	physical Arg1:T44 Arg2:T46	
+R29	physical Arg1:T44 Arg2:T47	
+T49	disease 690 697	B族链球菌感染
+T50	disease 700 705	病因学感染
+T51	disease 736 743	B族链球菌感染
+T52	pathogenic_bacteria 707 714	定植部位的细菌
+T53	pathogenic_bacteria 724 733	远处的菌血症性种植
+R30	cause Arg1:T52 Arg2:T50	
+R31	cause Arg1:T53 Arg2:T50	
+T54	pathogenic_bacteria 762 764	年幼
+T55	pathogenic_bacteria 765 767	高龄
+T56	pathogenic_bacteria 768 770	妊娠
+T57	pathogenic_bacteria 771 774	糖尿病
+T58	pathogenic_bacteria 775 780	免疫力低下
+T59	pathogenic_bacteria 782 795	有植入性血管内装置或导尿管
+R32	cause Arg1:T54 Arg2:T51	
+R33	cause Arg1:T55 Arg2:T51	
+R34	cause Arg1:T56 Arg2:T51	
+R35	cause Arg1:T57 Arg2:T51	
+R36	cause Arg1:T58 Arg2:T51	
+R37	cause Arg1:T59 Arg2:T51	
+T60	disease 802 806	食物中毒
+T61	symptom 817 819	发热
+T62	symptom 820 822	乏力
+T63	symptom 823 826	关节痛
+T64	symptom 827 830	关节炎
+T65	symptom 831 833	黄疸
+T66	symptom 834 836	皮疹
+R38	clinical_manifestation Arg1:T60 Arg2:T61	
+R39	clinical_manifestation Arg1:T60 Arg2:T62	
+R40	clinical_manifestation Arg1:T60 Arg2:T63	
+R41	clinical_manifestation Arg1:T60 Arg2:T64	
+R42	clinical_manifestation Arg1:T60 Arg2:T65	
+R43	clinical_manifestation Arg1:T60 Arg2:T66	

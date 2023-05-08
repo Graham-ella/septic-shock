@@ -1,0 +1,55 @@
+T1	disease 0 7	皮肤软组织感染
+T2	symptom 7 11	深部脓肿
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 28 35	皮肤软组织感染
+T4	physical_therapy 46 62	作伤口分泌物及脓肿穿刺液涂片检查
+T5	physical_therapy 63 67	细菌培养
+T6	physical_therapy 68 72	药敏试验
+R2	physical Arg1:T3 Arg2:T4	
+R3	physical Arg1:T3 Arg2:T5	
+R4	physical Arg1:T3 Arg2:T6	
+T7	disease 74 81	皮肤软组织感染
+T8	physical_therapy 84 90	作厌氧菌培养
+R5	physical Arg1:T7 Arg2:T8	
+T9	disease 92 99	皮肤软组织感染
+T10	disease 101 104	败血症
+R6	relevant Arg1:T9 Arg2:T10	
+T11	physical_therapy 106 115	作血培养及药敏试验
+R7	physical Arg1:T9 Arg2:T11	
+T12	disease 117 124	皮肤软组织感染
+T13	physical_therapy 125 132	制动及抬高患肢
+T14	physical_therapy 134 138	局部热敷
+T15	physical_therapy 139 149	辅以紫外线照射等理疗
+T16	medical_treatment 151 155	外敷中药
+T17	physical_therapy 157 161	封闭疗法
+T18	physical_therapy 163 167	放射治疗
+T19	symptom 169 177	局部已化脓溃烂者
+T20	physical_therapy 179 183	适当换药
+R8	physical Arg1:T12 Arg2:T13	
+R9	physical Arg1:T12 Arg2:T14	
+R10	physical Arg1:T12 Arg2:T15	
+R11	medical Arg1:T12 Arg2:T16	
+R12	physical Arg1:T12 Arg2:T17	
+R13	physical Arg1:T12 Arg2:T18	
+R14	clinical_manifestation Arg1:T12 Arg2:T19	
+R15	treatment Arg1:T19 Arg2:T20	
+T21	disease 185 192	皮肤软组织感染
+T22	medical_treatment 193 206	选用青霉素及氨基糖甙类药物
+R16	medical Arg1:T21 Arg2:T22	
+T23	medical_treatment 212 221	第2、3代头孢菌素
+T24	symptom 224 232	有厌氧菌混合感染
+T25	medical_treatment 233 245	加用甲硝唑等抗厌氧菌药物
+R17	treatment Arg1:T24 Arg2:T25	
+R18	medical Arg1:T21 Arg2:T23	
+R19	clinical_manifestation Arg1:T21 Arg2:T24	
+T26	disease 247 254	皮肤软组织感染
+T27	disease 278 285	皮肤软组织感染
+T28	symptom 285 287	脓肿
+R20	clinical_manifestation Arg1:T27 Arg2:T28	
+T29	physical_therapy 292 300	及时作切开引流术
+R21	treatment Arg1:T28 Arg2:T29	
+T30	disease 339 346	皮肤软组织感染
+T31	symptom 347 351	深部脓肿
+T32	physical_therapy 352 370	术前应先行穿刺以确定脓肿的部位和深度
+R22	clinical_manifestation Arg1:T30 Arg2:T31	
+R23	treatment Arg1:T31 Arg2:T32	

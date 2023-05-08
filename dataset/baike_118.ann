@@ -1,0 +1,36 @@
+T1	disease 0 5	多脏器衰竭
+T2	symptom 15 21	局部组织破坏
+T3	symptom 22 27	微血管损伤
+T4	symptom 28 32	代谢亢进
+T5	symptom 33 42	血流动力学功能不全
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 50 52	休克
+R5	relevant Arg1:T1 Arg2:T6	
+T7	disease 56 61	多脏器衰竭
+T8	disease 77 81	MSOF
+R6	same Arg1:T7 Arg2:T8	
+T9	pathogenic_bacteria 92 98	肿瘤坏死因子
+T10	pathogenic_bacteria 104 109	白介素-1
+T11	pathogenic_bacteria 116 121	白介素-6
+R7	cause Arg1:T9 Arg2:T8	
+R8	cause Arg1:T10 Arg2:T8	
+R9	cause Arg1:T11 Arg2:T8	
+T12	disease 131 136	多脏器衰竭
+T13	pathogenic_bacteria 138 149	促炎性细胞因子过量产生
+R10	cause Arg1:T13 Arg2:T12	
+T14	symptom 154 166	全身性多器官细胞广泛受损
+R11	clinical_manifestation Arg1:T12 Arg2:T14	
+T15	disease 168 173	多脏器衰竭
+T16	disease 256 265	全身炎症反应综合征
+T17	pathogenic_bacteria 241 250	注入超大剂量TNF
+R12	cause Arg1:T17 Arg2:T16	
+T18	disease 275 279	MSOF
+R13	relevant Arg1:T16 Arg2:T18	
+T19	disease 281 286	败血性休克
+T20	medical_treatment 290 311	早期应用TNF单克隆抗体或可溶性TNF受体
+R14	medical Arg1:T19 Arg2:T20	
+T21	disease 349 353	MSOF
+R15	relevant Arg1:T19 Arg2:T21	

@@ -1,0 +1,123 @@
+T1	disease 9 15	中枢性尿崩症
+T2	disease 76 80	低钾血症
+T3	symptom 24 26	多饮
+T4	symptom 27 29	多尿
+T5	disease 39 42	糖尿病
+T6	disease 43 49	肾小管酸中毒
+T7	symptom 33 38	高渗性利尿
+R1	clinical_manifestation Arg1:T5 Arg2:T7	
+R2	clinical_manifestation Arg1:T6 Arg2:T7	
+R3	clinical_manifestation Arg1:T1 Arg2:T3	
+R4	clinical_manifestation Arg1:T1 Arg2:T4	
+T8	physical_therapy 53 55	血糖
+T9	physical_therapy 56 59	尿比重
+T10	physical_therapy 60 64	尿渗透压
+R5	physical Arg1:T1 Arg2:T8	
+R6	physical Arg1:T1 Arg2:T9	
+R7	physical Arg1:T1 Arg2:T10	
+T11	disease 82 91	原发性醛固酮增多症
+T12	disease 92 96	慢性腹泻
+T13	disease 97 107	Bartter综合征
+R8	relevant Arg1:T2 Arg2:T11	
+R9	relevant Arg1:T2 Arg2:T12	
+R10	relevant Arg1:T2 Arg2:T13	
+T14	disease 110 115	急性胰腺炎
+T15	disease 126 133	肾前性氮质血症
+T16	symptom 137 146	肌酐和尿素水平升高
+R11	clinical_manifestation Arg1:T15 Arg2:T16	
+T17	physical_therapy 166 171	肝功能检查
+T18	pathogenic_bacteria 116 118	脱水
+R12	cause Arg1:T18 Arg2:T15	
+T19	disease 147 152	急性胰腺炎
+R13	physical Arg1:T19 Arg2:T17	
+T20	symptom 185 199	碱性磷酸酶和胆红素水平略升高
+R14	clinical_manifestation Arg1:T19 Arg2:T20	
+T21	disease 201 206	急性胰腺炎
+T22	symptom 223 229	轻度胰腺水肿
+T23	symptom 250 255	多器官衰竭
+T24	symptom 230 249	重度全身性炎症反应伴胰腺/胰腺周围坏死
+R15	clinical_manifestation Arg1:T21 Arg2:T22	
+R16	clinical_manifestation Arg1:T21 Arg2:T24	
+R17	clinical_manifestation Arg1:T21 Arg2:T23	
+T25	disease 261 265	慢性肾病
+T26	physical_therapy 266 274	尿微量白蛋白检测
+T27	disease 292 298	糖尿病性肾病
+R18	physical Arg1:T27 Arg2:T26	
+T28	disease 300 303	肝硬化
+T29	disease 304 308	门脉高压
+T30	symptom 312 314	腹水
+T31	symptom 315 320	脾功能亢进
+T32	symptom 321 327	侧支循环形成
+R19	clinical_manifestation Arg1:T29 Arg2:T30	
+R20	clinical_manifestation Arg1:T29 Arg2:T31	
+R21	clinical_manifestation Arg1:T29 Arg2:T32	
+T33	disease 329 333	乙型肝炎
+T34	symptom 334 339	扑翼样震颤
+R22	clinical_manifestation Arg1:T33 Arg2:T34	
+T35	disease 339 352	慢性HBV感染相关性肝硬化
+T36	disease 357 364	失代偿期肝硬化
+T37	disease 371 377	中枢性尿崩症
+T38	pathogenic_bacteria 378 383	ADH缺乏
+T39	pathogenic_bacteria 386 399	下丘脑及垂体任何部位的病变
+T40	pathogenic_bacteria 410 434	下丘脑视上核与室旁核内神经元发育不良或退行性病变
+T41	pathogenic_bacteria 480 482	肿瘤
+T42	pathogenic_bacteria 501 505	颅咽管瘤
+T43	pathogenic_bacteria 506 509	垂体瘤
+T44	pathogenic_bacteria 484 488	颅内肿瘤
+T45	pathogenic_bacteria 510 514	松果体瘤
+T46	pathogenic_bacteria 515 522	神经胶质细胞瘤
+T47	pathogenic_bacteria 523 526	黄色瘤
+R23	cause Arg1:T38 Arg2:T37	
+R24	cause Arg1:T39 Arg2:T37	
+R25	cause Arg1:T40 Arg2:T37	
+R26	cause Arg1:T41 Arg2:T37	
+R27	cause Arg1:T44 Arg2:T37	
+R28	cause Arg1:T42 Arg2:T37	
+R29	cause Arg1:T43 Arg2:T37	
+R30	cause Arg1:T45 Arg2:T37	
+R31	cause Arg1:T46 Arg2:T37	
+R32	cause Arg1:T47 Arg2:T37	
+T48	disease 529 534	缺血性卒中
+T49	disease 548 553	高血压脑病
+T50	symptom 536 544	短暂性脑缺血发作
+R33	clinical_manifestation Arg1:T48 Arg2:T50	
+T51	symptom 569 571	头痛
+T52	symptom 572 578	认知水平异常
+T53	symptom 579 585	意识水平下降
+T54	symptom 587 600	血压明显高于患者的基线血压
+R34	clinical_manifestation Arg1:T49 Arg2:T51	
+R35	clinical_manifestation Arg1:T49 Arg2:T52	
+R36	clinical_manifestation Arg1:T49 Arg2:T53	
+R37	clinical_manifestation Arg1:T49 Arg2:T54	
+T55	disease 603 608	高血压脑病
+T56	disease 609 614	缺血性卒中
+T57	disease 616 621	高血压脑病
+T58	disease 625 628	低血糖
+T59	medical_treatment 645 648	胰岛素
+T60	medical_treatment 649 655	促胰岛素激素
+T61	disease 656 659	糖尿病
+R38	medical Arg1:T61 Arg2:T60	
+R39	medical Arg1:T61 Arg2:T59	
+T62	disease 682 686	成骨肉瘤
+T63	disease 690 696	成骨性骨肉瘤
+T64	disease 697 704	成软骨性骨肉瘤
+T65	disease 705 712	成纤维性骨肉瘤
+T66	symptom 716 718	跛行
+T67	symptom 728 733	避痛性跛行
+T68	symptom 756 762	关节活动受限
+T69	symptom 763 771	肌肉的失用性萎缩
+R40	clinical_manifestation Arg1:T62 Arg2:T67	
+R41	clinical_manifestation Arg1:T62 Arg2:T66	
+R42	clinical_manifestation Arg1:T62 Arg2:T68	
+R43	clinical_manifestation Arg1:T62 Arg2:T69	
+T70	disease 802 807	严重肌无力
+T71	disease 815 817	肺炎
+T72	disease 818 822	营养不良
+T73	disease 823 827	骨骼畸形
+T74	disease 828 832	行动障碍
+T75	disease 833 840	精神社会性问题
+R44	relevant Arg1:T70 Arg2:T71	
+R45	relevant Arg1:T70 Arg2:T72	
+R46	relevant Arg1:T70 Arg2:T73	
+R47	relevant Arg1:T70 Arg2:T74	
+R48	relevant Arg1:T70 Arg2:T75	

@@ -1,0 +1,86 @@
+T1	disease 0 3	肛门癌
+T2	disease 6 9	糖尿病
+T3	physical_therapy 31 35	诱导化疗
+T4	physical_therapy 36 41	标准放化疗
+T5	physical_therapy 43 50	短距离放射治疗
+R1	physical Arg1:T1 Arg2:T3	
+R2	physical Arg1:T1 Arg2:T4	
+R3	physical Arg1:T1 Arg2:T5	
+T6	disease 68 73	儿童糖尿病
+T7	physical_therapy 112 115	尿酮体
+R4	physical Arg1:T6 Arg2:T7	
+T8	disease 116 119	糖尿病
+T9	disease 121 126	酮症酸中毒
+R5	relevant Arg1:T8 Arg2:T9	
+T10	disease 132 140	出生后感染性肺炎
+T11	symptom 167 169	气促
+T12	symptom 170 174	鼻翼扇动
+T13	symptom 175 177	发绀
+T14	symptom 178 180	吐沫
+T15	symptom 181 184	三凹征
+T16	symptom 143 145	发热
+T17	symptom 146 150	体温不升
+R6	clinical_manifestation Arg1:T10 Arg2:T16	
+R7	clinical_manifestation Arg1:T10 Arg2:T17	
+T18	symptom 151 154	反应差
+R8	clinical_manifestation Arg1:T10 Arg2:T18	
+R9	clinical_manifestation Arg1:T10 Arg2:T11	
+R10	clinical_manifestation Arg1:T10 Arg2:T12	
+R11	clinical_manifestation Arg1:T10 Arg2:T13	
+R12	clinical_manifestation Arg1:T10 Arg2:T14	
+R13	clinical_manifestation Arg1:T10 Arg2:T15	
+T19	disease 187 190	胆管癌
+T20	disease 192 197	胆总管结石
+T21	disease 201 204	胆管炎
+R14	relevant Arg1:T21 Arg2:T20	
+T22	symptom 222 224	发热
+T23	symptom 225 230	右上腹疼痛
+T24	symptom 231 236	黄疸三联征
+T25	disease 237 240	胆管癌
+R15	clinical_manifestation Arg1:T21 Arg2:T22	
+R16	clinical_manifestation Arg1:T21 Arg2:T23	
+R17	clinical_manifestation Arg1:T21 Arg2:T24	
+T26	disease 251 256	胆总管结石
+T27	disease 264 266	肿瘤
+T28	disease 273 277	肾细胞癌
+T29	physical_therapy 278 282	射频消融
+T30	disease 300 304	肾细胞癌
+R18	physical Arg1:T28 Arg2:T29	
+T31	disease 373 379	新生儿低血糖
+T32	physical_therapy 518 522	X线胸片
+T33	physical_therapy 523 526	心电图
+T34	physical_therapy 527 532	超声心动图
+T35	physical_therapy 514 517	脑脊液
+T36	disease 382 387	低血糖脑病
+R19	relevant Arg1:T31 Arg2:T36	
+T37	disease 388 391	低血糖
+T38	disease 406 409	低血糖
+T39	disease 442 445	低血糖
+T40	disease 455 458	低血糖
+R20	physical Arg1:T31 Arg2:T35	
+R21	physical Arg1:T31 Arg2:T32	
+R22	physical Arg1:T31 Arg2:T33	
+R23	physical Arg1:T31 Arg2:T34	
+T41	disease 569 571	NB
+T42	disease 606 608	NB
+T43	disease 629 631	NB
+T44	disease 661 665	室管膜瘤
+T45	disease 666 676	ependymoma
+R24	same Arg1:T44 Arg2:T45	
+T46	disease 701 703	肿瘤
+T47	disease 720 723	蚕豆病
+T48	symptom 789 793	轻度溶血
+T49	pathogenic_bacteria 736 745	食用蚕豆、及其制品
+R25	cause Arg1:T49 Arg2:T47	
+T50	disease 748 755	急性溶血性贫血
+T51	disease 756 758	黄疸
+R26	clinical_manifestation Arg1:T47 Arg2:T48	
+T52	disease 807 814	急性髓性白血病
+T53	medical_treatment 871 880	Vosaroxin
+T54	medical_treatment 827 831	帕克替尼
+T55	medical_treatment 832 842	pacritinib
+R27	same Arg1:T54 Arg2:T55	
+T56	disease 845 848	AML
+R28	medical Arg1:T56 Arg2:T54	
+T57	disease 860 867	急性髓性白血病
+R29	medical Arg1:T57 Arg2:T53	

@@ -1,0 +1,11 @@
+T1	disease 0 5	细菌性痢疾
+T2	pathogenic_bacteria 5 8	内毒素
+T3	symptom 16 18	发热
+T4	disease 19 22	毒血症
+T5	disease 23 28	感染性休克
+T6	disease 29 37	重要脏器功能衰竭
+R1	cause Arg1:T2 Arg2:T1	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+R5	relevant Arg1:T1 Arg2:T6	

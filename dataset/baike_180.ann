@@ -1,0 +1,10 @@
+T1	disease 0 5	医院内感染
+T2	disease 7 15	感染中枢神经系统
+T3	pathogenic_bacteria 37 43	肠杆菌科细菌
+T4	pathogenic_bacteria 44 48	绿脓杆菌
+T5	pathogenic_bacteria 49 52	金葡菌
+T6	pathogenic_bacteria 53 56	表葡菌
+R1	cause Arg1:T3 Arg2:T2	
+R2	cause Arg1:T4 Arg2:T2	
+R3	cause Arg1:T5 Arg2:T2	
+R4	cause Arg1:T6 Arg2:T2	

@@ -1,0 +1,38 @@
+T1	disease 0 5	细菌性痢疾
+T2	disease 7 11	急性菌痢
+T3	disease 12 16	慢性菌痢
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 18 23	细菌性痢疾
+T5	disease 23 27	急性菌痢
+R3	relevant Arg1:T4 Arg2:T5	
+T6	symptom 32 36	中毒症状
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+T7	symptom 57 60	起病急
+T8	symptom 70 72	畏寒
+T9	symptom 73 79	发热达39℃
+T10	symptom 80 82	乏力
+T11	symptom 83 87	食欲减退
+T12	symptom 88 90	恶心
+T13	symptom 91 93	呕吐
+T14	symptom 94 96	腹痛
+T15	symptom 97 99	腹泻
+R5	clinical_manifestation Arg1:T5 Arg2:T7	
+R6	clinical_manifestation Arg1:T5 Arg2:T8	
+R7	clinical_manifestation Arg1:T5 Arg2:T9	
+R8	clinical_manifestation Arg1:T5 Arg2:T10	
+R9	clinical_manifestation Arg1:T5 Arg2:T11	
+R10	clinical_manifestation Arg1:T5 Arg2:T12	
+R11	clinical_manifestation Arg1:T5 Arg2:T13	
+R12	clinical_manifestation Arg1:T5 Arg2:T14	
+R13	clinical_manifestation Arg1:T5 Arg2:T15	
+T16	symptom 100 104	里急后重
+R14	clinical_manifestation Arg1:T5 Arg2:T16	
+T17	disease 106 111	细菌性痢疾
+T18	disease 149 154	细菌性痢疾
+T19	symptom 113 117	稀水样便
+R15	clinical_manifestation Arg1:T17 Arg2:T19	
+T20	symptom 156 161	肠鸣音亢进
+T21	symptom 162 167	左下腹压痛
+R16	clinical_manifestation Arg1:T18 Arg2:T20	
+R17	clinical_manifestation Arg1:T18 Arg2:T21	

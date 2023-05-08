@@ -1,0 +1,59 @@
+T1	disease 0 3	胆囊炎
+T2	disease 12 17	右下叶肺炎
+T3	symptom 29 34	排痰性咳嗽
+T4	symptom 35 37	发热
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+R2	clinical_manifestation Arg1:T2 Arg2:T4	
+T5	disease 41 47	新生儿败血症
+T6	pathogenic_bacteria 82 90	B族溶血性链球菌
+T7	pathogenic_bacteria 91 95	李斯特菌
+T8	pathogenic_bacteria 57 61	葡萄球菌
+T9	pathogenic_bacteria 68 73	大肠埃希菌
+T10	pathogenic_bacteria 74 81	革兰氏阴性杆菌
+R3	cause Arg1:T8 Arg2:T5	
+R4	cause Arg1:T9 Arg2:T5	
+R5	cause Arg1:T10 Arg2:T5	
+R6	cause Arg1:T6 Arg2:T5	
+R7	cause Arg1:T7 Arg2:T5	
+T11	disease 125 132	自身免疫性肝炎
+T12	physical_therapy 136 140	体格检查
+R8	physical Arg1:T11 Arg2:T12	
+T13	symptom 140 143	肝肿大
+T14	symptom 144 146	黄疸
+R9	clinical_manifestation Arg1:T11 Arg2:T13	
+R10	clinical_manifestation Arg1:T11 Arg2:T14	
+T16	symptom 284 288	剧烈头痛
+T17	symptom 297 301	颅内出血
+T18	symptom 302 307	硬膜下出血
+T15	disease 289 292	血友病
+R11	clinical_manifestation Arg1:T15 Arg2:T16	
+R12	clinical_manifestation Arg1:T15 Arg2:T17	
+R13	clinical_manifestation Arg1:T15 Arg2:T18	
+T19	disease 320 326	转移性肝肿瘤
+T20	physical_therapy 380 384	腹部CT
+R14	physical Arg1:T19 Arg2:T20	
+T21	physical_therapy 385 389	核磁共振
+R15	physical Arg1:T19 Arg2:T21	
+T22	disease 407 409	喉癌
+T23	disease 444 447	肝硬化
+T24	physical_therapy 451 454	肝移植
+R16	physical Arg1:T23 Arg2:T24	
+T25	disease 461 465	肝细胞癌
+T26	disease 482 484	腹水
+T27	disease 485 487	黄疸
+T28	disease 488 494	静脉曲张出血
+T29	disease 495 501	门体肝性脑病
+T30	disease 502 507	肝肾综合征
+R17	physical Arg1:T25 Arg2:T24	
+R18	relevant Arg1:T25 Arg2:T26	
+R19	relevant Arg1:T25 Arg2:T27	
+R20	relevant Arg1:T25 Arg2:T28	
+R21	relevant Arg1:T25 Arg2:T29	
+R22	relevant Arg1:T25 Arg2:T30	
+T31	disease 526 535	金黄色葡萄球菌肺炎
+T32	pathogenic_bacteria 538 545	金黄色葡萄球菌
+R23	cause Arg1:T32 Arg2:T31	
+T33	disease 591 597	儿童恶性肿瘤
+T34	symptom 648 653	无痛性肿块
+R24	clinical_manifestation Arg1:T33 Arg2:T34	
+T35	disease 829 831	溃疡

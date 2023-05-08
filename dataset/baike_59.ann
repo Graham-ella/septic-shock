@@ -1,0 +1,36 @@
+T1	disease 0 4	腹腔感染
+T2	symptom 12 14	发热
+T3	symptom 15 17	呕吐
+T4	symptom 18 20	腹痛
+T5	symptom 21 23	腹泻
+T6	symptom 24 28	腹部压痛
+T7	symptom 29 32	反跳痛
+T8	symptom 33 37	腹肌紧张
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	clinical_manifestation Arg1:T1 Arg2:T7	
+R7	clinical_manifestation Arg1:T1 Arg2:T8	
+T9	disease 49 53	腹腔感染
+T10	disease 64 68	腹腔感染
+T11	disease 169 173	腹腔感染
+T12	disease 195 199	腹腔感染
+T13	symptom 175 193	血常规白细胞计数及中性粒细胞比例升高
+R8	clinical_manifestation Arg1:T11 Arg2:T13	
+T14	disease 216 220	腹腔感染
+T15	physical_therapy 222 232	影像学检查X线及CT
+R9	physical Arg1:T14 Arg2:T15	
+T16	disease 305 309	腹腔感染
+T17	disease 368 372	腹腔感染
+T18	symptom 378 384	合理胃肠减压
+R10	clinical_manifestation Arg1:T17 Arg2:T18	
+T19	disease 399 403	腹腔感染
+T20	symptom 311 316	腹膜刺激征
+T21	symptom 317 319	发热
+R11	clinical_manifestation Arg1:T16 Arg2:T20	
+R12	clinical_manifestation Arg1:T16 Arg2:T21	
+T22	medical_treatment 437 472	选用能覆盖肠道革兰阴性杆菌、肠球菌属等需氧菌和脆弱拟杆菌等厌氧菌的药物
+R13	medical Arg1:T19 Arg2:T22	
+T23	disease 493 497	腹腔感染

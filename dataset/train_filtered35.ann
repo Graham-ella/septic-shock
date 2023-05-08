@@ -1,0 +1,123 @@
+T1	disease 0 6	癫痫持续状态
+T2	pathogenic_bacteria 14 16	卒中
+T3	pathogenic_bacteria 17 20	脑溢血
+T4	pathogenic_bacteria 21 25	酒精滥用
+T5	pathogenic_bacteria 26 30	用药过量
+T6	pathogenic_bacteria 31 35	药物中毒
+T7	pathogenic_bacteria 36 44	中枢神经系统感染
+T8	pathogenic_bacteria 45 48	脑肿瘤
+T9	pathogenic_bacteria 49 51	创伤
+T10	pathogenic_bacteria 52 56	代谢异常
+T11	pathogenic_bacteria 64 69	难治性癫痫
+T12	pathogenic_bacteria 70 74	心脏骤停
+T13	pathogenic_bacteria 57 63	热性癫痫发作
+R1	cause Arg1:T2 Arg2:T1	
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	
+R4	cause Arg1:T5 Arg2:T1	
+R5	cause Arg1:T6 Arg2:T1	
+R6	cause Arg1:T7 Arg2:T1	
+R7	cause Arg1:T8 Arg2:T1	
+R8	cause Arg1:T9 Arg2:T1	
+R9	cause Arg1:T10 Arg2:T1	
+R10	cause Arg1:T13 Arg2:T1	
+R11	cause Arg1:T11 Arg2:T1	
+R12	cause Arg1:T12 Arg2:T1	
+T14	disease 76 81	急性胰腺炎
+T15	disease 85 92	胰腺性胸腔积液
+R13	relevant Arg1:T14 Arg2:T15	
+T16	disease 102 105	胰腺瘘
+T17	physical_therapy 105 107	引流
+R14	physical Arg1:T16 Arg2:T17	
+T18	disease 113 120	肺炎球菌性口炎
+T19	medical_treatment 167 173	2%利多卡因
+T20	physical_therapy 152 154	止痛
+T21	medical_treatment 181 186	养阴生肌散
+T22	physical_therapy 200 206	口腔局部湿敷
+R15	physical Arg1:T18 Arg2:T20	
+R16	medical Arg1:T18 Arg2:T19	
+R17	medical Arg1:T18 Arg2:T21	
+R18	physical Arg1:T18 Arg2:T22	
+T23	disease 213 216	肛门癌
+T24	disease 221 222	痔
+T25	physical_therapy 227 229	活检
+R19	physical Arg1:T24 Arg2:T25	
+T26	disease 234 239	慢性胰腺炎
+T27	disease 240 245	急性胰腺炎
+T28	symptom 265 269	中上腹痛
+T29	symptom 270 276	血清胰酶升高
+T30	disease 278 283	慢性胰腺炎
+T31	symptom 292 301	反复性或持续性腹痛
+T32	symptom 302 317	进行性加重的胰腺及胰周组织损伤
+T33	symptom 322 326	瘢痕形成
+T34	symptom 328 332	功能障碍
+R20	clinical_manifestation Arg1:T27 Arg2:T28	
+R21	clinical_manifestation Arg1:T27 Arg2:T29	
+R22	clinical_manifestation Arg1:T30 Arg2:T31	
+R23	clinical_manifestation Arg1:T30 Arg2:T32	
+R24	clinical_manifestation Arg1:T30 Arg2:T33	
+R25	clinical_manifestation Arg1:T30 Arg2:T34	
+T35	disease 334 337	肝硬化
+T36	physical_therapy 338 340	体检
+T37	symptom 342 348	毛细血管扩张
+T38	symptom 349 356	肝可触及且质硬
+T39	symptom 357 364	轻度脾功能亢进
+T40	symptom 365 372	移动性浊音阳性
+T41	symptom 375 378	腹水征
+R26	physical Arg1:T35 Arg2:T36	
+R27	clinical_manifestation Arg1:T35 Arg2:T37	
+R28	clinical_manifestation Arg1:T35 Arg2:T38	
+R29	clinical_manifestation Arg1:T35 Arg2:T39	
+R30	clinical_manifestation Arg1:T35 Arg2:T40	
+R31	clinical_manifestation Arg1:T35 Arg2:T41	
+T42	disease 380 383	肝硬化
+T43	disease 388 395	胃食管静脉曲张
+T44	medical_treatment 400 410	非选择性β受体阻滞剂
+T45	medical_treatment 411 415	普萘洛尔
+T46	medical_treatment 416 420	纳多洛尔
+T47	medical_treatment 421 425	卡维地洛
+T48	physical_therapy 427 430	EVL
+R32	medical Arg1:T43 Arg2:T44	
+R33	medical Arg1:T43 Arg2:T45	
+R34	medical Arg1:T43 Arg2:T46	
+R35	medical Arg1:T43 Arg2:T47	
+R36	physical Arg1:T43 Arg2:T48	
+T49	disease 452 460	鹦鹉热衣原体肺炎
+T50	disease 521 526	支气管扩张
+T51	symptom 569 573	反复咳嗽
+T52	symptom 574 576	咳痰
+T53	symptom 581 583	咯血
+T54	symptom 589 596	肺底闻及湿啰音
+T55	symptom 603 606	干啰音
+T56	symptom 616 622	生长发育落后
+T57	symptom 623 627	营养不良
+T58	disease 490 499	金黄色葡萄球菌肺炎
+T59	disease 500 504	耐药肺炎
+T60	disease 504 509	链球菌肺炎
+T61	disease 512 521	革兰氏阴性杆菌肺炎
+R37	clinical_manifestation Arg1:T50 Arg2:T51	
+R38	clinical_manifestation Arg1:T50 Arg2:T52	
+R39	clinical_manifestation Arg1:T50 Arg2:T53	
+R40	clinical_manifestation Arg1:T50 Arg2:T54	
+R41	clinical_manifestation Arg1:T50 Arg2:T55	
+R42	clinical_manifestation Arg1:T50 Arg2:T56	
+R43	clinical_manifestation Arg1:T50 Arg2:T57	
+T62	disease 651 657	垂体功能减退
+T63	symptom 693 695	头痛
+T64	symptom 696 698	恶心
+T65	symptom 699 701	呕吐
+T66	symptom 702 704	疲乏
+T67	symptom 705 707	力弱
+T68	symptom 708 710	头晕
+T69	symptom 711 715	循环衰竭
+T70	pathogenic_bacteria 681 686	皮质醇缺乏
+T71	pathogenic_bacteria 661 674	促肾上腺皮质激素的急性减少
+R44	cause Arg1:T71 Arg2:T62	
+R45	cause Arg1:T70 Arg2:T62	
+R46	clinical_manifestation Arg1:T62 Arg2:T63	
+R47	clinical_manifestation Arg1:T62 Arg2:T64	
+R48	clinical_manifestation Arg1:T62 Arg2:T65	
+R49	clinical_manifestation Arg1:T62 Arg2:T66	
+R50	clinical_manifestation Arg1:T62 Arg2:T67	
+R51	clinical_manifestation Arg1:T62 Arg2:T68	
+R52	clinical_manifestation Arg1:T62 Arg2:T69	

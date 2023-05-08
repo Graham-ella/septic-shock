@@ -1,0 +1,8 @@
+T1	disease 0 2	休克
+T2	medical_treatment 4 8	多培沙明
+T3	disease 9 13	急性心衰
+T4	disease 14 17	败血症
+R1	medical Arg1:T3 Arg2:T2	
+R2	medical Arg1:T4 Arg2:T2	
+R3	relevant Arg1:T1 Arg2:T3	
+R4	relevant Arg1:T1 Arg2:T4	

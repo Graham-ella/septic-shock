@@ -1,0 +1,9 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 5 14	聚团肠杆菌污染输液
+T3	disease 17 20	败血症
+R1	cause Arg1:T2 Arg2:T3	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	pathogenic_bacteria 37 42	鼠伤寒杆菌
+T5	pathogenic_bacteria 43 49	痢疾杆菌感染
+R3	cause Arg1:T4 Arg2:T3	
+R4	cause Arg1:T5 Arg2:T3	

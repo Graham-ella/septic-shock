@@ -1,0 +1,35 @@
+T1	disease 9 14	1型糖尿病
+T2	disease 179 181	本病
+T3	symptom 191 197	生长发育落后
+T4	symptom 198 200	烦渴
+T5	symptom 201 206	多饮及多尿
+T6	symptom 207 217	顽固性佝偻病和肾钙化
+T7	symptom 218 221	肾结石
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+R2	clinical_manifestation Arg1:T2 Arg2:T4	
+R3	clinical_manifestation Arg1:T2 Arg2:T5	
+R4	clinical_manifestation Arg1:T2 Arg2:T6	
+R5	clinical_manifestation Arg1:T2 Arg2:T7	
+T8	disease 364 368	急性肾炎
+T9	disease 400 404	肛周肿瘤
+T10	disease 418 422	皮肤肿瘤
+T11	disease 436 442	流感病毒肺炎
+T12	symptom 502 504	发热
+T13	symptom 505 507	咳嗽
+T14	symptom 508 510	流涕
+R6	clinical_manifestation Arg1:T11 Arg2:T12	
+R7	clinical_manifestation Arg1:T11 Arg2:T13	
+T15	symptom 511 532	肺部听诊可有呼吸音降低、细小湿啰音或哮鸣音
+R8	clinical_manifestation Arg1:T11 Arg2:T14	
+R9	clinical_manifestation Arg1:T11 Arg2:T15	
+T16	disease 534 537	胰腺癌
+T17	medical_treatment 546 556	基于氟尿嘧啶的放化疗
+R10	medical Arg1:T16 Arg2:T17	
+T18	disease 614 617	登革热
+T19	disease 752 757	急性膀胱炎
+T20	disease 761 764	糖尿病
+R11	relevant Arg1:T19 Arg2:T20	
+T21	disease 785 788	口咽癌
+T22	symptom 808 812	吞咽困难
+R12	clinical_manifestation Arg1:T21 Arg2:T22	
+T23	disease 849 853	成骨肉瘤

@@ -1,0 +1,95 @@
+T1	disease 0 3	败血症
+T2	disease 6 11	葡菌败血症
+R1	relevant Arg1:T1 Arg2:T2	
+T3	disease 116 119	败血症
+T4	disease 120 127	.肠球菌败血症
+T5	pathogenic_bacteria 127 130	肠球菌
+R2	cause Arg1:T5 Arg2:T4	
+T6	pathogenic_bacteria 14 19	医院内感染
+R3	cause Arg1:T6 Arg2:T2	
+T7	disease 216 219	败血症
+T8	disease 221 230	革兰阴性杆菌败血症
+T9	disease 230 239	革兰阴性杆菌败血症
+R4	relevant Arg1:T7 Arg2:T8	
+R5	relevant Arg1:T7 Arg2:T9	
+T10	disease 316 319	败血症
+T11	symptom 329 331	寒战
+T12	symptom 332 334	高热
+T13	symptom 335 337	大汗
+T14	symptom 339 347	双峰热型比较多见
+T15	disease 369 372	败血症
+T16	pathogenic_bacteria 320 325	医院内感染
+R6	cause Arg1:T16 Arg2:T10	
+R7	clinical_manifestation Arg1:T10 Arg2:T11	
+R8	clinical_manifestation Arg1:T10 Arg2:T12	
+R9	clinical_manifestation Arg1:T10 Arg2:T13	
+R10	clinical_manifestation Arg1:T10 Arg2:T14	
+T17	disease 381 384	败血症
+T18	pathogenic_bacteria 384 388	大肠杆菌
+R11	cause Arg1:T18 Arg2:T17	
+T19	pathogenic_bacteria 389 393	产碱杆菌
+R12	cause Arg1:T19 Arg2:T17	
+T20	disease 397 400	败血症
+T21	symptom 406 408	伤寒
+R13	clinical_manifestation Arg1:T20 Arg2:T21	
+T22	disease 444 452	革兰阳性球败血症
+T23	disease 487 496	革兰阴性杆菌败血症
+T24	disease 501 506	感染性休克
+R14	relevant Arg1:T23 Arg2:T24	
+T25	disease 465 472	绿脓杆菌败血症
+R15	relevant Arg1:T17 Arg2:T22	
+R16	relevant Arg1:T17 Arg2:T25	
+R17	relevant Arg1:T20 Arg2:T23	
+R18	relevant Arg1:T20 Arg2:T24	
+T26	disease 520 523	败血症
+T27	disease 529 536	多脏器功能损害
+R19	relevant Arg1:T26 Arg2:T27	
+T28	symptom 540 544	心律失常
+T29	symptom 545 549	心力衰竭
+T30	disease 550 552	黄疸
+T31	disease 553 556	肝衰竭
+T32	disease 557 562	急性肾衰竭
+T33	disease 563 568	呼吸窘迫症
+T34	disease 569 572	DIC
+R20	clinical_manifestation Arg1:T27 Arg2:T28	
+R21	clinical_manifestation Arg1:T27 Arg2:T29	
+R22	relevant Arg1:T27 Arg2:T30	
+R23	relevant Arg1:T27 Arg2:T31	
+R24	relevant Arg1:T27 Arg2:T32	
+R25	relevant Arg1:T27 Arg2:T33	
+R26	relevant Arg1:T27 Arg2:T34	
+T35	disease 575 578	败血症
+T36	disease 579 585	.真菌败血症
+R27	relevant Arg1:T35 Arg2:T36	
+T37	disease 606 608	肝病
+T38	disease 609 611	肾病
+T39	disease 612 615	糖尿病
+T40	disease 616 619	血液病
+T41	disease 620 624	恶性肿瘤
+T42	pathogenic_bacteria 632 636	严重烧伤
+T43	pathogenic_bacteria 637 641	心脏手术
+T44	pathogenic_bacteria 642 646	器官移植
+T45	pathogenic_bacteria 651 683	有较长时间应用广谱抗生素，肾上腺皮质激素及（或）抗肿瘤药物的历史
+R28	relevant Arg1:T36 Arg2:T37	
+R29	relevant Arg1:T36 Arg2:T38	
+R30	relevant Arg1:T36 Arg2:T39	
+R31	relevant Arg1:T36 Arg2:T40	
+R32	relevant Arg1:T36 Arg2:T41	
+R33	cause Arg1:T42 Arg2:T36	
+R34	cause Arg1:T43 Arg2:T36	
+R35	cause Arg1:T44 Arg2:T36	
+R36	cause Arg1:T45 Arg2:T36	
+T46	disease 718 721	败血症
+T47	disease 721 726	真菌败血症
+T48	disease 734 737	败血症
+T49	disease 754 757	毒血症
+R37	relevant Arg1:T46 Arg2:T47	
+R38	relevant Arg1:T48 Arg2:T47	
+R39	relevant Arg1:T47 Arg2:T49	
+T50	disease 790 793	败血症
+T51	disease 838 841	败血症
+T52	disease 842 848	.败血性休克
+T53	disease 848 853	败血性休克
+T54	disease 874 877	败血症
+R40	relevant Arg1:T51 Arg2:T52	
+R41	relevant Arg1:T51 Arg2:T53	

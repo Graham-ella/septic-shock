@@ -1,0 +1,15 @@
+T1	disease 0 8	中毒性休克综合征
+T2	symptom 24 27	急发病
+T3	symptom 28 30	畏寒
+T4	symptom 31 33	发热
+T5	symptom 34 39	全身肌肉痛
+T6	symptom 40 42	恶心
+T7	symptom 43 45	呕吐
+T8	symptom 46 48	腹泻
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+R5	clinical_manifestation Arg1:T1 Arg2:T6	
+R6	clinical_manifestation Arg1:T1 Arg2:T7	
+R7	clinical_manifestation Arg1:T1 Arg2:T8	

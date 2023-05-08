@@ -1,0 +1,77 @@
+T1	disease 0 5	腹主动脉瘤
+T2	pathogenic_bacteria 7 12	肺炎衣原体
+R1	cause Arg1:T2 Arg2:T1	
+T3	disease 29 34	腹主动脉瘤
+T4	disease 55 60	慢性胰腺炎
+T5	disease 109 114	慢性胰腺炎
+T6	physical_therapy 133 137	腹部CT
+T7	disease 123 126	糖尿病
+T8	disease 127 130	脂肪泻
+T9	symptom 139 143	胰腺钙化
+R2	relevant Arg1:T5 Arg2:T7	
+R3	relevant Arg1:T5 Arg2:T8	
+R4	physical Arg1:T5 Arg2:T6	
+R5	clinical_manifestation Arg1:T5 Arg2:T9	
+T10	disease 63 66	胰腺炎
+T11	disease 160 165	上皮样肉瘤
+T12	disease 247 253	输血后综合征
+T13	symptom 263 265	发热
+T14	symptom 266 268	黄疸
+T15	symptom 269 272	肝脾大
+T16	symptom 273 278	溶血性贫血
+T17	symptom 279 284	血小板减少
+T18	symptom 285 294	淋巴细胞和异淋增多
+T19	symptom 298 302	肺炎征象
+T20	symptom 305 309	呼吸衰竭
+R6	clinical_manifestation Arg1:T12 Arg2:T13	
+R7	clinical_manifestation Arg1:T12 Arg2:T14	
+R8	clinical_manifestation Arg1:T12 Arg2:T15	
+R9	clinical_manifestation Arg1:T12 Arg2:T16	
+R10	clinical_manifestation Arg1:T12 Arg2:T17	
+R11	clinical_manifestation Arg1:T12 Arg2:T18	
+R12	clinical_manifestation Arg1:T12 Arg2:T19	
+R13	clinical_manifestation Arg1:T12 Arg2:T20	
+T21	disease 314 319	横纹肌肉瘤
+T22	physical_therapy 398 402	再切除术
+R14	physical Arg1:T21 Arg2:T22	
+T23	disease 463 466	胰腺癌
+T24	physical_therapy 527 533	凝血酶原时间
+R15	physical Arg1:T23 Arg2:T24	
+T25	disease 469 474	梗阻性黄疸
+T26	symptom 475 491	胆红素、碱性磷酸酶、y-GT升高
+T27	symptom 492 507	转氨酶（ALT）正常或轻度升高
+R16	clinical_manifestation Arg1:T25 Arg2:T26	
+R17	clinical_manifestation Arg1:T25 Arg2:T27	
+T28	pathogenic_bacteria 571 574	胆红素
+T29	disease 589 594	胆红素脑病
+T30	disease 608 616	神经发育功能障碍
+R18	cause Arg1:T28 Arg2:T29	
+R19	cause Arg1:T28 Arg2:T30	
+T31	pathogenic_bacteria 639 642	胆红素
+T32	disease 645 651	神经功能障碍
+T33	disease 652 657	微小核黄疸
+R20	cause Arg1:T31 Arg2:T32	
+R21	cause Arg1:T31 Arg2:T33	
+T34	symptom 664 676	轻度的神经系统和认知异常
+T35	symptom 679 683	听力受损
+T36	symptom 684 693	听神经病变谱系障碍
+R22	clinical_manifestation Arg1:T32 Arg2:T34	
+R23	clinical_manifestation Arg1:T32 Arg2:T35	
+R24	clinical_manifestation Arg1:T32 Arg2:T36	
+T37	pathogenic_bacteria 716 718	蛔虫
+T38	disease 721 726	嗜酸性肺炎
+R25	cause Arg1:T37 Arg2:T38	
+T39	symptom 728 736	痰中找到蛔虫幼虫
+R26	clinical_manifestation Arg1:T38 Arg2:T39	
+T40	disease 741 745	慢性肾病
+T41	physical_therapy 776 785	微量白蛋白尿的检查
+R27	physical Arg1:T40 Arg2:T41	
+T42	disease 746 749	糖尿病
+T43	disease 750 753	CKD
+R28	same Arg1:T40 Arg2:T43	
+R29	relevant Arg1:T40 Arg2:T42	
+T44	disease 787 789	胃癌
+T45	physical_therapy 811 819	上消化道内镜检查
+T46	physical_therapy 820 824	活检检查
+R30	physical Arg1:T44 Arg2:T45	
+R31	physical Arg1:T44 Arg2:T46	

@@ -1,0 +1,86 @@
+T1	disease 0 5	慢性胰腺炎
+T2	disease 15 20	胰腺炎损伤
+T3	disease 92 95	胆管癌
+T4	disease 141 144	胆管炎
+T5	disease 188 192	胆道梗阻
+R1	relevant Arg1:T3 Arg2:T4	
+T6	medical_treatment 170 173	抗生素
+T7	physical_therapy 174 178	胆汁引流
+R2	medical Arg1:T4 Arg2:T6	
+R3	physical Arg1:T4 Arg2:T7	
+T8	symptom 199 205	肿瘤过度生长
+T9	physical_therapy 214 218	手术切除
+T10	physical_therapy 219 223	外科分流
+T11	physical_therapy 224 230	支架置入胆道
+R4	clinical_manifestation Arg1:T5 Arg2:T8	
+R5	physical Arg1:T5 Arg2:T9	
+R6	physical Arg1:T5 Arg2:T10	
+R7	physical Arg1:T5 Arg2:T11	
+T12	disease 245 252	儿童2型糖尿病
+T13	disease 344 352	人粒细胞无形体病
+T14	physical_therapy 353 356	尿常规
+T15	symptom 359 362	蛋白尿
+T16	symptom 363 365	血尿
+T17	symptom 366 369	管型尿
+R8	physical Arg1:T13 Arg2:T14	
+R9	clinical_manifestation Arg1:T13 Arg2:T15	
+R10	clinical_manifestation Arg1:T13 Arg2:T16	
+R11	clinical_manifestation Arg1:T13 Arg2:T17	
+T18	disease 371 376	类癌综合征
+T19	medical_treatment 386 393	生长抑素类似物
+T20	medical_treatment 394 401	放射性核素治疗
+T21	physical_therapy 403 407	手术治疗
+T22	physical_therapy 408 418	原发和继发肿瘤的切除
+R12	medical Arg1:T18 Arg2:T19	
+R13	medical Arg1:T18 Arg2:T20	
+R14	physical Arg1:T18 Arg2:T21	
+R15	physical Arg1:T18 Arg2:T22	
+T24	pathogenic_bacteria 451 457	慢性丙型肝炎
+T25	pathogenic_bacteria 458 463	酒精性肝病
+T26	disease 467 477	非酒精性肝脏脂肪浸润
+T27	disease 478 484	慢性乙型肝炎
+T23	disease 421 424	肝硬化
+R16	cause Arg1:T24 Arg2:T23	
+R17	cause Arg1:T25 Arg2:T23	
+R18	relevant Arg1:T26 Arg2:T23	
+R19	relevant Arg1:T27 Arg2:T23	
+T28	disease 549 555	中枢性尿崩症
+T29	symptom 574 576	烦渴
+T30	symptom 577 579	多饮
+T31	symptom 580 582	多尿
+T32	pathogenic_bacteria 486 495	AVP基因结构异常
+T33	pathogenic_bacteria 496 508	下丘脑及神经垂体发育缺陷
+T34	pathogenic_bacteria 510 544	下丘脑-神经束-神经垂体区域受到炎症、肿瘤、外伤、手术、自身免疫损伤
+R20	cause Arg1:T32 Arg2:T28	
+R21	cause Arg1:T33 Arg2:T28	
+R22	cause Arg1:T34 Arg2:T28	
+R23	clinical_manifestation Arg1:T28 Arg2:T29	
+R24	clinical_manifestation Arg1:T28 Arg2:T30	
+R25	clinical_manifestation Arg1:T28 Arg2:T31	
+T35	disease 589 593	大动脉炎
+T36	medical_treatment 597 601	生物制剂
+R26	medical Arg1:T35 Arg2:T36	
+T37	medical_treatment 608 617	抗肿瘤坏死因子制剂
+T38	medical_treatment 629 634	糖皮质激素
+R27	medical Arg1:T35 Arg2:T37	
+R28	medical Arg1:T35 Arg2:T38	
+T39	disease 659 665	非小细胞肺癌
+T40	disease 770 776	非小细胞肺癌
+T41	disease 824 828	典型流感
+T42	symptom 832 840	呼吸道卡他症状轻
+T43	symptom 842 846	全身中毒
+R29	clinical_manifestation Arg1:T41 Arg2:T42	
+R30	clinical_manifestation Arg1:T41 Arg2:T43	
+T44	disease 869 873	幼儿流感
+T45	disease 876 882	上呼吸道感染
+T46	disease 883 885	喉炎
+T47	disease 886 889	气管炎
+T48	disease 890 894	支气管炎
+T49	disease 895 901	毛细支气管炎
+T50	disease 902 904	肺炎
+R31	relevant Arg1:T44 Arg2:T45	
+R32	relevant Arg1:T44 Arg2:T46	
+R33	relevant Arg1:T44 Arg2:T47	
+R34	relevant Arg1:T44 Arg2:T48	
+R35	relevant Arg1:T44 Arg2:T49	
+R36	relevant Arg1:T44 Arg2:T50	

@@ -1,0 +1,15 @@
+T1	disease 0 5	多脏器衰竭
+T2	symptom 12 16	组织缺氧
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	disease 51 56	多脏器衰竭
+T4	symptom 121 134	溶酶体、线粒体和细胞膜破坏
+R2	clinical_manifestation Arg1:T3 Arg2:T4	
+T5	disease 136 141	多脏器衰竭
+T6	symptom 167 176	上皮组织基底膜破坏
+T7	symptom 177 184	血管通透性增加
+T8	symptom 187 193	引起血管阻塞
+T9	symptom 194 199	微血栓形成
+R3	clinical_manifestation Arg1:T5 Arg2:T6	
+R4	clinical_manifestation Arg1:T5 Arg2:T7	
+R5	clinical_manifestation Arg1:T5 Arg2:T8	
+R6	clinical_manifestation Arg1:T5 Arg2:T9	

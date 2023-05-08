@@ -1,0 +1,143 @@
+T1	disease 0 3	胆管癌
+T2	disease 6 8	肿瘤
+T3	physical_therapy 12 19	术前门静脉栓塞
+R1	physical Arg1:T2 Arg2:T3	
+R2	physical Arg1:T1 Arg2:T3	
+T4	physical_therapy 20 24	胆汁引流
+R3	physical Arg1:T1 Arg2:T4	
+T5	physical_therapy 41 48	术前门静脉栓塞
+T6	disease 122 127	新生儿肺炎
+T7	medical_treatment 145 148	抗生素
+T8	medical_treatment 165 169	氨苄西林
+T9	medical_treatment 170 174	阿米卡星
+T10	medical_treatment 181 188	第三代头孢菌素
+T11	medical_treatment 197 200	青霉素
+T12	medical_treatment 201 205	氨苄西林
+T13	medical_treatment 216 219	青霉素
+T14	medical_treatment 238 242	氨苄西林
+T15	medical_treatment 250 253	红霉素
+T16	medical_treatment 265 273	阿昔洛韦静脉滴注
+T17	symptom 138 142	呼吸增快
+R4	clinical_manifestation Arg1:T6 Arg2:T17	
+R5	medical Arg1:T6 Arg2:T7	
+T18	disease 157 163	肠道杆菌肺炎
+T19	pathogenic_bacteria 151 156	大肠埃希菌
+R6	cause Arg1:T19 Arg2:T18	
+R7	medical Arg1:T18 Arg2:T8	
+R8	medical Arg1:T18 Arg2:T9	
+R9	medical Arg1:T18 Arg2:T10	
+T20	disease 189 194	GBS肺炎
+R10	medical Arg1:T20 Arg2:T11	
+R11	medical Arg1:T20 Arg2:T12	
+R12	medical Arg1:T20 Arg2:T13	
+T21	disease 229 235	李斯特菌肺炎
+R13	medical Arg1:T21 Arg2:T14	
+T22	disease 243 248	衣原体肺炎
+R14	medical Arg1:T22 Arg2:T15	
+T23	disease 256 263	疱疹病毒性肺炎
+R15	medical Arg1:T23 Arg2:T16	
+T24	disease 288 291	脓毒症
+T25	pathogenic_bacteria 292 299	革兰氏阳性球菌
+T26	pathogenic_bacteria 302 306	葡萄球菌
+T27	pathogenic_bacteria 307 310	肠球菌
+T28	pathogenic_bacteria 311 314	链球菌
+T29	pathogenic_bacteria 315 321	革兰氏阴性菌
+T30	pathogenic_bacteria 324 329	大肠埃希菌
+T31	pathogenic_bacteria 330 337	肺炎克雷伯杆菌
+T32	pathogenic_bacteria 338 343	假单胞菌属
+T33	pathogenic_bacteria 344 348	变形杆菌
+T34	pathogenic_bacteria 349 354	克雷伯菌属
+T35	pathogenic_bacteria 356 359	厌氧菌
+T36	pathogenic_bacteria 360 365	脆弱类杆菌
+T37	pathogenic_bacteria 366 372	梭状芽胞杆菌
+T38	pathogenic_bacteria 373 379	消化道链状菌
+R16	cause Arg1:T25 Arg2:T24	
+R17	cause Arg1:T26 Arg2:T24	
+R18	cause Arg1:T27 Arg2:T24	
+R19	cause Arg1:T28 Arg2:T24	
+R20	cause Arg1:T29 Arg2:T24	
+R21	cause Arg1:T30 Arg2:T24	
+R22	cause Arg1:T31 Arg2:T24	
+R23	cause Arg1:T32 Arg2:T24	
+R24	cause Arg1:T33 Arg2:T24	
+R25	cause Arg1:T34 Arg2:T24	
+R26	cause Arg1:T35 Arg2:T24	
+R27	cause Arg1:T36 Arg2:T24	
+R28	cause Arg1:T37 Arg2:T24	
+R29	cause Arg1:T38 Arg2:T24	
+T39	disease 384 390	非小细胞肺癌
+T40	disease 392 401	多脉管炎合并肉芽肿
+T41	disease 402 409	韦格纳肉芽肿病
+R30	same Arg1:T40 Arg2:T41	
+T42	disease 414 421	非霍奇金淋巴瘤
+T43	disease 433 443	侵袭性非霍奇金淋巴瘤
+T44	symptom 447 449	发热
+T45	symptom 450 454	夜间盗汗
+T46	symptom 455 458	不适感
+T47	symptom 459 463	体重减轻
+T48	symptom 464 466	咳嗽
+T49	symptom 467 469	气促
+T50	symptom 470 474	腹部不适
+T51	symptom 475 477	头痛
+T52	symptom 478 484	精神状态改变
+T53	symptom 485 487	眩晕
+T54	symptom 488 492	共济失调
+T55	symptom 493 497	胸腔积液
+T56	symptom 498 502	淋巴结病
+T57	symptom 503 507	面色苍白
+T58	symptom 508 510	紫癜
+T59	symptom 511 513	黄疸
+T60	symptom 514 517	肝肿大
+T61	symptom 518 521	脾肿大
+T62	symptom 522 526	皮肤结节
+T63	symptom 527 537	神经系统体格检查异常
+T64	disease 538 544	非小细胞肺癌
+T65	physical_therapy 545 548	血涂片
+R31	physical Arg1:T43 Arg2:T65	
+R32	clinical_manifestation Arg1:T43 Arg2:T44	
+R33	clinical_manifestation Arg1:T43 Arg2:T45	
+R34	clinical_manifestation Arg1:T43 Arg2:T46	
+R35	clinical_manifestation Arg1:T43 Arg2:T47	
+R36	clinical_manifestation Arg1:T43 Arg2:T48	
+R37	clinical_manifestation Arg1:T43 Arg2:T49	
+R38	clinical_manifestation Arg1:T43 Arg2:T50	
+R39	clinical_manifestation Arg1:T43 Arg2:T51	
+R40	clinical_manifestation Arg1:T43 Arg2:T52	
+R41	clinical_manifestation Arg1:T43 Arg2:T53	
+R42	clinical_manifestation Arg1:T43 Arg2:T54	
+R43	clinical_manifestation Arg1:T43 Arg2:T55	
+R44	clinical_manifestation Arg1:T43 Arg2:T56	
+R45	clinical_manifestation Arg1:T43 Arg2:T57	
+R46	clinical_manifestation Arg1:T43 Arg2:T58	
+R47	clinical_manifestation Arg1:T43 Arg2:T59	
+R48	clinical_manifestation Arg1:T43 Arg2:T60	
+R49	clinical_manifestation Arg1:T43 Arg2:T61	
+R50	clinical_manifestation Arg1:T43 Arg2:T62	
+R51	clinical_manifestation Arg1:T43 Arg2:T63	
+T66	disease 565 568	口咽癌
+T67	pathogenic_bacteria 616 618	口交
+R52	cause Arg1:T67 Arg2:T66	
+T68	disease 657 661	低度肿瘤
+T69	disease 699 704	急性胰腺炎
+T70	symptom 705 707	发热
+R53	clinical_manifestation Arg1:T69 Arg2:T70	
+T71	disease 746 755	新生儿血色素沉着症
+T72	disease 773 779	先天性肝硬化
+R54	relevant Arg1:T71 Arg2:T72	
+T73	symptom 793 802	血清铁蛋白和铁升高
+T74	symptom 804 810	转铁蛋白降低
+R55	clinical_manifestation Arg1:T71 Arg2:T73	
+R56	clinical_manifestation Arg1:T71 Arg2:T74	
+T75	disease 818 823	肾母细胞瘤
+T76	physical_therapy 886 892	X线肺部检查
+R57	physical Arg1:T75 Arg2:T76	
+T77	physical_therapy 829 836	肾素的定量分析
+R58	physical Arg1:T75 Arg2:T77	
+T78	disease 851 853	肿瘤
+T79	disease 898 901	胆囊炎
+T80	disease 903 908	消化性溃疡
+T81	disease 912 917	急性胰腺炎
+T82	symptom 929 932	上腹痛
+T83	symptom 933 936	脐周痛
+R59	clinical_manifestation Arg1:T81 Arg2:T82	
+R60	clinical_manifestation Arg1:T81 Arg2:T83	

@@ -1,0 +1,56 @@
+T1	disease 0 3	肝硬化
+T2	physical_therapy 6 12	肝穿病理检查
+T3	physical_therapy 13 18	腹腔镜检查
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+T4	disease 24 27	肝硬化
+T5	disease 64 67	肝硬化
+T6	symptom 69 73	肝脾肿大
+T7	physical_therapy 96 101	肝穿刺活检
+R3	clinical_manifestation Arg1:T5 Arg2:T6	
+R4	treatment Arg1:T6 Arg2:T7	
+T8	disease 103 106	肝硬化
+T9	disease 108 112	腹腔积液
+R5	relevant Arg1:T8 Arg2:T9	
+T10	disease 112 116	腹腔积液
+T11	disease 123 129	结核性腹膜炎
+T12	disease 130 136	缩窄性心包炎
+T13	disease 137 144	慢性肾小球肾炎
+R6	relevant Arg1:T8 Arg2:T11	
+R7	relevant Arg1:T8 Arg2:T12	
+R8	relevant Arg1:T8 Arg2:T13	
+T14	disease 147 150	肝硬化
+T15	disease 173 176	肝硬化
+T16	physical_therapy 191 196	腹腔镜检查
+R9	physical Arg1:T14 Arg2:T16	
+T17	disease 202 205	肝硬化
+T18	disease 207 210	肝硬化
+T19	disease 214 220	上消化道出血
+T20	disease 221 225	肝性脑病
+T21	disease 226 231	肝肾综合征
+R10	relevant Arg1:T18 Arg2:T19	
+R11	relevant Arg1:T18 Arg2:T20	
+R12	relevant Arg1:T18 Arg2:T21	
+T22	disease 239 242	肝硬化
+T23	disease 242 245	肝硬化
+T24	disease 257 263	上消化道出血
+T25	disease 264 267	肝硬化
+R13	relevant Arg1:T25 Arg2:T24	
+T26	pathogenic_bacteria 276 280	肝性脑病
+T27	disease 281 284	肝硬化
+R14	cause Arg1:T26 Arg2:T27	
+T28	disease 294 297	肝硬化
+T29	disease 297 301	肝性脑病
+T30	disease 302 306	感染肝炎
+T31	disease 307 312	原发性肝癌
+T32	disease 313 318	肝肾综合征
+T33	disease 319 326	门静脉血栓形成
+T34	disease 327 333	呼吸系统损伤
+T35	disease 334 338	腹腔积液
+R15	relevant Arg1:T28 Arg2:T29	
+R16	relevant Arg1:T28 Arg2:T30	
+R17	relevant Arg1:T28 Arg2:T31	
+R18	relevant Arg1:T28 Arg2:T32	
+R19	relevant Arg1:T28 Arg2:T33	
+R20	relevant Arg1:T28 Arg2:T34	
+R21	relevant Arg1:T28 Arg2:T35	

@@ -1,0 +1,9 @@
+T1	disease 0 6	凝血功能障碍
+T2	symptom 8 16	凝血活酶生成不良
+T3	symptom 35 47	血浆因子Ⅺ活性减低或消失
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	disease 53 59	凝血功能障碍
+T5	disease 140 146	凝血功能障碍
+T6	medical_treatment 153 159	补充凝血因子
+R3	medical Arg1:T5 Arg2:T6	

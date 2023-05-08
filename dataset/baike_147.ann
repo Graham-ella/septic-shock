@@ -1,0 +1,22 @@
+T1	disease 0 4	器官移植
+T2	disease 42 45	糖尿病
+T3	disease 46 50	高脂血症
+T4	disease 51 56	高尿酸血症
+T5	disease 57 63	心脑血管疾病
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+T6	disease 69 73	器官移植
+T7	disease 75 79	器官移植
+T8	medical_treatment 105 115	应用免疫抑制药物治疗
+R5	medical Arg1:T7 Arg2:T8	
+T9	disease 124 130	感染性并发症
+R6	relevant Arg1:T7 Arg2:T9	
+R7	medical Arg1:T6 Arg2:T8	
+R8	relevant Arg1:T6 Arg2:T9	
+T10	disease 143 147	器官移植
+T11	disease 152 156	器官移植
+T12	medical_treatment 173 181	应用免疫抑制药物
+R9	medical Arg1:T11 Arg2:T12	
+R10	medical Arg1:T10 Arg2:T12	

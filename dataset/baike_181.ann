@@ -1,0 +1,7 @@
+T1	disease 0 8	中毒性休克综合征
+T2	pathogenic_bacteria 10 18	噬菌体Ⅰ型金葡菌
+R1	cause Arg1:T2 Arg2:T1	
+T3	pathogenic_bacteria 29 37	葡萄球菌肠毒素F
+T4	pathogenic_bacteria 38 45	致热性外毒素C
+R2	cause Arg1:T3 Arg2:T1	
+R3	cause Arg1:T4 Arg2:T1	

@@ -1,0 +1,10 @@
+T1	disease 0 6	凝血功能障碍
+T3	symptom 22 35	软组织、肌肉、负重关节出血
+R1	clinical_manifestation Arg1:T1 Arg2:T3	
+T2	disease 40 46	凝血功能障碍
+T4	disease 76 82	凝血功能障碍
+T5	disease 117 123	凝血功能障碍
+T6	symptom 88 92	轻微外伤
+T7	symptom 93 100	手术后严重出血
+R2	clinical_manifestation Arg1:T4 Arg2:T6	
+R3	clinical_manifestation Arg1:T4 Arg2:T7	

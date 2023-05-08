@@ -1,0 +1,78 @@
+T1	disease 4 9	继发性溃疡
+T2	symptom 60 64	急性起病
+T3	symptom 65 67	呕血
+T4	symptom 68 70	黑便
+T6	disease 21 30	出生窒息等缺血缺氧
+T7	disease 31 34	败血症
+T8	disease 35 38	低血糖
+T9	disease 39 46	呼吸窘迫综合征
+T10	disease 47 55	中枢神经系统疾病
+R1	relevant Arg1:T1 Arg2:T6	
+T5	disease 18 20	早产
+R2	relevant Arg1:T1 Arg2:T5	
+R3	relevant Arg1:T1 Arg2:T7	
+R4	relevant Arg1:T1 Arg2:T8	
+R5	relevant Arg1:T1 Arg2:T9	
+R6	relevant Arg1:T1 Arg2:T10	
+R7	clinical_manifestation Arg1:T1 Arg2:T2	
+R8	clinical_manifestation Arg1:T1 Arg2:T3	
+R9	clinical_manifestation Arg1:T1 Arg2:T4	
+T11	disease 72 77	基底细胞癌
+T12	physical_therapy 81 83	活检
+R10	physical Arg1:T11 Arg2:T12	
+T13	disease 130 135	1型糖尿病
+T14	disease 178 183	吸入性肺炎
+T15	disease 209 214	类脂性肺炎
+T16	disease 249 256	慢性间质性肺炎
+R11	relevant Arg1:T15 Arg2:T16	
+T17	pathogenic_bacteria 185 199	呼吸道直接吸入有机或无机物质
+R12	cause Arg1:T17 Arg2:T14	
+T18	pathogenic_bacteria 215 236	鱼肝油、石蜡油、油性滴鼻剂等油脂性物质吸入
+R13	cause Arg1:T18 Arg2:T15	
+T19	disease 258 265	肺炎链球菌肺炎
+T20	disease 276 281	细菌性肺炎
+T21	disease 282 291	金黄色葡萄球菌肺炎
+T22	pathogenic_bacteria 294 301	金黄色葡萄球菌
+R14	cause Arg1:T22 Arg2:T21	
+T23	disease 303 308	新生儿黄疸
+T24	physical_therapy 312 318	渗透脆性试验
+R15	physical Arg1:T23 Arg2:T24	
+T25	disease 328 333	消化道出血
+T26	physical_therapy 342 345	血常规
+T27	physical_therapy 352 358	粪便潜血试验
+T28	physical_therapy 367 374	消化道局部止血
+T29	physical_therapy 391 395	全身止血
+T30	medical_treatment 376 378	喷药
+T31	physical_therapy 379 384	胃镜下硬化
+T32	physical_therapy 385 389	电凝治疗
+R16	physical Arg1:T25 Arg2:T26	
+R17	physical Arg1:T25 Arg2:T27	
+R18	physical Arg1:T25 Arg2:T28	
+R19	medical Arg1:T25 Arg2:T30	
+R20	physical Arg1:T25 Arg2:T31	
+R21	physical Arg1:T25 Arg2:T32	
+R22	physical Arg1:T25 Arg2:T29	
+T33	disease 403 408	急性胰腺炎
+T34	disease 397 401	食物中毒
+T35	disease 412 416	急性肝炎
+T36	symptom 428 430	黄疸
+R23	clinical_manifestation Arg1:T35 Arg2:T36	
+T37	disease 442 444	肺炎
+T38	symptom 477 485	早期见肺纹理增粗
+T39	symptom 490 496	小斑片状阴影
+T40	symptom 517 520	肺不张
+T41	symptom 521 524	肺气肿
+T42	physical_therapy 437 441	血气分析
+R24	physical Arg1:T37 Arg2:T42	
+R25	clinical_manifestation Arg1:T37 Arg2:T38	
+R26	clinical_manifestation Arg1:T37 Arg2:T39	
+R27	clinical_manifestation Arg1:T37 Arg2:T40	
+R28	clinical_manifestation Arg1:T37 Arg2:T41	
+T43	disease 526 536	稳定型缺血性心脏疾病
+T44	medical_treatment 551 557	ACE抑制剂
+T45	disease 603 613	稳定型缺血性心脏疾病
+T46	medical_treatment 617 629	血管紧张素II受体拮抗剂
+T47	disease 596 600	SIHD
+R29	medical Arg1:T47 Arg2:T46	
+R30	medical Arg1:T47 Arg2:T44	
+T48	medical_treatment 635 641	ACE抑制剂

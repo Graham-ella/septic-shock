@@ -1,0 +1,35 @@
+T1	disease 0 9	重症急性呼吸综合征
+T2	disease 50 59	重症急性呼吸综合征
+T3	symptom 70 79	短期内病灶迅速增多
+T4	symptom 80 90	常累及双肺或单肺多叶
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+R2	clinical_manifestation Arg1:T2 Arg2:T4	
+T5	disease 92 101	重症急性呼吸综合征
+T6	disease 118 127	重症急性呼吸综合征
+T7	disease 141 150	重症急性呼吸综合征
+T8	disease 186 195	重症急性呼吸综合征
+T9	disease 212 221	重症急性呼吸综合征
+T10	symptom 221 232	肺部阴影吸收、消散较慢
+R3	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	disease 252 261	重症急性呼吸综合征
+T12	disease 300 309	重症急性呼吸综合征
+T13	disease 318 323	呼吸道感染
+T14	disease 324 329	流行性感冒
+T15	disease 330 339	细菌性或真菌性肺炎
+T16	disease 340 350	获得性免疫缺陷综合征
+T17	disease 363 367	军团菌病
+T18	disease 368 371	肺结核
+T19	disease 372 378	流行性出血热
+T20	disease 379 389	非感染性间质性肺疾病
+T21	disease 390 399	肺嗜酸粒细胞浸润症
+T22	disease 400 404	肺血管炎
+R4	relevant Arg1:T12 Arg2:T13	
+R5	relevant Arg1:T12 Arg2:T14	
+R6	relevant Arg1:T12 Arg2:T15	
+R7	relevant Arg1:T12 Arg2:T16	
+R8	relevant Arg1:T12 Arg2:T17	
+R9	relevant Arg1:T12 Arg2:T18	
+R10	relevant Arg1:T12 Arg2:T19	
+R11	relevant Arg1:T12 Arg2:T20	
+R12	relevant Arg1:T12 Arg2:T21	
+R13	relevant Arg1:T12 Arg2:T22	

@@ -1,0 +1,50 @@
+T1	disease 0 2	癌症
+T2	symptom 5 7	溃疡
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+T3	symptom 32 36	组织坏死
+T4	symptom 37 47	因继发感染而形成溃烂
+T5	disease 15 17	肿瘤
+R2	relevant Arg1:T1 Arg2:T5	
+R3	clinical_manifestation Arg1:T5 Arg2:T3	
+R4	clinical_manifestation Arg1:T5 Arg2:T4	
+T6	disease 49 51	癌症
+T7	symptom 54 56	出血
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+T8	disease 78 80	癌症
+T9	disease 81 83	肺癌
+T10	symptom 86 88	咯血
+T11	symptom 89 93	痰中带血
+R6	relevant Arg1:T8 Arg2:T9	
+R7	clinical_manifestation Arg1:T9 Arg2:T10	
+R8	clinical_manifestation Arg1:T9 Arg2:T11	
+T12	disease 94 96	胃癌
+T13	disease 97 100	食管癌
+T14	disease 101 104	结肠癌
+T15	symptom 106 108	呕血
+T16	symptom 109 111	便血
+R9	clinical_manifestation Arg1:T12 Arg2:T15	
+R10	clinical_manifestation Arg1:T13 Arg2:T15	
+R11	clinical_manifestation Arg1:T14 Arg2:T15	
+R12	clinical_manifestation Arg1:T12 Arg2:T16	
+R13	clinical_manifestation Arg1:T13 Arg2:T16	
+R14	clinical_manifestation Arg1:T14 Arg2:T16	
+T17	disease 112 117	泌尿道肿瘤
+T18	symptom 120 122	血尿
+R15	clinical_manifestation Arg1:T17 Arg2:T18	
+T19	disease 123 127	子宫颈癌
+T20	symptom 129 133	阴道流血
+T21	disease 134 138	肝癌破裂
+T22	symptom 141 146	腹腔内出血
+R16	clinical_manifestation Arg1:T19 Arg2:T20	
+R17	clinical_manifestation Arg1:T21 Arg2:T22	
+R18	relevant Arg1:T8 Arg2:T12	
+R19	relevant Arg1:T8 Arg2:T13	
+R20	relevant Arg1:T8 Arg2:T14	
+R21	relevant Arg1:T8 Arg2:T17	
+R22	relevant Arg1:T8 Arg2:T19	
+R23	relevant Arg1:T8 Arg2:T21	
+T23	disease 148 150	癌症
+T24	symptom 153 155	梗阻
+R24	clinical_manifestation Arg1:T23 Arg2:T24	
+T25	symptom 171 173	梗阻
+T26	pathogenic_bacteria 156 163	癌组织迅速生长

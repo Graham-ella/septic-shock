@@ -1,0 +1,10 @@
+T1	disease 0 7	皮肤软组织感染
+T2	physical_therapy 7 18	注意隔离，防止交叉感染
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 20 27	皮肤软组织感染
+T4	physical_therapy 29 42	多饮水及食用富含维生素水果
+R2	physical Arg1:T3 Arg2:T4	
+T5	disease 44 51	皮肤软组织感染
+T6	symptom 51 53	高热
+R3	clinical_manifestation Arg1:T5 Arg2:T6	
+T7	disease 66 73	皮肤软组织感染

@@ -1,0 +1,5 @@
+T1	disease 0 2	休克
+T2	disease 10 15	出血性休克
+R1	relevant Arg1:T1 Arg2:T2	
+T3	physical_therapy 21 28	迅速恢复血容量
+R2	physical Arg1:T2 Arg2:T3	

@@ -1,0 +1,14 @@
+T1	disease 0 5	医院内感染
+T2	disease 24 28	肺部感染
+T3	pathogenic_bacteria 8 13	嗜肺军团菌
+R1	cause Arg1:T3 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T2	
+T4	disease 44 49	胸骨骨髓炎
+T5	disease 50 53	心包炎
+T6	disease 54 58	心内膜炎
+R3	relevant Arg1:T2 Arg2:T4	
+R4	relevant Arg1:T2 Arg2:T5	
+R5	relevant Arg1:T2 Arg2:T6	
+T7	pathogenic_bacteria 82 88	胎儿弯曲杆菌
+T8	disease 89 91	腹泻
+R6	cause Arg1:T7 Arg2:T8	

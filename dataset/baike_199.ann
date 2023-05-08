@@ -1,0 +1,37 @@
+T1	disease 0 4	呼吸衰竭
+T2	disease 20 27	慢性阻塞性肺病
+T3	disease 28 33	重度肺结核
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 80 84	呼吸衰竭
+T5	symptom 94 103	缺氧和二氧化碳潴留
+R3	clinical_manifestation Arg1:T4 Arg2:T5	
+T6	symptom 108 112	呼吸困难
+T7	symptom 113 115	急促
+R4	clinical_manifestation Arg1:T4 Arg2:T6	
+R5	clinical_manifestation Arg1:T4 Arg2:T7	
+T8	symptom 135 140	消化道出血
+R6	clinical_manifestation Arg1:T4 Arg2:T8	
+T9	disease 142 146	呼吸衰竭
+T10	symptom 148 155	口唇和甲床发绀
+T11	symptom 156 160	意识障碍
+T12	symptom 161 166	球结膜充血
+T13	symptom 167 169	水肿
+T14	symptom 170 175	扑翼样震颤
+T15	symptom 176 183	视神经乳头水肿
+R7	clinical_manifestation Arg1:T9 Arg2:T10	
+R8	clinical_manifestation Arg1:T9 Arg2:T11	
+R9	clinical_manifestation Arg1:T9 Arg2:T12	
+R10	clinical_manifestation Arg1:T9 Arg2:T13	
+R11	clinical_manifestation Arg1:T9 Arg2:T14	
+R12	clinical_manifestation Arg1:T9 Arg2:T15	
+T16	disease 186 190	呼吸衰竭
+T17	disease 190 196	呼吸性酸中毒
+R13	relevant Arg1:T16 Arg2:T17	
+T18	disease 209 213	高钾血症
+R14	relevant Arg1:T17 Arg2:T18	
+T19	disease 214 220	呼吸性酸中毒
+R15	relevant Arg1:T16 Arg2:T19	
+T20	disease 241 245	呼吸衰竭
+T21	medical_treatment 250 257	肾上腺皮质激素
+R16	medical Arg1:T20 Arg2:T21	

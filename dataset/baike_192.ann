@@ -1,0 +1,16 @@
+T1	disease 0 3	暖休克
+T2	medical_treatment 5 10	纠正酸中毒
+T3	medical_treatment 11 22	使用5%碳酸氢钠注射液
+R1	medical Arg1:T1 Arg2:T2	
+R2	medical Arg1:T1 Arg2:T3	
+T4	disease 39 43	静脉萎陷
+T5	symptom 43 48	血容量减少
+T6	disease 49 51	休克
+T7	symptom 52 54	脱水
+T8	symptom 55 59	高热出汗
+T9	disease 71 75	静脉萎陷
+R3	clinical_manifestation Arg1:T4 Arg2:T5	
+R4	relevant Arg1:T4 Arg2:T6	
+R5	clinical_manifestation Arg1:T4 Arg2:T7	
+R6	clinical_manifestation Arg1:T4 Arg2:T8	
+R7	clinical_manifestation Arg1:T9 Arg2:T8	

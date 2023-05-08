@@ -1,0 +1,49 @@
+T1	disease 0 5	感染性休克
+T2	physical_therapy 5 10	尿pH测定
+T3	disease 16 21	感染性休克
+T4	physical_therapy 23 30	血清电解质测定
+R1	physical Arg1:T3 Arg2:T4	
+T5	disease 30 32	休克
+R2	relevant Arg1:T3 Arg2:T5	
+R3	physical Arg1:T5 Arg2:T4	
+T6	disease 56 61	感染性休克
+T7	physical_therapy 63 69	血清酶的测定
+T8	disease 104 109	感染性休克
+T9	disease 125 127	休克
+R4	relevant Arg1:T8 Arg2:T9	
+T10	disease 190 195	感染性休克
+T11	disease 197 200	DIC
+R5	relevant Arg1:T10 Arg2:T11	
+T12	disease 309 314	感染性休克
+T13	disease 334 339	感染性休克
+T14	physical_therapy 318 326	心电图、X线检查
+R6	physical Arg1:T12 Arg2:T14	
+T15	disease 344 346	休克
+R7	relevant Arg1:T13 Arg2:T15	
+T16	physical_therapy 366 370	检测血象
+T17	physical_therapy 371 376	病原学检查
+T18	physical_therapy 377 386	尿常规和肾功能检查
+T19	physical_therapy 387 393	血液生化检查
+T20	physical_therapy 394 401	血清电解质测定
+T21	physical_therapy 402 408	血清酶的测定
+T22	physical_therapy 409 422	血液流变学有关DIC的检查
+R8	physical Arg1:T13 Arg2:T16	
+R9	physical Arg1:T13 Arg2:T17	
+R10	physical Arg1:T13 Arg2:T18	
+R11	physical Arg1:T13 Arg2:T19	
+R12	physical Arg1:T13 Arg2:T20	
+R13	physical Arg1:T13 Arg2:T21	
+R14	physical Arg1:T13 Arg2:T22	
+T23	disease 434 439	感染性休克
+T24	disease 451 453	休克
+R15	relevant Arg1:T23 Arg2:T24	
+T25	physical_therapy 457 464	给予补充血容量
+T26	physical_therapy 465 470	纠正酸中毒
+T27	physical_therapy 471 479	调整血管舒缩功能
+R16	physical Arg1:T24 Arg2:T25	
+R17	physical Arg1:T24 Arg2:T26	
+R18	physical Arg1:T24 Arg2:T27	
+T28	disease 510 515	感染性休克
+T29	disease 543 548	感染性休克
+R19	physical Arg1:T1 Arg2:T2	
+R20	physical Arg1:T6 Arg2:T7	

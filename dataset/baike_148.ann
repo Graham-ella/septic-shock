@@ -1,0 +1,3 @@
+T1	disease 0 4	器官移植
+T2	medical_treatment 23 34	应用大剂量免疫抑制药物
+R1	medical Arg1:T1 Arg2:T2	

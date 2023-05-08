@@ -1,0 +1,94 @@
+T1	disease 14 20	阿米巴肝脓肿
+T2	disease 55 61	触痛性肝肿大
+R1	relevant Arg1:T1 Arg2:T2	
+T3	disease 62 68	右侧胸腔积液
+R2	relevant Arg1:T1 Arg2:T3	
+T4	pathogenic_bacteria 40 46	细菌性痢疾史
+R3	cause Arg1:T4 Arg2:T1	
+T5	disease 70 72	中毒
+T6	symptom 77 82	刺激性呛咳
+T7	symptom 83 87	呼吸困难
+T8	symptom 88 90	发绀
+T9	symptom 91 94	肺水肿
+T10	symptom 95 101	呼吸节律不整
+T11	symptom 107 113	呼吸中枢抑制
+T12	symptom 114 119	呼吸肌麻痹
+T13	symptom 121 125	呼吸衰竭
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+R5	clinical_manifestation Arg1:T5 Arg2:T7	
+R6	clinical_manifestation Arg1:T5 Arg2:T8	
+R7	clinical_manifestation Arg1:T5 Arg2:T9	
+R8	clinical_manifestation Arg1:T5 Arg2:T10	
+R9	clinical_manifestation Arg1:T5 Arg2:T11	
+R10	clinical_manifestation Arg1:T5 Arg2:T12	
+R11	clinical_manifestation Arg1:T5 Arg2:T13	
+T14	disease 133 139	胆石性胰腺炎
+T15	disease 166 172	新生儿败血症
+T16	pathogenic_bacteria 182 186	葡萄球菌
+T17	pathogenic_bacteria 193 198	大肠埃希菌
+T18	pathogenic_bacteria 199 206	革兰氏阴性杆菌
+T19	disease 207 210	晚发型
+T20	pathogenic_bacteria 250 254	葡萄球菌
+T21	pathogenic_bacteria 255 260	机会致病菌
+T22	disease 266 268	脐炎
+T23	disease 269 271	肺炎
+R12	cause Arg1:T16 Arg2:T15	
+R13	cause Arg1:T17 Arg2:T15	
+R14	cause Arg1:T18 Arg2:T15	
+R15	cause Arg1:T20 Arg2:T19	
+R16	cause Arg1:T21 Arg2:T19	
+R17	relevant Arg1:T19 Arg2:T22	
+R18	relevant Arg1:T19 Arg2:T23	
+T24	disease 288 291	肝硬化
+T25	disease 322 324	腹水
+T26	disease 325 331	静脉曲张出血
+T27	disease 332 334	黄疸
+T28	disease 335 342	门体性肝性脑病
+T29	disease 343 348	肝肾综合征
+T30	disease 349 354	肝肺综合征
+T31	disease 355 359	肝细胞癌
+R19	relevant Arg1:T24 Arg2:T25	
+R20	relevant Arg1:T24 Arg2:T26	
+R21	relevant Arg1:T24 Arg2:T27	
+R22	relevant Arg1:T24 Arg2:T28	
+R23	relevant Arg1:T24 Arg2:T29	
+R24	relevant Arg1:T24 Arg2:T30	
+R25	relevant Arg1:T24 Arg2:T31	
+T32	disease 364 367	肠梗阻
+T33	disease 394 398	心肌梗塞
+T34	disease 399 403	代谢紊乱
+T35	disease 404 407	败血症
+T36	disease 408 413	胃肠道疾病
+R26	relevant Arg1:T32 Arg2:T33	
+R27	relevant Arg1:T32 Arg2:T34	
+R28	relevant Arg1:T32 Arg2:T35	
+R29	relevant Arg1:T32 Arg2:T36	
+T37	disease 418 426	脱屑性间质性肺炎
+T38	medical_treatment 478 485	肾上腺皮质激素
+R30	medical Arg1:T37 Arg2:T38	
+T39	pathogenic_bacteria 443 448	腺病毒感染
+T40	pathogenic_bacteria 449 456	先天性风疹感染
+T41	pathogenic_bacteria 457 459	吸烟
+T42	pathogenic_bacteria 460 465	有机尘吸入
+T43	pathogenic_bacteria 466 475	应用呋喃旦啶等药物
+R31	cause Arg1:T39 Arg2:T37	
+R32	cause Arg1:T40 Arg2:T37	
+R33	cause Arg1:T41 Arg2:T37	
+R34	cause Arg1:T42 Arg2:T37	
+R35	cause Arg1:T43 Arg2:T37	
+T44	disease 501 510	混合性高胆红素血症
+T45	physical_therapy 547 553	积极控制感染
+R36	physical Arg1:T44 Arg2:T45	
+T46	physical_therapy 554 560	加强支持疗法
+R37	physical Arg1:T44 Arg2:T46	
+T47	pathogenic_bacteria 510 512	感染
+T48	pathogenic_bacteria 530 535	细菌和病毒
+T49	disease 539 541	黄疸
+R38	cause Arg1:T47 Arg2:T44	
+R39	cause Arg1:T48 Arg2:T49	
+T50	disease 562 566	前置胎盘
+T51	physical_therapy 634 640	血红蛋白水平
+R40	physical Arg1:T50 Arg2:T51	
+T52	disease 658 663	新生儿黄疸
+T53	physical_therapy 685 693	经皮胆红素检测仪
+R41	physical Arg1:T52 Arg2:T53	

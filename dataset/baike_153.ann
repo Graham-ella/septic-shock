@@ -1,0 +1,44 @@
+T1	disease 0 2	癌症
+T2	pathogenic_bacteria 2 10	高能量高脂肪食品
+T3	disease 13 16	乳腺癌
+T4	disease 17 22	子宫内膜癌
+T5	disease 23 27	前列腺癌
+T6	disease 28 31	结肠癌
+R1	relevant Arg1:T1 Arg2:T3	
+R2	relevant Arg1:T1 Arg2:T4	
+R3	relevant Arg1:T1 Arg2:T5	
+R4	relevant Arg1:T1 Arg2:T6	
+R5	cause Arg1:T2 Arg2:T3	
+R6	cause Arg1:T2 Arg2:T4	
+R7	cause Arg1:T2 Arg2:T5	
+R8	cause Arg1:T2 Arg2:T6	
+T7	disease 37 39	癌症
+T8	pathogenic_bacteria 39 50	饮用污染水、吃霉变食物
+T9	disease 53 55	肝癌
+T10	disease 56 59	食管癌
+T11	disease 60 62	胃癌
+R9	relevant Arg1:T7 Arg2:T9	
+R10	relevant Arg1:T7 Arg2:T10	
+R11	relevant Arg1:T7 Arg2:T11	
+R12	cause Arg1:T8 Arg2:T9	
+R13	cause Arg1:T8 Arg2:T10	
+R14	cause Arg1:T8 Arg2:T11	
+T12	disease 64 66	癌症
+T13	pathogenic_bacteria 73 75	病毒
+R15	cause Arg1:T13 Arg2:T12	
+T14	disease 99 101	癌症
+T15	pathogenic_bacteria 107 111	EB病毒
+T16	disease 112 115	鼻咽癌
+T17	disease 116 122	伯基特淋巴瘤
+R16	cause Arg1:T15 Arg2:T16	
+R17	cause Arg1:T15 Arg2:T17	
+R18	relevant Arg1:T14 Arg2:T16	
+R19	relevant Arg1:T14 Arg2:T17	
+T18	pathogenic_bacteria 125 134	人类乳头状病毒感染
+T19	disease 135 138	宫颈癌
+R20	cause Arg1:T18 Arg2:T19	
+T20	pathogenic_bacteria 141 147	乙型肝炎病毒
+T21	disease 148 150	肝癌
+R21	cause Arg1:T20 Arg2:T21	
+R22	relevant Arg1:T14 Arg2:T19	
+R23	relevant Arg1:T14 Arg2:T21	

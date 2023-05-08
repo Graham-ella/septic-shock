@@ -1,0 +1,60 @@
+T1	disease 0 3	败血症
+T2	disease 85 88	败血症
+T3	medical_treatment 98 105	肾上腺皮质激素
+T4	medical_treatment 106 110	抗代谢药
+T5	medical_treatment 111 115	抗肿瘤药
+T6	physical_therapy 117 121	放射治疗
+R1	medical Arg1:T2 Arg2:T3	
+R2	medical Arg1:T2 Arg2:T4	
+R3	medical Arg1:T2 Arg2:T5	
+R4	physical Arg1:T2 Arg2:T6	
+T7	disease 167 170	败血症
+T8	pathogenic_bacteria 170 178	长期应用抗菌药物
+T9	disease 191 193	感染
+R5	cause Arg1:T8 Arg2:T9	
+T10	disease 197 200	败血症
+T11	physical_therapy 211 215	内镜检查
+T12	physical_therapy 216 220	插管检查
+T13	physical_therapy 221 227	大隐静脉插管
+T14	physical_therapy 228 233	留置导尿管
+T15	physical_therapy 234 241	静脉高营养疗法
+T16	physical_therapy 242 247	各种透析术
+T17	disease 250 253	败血症
+T18	disease 253 256	败血症
+T19	disease 269 272	败血症
+T20	symptom 344 348	神志改变
+T21	disease 349 352	心肌炎
+T22	disease 353 358	感染性休克
+T23	disease 359 367	弥散性血管内凝血
+T24	disease 373 380	呼吸窘迫综合征
+R6	clinical_manifestation Arg1:T19 Arg2:T20	
+R7	relevant Arg1:T19 Arg2:T21	
+R8	relevant Arg1:T19 Arg2:T22	
+R9	relevant Arg1:T19 Arg2:T23	
+R10	relevant Arg1:T19 Arg2:T24	
+T25	disease 383 386	败血症
+T26	disease 397 400	败血症
+T27	disease 413 416	败血症
+T28	disease 417 424	.金葡菌败血症
+T29	symptom 472 475	起病急
+T30	disease 477 482	皮疹呈瘀点
+T31	disease 483 486	荨麻疹
+T32	disease 487 490	脓疱疹
+T33	disease 491 497	猩红热样皮疹
+R11	relevant Arg1:T27 Arg2:T28	
+R12	clinical_manifestation Arg1:T28 Arg2:T29	
+R13	relevant Arg1:T28 Arg2:T30	
+R14	relevant Arg1:T28 Arg2:T31	
+R15	relevant Arg1:T28 Arg2:T32	
+R16	relevant Arg1:T28 Arg2:T33	
+T34	disease 504 507	败血症
+T35	disease 523 526	败血症
+T36	disease 617 620	败血症
+T37	disease 620 625	感染性休克
+R17	relevant Arg1:T7 Arg2:T9	
+R18	physical Arg1:T10 Arg2:T11	
+R19	physical Arg1:T10 Arg2:T12	
+R20	physical Arg1:T10 Arg2:T13	
+R21	physical Arg1:T10 Arg2:T14	
+R22	physical Arg1:T10 Arg2:T15	
+R23	physical Arg1:T10 Arg2:T16	

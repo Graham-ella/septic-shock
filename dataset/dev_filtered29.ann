@@ -1,0 +1,100 @@
+T1	disease 2 8	葡萄球菌肺炎
+T2	disease 39 45	多发性小脓疡
+T3	disease 46 49	肺大疱
+T4	disease 53 55	脓胸
+T5	disease 56 59	脓气胸
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+T6	disease 92 95	胸腺瘤
+T7	physical_therapy 112 114	CT
+R5	physical Arg1:T6 Arg2:T7	
+T9	symptom 201 205	没有症状
+T8	disease 194 198	肾细胞癌
+R6	clinical_manifestation Arg1:T8 Arg2:T9	
+T10	disease 224 226	胃癌
+T11	disease 322 329	脉络丛乳头状瘤
+T12	physical_therapy 334 338	手术切除
+R7	physical Arg1:T11 Arg2:T12	
+T13	disease 340 345	急性胰腺炎
+T14	physical_therapy 346 350	内镜检查
+R8	physical Arg1:T13 Arg2:T14	
+T15	symptom 359 361	糜烂
+T16	symptom 362 364	红斑
+T17	symptom 365 367	溃疡
+T18	physical_therapy 371 376	活组织检查
+R9	clinical_manifestation Arg1:T13 Arg2:T15	
+R10	clinical_manifestation Arg1:T13 Arg2:T16	
+R11	clinical_manifestation Arg1:T13 Arg2:T17	
+R12	physical Arg1:T13 Arg2:T18	
+T19	disease 451 455	肝性脑病
+T20	disease 423 426	低血糖
+T21	disease 442 445	脓毒症
+T22	disease 446 449	登革热
+R13	relevant Arg1:T19 Arg2:T20	
+R14	relevant Arg1:T19 Arg2:T21	
+R15	relevant Arg1:T19 Arg2:T22	
+T23	symptom 427 429	出血
+T24	symptom 430 434	呼吸窘迫
+T25	symptom 435 440	电解质失衡
+R16	clinical_manifestation Arg1:T19 Arg2:T23	
+R17	clinical_manifestation Arg1:T19 Arg2:T24	
+R18	clinical_manifestation Arg1:T19 Arg2:T25	
+T26	disease 459 461	脑炎
+R19	relevant Arg1:T22 Arg2:T26	
+T27	symptom 469 478	不同水平的意识改变
+T28	symptom 479 481	抽搐
+R20	clinical_manifestation Arg1:T26 Arg2:T27	
+R21	clinical_manifestation Arg1:T26 Arg2:T28	
+T29	disease 493 500	肺炎链球菌肺炎
+T30	disease 518 523	感染性休克
+T31	disease 524 528	中毒脑病
+T32	disease 529 532	脑水肿
+T33	disease 534 536	脑疝
+R22	relevant Arg1:T29 Arg2:T30	
+R23	relevant Arg1:T29 Arg2:T31	
+R24	relevant Arg1:T29 Arg2:T32	
+R25	relevant Arg1:T29 Arg2:T33	
+T34	physical_therapy 608 613	血生化检査
+T35	disease 601 607	中枢性尿崩症
+R26	physical Arg1:T35 Arg2:T34	
+T36	pathogenic_bacteria 538 547	AVP基因结构异常
+T37	pathogenic_bacteria 548 560	下丘脑及神经垂体发育缺陷
+R27	cause Arg1:T36 Arg2:T35	
+R28	cause Arg1:T37 Arg2:T35	
+T38	disease 653 659	小脑幕切迹疝
+T39	symptom 839 843	脉搏减慢
+T40	symptom 844 849	呼吸不规则
+T41	symptom 852 856	面色潮红
+T42	symptom 857 861	大汗淋漓
+T43	symptom 866 868	苍白
+T44	symptom 869 871	汗闭
+T45	symptom 872 882	体温可高达41℃以上
+T46	symptom 675 679	剧烈头痛
+T47	symptom 680 684	频繁呕吐
+T48	symptom 696 700	烦躁不安
+T49	symptom 709 711	嗜睡
+T50	symptom 712 714	昏睡
+T51	symptom 715 718	浅昏迷
+T52	symptom 720 723	深昏迷
+T53	symptom 725 729	瞳孔改变
+T54	symptom 804 809	光反应消失
+T55	symptom 819 823	对侧偏瘫
+R29	clinical_manifestation Arg1:T38 Arg2:T46	
+R30	clinical_manifestation Arg1:T38 Arg2:T47	
+R31	clinical_manifestation Arg1:T38 Arg2:T48	
+R32	clinical_manifestation Arg1:T38 Arg2:T49	
+R33	clinical_manifestation Arg1:T38 Arg2:T50	
+R34	clinical_manifestation Arg1:T38 Arg2:T51	
+R35	clinical_manifestation Arg1:T38 Arg2:T52	
+R36	clinical_manifestation Arg1:T38 Arg2:T53	
+R37	clinical_manifestation Arg1:T38 Arg2:T54	
+R38	clinical_manifestation Arg1:T38 Arg2:T55	
+R39	clinical_manifestation Arg1:T38 Arg2:T39	
+R40	clinical_manifestation Arg1:T38 Arg2:T40	
+R41	clinical_manifestation Arg1:T38 Arg2:T41	
+R42	clinical_manifestation Arg1:T38 Arg2:T42	
+R43	clinical_manifestation Arg1:T38 Arg2:T43	
+R44	clinical_manifestation Arg1:T38 Arg2:T44	
+R45	clinical_manifestation Arg1:T38 Arg2:T45	

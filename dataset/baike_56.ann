@@ -1,0 +1,8 @@
+T1	disease 0 5	急性胆管炎
+T2	disease 5 10	重症胆管炎
+R1	relevant Arg1:T1 Arg2:T2	
+T3	pathogenic_bacteria 34 58	感染性物质通过毛细胆管的肝细胞屏障直接进入肝血流
+R2	cause Arg1:T3 Arg2:T2	
+T4	disease 63 68	急性胆管炎
+T5	physical_therapy 68 77	尽早的胆道引流减压
+R3	physical Arg1:T4 Arg2:T5	

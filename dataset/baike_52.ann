@@ -1,0 +1,30 @@
+T1	disease 0 4	急性肺炎
+T2	symptom 12 15	发病急
+T3	symptom 16 19	症状重
+T4	symptom 20 24	并发症多
+T5	disease 28 34	循环系统衰竭
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	
+T6	disease 48 52	急性肺炎
+T7	symptom 61 63	发热
+T8	symptom 64 66	咳嗽
+T9	symptom 67 69	气促
+T10	symptom 70 74	精神烦躁
+T11	symptom 75 82	肺部闻及湿啰音
+T12	symptom 83 91	X线片呈片状阴影
+T13	symptom 92 101	肺部有实变组织改变
+T14	symptom 102 112	血清IgM抗体强阳性
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+R6	clinical_manifestation Arg1:T6 Arg2:T8	
+R7	clinical_manifestation Arg1:T6 Arg2:T9	
+R8	clinical_manifestation Arg1:T6 Arg2:T10	
+R9	clinical_manifestation Arg1:T6 Arg2:T11	
+R10	clinical_manifestation Arg1:T6 Arg2:T12	
+R11	clinical_manifestation Arg1:T6 Arg2:T13	
+R12	clinical_manifestation Arg1:T6 Arg2:T14	
+T15	disease 114 118	急性肺炎
+T16	disease 160 162	肺炎
+R13	relevant Arg1:T15 Arg2:T16	
+T17	disease 164 168	急性肺炎

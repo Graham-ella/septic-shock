@@ -1,0 +1,85 @@
+T1	disease 0 3	胆管癌
+T2	disease 12 16	胆道炎症
+T3	disease 20 29	原发性硬化性胆管炎
+T4	disease 32 37	肝功能异常
+T5	disease 45 50	儿童偏头痛
+T6	disease 91 101	胃肠道不适和过敏反应
+R1	relevant Arg1:T5 Arg2:T6	
+T7	medical_treatment 52 57	乙酰氨基酚
+T8	medical_treatment 79 82	布洛芬
+R2	medical Arg1:T5 Arg2:T7	
+R3	medical Arg1:T5 Arg2:T8	
+T9	disease 103 110	婴儿胆汁淤积症
+T10	symptom 174 178	皮肤改变
+T11	symptom 178 180	黄疸
+R4	clinical_manifestation Arg1:T9 Arg2:T10	
+R5	clinical_manifestation Arg1:T9 Arg2:T11	
+T12	disease 193 200	急性髓性白血病
+T13	disease 201 210	急性肿瘤溶解综合征
+T14	disease 244 253	急性肿瘤溶解综合征
+T15	disease 254 260	高白细胞血症
+R6	relevant Arg1:T14 Arg2:T15	
+T16	pathogenic_bacteria 215 221	肿瘤细胞分解
+T17	pathogenic_bacteria 230 241	化疗期间的肿瘤细胞坏死
+R7	cause Arg1:T16 Arg2:T13	
+R8	cause Arg1:T17 Arg2:T13	
+T18	disease 271 274	睾丸癌
+T19	disease 326 329	睾丸癌
+T20	disease 335 341	非精原细胞瘤
+T21	disease 354 363	非精原细胞瘤睾丸癌
+T22	physical_therapy 375 377	化疗
+T23	physical_therapy 372 374	监测
+T24	physical_therapy 378 394	睾丸切除术后的腹膜后淋巴结清扫术
+R9	physical Arg1:T21 Arg2:T23	
+R10	physical Arg1:T21 Arg2:T22	
+R11	physical Arg1:T21 Arg2:T24	
+T25	physical_therapy 280 282	放疗
+T26	physical_therapy 296 298	监测
+T27	physical_therapy 299 303	卡铂化疗
+T28	disease 421 428	急性髓性白血病
+T29	disease 453 458	神经纤维瘤
+T30	pathogenic_bacteria 430 450	17q11.2上的肿瘤抑制基因NF1异常
+T31	disease 461 464	AML
+R12	cause Arg1:T30 Arg2:T29	
+R13	relevant Arg1:T29 Arg2:T31	
+T32	disease 531 534	脓毒症
+T33	symptom 488 492	急性发热
+T34	symptom 493 509	外周血白细胞及中性粒细胞明显增高
+R14	clinical_manifestation Arg1:T32 Arg2:T33	
+R15	clinical_manifestation Arg1:T32 Arg2:T34	
+T35	disease 539 542	肛门癌
+T36	physical_therapy 564 569	肛门镜检查
+R16	physical Arg1:T35 Arg2:T36	
+T37	disease 597 599	传单
+T38	pathogenic_bacteria 608 611	EBV
+R17	cause Arg1:T38 Arg2:T37	
+T39	disease 645 651	传单样综合征
+T40	pathogenic_bacteria 617 621	HCMV
+T41	pathogenic_bacteria 622 625	弓形虫
+T42	pathogenic_bacteria 626 629	腺病毒
+T43	pathogenic_bacteria 630 634	风疹病毒
+T44	pathogenic_bacteria 635 638	HAV
+R18	cause Arg1:T40 Arg2:T39	
+R19	cause Arg1:T41 Arg2:T39	
+R20	cause Arg1:T42 Arg2:T39	
+R21	cause Arg1:T43 Arg2:T39	
+R22	cause Arg1:T44 Arg2:T39	
+T45	physical_therapy 668 673	病原学检查
+R23	physical Arg1:T39 Arg2:T45	
+R24	physical Arg1:T37 Arg2:T45	
+T46	disease 689 693	MP肺炎
+T47	disease 698 700	肺炎
+T48	symptom 748 755	咳嗽突出而持久
+T49	symptom 757 762	肺部体征少
+T50	symptom 763 773	X线改变出现早且严重
+T51	symptom 775 781	用青霉素无效
+T52	medical_treatment 782 785	红霉素
+T53	symptom 792 805	外周血白细胞计数正常或升高
+T54	symptom 807 814	血清冷凝集阳性
+R26	clinical_manifestation Arg1:T46 Arg2:T49	
+R25	clinical_manifestation Arg1:T46 Arg2:T48	
+R27	clinical_manifestation Arg1:T46 Arg2:T50	
+R28	clinical_manifestation Arg1:T46 Arg2:T51	
+R29	medical Arg1:T46 Arg2:T52	
+R30	clinical_manifestation Arg1:T46 Arg2:T53	
+R31	clinical_manifestation Arg1:T46 Arg2:T54	

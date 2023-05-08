@@ -1,0 +1,114 @@
+T1	disease 0 3	肝硬化
+T2	physical_therapy 6 11	多普勒超声
+T3	physical_therapy 12 16	腹部CT
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+T4	disease 35 39	眶内肿瘤
+T5	disease 40 45	甲状腺毒症
+T6	disease 46 50	转移肿瘤
+T7	disease 51 57	神经母细胞瘤
+T8	disease 59 63	眶内感染
+T9	disease 64 74	坏死性肉芽肿性血管炎
+T10	symptom 26 30	眼球突出
+R3	clinical_manifestation Arg1:T4 Arg2:T10	
+R4	clinical_manifestation Arg1:T5 Arg2:T10	
+R5	clinical_manifestation Arg1:T6 Arg2:T10	
+R6	clinical_manifestation Arg1:T7 Arg2:T10	
+R7	clinical_manifestation Arg1:T8 Arg2:T10	
+R8	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	disease 76 79	肝硬化
+T12	disease 81 87	食管静脉曲张
+T13	disease 91 95	肝细胞癌
+R9	relevant Arg1:T11 Arg2:T12	
+R10	relevant Arg1:T11 Arg2:T13	
+T14	disease 113 118	病毒性肝炎
+T15	disease 119 123	乙型肝炎
+T16	disease 124 128	丙型肝炎
+T17	disease 102 105	肝硬化
+T18	disease 130 135	酒精性肝病
+T19	disease 136 139	血色病
+T20	disease 146 150	肝细胞癌
+T21	physical_therapy 165 169	超声监测
+T22	physical_therapy 176 182	甲胎蛋白检查
+R11	physical Arg1:T11 Arg2:T21	
+R12	physical Arg1:T11 Arg2:T22	
+T23	disease 184 187	卵巢癌
+T24	disease 209 212	卵巢癌
+T25	disease 221 224	卵巢癌
+T26	disease 230 233	卵巢癌
+T27	disease 238 241	卵巢癌
+T28	disease 283 290	生殖细胞性肿瘤
+T29	disease 436 443	生殖细胞性肿瘤
+T30	disease 498 503	上皮性肿瘤
+T31	disease 504 512	性索-基质性肿瘤
+T32	physical_therapy 340 346	血液生化检查
+T33	physical_therapy 348 352	甲胎蛋白
+T34	physical_therapy 360 371	β-人绒毛膜促性腺激素
+T35	physical_therapy 380 387	血清乳酸脱氢酶
+T36	physical_therapy 395 400	影像学检查
+T37	physical_therapy 404 409	B型超声波
+T38	physical_therapy 411 413	CT
+T39	physical_therapy 414 417	MRI
+T40	physical_therapy 424 426	手术
+T41	physical_therapy 429 431	化疗
+T42	physical_therapy 434 436	放疗
+R13	physical Arg1:T28 Arg2:T32	
+R14	physical Arg1:T28 Arg2:T33	
+R15	physical Arg1:T28 Arg2:T34	
+R16	physical Arg1:T28 Arg2:T35	
+R17	physical Arg1:T28 Arg2:T36	
+R18	physical Arg1:T28 Arg2:T37	
+R19	physical Arg1:T28 Arg2:T38	
+R20	physical Arg1:T28 Arg2:T39	
+R21	physical Arg1:T28 Arg2:T40	
+R22	physical Arg1:T28 Arg2:T41	
+R23	physical Arg1:T28 Arg2:T42	
+T43	disease 520 526	化脓性脑膜炎
+T44	pathogenic_bacteria 530 535	肺炎链球菌
+T45	pathogenic_bacteria 544 549	脑膜炎球菌
+T46	pathogenic_bacteria 550 556	流感嗜血杆菌
+T47	disease 559 565	化脓性脑膜炎
+T48	physical_therapy 353 357	α-FP
+R24	same Arg1:T33 Arg2:T48	
+T49	physical_therapy 372 377	β-HCG
+R25	same Arg1:T34 Arg2:T49	
+T50	physical_therapy 388 391	LDH
+R26	same Arg1:T35 Arg2:T50	
+R27	cause Arg1:T44 Arg2:T47	
+R28	cause Arg1:T45 Arg2:T47	
+R29	cause Arg1:T46 Arg2:T47	
+T51	symptom 587 591	精神委靡
+T52	symptom 592 594	嗜睡
+T53	symptom 595 597	昏睡
+T54	symptom 598 600	昏迷
+T55	symptom 601 605	深度昏迷
+R30	clinical_manifestation Arg1:T47 Arg2:T51	
+R31	clinical_manifestation Arg1:T47 Arg2:T52	
+R32	clinical_manifestation Arg1:T47 Arg2:T53	
+R33	clinical_manifestation Arg1:T47 Arg2:T54	
+R34	clinical_manifestation Arg1:T47 Arg2:T55	
+T56	disease 607 612	基底细胞癌
+T57	physical_therapy 627 631	刮取活检
+T58	physical_therapy 632 636	钻取活检
+R35	physical Arg1:T56 Arg2:T57	
+R36	physical Arg1:T56 Arg2:T58	
+T59	disease 642 647	急性胰腺炎
+T60	symptom 651 664	持续的中上腹和脐周剧烈腹痛
+T61	symptom 665 667	呕吐
+T62	symptom 671 673	发热
+R37	clinical_manifestation Arg1:T59 Arg2:T60	
+R38	clinical_manifestation Arg1:T59 Arg2:T61	
+R39	clinical_manifestation Arg1:T59 Arg2:T62	
+T63	disease 691 695	前列腺癌
+T64	disease 719 723	前列腺癌
+T65	disease 802 806	前列腺癌
+T66	disease 836 838	肿瘤
+T67	disease 847 849	肿瘤
+T68	disease 881 883	肿瘤
+T69	disease 934 937	膀胱癌
+T70	disease 946 949	膀胱癌
+T71	disease 970 973	膀胱癌
+T72	disease 985 990	2型糖尿病
+R40	relevant Arg1:T71 Arg2:T72	
+R41	relevant Arg1:T70 Arg2:T72	
+R42	relevant Arg1:T69 Arg2:T72	

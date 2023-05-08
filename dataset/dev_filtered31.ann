@@ -1,0 +1,77 @@
+T1	disease 15 20	胃肠道出血
+T2	physical_therapy 58 62	内镜检查
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 100 102	肺炎
+T4	pathogenic_bacteria 103 107	细菌感染
+T5	pathogenic_bacteria 111 115	混合感染
+T6	physical_therapy 137 141	改善通气
+T7	medical_treatment 119 122	抗生素
+R2	cause Arg1:T4 Arg2:T3	
+R3	cause Arg1:T5 Arg2:T3	
+R4	medical Arg1:T3 Arg2:T7	
+R5	physical Arg1:T3 Arg2:T6	
+T8	disease 213 221	脱屑性间质性肺炎
+T9	physical_therapy 264 268	X线胸片
+R6	physical Arg1:T8 Arg2:T9	
+T10	pathogenic_bacteria 229 234	腺病毒感染
+T11	pathogenic_bacteria 235 242	先天性风疹感染
+T12	pathogenic_bacteria 243 245	吸烟
+T13	pathogenic_bacteria 246 251	有机尘吸入
+T14	pathogenic_bacteria 252 261	应用呋喃旦啶等药物
+R7	cause Arg1:T10 Arg2:T8	
+R8	cause Arg1:T11 Arg2:T8	
+R9	cause Arg1:T12 Arg2:T8	
+R10	cause Arg1:T13 Arg2:T8	
+R11	cause Arg1:T14 Arg2:T8	
+T15	disease 369 373	细菌感染
+T16	disease 330 332	肺炎
+R12	relevant Arg1:T16 Arg2:T15	
+T17	disease 301 309	慢性阻塞性肺疾病
+T18	disease 313 318	复发性肺炎
+R13	relevant Arg1:T17 Arg2:T18	
+T19	disease 333 336	慢阻肺
+R14	relevant Arg1:T16 Arg2:T19	
+T20	disease 380 385	急性胰腺炎
+T21	physical_therapy 389 394	血清淀粉酶
+T22	physical_therapy 396 401	血清脂肪酶
+R15	physical Arg1:T20 Arg2:T21	
+R16	physical Arg1:T20 Arg2:T22	
+T23	disease 450 458	出生后感染性肺炎
+T24	pathogenic_bacteria 472 479	金黄色葡萄球菌
+T25	pathogenic_bacteria 480 485	大肠埃希菌
+T26	pathogenic_bacteria 486 491	克雷伯杆菌
+T27	pathogenic_bacteria 492 496	假单胞菌
+T28	pathogenic_bacteria 500 507	呼吸道合胞病毒
+T29	pathogenic_bacteria 508 511	腺病毒
+T30	pathogenic_bacteria 517 522	卡氏肺囊虫
+T31	pathogenic_bacteria 523 528	解脲支原体
+R17	cause Arg1:T24 Arg2:T23	
+R18	cause Arg1:T25 Arg2:T23	
+R19	cause Arg1:T26 Arg2:T23	
+R20	cause Arg1:T27 Arg2:T23	
+R21	cause Arg1:T28 Arg2:T23	
+R22	cause Arg1:T29 Arg2:T23	
+R23	cause Arg1:T30 Arg2:T23	
+R24	cause Arg1:T31 Arg2:T23	
+T32	disease 537 540	糖尿病
+T33	disease 557 559	痛风
+R25	relevant Arg1:T32 Arg2:T33	
+T34	disease 571 576	急性胰腺炎
+T35	disease 578 586	弥散性血管内凝血
+T36	disease 590 597	多器官功能衰竭
+R26	relevant Arg1:T34 Arg2:T35	
+R27	relevant Arg1:T34 Arg2:T36	
+T37	disease 636 642	细菌性脑膜炎
+T38	disease 722 730	肺炎链球菌脑膜炎
+T39	disease 736 742	Hib脑膜炎
+T40	disease 744 753	金黄色葡萄球菌肺炎
+T41	symptom 788 790	呕吐
+T42	symptom 791 793	腹泻
+T43	symptom 794 796	腹胀
+R28	clinical_manifestation Arg1:T40 Arg2:T41	
+R29	clinical_manifestation Arg1:T40 Arg2:T42	
+R30	clinical_manifestation Arg1:T40 Arg2:T43	
+T44	symptom 758 768	肺组织广泛出血性坏死
+T45	symptom 769 775	多发性小脓肿
+R31	clinical_manifestation Arg1:T40 Arg2:T44	
+R32	clinical_manifestation Arg1:T40 Arg2:T45	

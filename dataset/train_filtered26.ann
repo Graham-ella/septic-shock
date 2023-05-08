@@ -1,0 +1,74 @@
+T1	disease 0 3	睾丸癌
+T2	disease 21 24	睾丸癌
+T3	disease 41 44	睾丸癌
+T4	physical_therapy 57 62	睾丸切除术
+R1	physical Arg1:T3 Arg2:T4	
+T5	physical_therapy 28 38	血清肿瘤标志物的检测
+R2	physical Arg1:T2 Arg2:T5	
+T6	disease 72 82	稳定型缺血性心脏疾病
+T7	disease 84 87	胆管炎
+T8	disease 91 97	消化性溃疡病
+T9	disease 109 115	消化性溃疡病
+T10	symptom 117 127	反复发作的上腹部疼痛
+R3	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	disease 134 144	稳定型缺血性心脏疾病
+T12	physical_therapy 147 157	食管胃十二指肠镜检查
+R4	physical Arg1:T9 Arg2:T12	
+T13	disease 172 174	胃癌
+T14	disease 179 181	肿瘤
+T15	physical_therapy 204 209	补救性化疗
+R5	physical Arg1:T14 Arg2:T15	
+T16	disease 211 216	急性膀胱炎
+T17	physical_therapy 221 224	尿常规
+T18	physical_therapy 225 228	尿培养
+T19	physical_therapy 229 233	药敏检测
+R6	physical Arg1:T16 Arg2:T17	
+R7	physical Arg1:T16 Arg2:T18	
+R8	physical Arg1:T16 Arg2:T19	
+T20	disease 248 251	破伤风
+T21	disease 252 260	健康护理相关肺炎
+R9	relevant Arg1:T20 Arg2:T21	
+T22	disease 276 284	出生后感染性肺炎
+T23	symptom 420 424	呼吸困难
+T24	symptom 437 445	支气管肺发育不良
+T25	pathogenic_bacteria 285 290	呼吸道途径
+T26	pathogenic_bacteria 291 301	与呼吸道感染患者接触
+T27	pathogenic_bacteria 303 307	血行感染
+T28	pathogenic_bacteria 310 313	败血症
+T29	pathogenic_bacteria 319 323	医源途径
+R10	cause Arg1:T25 Arg2:T22	
+R11	cause Arg1:T26 Arg2:T22	
+R12	cause Arg1:T27 Arg2:T22	
+R13	cause Arg1:T28 Arg2:T22	
+R14	cause Arg1:T29 Arg2:T22	
+R15	clinical_manifestation Arg1:T22 Arg2:T23	
+R16	clinical_manifestation Arg1:T22 Arg2:T24	
+T30	disease 447 451	免疫缺陷
+T31	disease 483 488	支气管扩张
+T32	disease 458 466	低免疫球蛋白血症
+R17	relevant Arg1:T30 Arg2:T31	
+R18	relevant Arg1:T32 Arg2:T31	
+T33	disease 490 496	支气管扩张症
+T34	symptom 497 506	亚段支气管持续扩张
+T35	pathogenic_bacteria 556 565	支气管软骨发育缺陷
+T36	pathogenic_bacteria 571 585	支气管肌肉及弹力纤维发育缺陷
+T37	pathogenic_bacteria 597 603	慢性肺部感染
+T38	pathogenic_bacteria 607 609	麻疹
+T39	pathogenic_bacteria 610 613	百日咳
+T40	pathogenic_bacteria 614 618	重症肺炎
+R19	clinical_manifestation Arg1:T33 Arg2:T34	
+R20	cause Arg1:T35 Arg2:T33	
+R21	cause Arg1:T36 Arg2:T33	
+R22	cause Arg1:T37 Arg2:T33	
+R23	cause Arg1:T38 Arg2:T33	
+R24	cause Arg1:T39 Arg2:T33	
+R25	cause Arg1:T40 Arg2:T33	
+T41	disease 621 625	肾细胞癌
+T42	disease 690 694	肾细胞癌
+T43	medical_treatment 698 711	酪氨酸激酶抑制剂(TKI)
+R26	medical Arg1:T42 Arg2:T43	
+T44	disease 719 722	口咽癌
+T45	physical_therapy 730 736	肿瘤外科手术
+T46	physical_therapy 737 741	放射治疗
+R27	physical Arg1:T44 Arg2:T45	
+R28	physical Arg1:T44 Arg2:T46	

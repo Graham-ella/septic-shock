@@ -1,0 +1,49 @@
+T1	disease 0 2	黄疸
+T2	disease 2 4	黄疸
+T3	symptom 19 26	胆红素代谢障碍
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	disease 29 39	血清内胆红素浓度升高
+R2	relevant Arg1:T2 Arg2:T4	
+T5	disease 43 45	黄疸
+T6	symptom 51 69	巩膜、黏膜、皮肤及其他组织被染成黄色
+R3	clinical_manifestation Arg1:T5 Arg2:T6	
+T7	disease 71 73	黄疸
+T8	disease 100 102	黄疸
+T9	disease 124 126	黄疸
+T10	disease 156 158	黄疸
+T11	disease 161 165	隐性黄疸
+T12	disease 166 171	亚临床黄疸
+R4	same Arg1:T11 Arg2:T12	
+R5	relevant Arg1:T10 Arg2:T11	
+T13	symptom 127 149	血清总胆红素在17.1～34.2μmol/L
+R6	clinical_manifestation Arg1:T11 Arg2:T13	
+T14	symptom 173 193	血清总胆红素浓度超过34.2μmol/L
+T15	disease 202 204	黄疸
+T16	disease 208 212	显性黄疸
+R7	same Arg1:T15 Arg2:T16	
+R8	clinical_manifestation Arg1:T16 Arg2:T14	
+T17	disease 214 216	黄疸
+T18	disease 224 226	黄疸
+T19	symptom 234 250	过多的红细胞被破坏，释放出胆红素
+R9	clinical_manifestation Arg1:T18 Arg2:T19	
+T20	disease 252 254	黄疸
+T21	disease 254 256	黄疸
+T22	symptom 282 300	胆红素生成过多这是由于红细胞大量破坏
+R10	clinical_manifestation Arg1:T21 Arg2:T22	
+T23	symptom 373 386	血液中非结合胆红素浓度增高
+R11	clinical_manifestation Arg1:T21 Arg2:T23	
+T24	disease 388 390	黄疸
+T25	symptom 447 463	非结合胆红素在血液中浓度更为增高
+R12	clinical_manifestation Arg1:T24 Arg2:T25	
+T26	disease 466 468	黄疸
+R13	clinical_manifestation Arg1:T26 Arg2:T25	
+T27	disease 470 472	黄疸
+T28	disease 509 514	晚期肝硬化
+T29	disease 516 521	暴发性肝炎
+T30	disease 522 527	肝功能衰竭
+T31	symptom 560 576	非结合胆红素在血液中浓度更为增高
+T32	disease 579 581	黄疸
+R14	clinical_manifestation Arg1:T32 Arg2:T31	
+R15	relevant Arg1:T27 Arg2:T28	
+R16	relevant Arg1:T27 Arg2:T29	
+R17	relevant Arg1:T27 Arg2:T30	

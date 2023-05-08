@@ -1,0 +1,59 @@
+T1	disease 0 5	溶血性贫血
+T2	physical_therapy 38 43	肝功能检测
+R1	physical Arg1:T1 Arg2:T2	
+T4	physical_therapy 155 160	血清淀粉酶
+T5	physical_therapy 161 164	脂肪酶
+T6	physical_therapy 177 179	CT
+T7	physical_therapy 180 183	MRI
+T8	physical_therapy 184 186	超声
+T3	disease 112 117	急性胰腺炎
+R2	physical Arg1:T3 Arg2:T4	
+R3	physical Arg1:T3 Arg2:T5	
+R4	physical Arg1:T3 Arg2:T6	
+R5	physical Arg1:T3 Arg2:T7	
+R6	physical Arg1:T3 Arg2:T8	
+T9	disease 200 206	流行性腮腺炎
+T10	pathogenic_bacteria 208 213	腮腺炎病毒
+R7	cause Arg1:T10 Arg2:T9	
+T11	physical_therapy 288 292	病毒分离
+R8	physical Arg1:T9 Arg2:T11	
+T12	disease 347 352	急性胰腺炎
+T13	symptom 359 364	上腹部压痛
+T14	symptom 365 367	发热
+T15	symptom 368 372	心动过速
+R9	clinical_manifestation Arg1:T12 Arg2:T13	
+R10	clinical_manifestation Arg1:T12 Arg2:T14	
+R11	clinical_manifestation Arg1:T12 Arg2:T15	
+T16	disease 417 422	原发性肿瘤
+T17	physical_therapy 410 414	CT扫描
+R12	physical Arg1:T16 Arg2:T17	
+T18	disease 429 434	急性胰腺炎
+T19	medical_treatment 468 472	头孢噻肟
+T20	medical_treatment 473 477	头孢哌酮
+T21	medical_treatment 480 483	甲硝唑
+R13	medical Arg1:T18 Arg2:T19	
+R14	medical Arg1:T18 Arg2:T20	
+R15	medical Arg1:T18 Arg2:T21	
+T22	disease 545 547	肺炎
+T23	physical_therapy 496 504	保持室内空气新鲜
+T24	pathogenic_bacteria 548 552	细菌感染
+T25	pathogenic_bacteria 556 560	混合感染
+T26	medical_treatment 564 567	抗生素
+T27	physical_therapy 506 513	保持适当的室温
+R16	physical Arg1:T22 Arg2:T23	
+R17	physical Arg1:T22 Arg2:T27	
+R18	cause Arg1:T24 Arg2:T22	
+R19	cause Arg1:T25 Arg2:T22	
+R20	medical Arg1:T22 Arg2:T26	
+T28	disease 596 604	新生儿流行性腹泻
+T29	physical_therapy 574 579	病原学检查
+R21	physical Arg1:T28 Arg2:T29	
+T30	disease 636 641	流行性感冒
+T31	pathogenic_bacteria 644 651	流行性感冒病毒
+R22	cause Arg1:T31 Arg2:T30	
+T32	disease 678 683	肺炎型流感
+T33	pathogenic_bacteria 709 714	免疫抑制剂
+R23	cause Arg1:T33 Arg2:T32	
+T35	physical_therapy 770 775	大量放腹水
+T34	disease 721 726	难治性腹水
+R24	physical Arg1:T34 Arg2:T35	

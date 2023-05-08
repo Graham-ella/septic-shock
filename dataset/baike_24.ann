@@ -1,0 +1,15 @@
+T1	disease 0 3	败血症
+T2	disease 26 29	败血症
+T3	disease 71 74	败血症
+T4	disease 96 99	败血症
+T5	disease 155 158	败血症
+T6	disease 161 164	败血症
+T7	pathogenic_bacteria 165 171	静脉留置导管
+R1	cause Arg1:T7 Arg2:T6	
+T8	disease 208 211	败血症
+T9	disease 239 242	败血症
+T10	disease 286 289	败血症
+T11	disease 249 252	败血症
+T12	disease 357 360	败血症
+T13	disease 360 363	败血症
+T14	disease 376 379	败血症

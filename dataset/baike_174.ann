@@ -1,0 +1,7 @@
+T1	disease 0 5	医院内感染
+T2	pathogenic_bacteria 6 10	轮状病毒
+T3	pathogenic_bacteria 11 16	诺瓦克因子
+T4	disease 19 21	腹泻
+R1	cause Arg1:T3 Arg2:T4	
+R2	cause Arg1:T2 Arg2:T4	
+R3	relevant Arg1:T1 Arg2:T4	

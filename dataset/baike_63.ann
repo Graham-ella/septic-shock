@@ -1,0 +1,25 @@
+T1	disease 0 7	皮肤软组织感染
+T2	disease 19 25	坏死性筋膜炎
+T3	disease 26 31	链球菌坏死
+R1	relevant Arg1:T1 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	physical_therapy 34 40	广泛彻底清创
+R3	physical Arg1:T2 Arg2:T4	
+R4	physical Arg1:T3 Arg2:T4	
+T5	disease 88 95	皮肤软组织感染
+T6	physical_therapy 97 106	维持水、电解质平衡
+R5	physical Arg1:T5 Arg2:T6	
+T7	disease 108 115	皮肤软组织感染
+T8	physical_therapy 115 126	必要时少量多次输新鲜血
+R6	physical Arg1:T7 Arg2:T8	
+T9	disease 137 144	皮肤软组织感染
+T10	disease 144 147	糖尿病
+T11	disease 154 157	糖尿病
+T12	disease 159 166	皮肤软组织感染
+T13	disease 167 172	活动性足癣
+R7	relevant Arg1:T12 Arg2:T13	
+T14	medical_treatment 183 196	局部涂酮康唑霜等抗真菌药物
+R8	medical Arg1:T13 Arg2:T14	
+T15	disease 198 205	皮肤软组织感染
+T16	physical_therapy 207 214	必要时卧床休息
+R9	physical Arg1:T15 Arg2:T16	

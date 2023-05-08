@@ -1,0 +1,105 @@
+T1	disease 0 7	肺炎支原体肺炎
+T2	symptom 50 54	呼吸困难
+T3	symptom 55 57	喘憋
+T5	symptom 66 70	肺部啰音
+T4	symptom 58 61	喘鸣音
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 77 86	慢性淋巴细胞白血病
+T7	medical_treatment 127 133	预防性抗生素
+T8	disease 136 146	金罗维氏肺孢子菌肺炎
+T9	physical_therapy 152 156	血液检查
+T10	disease 165 174	慢性淋巴细胞白血病
+T11	physical_therapy 222 229	艾代拉里斯治疗
+T12	physical_therapy 240 244	替代治疗
+R5	physical Arg1:T6 Arg2:T9	
+R6	medical Arg1:T8 Arg2:T7	
+T13	disease 260 266	妊娠期高血压
+T14	disease 268 271	高血压
+T15	disease 282 286	子痫前期
+T16	disease 288 296	慢性肾炎合并妊娠
+T17	disease 300 302	子痫
+T18	disease 304 306	癫痫
+T19	disease 307 309	脑炎
+T20	disease 310 313	脑膜炎
+T21	disease 314 317	脑肿瘤
+T22	disease 318 327	脑血管畸形破裂出血
+T23	disease 328 336	糖尿病高渗性昏迷
+T24	disease 337 342	低血糖昏迷
+T25	disease 347 350	食管癌
+T26	disease 416 422	术后食管反流
+T27	disease 381 386	吸入性肺炎
+T28	disease 407 412	吸入性肺炎
+T29	disease 449 452	食管癌
+R7	relevant Arg1:T25 Arg2:T26	
+R8	relevant Arg1:T25 Arg2:T27	
+T30	disease 483 488	慢性胰腺炎
+T31	disease 492 498	急慢性胰腺炎
+T32	pathogenic_bacteria 489 491	吸烟
+T33	disease 509 514	急性胰腺炎
+T34	disease 515 520	慢性胰腺炎
+T35	disease 534 538	胰腺钙化
+T36	disease 539 542	胰腺癌
+T37	pathogenic_bacteria 558 560	吸烟
+T38	disease 565 568	胰腺癌
+R9	relevant Arg1:T33 Arg2:T34	
+R10	cause Arg1:T32 Arg2:T31	
+R11	cause Arg1:T37 Arg2:T38	
+R12	relevant Arg1:T31 Arg2:T35	
+R13	relevant Arg1:T31 Arg2:T36	
+T39	disease 584 591	低氧性呼吸衰竭
+T40	disease 592 596	PPHN
+T41	physical_therapy 656 662	一氧化氮吸入
+T42	physical_therapy 663 671	表面活性物质应用
+T43	disease 616 620	低氧血症
+R14	physical Arg1:T40 Arg2:T41	
+R15	physical Arg1:T40 Arg2:T42	
+T44	disease 685 690	肾小球肾炎
+T45	medical_treatment 699 705	环磷酰胺治疗
+T46	medical_treatment 715 722	皮质类固醇治疗
+R16	medical Arg1:T44 Arg2:T45	
+R17	medical Arg1:T44 Arg2:T46	
+T47	disease 710 712	肺炎
+T48	disease 727 730	鹅口疮
+T49	disease 735 742	肾血管性高血压
+T50	physical_therapy 754 757	血常规
+T51	physical_therapy 758 761	尿常规
+T52	physical_therapy 762 768	尿细菌学检查
+T53	physical_therapy 769 772	血尿素
+T54	physical_therapy 773 775	肌酐
+T55	physical_therapy 776 777	钾
+T56	physical_therapy 778 779	钠
+T57	physical_therapy 780 781	钙
+T58	physical_therapy 782 785	氯化物
+T59	physical_therapy 786 790	血气分析
+R18	physical Arg1:T49 Arg2:T50	
+R19	physical Arg1:T49 Arg2:T51	
+R20	physical Arg1:T49 Arg2:T52	
+R21	physical Arg1:T49 Arg2:T53	
+R22	physical Arg1:T49 Arg2:T54	
+R23	physical Arg1:T49 Arg2:T55	
+R24	physical Arg1:T49 Arg2:T56	
+R25	physical Arg1:T49 Arg2:T57	
+R26	physical Arg1:T49 Arg2:T58	
+R27	physical Arg1:T49 Arg2:T59	
+T60	disease 799 802	胆管癌
+T61	disease 1017 1019	肿瘤
+T62	physical_therapy 816 819	胆红素
+T63	physical_therapy 836 841	ALK磷酸
+T64	physical_therapy 873 877	γ-GT
+T65	physical_therapy 909 914	氨基转移酶
+T66	physical_therapy 922 928	凝血酶原时间
+T67	physical_therapy 935 941	CA19-9
+T68	physical_therapy 952 958	CA-125
+T69	physical_therapy 976 979	CEA
+T70	disease 989 992	胆管癌
+R28	physical Arg1:T60 Arg2:T62	
+R29	physical Arg1:T60 Arg2:T63	
+R30	physical Arg1:T60 Arg2:T64	
+R31	physical Arg1:T60 Arg2:T65	
+R32	physical Arg1:T60 Arg2:T66	
+R33	physical Arg1:T60 Arg2:T67	
+R34	physical Arg1:T60 Arg2:T68	
+R35	physical Arg1:T60 Arg2:T69	

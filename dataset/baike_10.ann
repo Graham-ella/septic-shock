@@ -1,0 +1,37 @@
+T1	disease 0 3	脓毒症
+T2	symptom 14 17	低血压
+T3	disease 120 123	脓毒症
+T4	disease 126 132	器官功能障碍
+R2	relevant Arg1:T3 Arg2:T4	
+T5	disease 276 279	脓毒症
+T6	disease 289 294	高乳酸血症
+R3	relevant Arg1:T5 Arg2:T6	
+T7	disease 326 329	脓毒症
+T8	disease 377 380	脓毒症
+T9	disease 415 418	脓毒症
+T10	disease 424 427	脓毒症
+T11	disease 429 434	严重脓毒症
+T12	disease 439 445	器官功能障碍
+T13	disease 448 451	脓毒症
+R4	relevant Arg1:T10 Arg2:T11	
+R5	relevant Arg1:T10 Arg2:T12	
+T14	disease 453 456	脓毒症
+T15	disease 458 463	脓毒性休克
+T16	symptom 475 478	低血压
+T17	disease 482 488	急性循环衰竭
+R6	clinical_manifestation Arg1:T17 Arg2:T16	
+T18	disease 492 497	严重脓毒症
+R7	clinical_manifestation Arg1:T18 Arg2:T16	
+R8	clinical_manifestation Arg1:T14 Arg2:T16	
+R9	clinical_manifestation Arg1:T15 Arg2:T16	
+T19	disease 506 509	脓毒症
+T20	disease 625 628	脓毒症
+T21	disease 637 640	脓毒症
+T22	disease 650 655	脓毒症休克
+R10	relevant Arg1:T20 Arg2:T22	
+R11	relevant Arg1:T21 Arg2:T22	
+T23	disease 722 725	脓毒症
+T24	disease 752 755	脓毒症
+T25	disease 804 809	严重脓毒症
+R13	relevant Arg1:T24 Arg2:T25	
+R1	clinical_manifestation Arg1:T1 Arg2:T2	

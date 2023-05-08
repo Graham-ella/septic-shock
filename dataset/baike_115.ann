@@ -1,0 +1,17 @@
+T1	disease 0 5	多脏器衰竭
+T2	disease 5 10	多脏器衰竭
+T3	symptom 21 40	两个或两个以上的器官或系统发生功能衰竭
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+T4	disease 42 47	多脏器衰竭
+T5	pathogenic_bacteria 47 57	大面积烧伤若处理不当
+R2	cause Arg1:T5 Arg2:T4	
+T6	disease 68 73	多脏器衰竭
+T7	disease 73 78	多脏器衰竭
+T8	physical_therapy 86 92	尽快液体复苏
+T9	physical_therapy 94 98	防治感染
+T10	physical_therapy 100 107	补足能量与营养
+T11	physical_therapy 109 117	应用保护脏器药物
+R3	physical Arg1:T7 Arg2:T8	
+R4	physical Arg1:T7 Arg2:T9	
+R5	physical Arg1:T7 Arg2:T10	
+R6	physical Arg1:T7 Arg2:T11	

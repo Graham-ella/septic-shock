@@ -1,0 +1,24 @@
+T1	disease 0 5	多脏器衰竭
+T2	disease 9 15	呼吸功能衰竭
+R1	relevant Arg1:T1 Arg2:T2	
+T3	physical_therapy 16 22	给予呼吸支持
+R2	physical Arg1:T2 Arg2:T3	
+T4	disease 23 27	低氧血症
+T5	physical_therapy 35 39	PEEP
+R3	physical Arg1:T4 Arg2:T5	
+R4	relevant Arg1:T1 Arg2:T4	
+T6	disease 41 46	多脏器衰竭
+T7	symptom 49 55	气道内压增高
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+T8	physical_therapy 80 86	高频正压通气
+R6	treatment Arg1:T7 Arg2:T8	
+T9	disease 88 93	多脏器衰竭
+T10	disease 94 98	呼吸衰竭
+R7	relevant Arg1:T9 Arg2:T10	
+T11	physical_therapy 107 116	体外循环模式氧合法
+R8	physical Arg1:T10 Arg2:T11	
+T12	disease 124 129	多脏器衰竭
+T13	disease 147 151	MSOF
+R9	same Arg1:T12 Arg2:T13	
+T14	disease 167 171	MSOF
+R10	same Arg1:T12 Arg2:T14	

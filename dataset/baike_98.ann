@@ -1,0 +1,27 @@
+T1	disease 0 3	肝硬化
+T2	physical_therapy 6 12	肝脏移植手术
+T3	disease 26 31	终末期肝病
+R1	physical Arg1:T3 Arg2:T2	
+R2	relevant Arg1:T1 Arg2:T3	
+T4	disease 33 36	肝硬化
+T5	disease 43 47	腹腔积液
+T6	disease 58 63	消化道出血
+T7	disease 48 53	门脉高压症
+T8	disease 64 72	严重的肝功能损害
+T9	disease 86 91	肝肾综合征
+T10	disease 105 108	肝硬化
+T11	disease 113 115	肝癌
+R3	relevant Arg1:T4 Arg2:T5	
+R4	relevant Arg1:T4 Arg2:T7	
+R5	relevant Arg1:T4 Arg2:T6	
+R6	relevant Arg1:T4 Arg2:T8	
+R7	relevant Arg1:T4 Arg2:T9	
+R8	relevant Arg1:T4 Arg2:T10	
+R9	relevant Arg1:T4 Arg2:T11	
+T12	disease 117 120	肝硬化
+T13	medical_treatment 130 135	普通干扰素
+T14	medical_treatment 136 141	长效干扰素
+T15	medical_treatment 143 151	核苷（酸）类似物
+R10	medical Arg1:T12 Arg2:T13	
+R11	medical Arg1:T12 Arg2:T14	
+R12	medical Arg1:T12 Arg2:T15	

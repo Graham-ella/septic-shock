@@ -1,0 +1,42 @@
+T1	disease 0 3	口咽癌
+T2	disease 80 85	急性胰腺炎
+T3	physical_therapy 119 125	肠外营养治疗
+R1	physical Arg1:T2 Arg2:T3	
+T4	disease 127 130	肝硬化
+T5	pathogenic_bacteria 149 153	酒精滥用
+R2	cause Arg1:T5 Arg2:T4	
+T6	disease 186 190	呼吸衰竭
+T7	symptom 200 211	肺活量＜20ml/kg
+T8	symptom 212 225	最大吸气压＜30cmH2O
+T9	symptom 226 239	最大呼气压＜40cmH2O
+R3	clinical_manifestation Arg1:T6 Arg2:T7	
+R4	clinical_manifestation Arg1:T6 Arg2:T8	
+R5	clinical_manifestation Arg1:T6 Arg2:T9	
+T10	disease 265 270	新生儿黄疸
+T11	physical_therapy 272 280	Coombs试验
+R6	physical Arg1:T10 Arg2:T11	
+T12	disease 342 345	糖尿病
+T13	physical_therapy 383 387	控制体重
+T14	physical_therapy 388 394	增加体力活动
+T15	physical_therapy 395 397	戒烟
+T16	physical_therapy 398 402	控制血压
+T17	physical_therapy 403 407	管理血脂
+R7	physical Arg1:T12 Arg2:T13	
+R8	physical Arg1:T12 Arg2:T14	
+R9	physical Arg1:T12 Arg2:T15	
+R10	physical Arg1:T12 Arg2:T16	
+R11	physical Arg1:T12 Arg2:T17	
+T18	disease 456 462	慢性心房颤动
+T19	disease 598 601	艾滋病
+T20	disease 609 619	获得性免疫缺陷综合征
+R12	same Arg1:T19 Arg2:T20	
+T21	disease 602 606	AIDS
+R13	same Arg1:T19 Arg2:T21	
+T22	disease 781 790	肺发育不全或不发育
+T23	physical_therapy 814 826	支气管镜及支气管造影检查
+R14	physical Arg1:T22 Arg2:T23	
+T24	disease 835 839	滑膜肉瘤
+T25	symptom 893 898	自发性疼痛
+T26	symptom 899 901	压痛
+R15	clinical_manifestation Arg1:T24 Arg2:T25	
+R16	clinical_manifestation Arg1:T24 Arg2:T26	

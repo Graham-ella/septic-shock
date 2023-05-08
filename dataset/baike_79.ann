@@ -1,0 +1,50 @@
+T1	disease 0 3	肝衰竭
+T2	physical_therapy 12 16	卧床休息
+T3	physical_therapy 17 23	严格消毒隔离
+T4	physical_therapy 24 35	保证每日能量和液体供给
+T5	physical_therapy 36 43	维持内环境稳定
+T6	physical_therapy 44 51	动态监测肝功能
+T7	physical_therapy 52 55	血生化
+T8	physical_therapy 56 59	凝血项
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+R3	physical Arg1:T1 Arg2:T4	
+R4	physical Arg1:T1 Arg2:T5	
+R5	physical Arg1:T1 Arg2:T6	
+R6	physical Arg1:T1 Arg2:T7	
+R7	physical Arg1:T1 Arg2:T8	
+T9	disease 64 67	肝衰竭
+T10	symptom 89 107	乙肝病毒标志物阳性及HBVDNA阳性
+T11	disease 108 111	肝衰竭
+R8	clinical_manifestation Arg1:T9 Arg2:T10	
+T12	medical_treatment 123 149	尽早酌情使用核苷类似物如拉米夫定、替比夫定、恩替卡韦
+R9	treatment Arg1:T10 Arg2:T12	
+T13	disease 240 243	肝衰竭
+T14	disease 252 255	肝衰竭
+T15	pathogenic_bacteria 245 250	药物或酒精
+R10	cause Arg1:T15 Arg2:T14	
+T16	disease 271 274	肝衰竭
+T17	medical_treatment 285 290	糖皮质激素
+T18	disease 293 298	急性肝衰竭
+R11	medical Arg1:T18 Arg2:T17	
+T19	disease 302 308	酒精性肝衰竭
+R12	relevant Arg1:T18 Arg2:T19	
+T20	medical_treatment 320 325	糖皮质激素
+R13	medical Arg1:T19 Arg2:T20	
+T21	disease 331 338	慢加急性肝衰竭
+R14	relevant Arg1:T16 Arg2:T21	
+R15	relevant Arg1:T16 Arg2:T18	
+R16	relevant Arg1:T16 Arg2:T19	
+T22	disease 351 354	肝衰竭
+T23	medical_treatment 403 408	糖皮质激素
+R17	medical Arg1:T22 Arg2:T23	
+T24	disease 463 467	腹腔感染
+T25	disease 468 473	消化道出血
+T26	disease 483 486	肝衰竭
+T27	symptom 504 509	肝细胞坏死
+R18	clinical_manifestation Arg1:T26 Arg2:T27	
+T28	medical_treatment 519 549	酌情使用促肝细胞生长素和前列腺素El(PEG1)脂质体等药物
+R19	treatment Arg1:T27 Arg2:T28	
+T29	disease 562 565	肝衰竭
+T30	physical_therapy 574 580	营养支持治疗
+R20	physical Arg1:T29 Arg2:T30	

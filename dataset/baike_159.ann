@@ -1,0 +1,19 @@
+T1	disease 0 2	癌症
+T2	physical_therapy 5 14	正电子发射断层显像
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 82 84	肿瘤
+R2	physical Arg1:T3 Arg2:T2	
+R3	relevant Arg1:T1 Arg2:T3	
+T4	disease 103 105	癌症
+T5	physical_therapy 107 111	内镜检查
+R4	physical Arg1:T4 Arg2:T5	
+T6	disease 134 136	肿瘤
+R5	physical Arg1:T6 Arg2:T5	
+R6	relevant Arg1:T4 Arg2:T6	
+T7	disease 207 209	癌症
+T8	physical_therapy 222 232	体液自然脱落细胞检查
+T9	physical_therapy 267 273	黏膜细胞检查
+T10	physical_therapy 305 313	细针吸取细胞检查
+R7	physical Arg1:T7 Arg2:T8	
+R8	physical Arg1:T7 Arg2:T9	
+R9	physical Arg1:T7 Arg2:T10	

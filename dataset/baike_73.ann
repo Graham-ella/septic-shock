@@ -1,0 +1,35 @@
+T1	disease 0 6	胃肠功能紊乱
+T2	symptom 11 16	胃肠道症状
+T3	symptom 32 36	肠道症状
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	disease 60 66	胃肠功能紊乱
+T5	physical_therapy 76 80	采取X线
+T6	physical_therapy 81 85	内镜检查
+T7	physical_therapy 86 90	胃液分析
+T8	physical_therapy 91 95	粪便化验
+R3	physical Arg1:T4 Arg2:T5	
+R4	physical Arg1:T4 Arg2:T6	
+R5	physical Arg1:T4 Arg2:T7	
+R6	physical Arg1:T4 Arg2:T8	
+T9	disease 100 106	胃肠功能紊乱
+T10	physical_therapy 111 119	超声、CT等检查
+R7	physical Arg1:T9 Arg2:T10	
+T11	disease 136 142	胃肠功能紊乱
+T12	physical_therapy 142 149	胃肠道X线检查
+R8	physical Arg1:T11 Arg2:T12	
+T13	disease 194 200	胃肠功能紊乱
+T14	physical_therapy 200 204	结肠镜检
+R9	physical Arg1:T13 Arg2:T14	
+T15	disease 216 222	胃肠功能紊乱
+T16	physical_therapy 227 230	血常规
+T17	physical_therapy 231 237	免疫因子检查
+T18	physical_therapy 243 252	必要时做活组织病检
+R10	physical Arg1:T15 Arg2:T16	
+R11	physical Arg1:T15 Arg2:T17	
+R12	physical Arg1:T15 Arg2:T18	
+T19	disease 254 260	胃肠功能紊乱
+T20	disease 260 267	胃肠道功能紊乱
+T21	disease 318 324	胃肠功能紊乱
+T22	disease 338 344	胃肠功能紊乱
+T23	disease 377 383	胃肠功能紊乱

@@ -1,0 +1,58 @@
+T1	disease 0 3	菌血症
+T2	disease 38 41	菌血症
+T3	disease 18 21	菌血症
+T4	symptom 41 43	高热
+T5	symptom 44 46	头痛
+T6	symptom 47 49	头晕
+T7	symptom 50 52	恶心
+T8	symptom 53 55	呕吐
+R1	clinical_manifestation Arg1:T2 Arg2:T4	
+R2	clinical_manifestation Arg1:T2 Arg2:T5	
+R3	clinical_manifestation Arg1:T2 Arg2:T6	
+R4	clinical_manifestation Arg1:T2 Arg2:T7	
+R5	clinical_manifestation Arg1:T2 Arg2:T8	
+T9	symptom 58 62	意识障碍
+T10	symptom 63 66	心率快
+T11	symptom 67 74	呼吸急促或困难
+R6	clinical_manifestation Arg1:T2 Arg2:T9	
+R7	clinical_manifestation Arg1:T2 Arg2:T10	
+R8	clinical_manifestation Arg1:T2 Arg2:T11	
+T12	disease 75 78	菌血症
+T13	disease 158 161	菌血症
+T14	disease 163 166	菌血症
+T15	disease 190 193	菌血症
+T16	disease 169 176	革兰阴性菌血症
+R9	relevant Arg1:T14 Arg2:T16	
+T17	disease 243 246	菌血症
+T18	disease 329 332	菌血症
+T19	disease 344 351	革兰阴性菌血症
+R10	relevant Arg1:T18 Arg2:T19	
+T20	pathogenic_bacteria 370 373	厌氧菌
+T21	pathogenic_bacteria 374 378	真菌感染
+T22	pathogenic_bacteria 366 369	需氧菌
+R11	cause Arg1:T22 Arg2:T19	
+R12	cause Arg1:T20 Arg2:T19	
+R13	cause Arg1:T21 Arg2:T19	
+T23	disease 380 383	菌血症
+T24	pathogenic_bacteria 383 386	拟杆菌
+T25	disease 389 396	腹部和盆腔感染
+R14	cause Arg1:T24 Arg2:T25	
+R15	relevant Arg1:T23 Arg2:T25	
+T26	disease 421 424	菌血症
+T27	disease 454 457	菌血症
+T28	pathogenic_bacteria 468 471	肠球菌
+T29	pathogenic_bacteria 472 476	葡萄球菌
+T30	pathogenic_bacteria 477 479	真菌
+R16	cause Arg1:T28 Arg2:T27	
+R17	cause Arg1:T29 Arg2:T27	
+R18	cause Arg1:T30 Arg2:T27	
+T31	disease 491 494	菌血症
+T32	disease 495 503	革兰阴性菌菌血症
+R19	relevant Arg1:T31 Arg2:T32	
+T33	disease 513 516	菌血症
+T34	disease 522 530	葡萄球菌性菌血症
+R20	relevant Arg1:T33 Arg2:T34	
+T35	pathogenic_bacteria 533 537	葡萄球菌
+T36	disease 546 551	革兰阳性菌
+R21	cause Arg1:T35 Arg2:T36	
+R22	relevant Arg1:T33 Arg2:T36	

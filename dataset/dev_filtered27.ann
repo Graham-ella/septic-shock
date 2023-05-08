@@ -1,0 +1,75 @@
+T1	disease 2 6	颅外感染
+T2	disease 40 45	中毒性脑病
+T3	pathogenic_bacteria 9 13	热性惊厥
+T4	disease 15 19	小儿惊厥
+R1	cause Arg1:T3 Arg2:T4	
+T5	pathogenic_bacteria 46 50	颅外感染
+T6	disease 52 57	中毒性脑病
+R2	cause Arg1:T5 Arg2:T6	
+T7	disease 60 64	重症肺炎
+T8	disease 65 70	中毒性菌痢
+T9	disease 72 75	败血症
+R3	relevant Arg1:T6 Arg2:T7	
+R4	relevant Arg1:T6 Arg2:T8	
+R5	relevant Arg1:T6 Arg2:T9	
+T10	disease 108 114	慢性心房颤动
+T11	pathogenic_bacteria 189 192	糖尿病
+R6	cause Arg1:T11 Arg2:T10	
+T12	pathogenic_bacteria 193 198	甲状腺疾病
+T13	pathogenic_bacteria 199 201	癌症
+R7	cause Arg1:T12 Arg2:T10	
+R8	cause Arg1:T13 Arg2:T10	
+T14	disease 277 287	肝功能损害及胆汁淤积
+T15	pathogenic_bacteria 423 426	高热能
+T16	pathogenic_bacteria 348 356	早产儿、低体重儿
+R9	cause Arg1:T16 Arg2:T14	
+R10	cause Arg1:T15 Arg2:T14	
+T17	disease 540 547	B细胞型NHL
+T18	disease 551 569	伯基特型（Burkitt’s）NHL
+T19	disease 571 579	大B细胞型NHL
+T20	disease 669 672	肝硬化
+T21	pathogenic_bacteria 680 683	胺碘酮
+T22	pathogenic_bacteria 684 688	甲氨蝶呤
+R11	cause Arg1:T21 Arg2:T20	
+R12	cause Arg1:T22 Arg2:T20	
+T23	disease 692 696	颅咽管瘤
+T24	disease 722 732	儿童中枢神经系统肿瘤
+T25	disease 820 826	溃疡性结肠炎
+T26	disease 835 839	脓性坏疽
+T27	disease 847 852	骶髂关节炎
+T28	disease 862 868	强直性脊柱炎
+T29	disease 876 885	原发性硬化性胆管炎
+R13	relevant Arg1:T25 Arg2:T26	
+R14	relevant Arg1:T25 Arg2:T27	
+R15	relevant Arg1:T25 Arg2:T28	
+R16	relevant Arg1:T25 Arg2:T29	
+T30	disease 903 909	中枢性尿崩症
+T31	symptom 918 920	多饮
+T32	symptom 921 923	多尿
+R17	clinical_manifestation Arg1:T30 Arg2:T31	
+R18	clinical_manifestation Arg1:T30 Arg2:T32	
+T33	disease 970 974	高钙血症
+T34	disease 983 992	甲状旁腺功能亢进症
+R19	relevant Arg1:T33 Arg2:T34	
+T35	disease 976 982	维生素D中毒
+R20	relevant Arg1:T33 Arg2:T35	
+T36	physical_therapy 947 949	血糖
+T37	physical_therapy 950 953	尿比重
+T38	physical_therapy 954 958	尿渗透压
+R21	physical Arg1:T30 Arg2:T36	
+R22	physical Arg1:T30 Arg2:T37	
+R23	physical Arg1:T30 Arg2:T38	
+T39	disease 1097 1102	肾上腺肿瘤
+T40	disease 1047 1050	性早熟
+R24	relevant Arg1:T39 Arg2:T40	
+T41	disease 1117 1122	基底细胞癌
+T42	symptom 1125 1136	珍珠白色结节和/或斑块
+T43	symptom 1137 1143	不易愈合的痂
+T44	symptom 1144 1154	小痂和不易愈合的伤口
+T45	symptom 1155 1157	斑块
+T46	symptom 1168 1178	结节伴有毛细血管扩张
+R25	clinical_manifestation Arg1:T41 Arg2:T42	
+R26	clinical_manifestation Arg1:T41 Arg2:T43	
+R27	clinical_manifestation Arg1:T41 Arg2:T44	
+R28	clinical_manifestation Arg1:T41 Arg2:T45	
+R29	clinical_manifestation Arg1:T41 Arg2:T46	

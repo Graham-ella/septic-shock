@@ -1,0 +1,101 @@
+T1	disease 0 4	肾细胞癌
+T2	physical_therapy 26 29	FBC
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 93 99	红细胞增多症
+T4	pathogenic_bacteria 59 65	慢性病性贫血
+T5	pathogenic_bacteria 68 75	慢性肾功能不全
+R2	cause Arg1:T4 Arg2:T3	
+R3	cause Arg1:T5 Arg2:T3	
+T6	disease 101 108	皮肤鳞状细胞癌
+T7	pathogenic_bacteria 127 134	紫外线辐射暴露
+R4	cause Arg1:T7 Arg2:T6	
+T8	pathogenic_bacteria 134 139	紫外线辐射
+R5	cause Arg1:T8 Arg2:T6	
+T9	disease 142 150	非黑色素瘤皮肤癌
+R6	cause Arg1:T8 Arg2:T9	
+T10	disease 202 209	自身免疫性肝炎
+T11	symptom 254 256	疲乏
+T12	symptom 257 260	关节痛
+T13	symptom 261 263	黄疸
+R7	clinical_manifestation Arg1:T10 Arg2:T11	
+R8	clinical_manifestation Arg1:T10 Arg2:T12	
+R9	clinical_manifestation Arg1:T10 Arg2:T13	
+T14	disease 305 308	肝硬化
+T15	symptom 319 325	毛细血管扩张
+T16	symptom 326 329	蜘蛛痣
+T17	symptom 330 334	巩膜黄染
+R10	clinical_manifestation Arg1:T14 Arg2:T15	
+R11	clinical_manifestation Arg1:T14 Arg2:T16	
+R12	clinical_manifestation Arg1:T14 Arg2:T17	
+T18	disease 335 339	慢性肝病
+T19	symptom 352 358	毛细血管扩张
+T20	symptom 359 366	局灶性红色病变
+T21	symptom 369 380	皮肤小血管的不可逆扩张
+T22	symptom 382 385	蜘蛛痣
+T23	symptom 412 414	瘀伤
+T24	symptom 415 421	肥大性酒渣鼻
+T25	symptom 422 426	腮腺肿大
+T26	symptom 427 430	钞票纹
+T27	symptom 442 450	酒精性肝病的红舌
+T28	symptom 451 456	脂溢性皮炎
+T29	symptom 457 461	巩膜黄染
+T30	disease 462 471	原发性胆汁性胆管炎
+T31	symptom 472 475	黄斑瘤
+R13	clinical_manifestation Arg1:T30 Arg2:T31	
+R14	clinical_manifestation Arg1:T18 Arg2:T19	
+R15	clinical_manifestation Arg1:T18 Arg2:T20	
+R16	clinical_manifestation Arg1:T18 Arg2:T21	
+R17	clinical_manifestation Arg1:T18 Arg2:T22	
+R18	clinical_manifestation Arg1:T18 Arg2:T23	
+R19	clinical_manifestation Arg1:T18 Arg2:T24	
+R20	clinical_manifestation Arg1:T18 Arg2:T25	
+R21	clinical_manifestation Arg1:T18 Arg2:T26	
+R22	clinical_manifestation Arg1:T18 Arg2:T27	
+R23	clinical_manifestation Arg1:T18 Arg2:T28	
+R24	clinical_manifestation Arg1:T18 Arg2:T29	
+R25	clinical_manifestation Arg1:T18 Arg2:T31	
+T32	disease 494 496	喉癌
+T33	disease 508 513	喉恶性肿瘤
+T34	physical_therapy 519 525	颈部增强CT
+R26	physical Arg1:T33 Arg2:T34	
+T35	disease 527 530	卵巢癌
+T36	physical_therapy 534 544	紫杉醇和卡铂联合化疗
+T37	disease 553 556	卵巢癌
+R27	physical Arg1:T35 Arg2:T36	
+T38	disease 588 591	卵巢癌
+T39	physical_therapy 635 643	紫杉醇和卡铂化疗
+R28	physical Arg1:T38 Arg2:T39	
+T40	disease 645 650	新生儿黄疸
+T41	disease 651 663	Zellweger综合征
+T42	symptom 688 694	严重智力低下
+T43	symptom 695 699	癫痫发作
+R29	clinical_manifestation Arg1:T41 Arg2:T42	
+R30	clinical_manifestation Arg1:T41 Arg2:T43	
+T44	disease 701 706	急性胰腺炎
+T45	symptom 714 716	激动
+T46	symptom 717 721	思维混乱
+T47	symptom 723 726	压抑感
+R31	clinical_manifestation Arg1:T44 Arg2:T45	
+R32	clinical_manifestation Arg1:T44 Arg2:T46	
+R33	clinical_manifestation Arg1:T44 Arg2:T47	
+T48	disease 727 732	急性胰腺炎
+T49	symptom 739 741	厌食
+T50	symptom 742 749	恶心呕吐伴纳差
+R34	clinical_manifestation Arg1:T48 Arg2:T49	
+R35	clinical_manifestation Arg1:T48 Arg2:T50	
+T51	disease 754 760	松果体区肿瘤
+T52	disease 782 788	生殖细胞肿瘤
+T53	disease 798 806	松果体实质细胞瘤
+T54	disease 812 817	星形细胞瘤
+T55	disease 825 831	生殖细胞肿瘤
+T56	disease 835 840	生殖细胞瘤
+T57	disease 841 844	畸胎瘤
+T58	disease 846 854	合型生殖细胞肿瘤
+T59	physical_therapy 855 862	辅助检查MRI
+T60	physical_therapy 898 905	脊柱MRI检查
+T61	physical_therapy 906 914	脑脊液细胞学检查
+R36	physical Arg1:T51 Arg2:T59	
+R37	physical Arg1:T51 Arg2:T60	
+R38	physical Arg1:T51 Arg2:T61	
+T62	disease 947 952	吸入性肺炎
+T63	disease 969 972	肺损伤

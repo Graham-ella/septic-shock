@@ -1,0 +1,65 @@
+T1	disease 0 5	肾母细胞瘤
+T2	disease 130 136	透明细胞肉瘤
+T3	disease 137 143	杆状细胞肉瘤
+T4	disease 145 148	口咽癌
+T6	physical_therapy 173 178	同步放化疗
+T7	disease 186 189	口咽癌
+T5	physical_therapy 162 171	手术治疗及术后放疗
+R1	physical Arg1:T4 Arg2:T5	
+R2	physical Arg1:T4 Arg2:T6	
+T8	physical_therapy 190 193	放化疗
+R3	physical Arg1:T7 Arg2:T8	
+T9	physical_therapy 201 204	放化疗
+R4	physical Arg1:T7 Arg2:T9	
+T10	disease 238 243	厌氧菌肺炎
+T11	disease 246 251	吸入性肺炎
+T12	physical_therapy 269 273	支持治疗
+R5	physical Arg1:T10 Arg2:T12	
+T13	disease 275 278	低体温
+T14	pathogenic_bacteria 282 288	能量供应不足
+T15	pathogenic_bacteria 289 297	体温调节体能障碍
+T16	pathogenic_bacteria 298 303	环境温度低
+T17	pathogenic_bacteria 305 310	合并败血症
+R6	cause Arg1:T14 Arg2:T13	
+R7	cause Arg1:T15 Arg2:T13	
+R8	cause Arg1:T16 Arg2:T13	
+R9	cause Arg1:T17 Arg2:T13	
+T18	physical_therapy 321 335	保持环境温度（30～33℃）
+T19	physical_therapy 348 351	暖水袋
+R10	physical Arg1:T13 Arg2:T18	
+R11	physical Arg1:T13 Arg2:T19	
+T20	disease 395 400	新生儿肺炎
+T21	medical_treatment 419 422	抗生素
+R12	medical Arg1:T20 Arg2:T21	
+T22	disease 430 436	非小细胞肺癌
+T23	disease 438 445	上腔静脉综合征
+T24	disease 449 455	副肿瘤综合征
+T25	disease 471 477	副肿瘤综合征
+T26	disease 482 487	急性胰腺炎
+T27	disease 509 516	急性髓性白血病
+T28	disease 567 574	急性髓性白血病
+T29	pathogenic_bacteria 639 644	唐氏综合征
+T30	pathogenic_bacteria 656 663	暴露于辐射或苯
+R13	cause Arg1:T29 Arg2:T28	
+R14	cause Arg1:T30 Arg2:T28	
+T31	disease 668 674	假丝酵母菌病
+T32	pathogenic_bacteria 676 682	假丝酵母菌属
+R15	cause Arg1:T32 Arg2:T31	
+T33	disease 715 724	呼吸道假丝酵母菌病
+T34	disease 711 714	脓毒症
+R16	relevant Arg1:T31 Arg2:T34	
+T35	disease 762 772	原发假丝酵母菌性肺炎
+T36	disease 783 788	细菌性肺炎
+T37	disease 789 792	肺结核
+T38	disease 793 796	血液病
+R17	relevant Arg1:T35 Arg2:T36	
+R18	relevant Arg1:T35 Arg2:T37	
+R19	relevant Arg1:T35 Arg2:T38	
+T39	disease 726 734	假丝酵母菌性肺炎
+T40	disease 838 843	儿童HLH
+T41	pathogenic_bacteria 814 818	免疫抑制
+T42	pathogenic_bacteria 819 829	造血干细胞或器官移植
+T43	pathogenic_bacteria 830 834	某些药物
+R20	cause Arg1:T41 Arg2:T40	
+R21	cause Arg1:T42 Arg2:T40	
+R22	cause Arg1:T43 Arg2:T40	

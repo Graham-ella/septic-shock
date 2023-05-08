@@ -1,0 +1,26 @@
+T1	disease 0 3	败血症
+T2	disease 3 8	败血性休克
+T3	disease 36 39	败血症
+T4	disease 39 42	败血症
+T5	disease 90 93	败血症
+T6	disease 93 98	败血性休克
+R1	relevant Arg1:T1 Arg2:T2	
+T7	disease 81 84	糖尿病
+T8	disease 85 88	肝硬化
+R2	relevant Arg1:T4 Arg2:T7	
+R3	relevant Arg1:T4 Arg2:T8	
+R4	relevant Arg1:T5 Arg2:T6	
+T9	disease 126 129	败血症
+T10	disease 159 162	败血症
+T11	disease 184 187	败血症
+T12	disease 224 227	败血症
+T13	disease 227 232	败血性休克
+R5	relevant Arg1:T12 Arg2:T13	
+T14	disease 302 305	败血症
+T15	disease 339 342	败血症
+T16	symptom 348 350	寒战
+T17	symptom 351 357	体温迅速升高
+T18	symptom 358 364	皮肤发热潮红
+R6	clinical_manifestation Arg1:T15 Arg2:T16	
+R7	clinical_manifestation Arg1:T15 Arg2:T17	
+R8	clinical_manifestation Arg1:T15 Arg2:T18	

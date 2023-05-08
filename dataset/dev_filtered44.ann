@@ -1,0 +1,62 @@
+T1	disease 0 5	急性胰腺炎
+T2	symptom 11 13	恶心
+T3	symptom 14 16	呕吐
+T4	symptom 17 19	腹痛
+T5	physical_therapy 31 35	液体复苏
+T6	physical_therapy 37 39	禁食
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	physical Arg1:T1 Arg2:T5	
+R5	physical Arg1:T1 Arg2:T6	
+T7	disease 51 58	脉络丛乳头状瘤
+T8	physical_therapy 81 83	放疗
+R6	physical Arg1:T7 Arg2:T8	
+T9	disease 120 125	脊髓内肿瘤
+T10	physical_therapy 216 218	化疗
+R7	physical Arg1:T9 Arg2:T10	
+T11	disease 304 309	新生儿黄疸
+T12	pathogenic_bacteria 266 273	分娩中的催产素
+R8	cause Arg1:T12 Arg2:T11	
+T13	disease 331 335	呼吸衰竭
+T14	physical_therapy 394 400	无创正压通气
+T15	physical_therapy 403 407	机械通气
+T16	disease 319 327	慢性阻塞性肺疾病
+R9	relevant Arg1:T13 Arg2:T16	
+R10	physical Arg1:T13 Arg2:T14	
+R11	physical Arg1:T13 Arg2:T15	
+T17	disease 479 481	溶血
+T18	physical_therapy 488 498	血涂片检查球形红细胞
+T19	physical_therapy 499 504	有核红细胞
+T20	physical_therapy 505 512	呼出气一氧化碳
+T21	physical_therapy 519 528	血液中碳氧血红蛋白
+R12	physical Arg1:T17 Arg2:T18	
+R13	physical Arg1:T17 Arg2:T19	
+R14	physical Arg1:T17 Arg2:T20	
+R15	physical Arg1:T17 Arg2:T21	
+T22	disease 551 554	尿崩症
+T23	physical_therapy 577 584	头颅MRI检查
+T24	symptom 555 562	血钠正常或稍高
+T25	symptom 563 574	血浆渗透压多正常或偏高
+R16	clinical_manifestation Arg1:T22 Arg2:T24	
+R17	clinical_manifestation Arg1:T22 Arg2:T25	
+R18	physical Arg1:T22 Arg2:T23	
+T26	disease 639 642	心脏病
+T27	symptom 675 678	心绞痛
+R19	clinical_manifestation Arg1:T26 Arg2:T27	
+T28	symptom 669 674	心功能不全
+R20	clinical_manifestation Arg1:T26 Arg2:T28	
+T29	disease 729 734	急性胰腺炎
+T30	physical_therapy 739 744	血清淀粉酶
+R21	physical Arg1:T29 Arg2:T30	
+T31	disease 685 688	登革热
+T32	disease 690 692	脑炎
+R22	relevant Arg1:T31 Arg2:T32	
+R23	relevant Arg1:T31 Arg2:T29	
+T33	symptom 720 722	腹痛
+T34	symptom 723 725	呕吐
+R24	clinical_manifestation Arg1:T29 Arg2:T33	
+R25	clinical_manifestation Arg1:T29 Arg2:T34	
+T35	disease 760 765	新生儿黄疸
+T36	physical_therapy 779 785	渗透脆性试验
+R26	physical Arg1:T35 Arg2:T36	

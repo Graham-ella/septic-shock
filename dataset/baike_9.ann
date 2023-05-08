@@ -1,0 +1,42 @@
+T1	disease 0 3	脓毒症
+T2	pathogenic_bacteria 51 61	肠道细菌/内毒素移位
+T3	disease 66 72	过度炎症反应
+T4	disease 73 79	器官功能损害
+R1	cause Arg1:T2 Arg2:T3	
+R2	cause Arg1:T2 Arg2:T4	
+T5	disease 81 84	脓毒症
+T6	disease 86 92	凝血功能紊乱
+R3	relevant Arg1:T5 Arg2:T6	
+T7	disease 98 101	脓毒症
+T8	disease 129 132	脓毒症
+R4	relevant Arg1:T5 Arg2:T7	
+T9	disease 145 148	脓毒症
+T10	disease 219 227	弥漫性血管内凝血
+T11	pathogenic_bacteria 148 154	内毒素和TN
+R5	cause Arg1:T11 Arg2:T9	
+R6	cause Arg1:T11 Arg2:T10	
+T12	disease 234 237	脓毒症
+T13	disease 332 335	脓毒症
+T14	disease 456 459	脓毒症
+T15	symptom 366 377	体温>38℃或<36℃
+T16	symptom 381 389	心率>90次/分
+T17	symptom 393 416	呼吸频率>20次/分或PaCO2<32mmHg
+T18	symptom 420 454	外周血白细胞>12×109/L或<4×109/L或未成熟细胞>10%
+R7	clinical_manifestation Arg1:T13 Arg2:T15	
+R8	clinical_manifestation Arg1:T13 Arg2:T16	
+R9	clinical_manifestation Arg1:T13 Arg2:T17	
+R10	clinical_manifestation Arg1:T13 Arg2:T18	
+T19	disease 461 464	脓毒症
+T20	disease 471 475	SIRS
+R11	relevant Arg1:T19 Arg2:T20	
+T21	disease 485 488	脓毒症
+T22	symptom 493 495	发热
+T23	symptom 496 500	心动过速
+T24	symptom 501 505	呼吸急促
+T25	symptom 506 514	外周血白细胞增加
+R12	clinical_manifestation Arg1:T21 Arg2:T22	
+R13	clinical_manifestation Arg1:T21 Arg2:T23	
+R14	clinical_manifestation Arg1:T21 Arg2:T24	
+R15	clinical_manifestation Arg1:T21 Arg2:T25	
+R16	relevant Arg1:T1 Arg2:T3	
+R17	relevant Arg1:T1 Arg2:T4	

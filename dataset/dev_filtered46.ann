@@ -1,0 +1,121 @@
+T1	disease 6 14	中枢神经系统肿瘤
+T2	symptom 44 46	头痛
+T3	symptom 47 49	呕吐
+T4	symptom 50 52	嗜睡
+T5	symptom 53 60	视神经乳头水肿
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 88 93	感染性肺炎
+T7	pathogenic_bacteria 94 99	巨细胞病毒
+T8	pathogenic_bacteria 100 106	单纯疱疹病毒
+T9	pathogenic_bacteria 65 70	克雷伯杆菌
+T10	pathogenic_bacteria 71 75	李斯特菌
+T11	pathogenic_bacteria 107 111	风疹病毒
+T12	pathogenic_bacteria 115 117	原虫
+T13	pathogenic_bacteria 119 122	弓形虫
+T14	pathogenic_bacteria 124 127	衣原体
+T15	pathogenic_bacteria 128 131	支原体
+T16	pathogenic_bacteria 133 138	解脲支原体
+R5	cause Arg1:T9 Arg2:T6	
+R6	cause Arg1:T10 Arg2:T6	
+R7	cause Arg1:T7 Arg2:T6	
+R8	cause Arg1:T8 Arg2:T6	
+R9	cause Arg1:T11 Arg2:T6	
+R10	cause Arg1:T12 Arg2:T6	
+R11	cause Arg1:T13 Arg2:T6	
+R12	cause Arg1:T14 Arg2:T6	
+R13	cause Arg1:T15 Arg2:T6	
+R14	cause Arg1:T16 Arg2:T6	
+T17	disease 183 186	ICH
+T18	pathogenic_bacteria 160 163	血液病
+T19	pathogenic_bacteria 164 171	脑血管发育异常
+R15	cause Arg1:T19 Arg2:T17	
+R16	cause Arg1:T18 Arg2:T17	
+T20	disease 281 284	胰腺炎
+T21	disease 345 348	糖尿病
+T22	disease 401 404	低血糖
+R17	relevant Arg1:T21 Arg2:T22	
+T23	disease 361 366	慢性胰腺炎
+R18	relevant Arg1:T21 Arg2:T23	
+T24	symptom 353 358	糖耐量异常
+R19	clinical_manifestation Arg1:T21 Arg2:T24	
+T25	symptom 393 398	肝脏糖异生
+R20	clinical_manifestation Arg1:T22 Arg2:T25	
+T26	disease 384 392	低胰高血糖素血症
+R21	relevant Arg1:T22 Arg2:T26	
+T27	medical_treatment 370 373	胰岛素
+R22	medical Arg1:T21 Arg2:T27	
+T28	disease 411 413	休克
+T29	symptom 417 421	面色苍白
+T30	symptom 422 426	四肢厥冷
+T31	symptom 427 431	脉搏细弱
+T32	symptom 432 436	尿量减少
+T33	symptom 451 455	呼吸急促
+T34	symptom 545 548	DIC
+T35	symptom 533 540	尿量减少或无尿
+T36	symptom 513 517	血压降低
+T37	symptom 438 442	严重缺氧
+T38	symptom 443 447	循环衰竭
+T39	symptom 456 460	唇周发绀
+T40	symptom 461 465	烦躁不安
+T41	symptom 466 470	意识障碍
+T42	symptom 471 479	动脉血氧分压降低
+T43	symptom 480 487	血氧饱和度下降
+T44	symptom 488 494	代谢性酸中毒
+T45	symptom 495 499	心率增快
+T46	symptom 500 507	四肢及皮肤湿冷
+T47	symptom 508 512	出现花纹
+T48	symptom 518 532	收缩压可低于40mmHg以下
+R23	clinical_manifestation Arg1:T28 Arg2:T29	
+R24	clinical_manifestation Arg1:T28 Arg2:T30	
+R25	clinical_manifestation Arg1:T28 Arg2:T31	
+R26	clinical_manifestation Arg1:T28 Arg2:T32	
+R27	clinical_manifestation Arg1:T28 Arg2:T37	
+R28	clinical_manifestation Arg1:T28 Arg2:T38	
+R29	clinical_manifestation Arg1:T28 Arg2:T33	
+R30	clinical_manifestation Arg1:T28 Arg2:T39	
+R31	clinical_manifestation Arg1:T28 Arg2:T40	
+R32	clinical_manifestation Arg1:T28 Arg2:T41	
+R33	clinical_manifestation Arg1:T28 Arg2:T42	
+R34	clinical_manifestation Arg1:T28 Arg2:T43	
+R35	clinical_manifestation Arg1:T28 Arg2:T44	
+R36	clinical_manifestation Arg1:T28 Arg2:T45	
+R37	clinical_manifestation Arg1:T28 Arg2:T46	
+R38	clinical_manifestation Arg1:T28 Arg2:T47	
+R39	clinical_manifestation Arg1:T28 Arg2:T36	
+R40	clinical_manifestation Arg1:T28 Arg2:T48	
+R41	clinical_manifestation Arg1:T28 Arg2:T35	
+R42	clinical_manifestation Arg1:T28 Arg2:T34	
+T49	disease 564 572	腺泡型横纹肌肉瘤
+T50	disease 604 608	慢性肾病
+T51	physical_therapy 626 630	血清肌酐
+T52	physical_therapy 631 634	GFR
+T53	physical_therapy 635 641	尿微量白蛋白
+T54	physical_therapy 642 645	尿常规
+T55	physical_therapy 658 661	肾脏超
+R43	physical Arg1:T50 Arg2:T51	
+R44	physical Arg1:T50 Arg2:T52	
+R45	physical Arg1:T50 Arg2:T53	
+R46	physical Arg1:T50 Arg2:T54	
+R47	physical Arg1:T50 Arg2:T55	
+T56	disease 690 697	B族链球菌感染
+T57	symptom 715 720	血小板减少
+R48	clinical_manifestation Arg1:T56 Arg2:T57	
+T58	disease 702 707	重度脓毒症
+R49	clinical_manifestation Arg1:T58 Arg2:T57	
+T59	disease 731 737	中枢性尿崩症
+T60	medical_treatment 804 819	1-脱氨-8-D-精氨酸加压素
+R50	medical Arg1:T59 Arg2:T60	
+T61	medical_treatment 820 825	DDAVP
+R51	medical Arg1:T59 Arg2:T61	
+T62	symptom 746 748	多饮
+T63	symptom 749 751	多尿
+R52	clinical_manifestation Arg1:T59 Arg2:T62	
+R53	clinical_manifestation Arg1:T59 Arg2:T63	
+T64	disease 761 764	糖尿病
+T65	symptom 755 760	高渗性利尿
+R54	clinical_manifestation Arg1:T64 Arg2:T65	
+T66	disease 765 771	肾小管酸中毒
+R55	clinical_manifestation Arg1:T66 Arg2:T65	

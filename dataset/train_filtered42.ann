@@ -1,0 +1,163 @@
+T1	disease 0 2	脑炎
+T2	symptom 24 26	咳嗽
+T3	symptom 44 46	咳嗽
+T4	disease 50 55	HSV-1
+T5	disease 56 58	流感
+T6	disease 59 62	副流感
+T7	disease 63 68	肺炎支原体
+T8	disease 69 71	Q热
+T9	disease 72 76	球孢子菌
+T10	disease 77 82	组织胞浆菌
+T11	disease 83 87	酿母菌病
+T12	disease 88 93	狂犬病感染
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T4 Arg2:T3	
+R3	clinical_manifestation Arg1:T5 Arg2:T3	
+R4	clinical_manifestation Arg1:T6 Arg2:T3	
+R5	clinical_manifestation Arg1:T7 Arg2:T3	
+R6	clinical_manifestation Arg1:T8 Arg2:T3	
+R7	clinical_manifestation Arg1:T9 Arg2:T3	
+R8	clinical_manifestation Arg1:T10 Arg2:T3	
+R9	clinical_manifestation Arg1:T11 Arg2:T3	
+R10	clinical_manifestation Arg1:T12 Arg2:T3	
+T13	disease 95 101	非小细胞肺癌
+T14	disease 138 144	非小细胞肺癌
+T15	disease 146 151	机化性肺炎
+T16	disease 180 184	放线菌病
+T17	physical_therapy 103 109	支气管肺活检
+T18	physical_therapy 133 137	开胸活检
+T19	physical_therapy 111 114	BAL
+R11	physical Arg1:T15 Arg2:T17	
+R12	physical Arg1:T15 Arg2:T19	
+R13	physical Arg1:T15 Arg2:T18	
+T20	symptom 199 201	干咳
+T21	symptom 207 209	发烧
+T22	disease 210 213	脓毒症
+T23	symptom 225 227	咯血
+T24	symptom 228 232	胸壁疼痛
+R14	clinical_manifestation Arg1:T16 Arg2:T20	
+R15	clinical_manifestation Arg1:T16 Arg2:T21	
+R16	clinical_manifestation Arg1:T16 Arg2:T23	
+R17	clinical_manifestation Arg1:T16 Arg2:T24	
+T25	disease 234 237	胰腺癌
+T26	physical_therapy 255 259	切除胃窦
+T27	disease 239 241	肿瘤
+T28	physical_therapy 260 272	保留幽门胰十二指肠切除术
+R18	physical Arg1:T25 Arg2:T26	
+R19	physical Arg1:T25 Arg2:T28	
+T29	disease 274 281	恶性血管内皮瘤
+T30	disease 283 287	血管肉瘤
+R20	same Arg1:T29 Arg2:T30	
+T31	disease 294 296	肿瘤
+T32	disease 315 319	念珠菌病
+T33	disease 322 330	慢性皮肤念珠菌病
+T34	disease 372 376	念珠菌病
+T35	symptom 384 387	鹅口疮
+T36	symptom 388 392	口角糜烂
+T37	symptom 413 420	有角质增生现象
+T38	symptom 421 427	皮损渐及躯干
+T39	symptom 405 412	红斑鳞屑性皮疹
+T40	disease 333 338	内分泌异常
+T41	disease 339 345	免疫功能低下
+T42	disease 347 354	甲状腺功能低下
+T43	disease 355 361	垂体功能低下
+T44	disease 362 366	艾迪生病
+T45	disease 367 370	糖尿病
+R21	relevant Arg1:T33 Arg2:T40	
+R22	relevant Arg1:T33 Arg2:T41	
+R23	relevant Arg1:T33 Arg2:T42	
+R24	relevant Arg1:T33 Arg2:T43	
+R25	relevant Arg1:T33 Arg2:T44	
+R26	relevant Arg1:T33 Arg2:T45	
+R27	clinical_manifestation Arg1:T33 Arg2:T35	
+R28	clinical_manifestation Arg1:T33 Arg2:T36	
+R29	clinical_manifestation Arg1:T33 Arg2:T39	
+R30	clinical_manifestation Arg1:T33 Arg2:T37	
+R31	clinical_manifestation Arg1:T33 Arg2:T38	
+T46	disease 429 432	血友病
+T47	physical_therapy 549 555	凝血时间延长
+R32	physical Arg1:T46 Arg2:T47	
+T48	disease 453 457	血友病甲
+T49	disease 481 485	血友病乙
+T50	disease 510 514	血友病丙
+T51	disease 459 480	因子Ⅷ（又称抗血友病球蛋白，AHG）缺乏症
+R33	same Arg1:T48 Arg2:T51	
+T52	disease 487 509	因子Ⅸ（又称血浆凝血活酶成分，PTC）缺乏症
+R34	same Arg1:T49 Arg2:T52	
+T53	disease 516 538	因子Ⅺ（又称血浆凝血活酶前质，PTA）缺乏症
+R35	same Arg1:T50 Arg2:T53	
+T54	disease 596 599	AHF
+T55	physical_therapy 648 652	血浆置换
+R36	physical Arg1:T54 Arg2:T55	
+T56	physical_therapy 611 617	新鲜冷冻血浆
+R37	physical Arg1:T54 Arg2:T56	
+T57	symptom 604 610	凝血功能障碍
+R38	clinical_manifestation Arg1:T54 Arg2:T57	
+T58	disease 682 687	新生儿黄疸
+T59	disease 701 706	电解质紊乱
+T60	disease 707 709	出血
+T61	disease 710 712	感染
+T62	disease 713 717	心律失常
+T63	disease 718 725	血栓形成与栓塞
+T64	disease 726 734	坏死性小肠结肠炎
+T65	disease 735 742	移植物抗宿主病
+R39	relevant Arg1:T58 Arg2:T59	
+R40	relevant Arg1:T58 Arg2:T60	
+R41	relevant Arg1:T58 Arg2:T61	
+R42	relevant Arg1:T58 Arg2:T62	
+R43	relevant Arg1:T58 Arg2:T63	
+R44	relevant Arg1:T58 Arg2:T64	
+R45	relevant Arg1:T58 Arg2:T65	
+T66	disease 747 751	颅内肿瘤
+T67	symptom 744 746	癫痫
+R46	clinical_manifestation Arg1:T66 Arg2:T67	
+T68	symptom 773 775	癫痫
+T69	disease 767 771	幕上肿瘤
+R47	clinical_manifestation Arg1:T69 Arg2:T68	
+T70	symptom 788 790	头痛
+R48	clinical_manifestation Arg1:T69 Arg2:T70	
+T71	symptom 812 816	对侧偏瘫
+T72	symptom 828 833	运动性失语
+T73	symptom 871 877	生长发育紊乱
+T74	symptom 878 880	肥胖
+T75	symptom 881 883	消瘦
+T76	symptom 884 886	多饮
+T77	symptom 887 889	多尿
+T78	symptom 890 896	体温调节障碍
+T79	disease 834 839	蝶鞍区肿瘤
+T80	symptom 841 849	视神经原发性萎缩
+T81	symptom 850 857	视力、视野改变
+T82	disease 897 901	幕下肿瘤
+T83	symptom 903 907	走路不稳
+T84	symptom 908 912	眼球震颤
+T85	symptom 913 923	肌张力及肌腱反射减退
+T86	disease 924 930	脑干部位肿瘤
+T87	symptom 932 939	一侧脑神经损害
+T88	symptom 940 946	对侧锥体束征
+T89	disease 954 960	松果体区肿瘤
+T90	symptom 962 968	眼球上视障碍
+T91	symptom 969 972	性早熟
+R49	clinical_manifestation Arg1:T66 Arg2:T71	
+R50	clinical_manifestation Arg1:T66 Arg2:T72	
+R51	clinical_manifestation Arg1:T79 Arg2:T80	
+R52	clinical_manifestation Arg1:T79 Arg2:T81	
+R53	clinical_manifestation Arg1:T66 Arg2:T73	
+R54	clinical_manifestation Arg1:T66 Arg2:T74	
+R55	clinical_manifestation Arg1:T66 Arg2:T75	
+R56	clinical_manifestation Arg1:T66 Arg2:T76	
+R57	clinical_manifestation Arg1:T66 Arg2:T77	
+R58	clinical_manifestation Arg1:T66 Arg2:T78	
+R59	clinical_manifestation Arg1:T82 Arg2:T83	
+R60	clinical_manifestation Arg1:T82 Arg2:T84	
+R61	clinical_manifestation Arg1:T82 Arg2:T85	
+R62	clinical_manifestation Arg1:T86 Arg2:T87	
+R63	clinical_manifestation Arg1:T86 Arg2:T88	
+R64	clinical_manifestation Arg1:T89 Arg2:T90	
+R65	clinical_manifestation Arg1:T89 Arg2:T91	
+T92	disease 975 979	尤因肉瘤
+T93	physical_therapy 1031 1035	X线摄片
+T94	physical_therapy 1036 1040	CT扫描
+T95	disease 998 1000	肿瘤
+T96	disease 1044 1046	肿瘤
+R66	physical Arg1:T92 Arg2:T93	
+R67	physical Arg1:T92 Arg2:T94	

@@ -1,0 +1,12 @@
+T1	disease 0 3	血液病
+T2	physical_therapy 19 27	补充造血所需营养
+R1	physical Arg1:T1 Arg2:T2	
+T3	symptom 51 56	缺铁性贫血
+T4	medical_treatment 57 61	补充铁剂
+R2	treatment Arg1:T3 Arg2:T4	
+R3	clinical_manifestation Arg1:T1 Arg2:T3	
+T5	disease 63 66	血液病
+T6	symptom 73 80	严重贫血或失血
+R4	clinical_manifestation Arg1:T5 Arg2:T6	
+T7	physical_therapy 81 86	输注红细胞
+R5	treatment Arg1:T6 Arg2:T7	

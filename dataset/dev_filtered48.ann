@@ -1,0 +1,84 @@
+T1	disease 15 17	哮喘
+T2	physical_therapy 88 90	吸氧
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 166 169	卵巢癌
+T4	disease 171 178	深静脉血栓形成
+T5	disease 185 188	肺栓塞
+R2	relevant Arg1:T3 Arg2:T4	
+R3	relevant Arg1:T3 Arg2:T5	
+T6	disease 203 210	感染性胰腺坏死
+T7	physical_therapy 214 220	经皮导管引流
+R4	physical Arg1:T6 Arg2:T7	
+T8	disease 262 265	肝硬化
+T9	pathogenic_bacteria 270 276	上消化道出血
+T10	pathogenic_bacteria 277 279	便秘
+T11	pathogenic_bacteria 280 288	饮食摄入蛋白过多
+T12	pathogenic_bacteria 289 291	腹泻
+T13	pathogenic_bacteria 292 294	呕吐
+T14	pathogenic_bacteria 295 298	低血糖
+T15	pathogenic_bacteria 299 304	电解质紊乱
+T16	pathogenic_bacteria 311 314	利尿剂
+T17	pathogenic_bacteria 315 318	镇静剂
+T18	pathogenic_bacteria 326 330	腹穿放液
+T19	pathogenic_bacteria 331 336	TIPSS
+T20	pathogenic_bacteria 338 340	感染
+T21	pathogenic_bacteria 341 343	贫血
+T22	pathogenic_bacteria 344 346	缺氧
+T23	pathogenic_bacteria 347 350	低血压
+R5	cause Arg1:T9 Arg2:T8	
+R6	cause Arg1:T10 Arg2:T8	
+R7	cause Arg1:T11 Arg2:T8	
+R8	cause Arg1:T12 Arg2:T8	
+R9	cause Arg1:T13 Arg2:T8	
+R10	cause Arg1:T15 Arg2:T8	
+R11	cause Arg1:T14 Arg2:T8	
+R12	cause Arg1:T16 Arg2:T8	
+R13	cause Arg1:T17 Arg2:T8	
+R14	cause Arg1:T18 Arg2:T8	
+R15	cause Arg1:T19 Arg2:T8	
+R16	cause Arg1:T20 Arg2:T8	
+R17	cause Arg1:T21 Arg2:T8	
+R18	cause Arg1:T22 Arg2:T8	
+R19	cause Arg1:T23 Arg2:T8	
+T24	disease 367 374	自身免疫性肝炎
+T25	physical_therapy 408 413	血清白蛋白
+R20	physical Arg1:T24 Arg2:T25	
+T26	disease 477 484	胎粪吸入综合征
+T27	symptom 556 562	临床呼吸困难
+R21	clinical_manifestation Arg1:T26 Arg2:T27	
+T28	disease 487 494	胎粪吸入性肺炎
+R22	same Arg1:T26 Arg2:T28	
+T29	disease 594 602	肺炎球菌性脑膜炎
+T30	disease 713 721	继发性肾病综合征
+T31	disease 774 777	糖尿病
+R23	relevant Arg1:T30 Arg2:T31	
+T32	disease 778 784	桥本甲状腺炎
+T33	disease 785 790	淀粉样变性
+R24	relevant Arg1:T30 Arg2:T32	
+R25	relevant Arg1:T30 Arg2:T33	
+T34	pathogenic_bacteria 698 708	呼吸道感染及过敏反应
+T35	pathogenic_bacteria 727 729	感染
+T36	pathogenic_bacteria 730 732	药物
+T37	pathogenic_bacteria 733 735	中毒
+T38	disease 740 742	肿瘤
+T39	disease 743 750	遗传及代谢疾病
+T40	disease 752 760	全身性系统性疾病
+R26	cause Arg1:T34 Arg2:T30	
+R27	cause Arg1:T35 Arg2:T30	
+R28	cause Arg1:T36 Arg2:T30	
+R29	cause Arg1:T37 Arg2:T30	
+R30	relevant Arg1:T30 Arg2:T38	
+R31	relevant Arg1:T30 Arg2:T39	
+R32	relevant Arg1:T30 Arg2:T40	
+T41	disease 793 798	新生儿黄疸
+T42	physical_therapy 805 813	Coombs试验
+R33	physical Arg1:T41 Arg2:T42	
+T43	disease 849 855	HCMV肝炎
+T44	symptom 873 877	中度肝大
+T45	symptom 880 882	脾大
+T46	symptom 892 896	胆汁淤积
+T47	symptom 897 907	血清肝酶轻到中度升高
+R34	clinical_manifestation Arg1:T43 Arg2:T44	
+R35	clinical_manifestation Arg1:T43 Arg2:T45	
+R36	clinical_manifestation Arg1:T43 Arg2:T46	
+R37	clinical_manifestation Arg1:T43 Arg2:T47	

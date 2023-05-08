@@ -1,0 +1,9 @@
+T1	disease 0 3	肝损伤
+T2	symptom 29 34	腹腔内出血
+T3	symptom 35 39	胆汁泄漏
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+T4	disease 42 47	出血性休克
+T5	disease 48 54	胆汁性腹膜炎
+R3	relevant Arg1:T1 Arg2:T4	
+R4	relevant Arg1:T1 Arg2:T5	

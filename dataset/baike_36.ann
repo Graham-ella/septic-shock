@@ -1,0 +1,28 @@
+T1	disease 0 9	重症急性呼吸综合征
+T2	disease 24 33	重症急性呼吸综合征
+T3	symptom 43 45	咳嗽
+T4	symptom 40 42	咳嗽
+R1	clinical_manifestation Arg1:T2 Arg2:T4	
+T5	medical_treatment 50 52	镇咳
+R2	treatment Arg1:T3 Arg2:T5	
+T6	symptom 53 55	咳痰
+T7	medical_treatment 58 61	祛痰药
+R3	treatment Arg1:T6 Arg2:T7	
+R4	clinical_manifestation Arg1:T2 Arg2:T4	
+R5	clinical_manifestation Arg1:T2 Arg2:T3	
+R6	clinical_manifestation Arg1:T2 Arg2:T6	
+T8	disease 63 72	重症急性呼吸综合征
+T9	disease 134 143	重症急性呼吸综合征
+T10	symptom 147 159	心、肝、肾等器官功能损害
+R7	clinical_manifestation Arg1:T9 Arg2:T10	
+T11	disease 170 179	重症急性呼吸综合征
+T12	symptom 185 187	气促
+T13	physical_therapy 190 195	持续鼻导管
+T14	physical_therapy 196 200	面罩吸氧
+R8	clinical_manifestation Arg1:T11 Arg2:T12	
+R9	treatment Arg1:T12 Arg2:T13	
+R10	treatment Arg1:T12 Arg2:T14	
+T15	disease 202 211	重症急性呼吸综合征
+T16	disease 248 257	重症急性呼吸综合征
+T17	disease 294 303	重症急性呼吸综合征
+T18	disease 350 359	重症急性呼吸综合征

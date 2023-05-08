@@ -1,0 +1,101 @@
+T1	disease 15 20	恶性骨肿瘤
+T2	physical_therapy 25 27	截肢
+T3	physical_therapy 45 55	人工关节假体功能重建
+R1	physical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+T4	disease 83 89	浆液性胸膜炎
+T5	disease 92 98	渗出性胸膜炎
+T6	disease 99 108	浆液纤维素性胸膜炎
+T7	disease 109 116	浆液血性胸膜炎
+R3	same Arg1:T4 Arg2:T5	
+R4	same Arg1:T4 Arg2:T6	
+R5	same Arg1:T4 Arg2:T7	
+T8	disease 122 130	非化脓性细菌感染
+T9	disease 132 134	结核
+T10	disease 135 140	病毒性肺炎
+T11	disease 142 147	腺病毒肺炎
+T12	disease 149 154	真菌性肺炎
+T13	disease 155 160	支原体肺炎
+R6	relevant Arg1:T4 Arg2:T8	
+R7	relevant Arg1:T4 Arg2:T9	
+R8	relevant Arg1:T4 Arg2:T10	
+R9	relevant Arg1:T4 Arg2:T11	
+R10	relevant Arg1:T4 Arg2:T12	
+R11	relevant Arg1:T4 Arg2:T13	
+T14	symptom 206 208	胸痛
+R12	clinical_manifestation Arg1:T4 Arg2:T14	
+T15	disease 216 223	B族链球菌感染
+T16	symptom 245 247	发热
+T17	symptom 261 265	心动过速
+T18	symptom 274 280	呼吸频率加快
+T19	symptom 288 294	轻度意识模糊
+R13	clinical_manifestation Arg1:T15 Arg2:T16	
+R14	clinical_manifestation Arg1:T15 Arg2:T17	
+R15	clinical_manifestation Arg1:T15 Arg2:T18	
+R16	clinical_manifestation Arg1:T15 Arg2:T19	
+T20	disease 306 311	ADV肺炎
+T21	disease 315 323	闭塞性细支气管炎
+R17	relevant Arg1:T20 Arg2:T21	
+T22	symptom 326 330	反复喘息
+R18	clinical_manifestation Arg1:T20 Arg2:T22	
+T23	disease 338 345	先天性代谢缺陷
+T24	physical_therapy 415 419	体格检查
+R19	physical Arg1:T23 Arg2:T24	
+T25	disease 423 425	黄疸
+T26	disease 426 429	白内障
+T27	disease 430 434	肝脾肿大
+T28	disease 435 440	肌张力异常
+T29	disease 441 446	先天性畸形
+T30	disease 450 454	面部粗糙
+T31	disease 456 460	异常体味
+R20	relevant Arg1:T23 Arg2:T25	
+R21	relevant Arg1:T23 Arg2:T26	
+R22	relevant Arg1:T23 Arg2:T27	
+R23	relevant Arg1:T23 Arg2:T28	
+R24	relevant Arg1:T23 Arg2:T29	
+R25	relevant Arg1:T23 Arg2:T30	
+R26	relevant Arg1:T23 Arg2:T31	
+T32	disease 462 470	人粒细胞无形体病
+T33	physical_therapy 471 476	血生化检查
+R27	physical Arg1:T32 Arg2:T33	
+T34	symptom 479 486	肝、肾功能异常
+T35	symptom 487 493	心肌酶谱升高
+T36	symptom 500 514	血淀粉酶、尿淀粉酶和血糖升高
+R28	clinical_manifestation Arg1:T32 Arg2:T34	
+R29	clinical_manifestation Arg1:T32 Arg2:T35	
+R30	clinical_manifestation Arg1:T32 Arg2:T36	
+T38	disease 523 528	子宫内膜癌
+T39	disease 532 538	侵袭性乳腺癌
+T40	disease 545 550	小叶原位癌
+T41	disease 570 577	乳腺导管原位癌
+T37	disease 618 623	乳腺原位癌
+T42	pathogenic_bacteria 658 664	肿瘤未能切除
+T43	pathogenic_bacteria 671 675	缺乏放疗
+R31	cause Arg1:T42 Arg2:T37	
+R32	cause Arg1:T43 Arg2:T37	
+T44	disease 677 682	腹主动脉瘤
+T45	disease 774 779	主动脉肠瘘
+T46	disease 735 740	移植物感染
+R33	relevant Arg1:T44 Arg2:T46	
+R34	relevant Arg1:T44 Arg2:T45	
+T47	symptom 687 693	全身性脓毒症
+T48	symptom 694 699	腹股沟引流
+T49	symptom 700 707	假性动脉瘤形成
+T50	symptom 708 726	开放修复术或EVAR后性质不明的疼痛
+T51	symptom 749 765	开放修复术或EVAR后胃肠道出血
+R35	clinical_manifestation Arg1:T44 Arg2:T47	
+R36	clinical_manifestation Arg1:T44 Arg2:T48	
+R37	clinical_manifestation Arg1:T44 Arg2:T49	
+R38	clinical_manifestation Arg1:T44 Arg2:T50	
+R39	clinical_manifestation Arg1:T44 Arg2:T51	
+T52	disease 830 833	脑肿瘤
+T53	symptom 840 847	夜间或清晨头痛
+R40	clinical_manifestation Arg1:T52 Arg2:T53	
+T54	disease 781 786	儿童偏头痛
+T55	disease 873 878	感染性肺炎
+T56	physical_therapy 906 910	肺部听诊
+T57	symptom 910 920	呼吸音可为粗糙、减低
+T58	symptom 921 926	闻及湿啰音
+R41	physical Arg1:T55 Arg2:T56	
+R42	clinical_manifestation Arg1:T55 Arg2:T57	
+R43	clinical_manifestation Arg1:T55 Arg2:T58	

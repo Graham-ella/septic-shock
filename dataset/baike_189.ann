@@ -1,0 +1,43 @@
+T1	disease 0 8	中毒性休克综合征
+T2	medical_treatment 29 40	血管活性药物糖皮质激素
+T3	physical_therapy 41 53	纠正酸碱平衡和电解质紊乱
+R1	medical Arg1:T1 Arg2:T2	
+R2	physical Arg1:T1 Arg2:T3	
+T4	disease 56 59	暖休克
+T5	symptom 79 85	外周血管扩张
+T6	symptom 86 91	微循环淤滞
+R3	clinical_manifestation Arg1:T4 Arg2:T5	
+R4	clinical_manifestation Arg1:T4 Arg2:T6	
+T7	symptom 101 113	血容量和CO2正常或升高
+R5	clinical_manifestation Arg1:T4 Arg2:T7	
+T8	disease 115 118	暖休克
+T9	symptom 120 126	血管阻力降低
+T10	symptom 127 132	氧耗量减低
+T11	symptom 133 137	乳酸增多
+T12	disease 138 142	低氧血症
+T13	disease 143 148	低碳酸血症
+R6	clinical_manifestation Arg1:T8 Arg2:T9	
+R7	clinical_manifestation Arg1:T8 Arg2:T10	
+R8	clinical_manifestation Arg1:T8 Arg2:T11	
+R9	relevant Arg1:T8 Arg2:T12	
+R10	relevant Arg1:T8 Arg2:T13	
+T14	disease 150 153	暖休克
+T15	symptom 153 158	脉压差较大
+T16	symptom 159 163	呼吸急促
+T17	symptom 165 169	烦躁不安
+R11	clinical_manifestation Arg1:T14 Arg2:T15	
+R12	clinical_manifestation Arg1:T14 Arg2:T16	
+R13	clinical_manifestation Arg1:T14 Arg2:T17	
+T18	disease 172 175	暖休克
+T19	disease 180 183	暖休克
+T20	pathogenic_bacteria 193 198	革兰阳性菌
+T21	disease 205 207	休克
+R14	relevant Arg1:T18 Arg2:T21	
+R15	cause Arg1:T20 Arg2:T21	
+R16	relevant Arg1:T19 Arg2:T21	
+T22	disease 211 214	暖休克
+T23	symptom 232 237	心功能衰竭
+T24	symptom 238 244	外周血管扩张
+R17	clinical_manifestation Arg1:T22 Arg2:T23	
+R18	clinical_manifestation Arg1:T22 Arg2:T24	
+R19	relevant Arg1:T21 Arg2:T22	

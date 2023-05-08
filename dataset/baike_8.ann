@@ -1,0 +1,62 @@
+T1	disease 0 3	脓毒症
+T2	disease 3 6	脓毒症
+T3	pathogenic_bacteria 22 26	严重烧伤
+T4	pathogenic_bacteria 27 30	多发伤
+R1	cause Arg1:T3 Arg2:T2	
+R2	cause Arg1:T4 Arg2:T2	
+T5	disease 41 44	脓毒症
+T6	disease 44 47	脓毒症
+T7	disease 60 63	糖尿病
+T8	disease 64 72	慢性阻塞性支气管
+T9	disease 73 76	白血病
+T10	disease 77 84	再生障碍型贫血
+T11	disease 85 89	尿路结石
+R3	relevant Arg1:T6 Arg2:T7	
+R4	relevant Arg1:T6 Arg2:T8	
+R5	relevant Arg1:T6 Arg2:T9	
+R6	relevant Arg1:T6 Arg2:T10	
+R7	relevant Arg1:T6 Arg2:T11	
+T12	disease 91 94	脓毒症
+T13	disease 94 97	脓毒症
+T14	disease 215 218	脓毒症
+T15	pathogenic_bacteria 220 225	细菌内毒素
+R8	cause Arg1:T15 Arg2:T14	
+T16	disease 300 303	脓毒症
+T17	pathogenic_bacteria 305 309	炎症介质
+R9	cause Arg1:T17 Arg2:T16	
+T18	pathogenic_bacteria 233 236	内毒素
+T19	disease 240 243	脓毒症
+R10	cause Arg1:T18 Arg2:T19	
+T20	disease 244 247	脓毒症
+T21	disease 260 264	炎性反应
+T22	disease 265 271	免疫功能紊乱
+T23	disease 272 277	高代谢状态
+T24	disease 278 283	多器官功能
+R11	relevant Arg1:T20 Arg2:T21	
+R12	relevant Arg1:T20 Arg2:T22	
+R13	relevant Arg1:T20 Arg2:T23	
+R14	relevant Arg1:T20 Arg2:T24	
+T25	disease 310 313	脓毒症
+T26	pathogenic_bacteria 347 351	炎性介质
+R15	cause Arg1:T26 Arg2:T25	
+T27	disease 355 358	脓毒症
+T28	disease 358 361	脓毒症
+T29	pathogenic_bacteria 363 370	内源性炎性介质
+R16	cause Arg1:T29 Arg2:T28	
+T30	disease 456 459	脓毒症
+T31	disease 504 507	脓毒症
+T32	disease 516 519	脓毒症
+T33	disease 509 515	免疫功能紊乱
+R17	relevant Arg1:T31 Arg2:T33	
+T34	disease 555 558	脓毒症
+T35	disease 558 561	脓毒症
+T36	symptom 588 595	T细胞功能失调
+T37	symptom 630 634	免疫麻痹
+R18	clinical_manifestation Arg1:T35 Arg2:T36	
+R19	clinical_manifestation Arg1:T35 Arg2:T37	
+T38	disease 676 679	脓毒症
+T39	disease 765 768	脓毒症
+T40	disease 769 776	多器官功能不全
+T41	pathogenic_bacteria 745 755	肠道细菌/内毒素移位
+R20	cause Arg1:T41 Arg2:T39	
+R21	cause Arg1:T41 Arg2:T40	

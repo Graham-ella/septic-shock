@@ -1,0 +1,99 @@
+T1	disease 0 5	慢性胰腺炎
+T2	symptom 38 42	体重下降
+T3	disease 57 61	胰腺钙化
+T4	symptom 24 28	慢性腹痛
+T5	symptom 29 37	复发性急性胰腺炎
+T6	symptom 43 45	油便
+T7	disease 120 125	急性咽喉炎
+T8	pathogenic_bacteria 126 131	念珠菌感染
+T9	disease 141 143	咽痛
+T10	physical_therapy 156 158	化疗
+T11	physical_therapy 159 164	口咽部放疗
+R1	cause Arg1:T8 Arg2:T9	
+T12	disease 132 136	免疫抑制
+T13	disease 171 179	脱屑性间质性肺炎
+T14	pathogenic_bacteria 187 192	腺病毒感染
+T15	pathogenic_bacteria 193 200	先天性风疹感染
+T16	pathogenic_bacteria 201 203	吸烟
+T17	pathogenic_bacteria 204 209	有机尘吸入
+T18	pathogenic_bacteria 210 219	应用呋喃旦啶等药物
+R2	cause Arg1:T14 Arg2:T13	
+R3	cause Arg1:T15 Arg2:T13	
+R4	cause Arg1:T16 Arg2:T13	
+R5	cause Arg1:T17 Arg2:T13	
+R6	cause Arg1:T18 Arg2:T13	
+T19	disease 244 250	毛细支气管炎
+T20	disease 290 299	流行性毛细支气管炎
+T21	symptom 306 308	喘憋
+T22	disease 327 332	喘憋性肺炎
+R7	same Arg1:T19 Arg2:T22	
+R8	clinical_manifestation Arg1:T19 Arg2:T21	
+T23	disease 340 343	菌血症
+T24	medical_treatment 352 355	抗生素
+T25	medical_treatment 359 363	头孢噻肟
+T26	medical_treatment 364 368	头孢曲松
+T28	medical_treatment 379 382	抗生素
+T29	physical_therapy 393 400	镇静、及时吸氧
+T30	medical_treatment 425 429	地塞米松
+T31	medical_treatment 436 440	肾上腺素
+T32	medical_treatment 441 445	布地奈德
+R9	medical Arg1:T23 Arg2:T24	
+R10	medical Arg1:T23 Arg2:T25	
+R11	medical Arg1:T23 Arg2:T26	
+T27	medical_treatment 369 373	氨苄西林
+T33	medical_treatment 374 377	舒巴坦
+R12	medical Arg1:T23 Arg2:T27	
+R13	medical Arg1:T23 Arg2:T33	
+R14	medical Arg1:T23 Arg2:T28	
+R15	physical Arg1:T23 Arg2:T29	
+R16	medical Arg1:T23 Arg2:T30	
+R17	medical Arg1:T23 Arg2:T31	
+R18	medical Arg1:T23 Arg2:T32	
+T34	disease 451 454	肝硬化
+T35	disease 462 470	血浆凝血酶原时间
+T36	disease 485 493	肝脏合成功能异常
+T37	symptom 476 484	凝血酶原时间延长
+R19	clinical_manifestation Arg1:T36 Arg2:T37	
+T38	disease 498 501	卵巢癌
+T39	disease 554 557	卵巢癌
+T40	symptom 568 573	移动性浊音
+T41	symptom 563 567	液波震颤
+T42	symptom 505 507	尿急
+R20	clinical_manifestation Arg1:T38 Arg2:T42	
+R21	clinical_manifestation Arg1:T39 Arg2:T41	
+R22	clinical_manifestation Arg1:T39 Arg2:T40	
+T43	disease 587 592	支气管肺炎
+T44	disease 595 602	肺炎链球菌肺炎
+T45	disease 641 648	缺氧中毒性脑病
+R23	relevant Arg1:T44 Arg2:T45	
+T46	symptom 614 618	神志清醒
+T47	symptom 624 626	烦躁
+T48	symptom 627 629	嗜睡
+T49	symptom 630 632	惊厥
+T50	symptom 633 635	谵妄
+T51	symptom 638 640	昏迷
+R24	clinical_manifestation Arg1:T44 Arg2:T46	
+R25	clinical_manifestation Arg1:T44 Arg2:T47	
+R26	clinical_manifestation Arg1:T44 Arg2:T48	
+R27	clinical_manifestation Arg1:T44 Arg2:T49	
+R28	clinical_manifestation Arg1:T44 Arg2:T50	
+R29	clinical_manifestation Arg1:T44 Arg2:T51	
+T52	disease 652 655	肛门癌
+T53	symptom 660 664	肛门肿块
+T54	physical_therapy 669 671	活检
+R30	clinical_manifestation Arg1:T52 Arg2:T53	
+R31	physical Arg1:T52 Arg2:T54	
+T55	disease 683 686	胆管癌
+T56	disease 688 693	肝细胞肝癌
+T57	disease 697 701	壶腹部癌
+T58	disease 720 723	胆管癌
+T59	symptom 727 729	黄疸
+T60	symptom 730 734	皮肤瘙痒
+T61	symptom 735 737	厌食
+T62	symptom 738 740	消瘦
+T63	symptom 743 752	扩张的可触及的胆囊
+R32	clinical_manifestation Arg1:T58 Arg2:T59	
+R33	clinical_manifestation Arg1:T58 Arg2:T60	
+R34	clinical_manifestation Arg1:T58 Arg2:T61	
+R35	clinical_manifestation Arg1:T58 Arg2:T62	
+R36	clinical_manifestation Arg1:T58 Arg2:T63	

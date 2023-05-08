@@ -1,0 +1,6 @@
+T1	disease 0 3	肝硬化
+T2	physical_therapy 5 10	肝活检检查
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 20 23	肝硬化
+T4	physical_therapy 25 30	腹腔镜检查
+R2	physical Arg1:T3 Arg2:T4	

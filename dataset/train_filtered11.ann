@@ -1,0 +1,79 @@
+T1	disease 0 8	出生后感染性肺炎
+T2	symptom 11 13	发热
+T3	symptom 14 18	体温不升
+T4	symptom 19 22	反应差
+T5	symptom 45 51	双肺细湿啰音
+R1	clinical_manifestation Arg1:T1 Arg2:T2	
+R2	clinical_manifestation Arg1:T1 Arg2:T3	
+R3	clinical_manifestation Arg1:T1 Arg2:T4	
+R4	clinical_manifestation Arg1:T1 Arg2:T5	
+T6	disease 53 58	急性胰腺炎
+T8	symptom 73 77	无反跳痛
+T9	disease 84 88	低钙血症
+T10	symptom 129 134	沃斯特克征
+T11	symptom 152 156	特鲁索征
+T12	disease 78 83	急性胰腺炎
+T7	symptom 66 71	轻度肌紧张
+R5	clinical_manifestation Arg1:T6 Arg2:T7	
+R6	clinical_manifestation Arg1:T6 Arg2:T8	
+R7	clinical_manifestation Arg1:T9 Arg2:T10	
+R8	clinical_manifestation Arg1:T9 Arg2:T11	
+T13	disease 159 164	新生儿黄疸
+T14	disease 187 193	高胆红素血症
+T15	disease 228 231	胆管癌
+T16	disease 233 235	肿瘤
+T17	physical_therapy 242 247	光动力治疗
+R9	physical Arg1:T16 Arg2:T17	
+T18	disease 249 252	GSD
+T19	symptom 308 310	肝大
+R10	clinical_manifestation Arg1:T18 Arg2:T19	
+T20	symptom 276 282	糖原异常堆积
+R11	clinical_manifestation Arg1:T18 Arg2:T20	
+T21	disease 321 324	低血糖
+R12	relevant Arg1:T18 Arg2:T21	
+T22	physical_therapy 314 318	生化检查
+R13	physical Arg1:T18 Arg2:T22	
+T23	disease 326 329	肝硬化
+T24	disease 351 356	病毒性肝炎
+T25	pathogenic_bacteria 364 368	静脉吸毒
+T26	pathogenic_bacteria 369 379	不使用避孕工具的性交
+T27	pathogenic_bacteria 380 382	纹身
+R14	cause Arg1:T25 Arg2:T24	
+R15	cause Arg1:T26 Arg2:T24	
+R16	cause Arg1:T27 Arg2:T24	
+T28	disease 385 388	肝硬化
+T29	medical_treatment 413 416	白蛋白
+T30	medical_treatment 397 401	头孢噻肟
+T31	medical_treatment 402 408	喹诺酮类药物
+R17	medical Arg1:T28 Arg2:T30	
+R18	medical Arg1:T28 Arg2:T31	
+R19	medical Arg1:T28 Arg2:T29	
+T32	disease 418 423	百日咳肺炎
+T33	pathogenic_bacteria 424 429	百日咳杆菌
+T34	symptom 469 471	发热
+T35	symptom 472 474	气急
+T36	symptom 475 486	呼吸增快与体温不成比例
+T37	symptom 493 497	呼吸困难
+T38	symptom 498 500	发绀
+T39	disease 452 457	支气管肺炎
+R20	cause Arg1:T33 Arg2:T32	
+R21	relevant Arg1:T32 Arg2:T39	
+R22	clinical_manifestation Arg1:T32 Arg2:T34	
+R23	clinical_manifestation Arg1:T32 Arg2:T35	
+R24	clinical_manifestation Arg1:T32 Arg2:T36	
+R25	clinical_manifestation Arg1:T32 Arg2:T37	
+R26	clinical_manifestation Arg1:T32 Arg2:T38	
+T40	disease 540 544	AIDS
+T41	disease 554 556	肾炎
+T42	disease 557 559	肾病
+R27	relevant Arg1:T40 Arg2:T41	
+R28	relevant Arg1:T40 Arg2:T42	
+T43	pathogenic_bacteria 502 506	机会感染
+T44	pathogenic_bacteria 517 521	恶性肿瘤
+R29	cause Arg1:T43 Arg2:T40	
+R30	cause Arg1:T44 Arg2:T40	
+T45	disease 563 568	急性胰腺炎
+T46	physical_therapy 582 586	体格检查
+T47	physical_therapy 594 601	CT血管造影术
+R31	physical Arg1:T45 Arg2:T46	
+R32	physical Arg1:T45 Arg2:T47	

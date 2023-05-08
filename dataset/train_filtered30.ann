@@ -1,0 +1,102 @@
+T1	disease 0 4	疟疾感染
+T2	disease 8 10	肺炎
+T3	disease 48 52	疟疾感染
+T4	disease 57 61	胸腔积液
+T5	symptom 33 35	咳嗽
+T6	symptom 36 38	咯血
+T7	symptom 39 43	呼吸困难
+T8	symptom 44 46	胸痛
+R1	clinical_manifestation Arg1:T2 Arg2:T5	
+R2	clinical_manifestation Arg1:T2 Arg2:T6	
+R3	clinical_manifestation Arg1:T2 Arg2:T7	
+R4	clinical_manifestation Arg1:T2 Arg2:T8	
+T9	symptom 67 72	叩诊呈浊音
+T10	symptom 73 82	受影响区呼吸音减低
+R5	clinical_manifestation Arg1:T4 Arg2:T9	
+R6	clinical_manifestation Arg1:T4 Arg2:T10	
+T11	disease 102 111	皮质类固醇过度替代
+T12	disease 122 127	库欣综合征
+T13	disease 128 131	高血压
+T14	disease 132 136	高脂血症
+T15	disease 138 141	糖尿病
+T16	disease 85 91	垂体功能减退
+T17	disease 93 98	女性不育症
+R7	relevant Arg1:T16 Arg2:T17	
+R8	relevant Arg1:T16 Arg2:T11	
+R9	relevant Arg1:T11 Arg2:T12	
+R10	relevant Arg1:T11 Arg2:T13	
+R11	relevant Arg1:T11 Arg2:T14	
+R12	relevant Arg1:T11 Arg2:T15	
+T18	disease 143 151	脱屑性间质性肺炎
+T19	pathogenic_bacteria 159 164	腺病毒感染
+T20	pathogenic_bacteria 165 172	先天性风疹感染
+T21	pathogenic_bacteria 173 175	吸烟
+T22	pathogenic_bacteria 176 181	有机尘吸入
+T23	pathogenic_bacteria 182 191	应用呋喃旦啶等药物
+R13	cause Arg1:T19 Arg2:T18	
+R14	cause Arg1:T20 Arg2:T18	
+R15	cause Arg1:T21 Arg2:T18	
+R16	cause Arg1:T22 Arg2:T18	
+R17	cause Arg1:T23 Arg2:T18	
+T24	disease 207 210	肝硬化
+T25	pathogenic_bacteria 222 224	输血
+R18	cause Arg1:T25 Arg2:T24	
+T26	disease 276 279	肝硬化
+T27	pathogenic_bacteria 280 282	乙肝
+T28	pathogenic_bacteria 283 285	丙肝
+R19	cause Arg1:T27 Arg2:T26	
+R20	cause Arg1:T28 Arg2:T26	
+T29	disease 289 294	腹主动脉瘤
+T30	disease 298 303	AAA破裂
+T31	disease 320 325	腹主动脉瘤
+T32	physical_therapy 347 359	静脉通路（中心静脉导管）
+T33	physical_therapy 360 364	动脉置管
+T34	physical_therapy 380 384	尿道置管
+T35	physical_therapy 385 390	低血压复苏
+T36	physical_therapy 330 334	气道管理
+T37	physical_therapy 335 339	辅助供氧
+T38	physical_therapy 340 345	气管内插管
+R21	physical Arg1:T30 Arg2:T36	
+R22	physical Arg1:T30 Arg2:T37	
+R23	physical Arg1:T30 Arg2:T38	
+R24	physical Arg1:T30 Arg2:T32	
+R25	physical Arg1:T30 Arg2:T33	
+R26	physical Arg1:T30 Arg2:T34	
+R27	physical Arg1:T30 Arg2:T35	
+T39	disease 499 502	脑膜炎
+T40	medical_treatment 472 478	头孢噻甲羧肟
+T41	medical_treatment 479 483	万古霉素
+T42	medical_treatment 522 526	万古霉素
+T43	medical_treatment 527 531	头孢三嗪
+T44	disease 450 456	绿脓杆菌感染
+T45	disease 458 464	免疫功能缺陷
+R28	medical Arg1:T44 Arg2:T40	
+R29	medical Arg1:T44 Arg2:T41	
+R30	medical Arg1:T45 Arg2:T40	
+R31	medical Arg1:T45 Arg2:T41	
+R32	medical Arg1:T39 Arg2:T42	
+R33	medical Arg1:T39 Arg2:T43	
+T46	disease 535 540	急性胰腺炎
+T47	symptom 548 556	稳定的突发性腹痛
+R34	clinical_manifestation Arg1:T46 Arg2:T47	
+T48	disease 572 576	血吸虫病
+T49	disease 581 585	血吸虫病
+T50	disease 653 660	血吸虫病肝硬化
+R35	relevant Arg1:T49 Arg2:T50	
+T51	symptom 641 649	肝脏发生纤维性变
+R36	clinical_manifestation Arg1:T50 Arg2:T51	
+T52	symptom 608 622	汇管区较大门静脉分支管腔阻塞
+T53	symptom 623 633	周围渐显结缔组织增生
+R37	clinical_manifestation Arg1:T49 Arg2:T52	
+R38	clinical_manifestation Arg1:T49 Arg2:T53	
+T54	disease 662 665	睾丸癌
+T55	symptom 680 682	恶心
+T56	symptom 683 685	腹泻
+T57	symptom 686 690	消化不良
+T58	physical_therapy 669 671	化疗
+T59	symptom 695 701	生育能力降低
+T60	disease 706 708	肿瘤
+T61	disease 717 723	转移性乳腺癌
+T62	disease 727 744	激素敏感型HER2阴性转移性乳腺癌
+T63	physical_therapy 795 803	基于内分泌的治疗
+R39	physical Arg1:T62 Arg2:T63	

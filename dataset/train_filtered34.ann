@@ -1,0 +1,61 @@
+T1	disease 0 2	肿瘤
+T2	physical_therapy 3 7	手术切除
+R1	physical Arg1:T1 Arg2:T2	
+T3	disease 9 12	膀胱癌
+T4	disease 55 63	非肌层浸润性肿瘤
+T5	physical_therapy 73 79	经尿道切除术
+T6	disease 87 90	膀胱癌
+T7	disease 96 99	膀胱癌
+R2	physical Arg1:T4 Arg2:T5	
+T8	disease 132 138	转移性骨肿瘤
+T9	disease 168 174	转移性骨肿瘤
+T10	disease 192 195	乳腺癌
+T11	disease 212 216	甲状腺癌
+T12	disease 251 259	钙化性筋膜纤维瘤
+T13	physical_therapy 289 293	完全切除
+R3	physical Arg1:T12 Arg2:T13	
+T14	disease 312 316	小儿头痛
+T15	disease 337 342	颈源性头痛
+T16	disease 342 346	颈肌损伤
+R4	relevant Arg1:T14 Arg2:T15	
+T17	disease 347 349	炎症
+T18	disease 350 354	颈椎炎症
+T19	disease 358 360	肿瘤
+T20	disease 361 363	骨折
+T21	disease 364 366	脱臼
+T22	disease 369 373	乙型肝炎
+T23	physical_therapy 394 398	基本生化
+R5	physical Arg1:T22 Arg2:T23	
+T24	disease 404 411	乙肝肝硬化腹水
+T25	disease 431 435	低钠血症
+R6	relevant Arg1:T24 Arg2:T25	
+T26	disease 436 440	乙型肝炎
+T27	disease 443 447	低钠血症
+T28	physical_therapy 454 458	凝血指标
+T29	physical_therapy 459 465	PT/INR
+R7	same Arg1:T28 Arg2:T29	
+T30	disease 513 518	新生儿黄疸
+T31	disease 521 523	肝炎
+T32	pathogenic_bacteria 534 539	先天性梅毒
+T33	pathogenic_bacteria 540 545	细菌性肝炎
+R8	cause Arg1:T32 Arg2:T31	
+R9	cause Arg1:T33 Arg2:T31	
+T34	disease 577 586	呼吸道合胞病毒肺炎
+T35	disease 588 599	合胞病毒（RSV）肺炎
+R10	same Arg1:T34 Arg2:T35	
+T36	physical_therapy 611 615	胸部X线
+R11	physical Arg1:T34 Arg2:T36	
+T37	symptom 620 634	两肺可见小点片状、斑片状阴影
+T38	symptom 645 648	肺气肿
+R12	clinical_manifestation Arg1:T34 Arg2:T37	
+R13	clinical_manifestation Arg1:T34 Arg2:T38	
+T39	disease 650 655	急性胰腺炎
+T40	medical_treatment 659 662	胰岛素
+R14	medical Arg1:T39 Arg2:T40	
+T41	disease 747 750	肝硬化
+T42	disease 759 765	食管静脉曲张
+T43	disease 797 804	失代偿期肝硬化
+T44	physical_therapy 788 796	每两年复查EGD
+R15	physical Arg1:T42 Arg2:T44	
+T45	medical_treatment 772 782	非选择性β受体阻滞剂
+R16	medical Arg1:T42 Arg2:T45	

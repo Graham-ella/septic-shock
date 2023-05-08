@@ -1,0 +1,39 @@
+T1	disease 0 3	糖尿病
+T2	disease 3 8	1型糖尿病
+T3	symptom 12 18	免疫系统异常
+R1	clinical_manifestation Arg1:T2 Arg2:T3	
+R2	relevant Arg1:T1 Arg2:T2	
+T4	disease 63 66	糖尿病
+T5	symptom 68 79	多饮、多尿、多食和消瘦
+T7	disease 102 107	1型糖尿病
+R4	clinical_manifestation Arg1:T7 Arg2:T5	
+R5	relevant Arg1:T4 Arg2:T7	
+T8	disease 109 112	糖尿病
+T9	disease 137 140	糖尿病
+T10	disease 152 157	2型糖尿病
+T11	symptom 142 146	疲乏无力
+T12	symptom 147 149	肥胖
+R6	relevant Arg1:T9 Arg2:T10	
+R7	clinical_manifestation Arg1:T10 Arg2:T12	
+R8	clinical_manifestation Arg1:T10 Arg2:T11	
+T13	disease 159 162	糖尿病
+T14	disease 162 167	2型糖尿病
+R9	relevant Arg1:T13 Arg2:T14	
+T15	symptom 170 174	常有肥胖
+R10	clinical_manifestation Arg1:T14 Arg2:T15	
+T16	disease 193 196	糖尿病
+T17	disease 203 206	糖尿病
+T18	disease 213 216	糖尿病
+T19	symptom 219 227	“三多一少”症状
+R11	clinical_manifestation Arg1:T18 Arg2:T19	
+T6	physical_therapy 231 238	一次异常血糖值
+R3	treatment Arg1:T19 Arg2:T6	
+T20	disease 244 247	糖尿病
+T21	symptom 90 98	“三多一少”症状
+R12	same Arg1:T5 Arg2:T21	
+T22	disease 253 256	糖尿病
+T23	physical_therapy 258 265	两次异常血糖值
+R13	physical Arg1:T22 Arg2:T23	
+T24	disease 267 270	糖尿病
+T25	physical_therapy 270 285	可疑者需做75g葡萄糖耐量试验
+R14	physical Arg1:T24 Arg2:T25	

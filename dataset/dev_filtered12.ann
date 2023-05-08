@@ -1,0 +1,50 @@
+T1	disease 3 8	支原体肺炎
+T2	disease 107 110	DIC
+T3	medical_treatment 48 50	肝素
+R1	medical Arg1:T2 Arg2:T3	
+T4	disease 178 183	HIV感染
+T5	disease 218 223	卡波西肉瘤
+T6	disease 241 248	非霍奇金淋巴瘤
+T7	disease 249 252	宫颈癌
+R2	relevant Arg1:T4 Arg2:T5	
+R3	relevant Arg1:T4 Arg2:T6	
+R4	relevant Arg1:T4 Arg2:T7	
+T8	disease 322 330	革兰氏阴性菌感染
+T9	pathogenic_bacteria 333 342	既往有过抗生素治疗
+T10	pathogenic_bacteria 343 347	器械治疗
+T11	pathogenic_bacteria 348 352	肢体固定
+T12	pathogenic_bacteria 353 359	医院菌落定植
+R5	cause Arg1:T9 Arg2:T8	
+R6	cause Arg1:T10 Arg2:T8	
+R7	cause Arg1:T11 Arg2:T8	
+R8	cause Arg1:T12 Arg2:T8	
+T13	disease 389 394	横纹肌肉瘤
+T14	physical_therapy 474 482	腹膜后淋巴结活检
+R9	physical Arg1:T13 Arg2:T14	
+T15	physical_therapy 446 450	外科手术
+R10	physical Arg1:T13 Arg2:T15	
+T16	disease 503 506	SLE
+T17	pathogenic_bacteria 494 497	紫外线
+R11	cause Arg1:T17 Arg2:T16	
+T18	symptom 663 671	雌激素水平均增高
+T19	symptom 672 679	雄激素水平降低
+R12	clinical_manifestation Arg1:T16 Arg2:T18	
+R13	clinical_manifestation Arg1:T16 Arg2:T19	
+T20	disease 709 714	急性胰腺炎
+T21	physical_therapy 691 696	淀粉酶测定
+R14	physical Arg1:T20 Arg2:T21	
+T22	disease 791 796	急性胰腺炎
+T23	physical_therapy 813 818	血清淀粉酶
+R15	physical Arg1:T22 Arg2:T23	
+T24	disease 859 867	晚发型母乳性黄疸
+T25	physical_therapy 948 950	光疗
+R16	physical Arg1:T24 Arg2:T25	
+T26	disease 966 974	出生后感染性肺炎
+T27	disease 1067 1073	化脓性脑膜炎
+T28	disease 1074 1076	脓胸
+T29	disease 1077 1080	脓气胸
+T30	disease 1081 1084	肺大疱
+R17	relevant Arg1:T26 Arg2:T27	
+R18	relevant Arg1:T26 Arg2:T28	
+R19	relevant Arg1:T26 Arg2:T29	
+R20	relevant Arg1:T26 Arg2:T30	

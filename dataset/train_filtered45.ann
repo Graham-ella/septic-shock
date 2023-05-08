@@ -1,0 +1,75 @@
+T1	disease 0 3	肝硬化
+T2	disease 7 9	骨病
+T3	disease 40 43	肝硬化
+T4	physical_therapy 51 62	摄入足够的钙和维生素D
+T5	physical_therapy 63 67	锻炼身体
+T6	physical_therapy 68 74	纠正危险因素
+T7	disease 9 13	慢性肝病
+T8	disease 14 17	肝硬化
+T9	medical_treatment 75 85	特效抗骨质再吸收药物
+R1	physical Arg1:T2 Arg2:T4	
+R2	physical Arg1:T2 Arg2:T5	
+R3	physical Arg1:T2 Arg2:T6	
+R4	medical Arg1:T2 Arg2:T9	
+T10	disease 89 95	假丝酵母菌病
+T11	pathogenic_bacteria 97 103	假丝酵母菌属
+R5	cause Arg1:T11 Arg2:T10	
+T12	disease 132 135	脓毒症
+R6	relevant Arg1:T10 Arg2:T12	
+T13	disease 162 167	类癌综合征
+T14	disease 171 174	肝转移
+T15	disease 230 239	呼吸道合胞病毒肺炎
+T16	symptom 243 245	喘息
+T17	physical_therapy 246 250	肺部听诊
+T18	symptom 250 256	可闻及哮鸣音
+R7	clinical_manifestation Arg1:T15 Arg2:T16	
+R8	physical Arg1:T15 Arg2:T17	
+R9	clinical_manifestation Arg1:T15 Arg2:T18	
+T19	disease 258 262	咽旁脓肿
+T20	symptom 280 285	咽侧壁膨出
+R10	clinical_manifestation Arg1:T19 Arg2:T20	
+T21	disease 266 271	咽后壁脓肿
+T22	disease 287 289	脑炎
+T23	disease 317 320	狂犬病
+T24	disease 321 327	西尼罗河病毒
+T25	disease 328 335	巨细胞病毒感染
+T26	pathogenic_bacteria 293 297	器官移植
+R11	cause Arg1:T26 Arg2:T22	
+R12	cause Arg1:T26 Arg2:T23	
+R13	cause Arg1:T26 Arg2:T24	
+R14	cause Arg1:T26 Arg2:T25	
+T27	disease 337 344	沙眼衣原体肺炎
+T28	pathogenic_bacteria 345 350	沙眼衣原体
+T29	pathogenic_bacteria 351 353	CT
+R15	same Arg1:T28 Arg2:T29	
+R16	cause Arg1:T28 Arg2:T27	
+T30	symptom 370 372	喘息
+T31	symptom 375 379	呼吸暂停
+R17	clinical_manifestation Arg1:T27 Arg2:T30	
+R18	clinical_manifestation Arg1:T27 Arg2:T31	
+T32	disease 381 386	基底细胞癌
+T33	physical_therapy 409 413	肿瘤筛查
+R19	physical Arg1:T32 Arg2:T33	
+T34	disease 395 399	皮肤肿瘤
+R20	physical Arg1:T34 Arg2:T33	
+T35	disease 415 424	中耳及乳突部位肿瘤
+T36	disease 436 439	中耳炎
+T37	disease 440 445	面神经瘫痪
+T38	symptom 425 433	呈息肉样从耳凸出
+R21	clinical_manifestation Arg1:T35 Arg2:T38	
+R22	relevant Arg1:T35 Arg2:T36	
+R23	relevant Arg1:T35 Arg2:T37	
+T39	disease 449 458	泌尿道假丝酵母菌病
+T40	symptom 503 506	小脓肿
+T41	pathogenic_bacteria 479 486	白色假丝酵母菌
+T42	disease 520 528	假丝酵母菌菌血症
+T43	symptom 534 538	长期发热
+T44	symptom 558 562	体温增高
+R24	clinical_manifestation Arg1:T42 Arg2:T43	
+R25	clinical_manifestation Arg1:T42 Arg2:T44	
+T45	disease 507 519	播散性假丝酵母菌病综合征
+R26	clinical_manifestation Arg1:T45 Arg2:T43	
+R27	clinical_manifestation Arg1:T45 Arg2:T44	
+R28	cause Arg1:T41 Arg2:T39	
+R29	clinical_manifestation Arg1:T39 Arg2:T40	
+T46	disease 459 468	全身性假丝酵母菌病
